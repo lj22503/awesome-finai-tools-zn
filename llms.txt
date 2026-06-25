@@ -6,64 +6,69 @@ Awesome FinAI Tools 是中国金融 AI 工具全景图，收录可接入 AI Agen
 
 ## 核心页面
 
-- [README](https://github.com/lj22503/awesome-finai-tools) — 完整工具清单和使用指南
+- [README](https://github.com/lj22503/awesome-finai-tools-zn) — 完整工具清单和使用指南
 - [工具数据](data/tools.json) — 结构化 JSON 格式，所有工具的机器可读数据
 - [Agent Skill](SKILL.md) — AI Agent 接入指南
 - [贡献指南](CONTRIBUTING.md) — 如何提交新工具
 - [更新日志](CHANGELOG.md) — 版本变更记录
 
-## 工具分类（5 大类）
+## 工具分类（6 大类）
 
 ### 📊 Market Data（行情数据）
+
 | 工具 | 类型 | 费用 | 一句话描述 |
 |------|------|------|-----------|
-| OpenCLI EastMoney | CLI | 免费 | 实时行情/资金流/板块/龙虎榜/北向 |
-| ashare-mcp | MCP | 免费 | 30个tool，akshare主源+多源降级 |
-| BaoStock | Python | 免费 | 免费A股平台，1990年至今，零配置 |
-| AKShare | Python | 免费 | 东方财富/新浪/腾讯聚合，300+接口 |
-| Tushare Pro | Python | 积分制 | 高质量财务/指数，需注册 |
+| OpenCLI EastMoney | CLI | ✅ | 实时行情/资金流/板块/龙虎榜/北向/ETF |
+| ashare-mcp | MCP | ✅ | 30个tool，akshare主源+多源降级，生产级 |
+| BaoStock | Python | ✅ | 免费A股，1990年至今，零配置 |
+| AKShare | Python | ✅ | 东方财富/新浪/腾讯聚合，300+接口 |
 | 广发证券 Skill | Skill | 免费/未知 | 股票信息/财务对比/龙虎榜/ETF监测 |
 | 国信证券 Skill | Skill | 免费/未知 | 智能选股/ETF筛选/基金对比 |
 | 华泰 AI 涨乐 | Skill | 限时免费 | 行情检索/模拟交易/条件选股/自选股 |
-| 天天基金 Skill | Skill | 免费部分 | 基金信息查询/自选/深度诊断 |
+| 天天基金 Skill | Skill | 免费部分 | 基金信息/自选/深度诊断/持仓 |
+| Tushare Pro | Python | 积分制 | 高质量财务/指数，需注册 |
 
 ### 💬 Sentiment（舆情/社区）
+
 | 工具 | 类型 | 费用 | 一句话描述 |
 |------|------|------|-----------|
-| OpenCLI Xueqiu | CLI | 免费 | 雪球股票搜索/热门帖子 |
-| OpenCLI THS Hot | CLI | 免费 | 同花顺人气排行 |
+| OpenCLI Xueqiu | CLI | ✅ | 雪球股票搜索/热门帖子 |
+| OpenCLI THS Hot | CLI | ✅ | 同花顺人气排行 |
 
 ### 📈 Analysis（分析与因子）
+
 | 工具 | 类型 | 费用 | 一句话描述 |
 |------|------|------|-----------|
 | FinanceMCP-Alpha | MCP | Tushare Token | WorldQuant 101 Alpha因子 |
-| Qlib | 框架 | 免费 | 微软AI量化，自动因子挖掘 |
-| TradingAgents | 框架 | 免费 | 多Agent LLM投研团队 |
+| Qlib | 框架 | ✅ | 微软AI量化，自动因子挖掘 |
+| TradingAgents | 框架 | ✅ | 多Agent LLM投研团队 |
 
 ### 🔄 Trading（交易执行）
+
 | 工具 | 类型 | 费用 | 一句话描述 |
 |------|------|------|-----------|
-| QTrade | 框架 | 免费 | 15种量化策略，回测+模拟+实盘 |
-| VeighNa | 框架 | 免费 | 事件驱动量化，回测+实盘 |
+| QTrade | 框架 | ✅ | 15种量化策略，回测+模拟+实盘 |
+| VeighNa | 框架 | ✅ | 事件驱动量化，回测+实盘 |
 | 华泰 AI 涨乐 | Skill | 限时免费 | A股模拟交易/条件选股 |
 
 ### 🔬 Research（投研）
+
 | 工具 | 类型 | 费用 | 一句话描述 |
 |------|------|------|-----------|
 | 同花顺问财 SkillHub | Skill | 免费部分 | 股基债期全品类，选股/诊断/产业链 |
-| 东方财富 ClawBot | Skill | 免费 | 智能选股/个股诊断/财报解读 |
+| 东方财富 ClawBot | Skill | ✅ | 智能选股/个股诊断/财报解读 |
 | 盈米基金 MCP | MCP | 联系销售 | 69个MCP工具，组合回测/蒙特卡洛模拟 |
-| FinClaw | 框架 | 免费 | 上财AIFinLab，1000+Skills，六大行业 |
+| FinClaw（上财AIFinLab） | 框架 | ✅ | 1000+Skills，六大行业，原生OpenClaw兼容 |
 | FIN-SKILLS | Skill市场 | 免费部分 | 龙虎榜解读/个股异动/基金分析/日报生成 |
-| 中金点睛 | Skill | 机构付费 | 首席分析师专属Skill，宏观/策略/行业 |
+| 中金点睛 | Skill | 机构付费 | 首席分析师专属，宏观/策略/行业 |
 | 兴业证券 知己管家 | Skill | 免费部分 | 一句话交易/智能诊断/资讯总结 |
 | 国泰海通 灵犀 | Skill | 免费部分 | 查研报/行情/数据/榜单/选股 |
 
-## 品牌关键词
+## 搜索关键词（命中词）
 
-金融 AI、A股、量化交易、Market Data MCP、Skill、OpenClaw、投研 Agent、基金分析、ETF、龙虎榜、北向资金、技术分析、因子挖掘、量化策略、回测
+中国金融 AI 工具、金融 MCP、A股 Market Data、量化交易工具、Python 金融库、免费行情数据、Skill 投顾 Agent、龙虎榜工具、北向资金 API、基金分析 MCP、OpenClaw 金融 Skills、券商 AI 助手、AKShare Tushare 对比、BaoStock 免费数据、量化回测框架、因子挖掘工具、舆情分析、ChatGPT 量化、Cursor 金融开发
 
 ## 联系方式
 
-- GitHub Issues: https://github.com/lj22503/awesome-finai-tools/issues
-- 提交新工具: Pull Request 或 Issue
+GitHub Issues: https://github.com/lj22503/awesome-finai-tools-zn/issues
+提交新工具: Pull Request 或 Issue

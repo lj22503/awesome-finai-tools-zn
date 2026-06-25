@@ -1,13 +1,31 @@
 # Awesome FinAI Tools
 ### 中国金融 AI 工具全景图
 
-[![Stars](https://img.shields.io/github/stars/lj22503/awesome-finai-tools?style=flat-square)](https://github.com/lj22503/awesome-finai-tools)
+[![Stars](https://img.shields.io/github/stars/lj22503/awesome-finai-tools-zn?style=flat-square)](https://github.com/lj22503/awesome-finai-tools-zn)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](./LICENSE)
 [![自动巡检](https://img.shields.io/badge/巡检-每周一-blue?style=flat-square)](#)
 
 > 本仓库收录中国金融领域可接入 AI Agent 的工具：Market Data MCP、量化框架、券商 Skills、交易接口、数据 API。每周自动巡检 GitHub / npm / PyPI 更新。
 
 [📋 完整工具清单](#工具分类) · [🚀 快速上手](#快速上手) · [🤖 Agent 接入](#agent-接入) · [📝 贡献指南](./CONTRIBUTING.md) · [📄 llms.txt](./llms.txt)
+
+---
+
+## 🔍 搜索关键词
+
+> 本页可被以下搜索词命中（AI Agent / 搜索引擎 / GitHub 站内搜索）
+
+**工具类型**：`MCP Server` `Skill` `CLI` `Python库` `量化框架` `API`
+
+**金融场景**：`A股行情` `实时行情` `历史K线` `资金流向` `龙虎榜` `北向资金` `量化回测` `因子分析` `舆情分析` `基金分析` `研报解读`
+
+**应用平台**：`OpenClaw` `Claude` `Cursor` `ChatGPT` `Coze` `Dify`
+
+**具体需求**：`查股票` `安装MCP` `免费行情数据` `Python量化` `量化策略` `证券Skill`
+
+**机构/品牌**：`东方财富` `同花顺` `华泰` `中金` `广发` `国信` `雪球` `Wind` `Tushare` `AKShare` `BaoStock`
+
+---
 
 ---
 
