@@ -1,0 +1,76 @@
+name: Weekly FinAI Tools Update
+
+on:
+  schedule:
+    # 每周一 09:00 UTC = 北京时间 17:00
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+    # 支持手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run weekly update script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_tools.py
+
+      - name: Check for changes
+        id: changed
+        run: |
+          if git diff --quiet data/tools.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "msg=$(git diff --stat data/tools.json)" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create PR with changes
+        if: steps.changed.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: update/weekly-$(date +%Y-%m-%d)
+          title: '📡 周更: FinAI Tools 新增工具 $(date +%Y-%m-%d)'
+          body: |
+            ## 本周 FinAI Tools 更新
+
+            自动生成 by GitHub Actions
+
+            ### 变更内容
+            ${{ steps.changed.outputs.msg }}
+
+            ### 操作
+            - [ ] 确认新增工具描述准确
+            - [ ] 补充缺失字段（input/output/安装命令）
+            - [ ] 合并前删除 pending_review 标记
+
+            ---
+            *由 [awesome-finai-tools](https://github.com/lj22503/awesome-finai-tools) 自动生成*
+          delete-branch: false
+          labels: |
+            automated pr
+            finai-tools
+
+      - name: Publish weekly report
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./data
+          publish_branch: gh-pages
+          exclude_files: 'tools.json'
