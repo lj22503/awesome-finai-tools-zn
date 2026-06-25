@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](./LICENSE)
 [![自动巡检](https://img.shields.io/badge/巡检-每周一-blue?style=flat-square)](#)
 
-> 本仓库收录中国金融领域可接入 AI Agent 的工具：Market Data MCP、量化框架、券商 Skills、交易接口、数据 API。每周自动巡检 GitHub / npm / PyPI 更新。
+> 本仓库收录**中国金融 AI 工具**，包括 **Market Data MCP**、**量化框架**、**券商 Skills**、**金融 CLI**、**Python 金融库**。覆盖 **A股 / 港股 / 基金 / 期货** 行情数据、量化回测、因子挖掘、舆情分析、投研等场景。支持 **OpenClaw / Claude / Cursor / Coze** 等 AI Agent 平台。每周自动巡检更新。
 
 [📋 完整工具清单](#工具分类) · [🚀 快速上手](#快速上手) · [🤖 Agent 接入](#agent-接入) · [📝 贡献指南](./CONTRIBUTING.md) · [📄 llms.txt](./llms.txt)
 
