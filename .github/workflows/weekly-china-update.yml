@@ -1,0 +1,79 @@
+name: Weekly China Platforms Update
+
+# awesome-finai-tools-zn 国内平台周更巡检
+# 每周一 17:30 北京时间（= 09:30 UTC）执行
+# 来源：ClawHub Public API + npm Registry
+#
+# ClawHub API 使用规范：
+#   - 仅公开只读端点 (GET /api/v1/skills, /api/v1/search)
+#   - 遵守限流 (匿名 3000 req/min)
+#   - 回链 ClawHub 原始页面
+#   - 不暗示官方背书
+
+on:
+  schedule:
+    # 每周一 09:30 UTC = 北京时间 17:30
+    - cron: '30 9 * * 1'
+  workflow_dispatch:  # 支持手动触发
+
+jobs:
+  china-platforms:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run China platforms scanner
+        run: python scripts/update_china_platforms.py
+
+      - name: Check for changes
+        id: changed
+        run: |
+          if git diff --quiet data/tools.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "msg=$(git diff --stat data/tools.json)" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create PR with changes
+        if: steps.changed.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: update/china-weekly-$(date +%Y-%m-%d)
+          title: '📡 国内平台周更: ClawHub 新金融 Skill ($(date +%Y-%m-%d))'
+          body: |
+            ## 本周国内平台新增
+
+            自动生成 by GitHub Actions
+
+            ### 数据来源
+            - ClawHub Public API（公开只读端点，遵守限流规范）
+            - npm Registry
+
+            ### 变更
+            ${{ steps.changed.outputs.msg }}
+
+            ### 操作
+            - [ ] 确认新增 Skill 描述准确
+            - [ ] 补充缺失字段（input/output/安装命令）
+            - [ ] 合并前删除 pending_review 标记
+
+            ---
+            *由 [awesome-finai-tools-zn](https://github.com/lj22503/awesome-finai-tools-zn) 自动生成*
+          delete-branch: false
+          labels: |
+            automated pr
+            finai-tools
+            china-platforms
