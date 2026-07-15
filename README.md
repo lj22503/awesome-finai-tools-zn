@@ -309,6 +309,69 @@ GitHub Actions 每周一 09:00 UTC 自动执行：
 
 ---
 
+## 🏢 机构 Skill 矩阵
+
+> 截至 2026 年 7 月，国内头部券商中已有半数以上落地 Skill 产品，金融数据商和基金公司也在加速跟进。以下为核心机构 Skill 矩阵：
+
+| 机构 | 类型 | Skill 数量 | 核心能力 | 接入平台 | 获取方式 |
+|------|------|-----------|---------|---------|---------|
+| **广发证券** | 券商 | 8个 C端 | 龙虎榜 / 财务对比 / ETF全流程 / 定投计算 | IMA / Coze / 华为小艺 / OpenClaw | [gf.com.cn](https://hd.gf.com.cn/gfwskill2026/#/index) 注册领Key |
+| **东方财富** | 券商 | 7个 | 诊基 / 诊股 / 宏观 / 选股 / 热点 | IMA / Coze / 飞书 / OpenClaw | 财富号自动绑定 API Key |
+| **国泰海通** | 券商 | 6个 | 研报搜索 / 行情 / 热榜 / 智能选股 / 自选 | 华为小艺 / OpenClaw / ClawHub | 君弘APP每日1000名额 |
+| **华泰证券** | 券商 | 5个C端 | 资讯 / 行情 / 模拟交易 / 选股 / 自选 | 涨乐App / OpenClaw | AI涨乐App获取Key |
+| **中金公司** | 券商 | 5+个 | 行情 / 财务分析 / 首席分析师数字分身 | OpenClaw / 中金点睛 | 中金财富Skills中心 |
+| **国信证券** | 券商 | 6个 | 选股 / ETF筛选 / 基金对比 / 宏观 / 研报 | OpenClaw / Coze | [小信助手](https://weixin.guosen.com.cn/gs/xxskills/#architecture) |
+| **中信建投** | 券商 | 多个 | 选股/资讯/交易全链条 AI 蜻蜓翼答 | 蜻蜓点金App | App内置 |
+| **广东博众** | 投顾 | 23个 | 股票分析 / 量化选股 / 情绪分析 | Coze / 万得 AIFin | Coze技能商店 |
+| **万得 (Wind)** | 数据商 | 3个产品 | AIFin Market (MCP) / WindClaw / Wind Alice | **WorkBuddy** / OpenClaw | Wind账号 / MCP协议 |
+| **同花顺** | 数据商 | 2个产品 | iFinD MCP / 问财 SkillHub（上百社区Skill） | MCP / OpenClaw | 同花顺账号 |
+| **盈米基金** | 数据商 | 69个MCP工具 | 组合回测 / 蒙特卡洛模拟 / 投顾 | MCP / Coze / Dify / Cursor | 联系盈米AI开放平台 |
+| **易方达基金** | 基金 | 2个 | ETF查询 / 场外指数基金查询 | **WorkBuddy** / OpenClaw | 指数直通车小程序领Key |
+| **南方基金** | 基金 | 2个 | AI梦（选基/诊基/行情/交易） | 南方基金App | App内置 |
+| **天弘基金** | 基金 | 1个系统 | FinAgent（投研/销售/合规） | 内部系统 | 未对外开放 |
+| **中国平安** | 保险 | 7万+内部 | 智小安 AI 保险顾问 | 内部平台 | 未开放外部Skill |
+| **招商银行** | 银行 | 「小助」系列 | 零售/批发/风险/运营智能体矩阵 | 内部使用 | 未对外开放 |
+| **工商银行** | 银行 | 500+应用 | AI数字员工（相当5.5万人年工作量） | 内部使用 | 未对外开放 |
+
+> 📊 完整数据见 [data/institution-skills.json](./data/institution-skills.json)
+
+## 📡 机构 Skill 动态
+
+> 最近更新：**2026-07-13** | 来源：公开信息整理与深度调研
+
+### 变化摘要
+
+- **新增**：易方达基金明确对接 **WorkBuddy**，成为首家入驻 WorkBuddy 生态的基金公司（每日500次免费调用）
+- **新增**：万得 AIFin Market 支持 WorkBuddy / OpenClaw MCP 调用，数据覆盖 A股/港股/美股全品类
+- **新增**：广东博众 23 个金融 Skills 入驻 Coze 和万得 AIFin Market
+- **扩展**：广发证券 C端 Skill 从内部扩展至 IMA（行业首家）、Coze（行业首家）、华为小艺
+- **趋势**：中金公司推出分析师数字分身（「老于」），开启分析师 IP 化新范式
+- **动态**：腾讯云金融五大智能体专家团即将上线 WorkBuddy
+
+### 趋势评论
+
+2026 年上半年，国内金融行业正从「大模型军备竞赛」转向「Skill 生态构建」。核心趋势有三：
+
+1. **平台卡位加速**：头部券商/数据商在 IMA、Coze、华为小艺、WorkBuddy 等主流 Agent 平台密集上线 Skill，抢占 AI 流量入口
+2. **开放 vs 封闭分化**：券商和数据商倾向于对外开放（MCP/Skill），而银行/保险仍以内部应用为主
+3. **MCP 成主流协议**：万得、同花顺、盈米基金均采用 MCP 标准，跨平台互操作路径已通
+
+**对开发者的启示**：Skill 生态已从「能不能用」进入「怎么组合用」阶段——单个 Skill 提供数据，多个 Skill 串联形成决策闭环才是真正的价值所在。
+
+---
+
+## 🔗 工具链联动
+
+本仓库是 FinAI 工具生态的一部分，与其他仓库协作：
+
+| 仓库 | 定位 | 与本仓库的关系 |
+|------|------|---------------|
+| [awesome-finai-tools-zn](https://github.com/lj22503/awesome-finai-tools-zn) | 数据底座 | 提供工具清单+机构Skill数据 |
+| [invest-brain](https://github.com/lj22503/invest-brain) | 工具推荐引擎 | 基于场景自动推荐工具 |
+| [investment-buddy-pet](https://github.com/lj22503/investment-buddy-pet) | 人格化投顾 | 按投资人格匹配工具箱 |
+| [SoloAdvisor-Toolkit](https://github.com/lj22503/SoloAdvisor-Toolkit) | 投顾流程工具包 | KYC→配置→组合→报告 |
+| [knowledge-workflow](https://github.com/lj22503/knowledge-workflow) | 知识管理 | 收集→打标→存储→产出 |
+
 ## 📄 License
 
 MIT — 详见 [LICENSE](./LICENSE)

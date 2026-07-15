@@ -1,0 +1,194 @@
+[
+  {
+    "institution_name": "广发证券",
+    "category": "券商",
+    "skills": [
+      {"skill_name": "股票简况信息", "description": "沪深上市公司基本信息/三大表/股东数据", "platform": "IMA / Coze / 华为小艺 / OpenClaw", "install_method": "API Key 注册 → 一键复制安装", "evaluation": "基础数据覆盖全面，行业首家入驻IMA和Coze"},
+      {"skill_name": "财务对比", "description": "两家公司多维度财务横向对比（估值/盈利/现金流/偿债/营运/成长）", "platform": "IMA / Coze / 华为小艺 / OpenClaw", "install_method": "API Key 注册 → 一键复制安装", "evaluation": "多维度对比实用性强"},
+      {"skill_name": "沪深龙虎榜", "description": "交易所盘后异动股 + 历史回溯", "platform": "IMA / Coze / 华为小艺 / OpenClaw", "install_method": "API Key 注册 → 一键复制安装", "evaluation": "龙虎榜数据及时可靠"},
+      {"skill_name": "ETF筛选", "description": "多维度组合条件筛ETF（跟踪指数/规模/成交/成立时间）", "platform": "IMA / Coze / 华为小艺 / OpenClaw", "install_method": "API Key 注册 → 一键复制安装", "evaluation": "ETF筛选维度丰富"},
+      {"skill_name": "ETF涨幅榜单", "description": "ETF涨跌幅/特色榜/融资榜实时排行", "platform": "IMA / Coze / 华为小艺 / OpenClaw", "install_method": "API Key 注册 → 一键复制安装", "evaluation": "榜单覆盖全面"},
+      {"skill_name": "ETF资金异动追踪", "description": "每日净申购资金大幅流入/流出监测", "platform": "IMA / Coze / 华为小艺 / OpenClaw", "install_method": "API Key 注册 → 一键复制安装", "evaluation": "资金异动捕捉及时"},
+      {"skill_name": "基金定投计算器", "description": "已知基金的历史定投收益回测", "platform": "IMA / Coze / 华为小艺 / OpenClaw", "install_method": "API Key 注册 → 一键复制安装", "evaluation": "定投回测功能实用"},
+      {"skill_name": "基金简况信息", "description": "基金净值/类型/涨跌/申赎/持仓查询", "platform": "IMA / Coze / 华为小艺 / OpenClaw", "install_method": "API Key 注册 → 一键复制安装", "evaluation": "基金基础数据覆盖"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "东方财富",
+    "category": "券商",
+    "skills": [
+      {"skill_name": "综合诊基", "description": "单基金结构化诊断报告（风险收益/持仓/适合人群）", "platform": "IMA / Coze / 飞书 / OpenClaw", "install_method": "财富号自带 API Key，无需额外配置", "evaluation": "C端流量最大，基金诊断体验好"},
+      {"skill_name": "综合诊股", "description": "单股票结构化诊断报告", "platform": "IMA / Coze / 飞书 / OpenClaw", "install_method": "财富号自带 API Key", "evaluation": "个股诊断全面"},
+      {"skill_name": "金融数据", "description": "A股/港股/美股/基金/债券行情+公司信息+估值+财报", "platform": "IMA / Coze / 飞书 / OpenClaw", "install_method": "财富号自带 API Key", "evaluation": "数据覆盖面广"},
+      {"skill_name": "市场搜索", "description": "公告/研报/新闻搜索", "platform": "IMA / Coze / 飞书 / OpenClaw", "install_method": "财富号自带 API Key", "evaluation": "搜索覆盖多信息源"},
+      {"skill_name": "宏观查询", "description": "GDP/CPI/PMI 等宏观指标一句话查询", "platform": "IMA / Coze / 飞书 / OpenClaw", "install_method": "财富号自带 API Key", "evaluation": "宏观数据获取便捷"},
+      {"skill_name": "智能选股", "description": "自然语言条件筛选股票/基金/债券", "platform": "IMA / Coze / 飞书 / OpenClaw", "install_method": "财富号自带 API Key", "evaluation": "自然语言选股体验好"},
+      {"skill_name": "热点发现", "description": "实时盘面异动、热门板块锁定", "platform": "IMA / Coze / 飞书 / OpenClaw", "install_method": "财富号自带 API Key", "evaluation": "热点捕捉及时"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "国泰海通",
+    "category": "券商",
+    "skills": [
+      {"skill_name": "研报搜索", "description": "自动提取券商研报核心观点和数据", "platform": "华为小艺 / OpenClaw / ClawHub", "install_method": "君弘APP搜索「灵犀Skills」→ 领资格 → 一键复制安装", "evaluation": "首批官方金融Skill包，研报提取能力强"},
+      {"skill_name": "实时行情", "description": "毫秒级 A股/港股/美股/ETF 行情+盘口", "platform": "华为小艺 / OpenClaw / ClawHub", "install_method": "君弘APP每日领名额", "evaluation": "毫秒级行情，延迟低"},
+      {"skill_name": "金融数据", "description": "财务指标/估值水平/趋势形态一键查询", "platform": "华为小艺 / OpenClaw / ClawHub", "install_method": "君弘APP每日领名额", "evaluation": "数据查询便捷"},
+      {"skill_name": "市场热榜", "description": "实时市场热点和资金流向跟踪", "platform": "华为小艺 / OpenClaw / ClawHub", "install_method": "君弘APP每日领名额", "evaluation": "热点追踪及时"},
+      {"skill_name": "智能选股", "description": "自然语言多指标选股+历史回测", "platform": "华为小艺 / OpenClaw / ClawHub", "install_method": "君弘APP每日领名额", "evaluation": "选股+回测一体化"},
+      {"skill_name": "自选管理", "description": "自动管理自选股，涨跌条件触发提醒", "platform": "华为小艺 / OpenClaw / ClawHub", "install_method": "君弘APP每日领名额", "evaluation": "自选提醒机制实用"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "华泰证券",
+    "category": "券商",
+    "skills": [
+      {"skill_name": "金融分析与资讯查询", "description": "个股/大盘/板块资讯+投资日历+基金诊断", "platform": "涨乐App / OpenClaw", "install_method": "AI涨乐App → 复制提示词&Key → 粘贴安装", "evaluation": "零售端覆盖面广，机构+零售双线布局"},
+      {"skill_name": "金融指标与行情综合检索", "description": "实时/历史行情+财务指标+估值数据", "platform": "涨乐App / OpenClaw", "install_method": "AI涨乐App → 复制安装", "evaluation": "行情数据全面"},
+      {"skill_name": "A股模拟交易", "description": "完整模拟盘（行情/持仓/买卖/撤单）", "platform": "涨乐App / OpenClaw", "install_method": "AI涨乐App → 复制安装", "evaluation": "模拟交易功能完整"},
+      {"skill_name": "条件选股", "description": "自然语言描述筛选条件（行业/财务/技术面）", "platform": "涨乐App / OpenClaw", "install_method": "AI涨乐App → 复制安装", "evaluation": "自然语言选股灵活"},
+      {"skill_name": "自选股管理", "description": "多股票分组管理", "platform": "涨乐App / OpenClaw", "install_method": "AI涨乐App → 复制安装", "evaluation": "自选股管理便捷"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "中金公司",
+    "category": "券商",
+    "skills": [
+      {"skill_name": "行情数据", "description": "实时行情查询", "platform": "中金点睛 / OpenClaw", "install_method": "中金财富 Skills 中心注册 → 获取 API Key → 一键安装", "evaluation": "机构级数据质量高"},
+      {"skill_name": "财务分析", "description": "个股财务深度分析", "platform": "中金点睛 / OpenClaw", "install_method": "中金财富 Skills 中心注册", "evaluation": "财务分析有深度"},
+      {"skill_name": "热榜资讯", "description": "市场热点+资讯聚合", "platform": "中金点睛 / OpenClaw", "install_method": "中金财富 Skills 中心注册", "evaluation": "资讯聚合能力强"},
+      {"skill_name": "分析师「老于」数字分身", "description": "计算机首席于钟海数字分身（30万字+研报训练）", "platform": "中金点睛", "install_method": "面向机构付费", "evaluation": "分析师IP化创新，行业标杆"},
+      {"skill_name": "策略/宏观/新能源分析师专属Skill", "description": "各领域首席投研框架（含策略、宏观、新能源等）", "platform": "中金点睛", "install_method": "面向机构付费", "evaluation": "首席投研框架独家性强"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "国信证券",
+    "category": "券商",
+    "skills": [
+      {"skill_name": "智能选股", "description": "自然语言选股", "platform": "小信助手 / OpenClaw / Coze", "install_method": "https://weixin.guosen.com.cn/gs/xxskills/#architecture", "evaluation": "自然语言交互流畅"},
+      {"skill_name": "ETF筛选", "description": "多维度 ETF 筛选", "platform": "小信助手 / OpenClaw / Coze", "install_method": "小信助手 Skills 中心", "evaluation": "ETF筛选维度实用"},
+      {"skill_name": "基金对比", "description": "多基金横向对比", "platform": "小信助手 / OpenClaw / Coze", "install_method": "小信助手 Skills 中心", "evaluation": "对比功能直观"},
+      {"skill_name": "宏观数据查询", "description": "GDP/CPI/PMI 等", "platform": "小信助手 / OpenClaw / Coze", "install_method": "小信助手 Skills 中心", "evaluation": "宏观数据查询便捷"},
+      {"skill_name": "行情查询", "description": "实时/历史行情", "platform": "小信助手 / OpenClaw / Coze", "install_method": "小信助手 Skills 中心", "evaluation": "行情数据覆盖广"},
+      {"skill_name": "研报查询", "description": "研报核心提取", "platform": "小信助手 / OpenClaw / Coze", "install_method": "小信助手 Skills 中心", "evaluation": "研报核心观点提取准确"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "中信建投",
+    "category": "券商",
+    "skills": [
+      {"skill_name": "AI蜻蜓翼答", "description": "选股/资讯/交易全链条AI助手", "platform": "蜻蜓点金App", "install_method": "App内置，暂未以独立Skill包发布", "evaluation": "全链条覆盖但开放程度有限"},
+      {"skill_name": "智研多资产配置", "description": "多资产配置AI智能体矩阵", "platform": "机构端平台", "install_method": "机构端内部", "evaluation": "资产配置能力全面"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "广东博众",
+    "category": "券商",
+    "skills": [
+      {"skill_name": "股票智能分析", "description": "综合个股分析", "platform": "Coze / 万得 AIFin Market", "install_method": "Coze技能商店 / 万得AIFin Market", "evaluation": "综合个股分析全面"},
+      {"skill_name": "量化成长选股助手", "description": "量化因子选股", "platform": "Coze", "install_method": "Coze技能商店", "evaluation": "量化因子策略丰富"},
+      {"skill_name": "股票情绪分析", "description": "市场情绪判断", "platform": "Coze", "install_method": "Coze技能商店", "evaluation": "情绪分析维度独特"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "万得 (Wind)",
+    "category": "数据商",
+    "skills": [
+      {"skill_name": "WindClaw", "description": "独立Agent（龙虾），金融数据+分析全链路", "platform": "桌面端", "install_method": "下载安装", "evaluation": "机构级数据最全，分析链路完整"},
+      {"skill_name": "AIFin Market", "description": "A股/港股/美股行情财报、ETF/基金/债券/指数/宏观数据的MCP开放平台", "platform": "WorkBuddy / OpenClaw / Hermes Agent", "install_method": "MCP协议接入 WorkBuddy", "evaluation": "MCP标准化程度高，生态兼容性好"},
+      {"skill_name": "万得 AI (Wind Alice)", "description": "行业个股分析/估值建模/策略回测/PPT生成", "platform": "独立App + 微信", "install_method": "独立App或微信接入", "evaluation": "C端产品覆盖分析+回测+报告生成"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "同花顺",
+    "category": "数据商",
+    "skills": [
+      {"skill_name": "iFinD MCP", "description": "金融数据库开放调用（全品类数据）", "platform": "MCP协议", "install_method": "MCP协议接入", "evaluation": "MCP标准化，数据品类全面"},
+      {"skill_name": "问财 SkillHub", "description": "股基债期全品类数据+上百个社区Skill（DCF估值/量化策略等）", "platform": "OpenClaw / Claude / ChatGPT / Cursor", "install_method": "搜索「同花顺问财」一键安装", "evaluation": "社区Skill生态丰富，安装便捷"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "盈米基金",
+    "category": "数据商",
+    "skills": [
+      {"skill_name": "盈米MCP", "description": "69个标准化MCP工具 + 16项核心技能组件，涵盖金融数据、投研服务（组合回测、蒙特卡洛模拟）、投顾内容与策略", "platform": "MCP / Coze / Dify / Cursor", "install_method": "联系盈米AI开放平台", "evaluation": "基金投研工具最丰富，组合回测/蒙特卡洛模拟是亮点"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "易方达基金",
+    "category": "基金",
+    "skills": [
+      {"skill_name": "ETF查询", "description": "ETF基金经理/规模/重仓股/区间收益/历史分红；支持反向查询（股票→含该股票的ETF）", "platform": "WorkBuddy / OpenClaw / Hermes Agent / ArkClaw", "install_method": "微信小程序「指数直通车」→ AI Skills → 获取 API Key → 复制指令 → 发送给 WorkBuddy", "evaluation": "唯一明确对接WorkBuddy的基金公司，反向查询实用"},
+      {"skill_name": "场外指数基金查询", "description": "净值/规模/收益/基金经理/区间收益/历史分红", "platform": "WorkBuddy / OpenClaw / Hermes Agent / ArkClaw", "install_method": "微信小程序获取Key → 一键安装", "evaluation": "场外指数基金覆盖全面"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "南方基金",
+    "category": "基金",
+    "skills": [
+      {"skill_name": "AI梦", "description": "选基/诊基/行情/交易全流程AI助手", "platform": "南方基金App", "install_method": "App内置，未开放外部Skill", "evaluation": "App内体验闭环，但未对外开放"},
+      {"skill_name": "南南FUND搭子", "description": "24小时投教咨询智能体", "platform": "南方基金App", "install_method": "App内置", "evaluation": "投教方向差异化"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "天弘基金",
+    "category": "基金",
+    "skills": [
+      {"skill_name": "FinAgent 金融智能体系统", "description": "投研分析/销售话术/合规风控/热门事件助手", "platform": "内部系统", "install_method": "内部系统，未开放外部Skill", "evaluation": "内部应用深度强，但未对外"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713 + 深度调研",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "中国平安",
+    "category": "银行保险",
+    "skills": [
+      {"skill_name": "智小安AI保险顾问", "description": "面向C端的AI保险顾问", "platform": "平安旗下App", "install_method": "内部平台为主，未明确开放外部Skill", "evaluation": "超7万个内部智能体，但外部开放度低"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "招商银行",
+    "category": "银行保险",
+    "skills": [
+      {"skill_name": "「小助」系列智能体", "description": "覆盖零售/批发/风险/运营的AI智能体矩阵", "platform": "内部使用", "install_method": "内部使用，未开放外部Skill", "evaluation": "内部应用全面，暂未对外"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713",
+    "last_updated": "2026-07-13"
+  },
+  {
+    "institution_name": "工商银行",
+    "category": "银行保险",
+    "skills": [
+      {"skill_name": "AI数字员工", "description": "500+AI应用，AI数字员工相当5.5万人年工作量", "platform": "内部使用", "install_method": "内部使用，未开放外部Skill", "evaluation": "规模最大但未对外开放"}
+    ],
+    "data_source": "prod_金融公司Skill上线调研报告_20260713",
+    "last_updated": "2026-07-13"
+  }
+]
