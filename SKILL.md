@@ -13,6 +13,8 @@ triggers:
   - "帮我装个MCP"
 ---
 
+> **命名说明**：本仓库 GitHub 名 `awesome-finai-tools-zn`，Anthropic Skill 内部标识名为 `finai-tools-hub`（SKILL.md frontmatter `name`）。两者不同是按 Anthropic Skills 规范的有意设计——仓库名是 GitHub 标识，Skill 内部名是 agent 加载时的 unique identifier。
+
 # FinAI Tools Hub — Agent Skill
 
 ## 使用方法
