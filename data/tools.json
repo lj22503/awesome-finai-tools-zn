@@ -1031,6 +1031,35 @@
       "github": "github.com/aifinlab/FinClaw",
       "maintainer": "上财AIFinLab",
       "tags": ["上财", "FinClaw", "开源", "1000+Skills", "六大行业", "OpenClaw"]
+    },
+    {
+      "id": "jacobian",
+      "name": "Jacobian",
+      "category": "analysis",
+      "type": "python_lib",
+      "description": "面向 AI Agent 的可组合数学工具，提供跨多项式映射、线性代数和图算法的精确计算与猜想测试，可用于量化研究实验",
+      "input": {
+        "intent": "精确数学计算 / 猜想测试 / 量化研究实验",
+        "domains": "多项式映射 / 线性代数 / 图算法"
+      },
+      "output": {
+        "format": "Python结果 / CLI输出 / MCP结构化结果",
+        "覆盖": ["精确计算", "猜想测试", "中间结果检查"]
+      },
+      "access": {
+        "method": "Python 库、CLI 或 MCP",
+        "auth_required": false,
+        "api_key_required": false
+      },
+      "installation": {
+        "command": "python -m pip install jacobian",
+        "url": "https://github.com/morluto/jacobian"
+      },
+      "cost": "free",
+      "official_url": "https://github.com/morluto/jacobian",
+      "github": "github.com/morluto/jacobian",
+      "maintainer": "morluto",
+      "tags": ["数学", "精确计算", "猜想测试", "线性代数", "图算法", "MCP", "量化研究"]
     }
   ]
 }
