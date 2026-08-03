@@ -80,6 +80,7 @@
 |------|------|------|------|------|
 | [FinanceMCP-Alpha](#financemcp-alpha) | MCP | ⚠️ Tushare Token | WorldQuant 101 Alpha因子 | `npm install finance-mcp-alpha` |
 | [Qlib](#qlib) | 框架 | ✅ 免费 | 微软AI量化，自动因子挖掘 | `pip install pyqlib` |
+| [Jacobian](#jacobian) | PYTHON_LIB | ✅ 免费 | 精确数学计算与猜想测试，覆盖多项式映射、线性代数和图算法 | `python -m pip install jacobian` |
 | [TradingAgents](#tradingagents) | 框架 | ✅ 免费 | 多Agent LLM投研，基本面+舆情+技术 | `pip install tradingagents` |
 | [AlphaAgent](#alphaagent) | 框架 | ✅ 免费 | KDD 2025 LLM驱动因子挖掘 | GitHub |
 
@@ -165,6 +166,19 @@ bs.login()
 rs = bs.query_history_k_data_plus("sh.600000",
     "date,code,open,high,low,close,volume",
     start_date='2024-01-01', end_date='2024-12-31')
+```
+
+---
+
+### Jacobian
+
+**类型**：Python 库、CLI、MCP
+**GitHub**：[morluto/jacobian](https://github.com/morluto/jacobian)
+**描述**：面向 AI Agent 的可组合数学工具，提供跨多项式映射、线性代数和图算法的精确计算与猜想测试，可用于量化研究实验。
+
+**安装**：
+```bash
+python -m pip install jacobian
 ```
 
 ---

@@ -41,6 +41,7 @@ Awesome FinAI Tools 是中国金融 AI 工具全景图，收录可接入 AI Agen
 |------|------|------|-----------|
 | FinanceMCP-Alpha | MCP | Tushare Token | WorldQuant 101 Alpha因子 |
 | Qlib | 框架 | ✅ | 微软AI量化，自动因子挖掘 |
+| Jacobian | Python库 | ✅ | 面向 AI Agent 的可组合数学工具，提供精确计算与猜想测试 |
 | TradingAgents | 框架 | ✅ | 多Agent LLM投研团队 |
 
 ### 🔄 Trading（交易执行）
