@@ -320,6 +320,8 @@ GitHub Actions 每周一 09:00 UTC 自动执行：
 
 {institution_matrix}
 
+{institution_sources}
+
 > 📊 完整数据见 [data/institution-skills.json](./data/institution-skills.json)
 
 ## 📡 机构 Skill 动态
@@ -474,6 +476,47 @@ def generate_institution_matrix(institutions, data_date) -> str:
     return "\n".join(rows)
 
 
+def generate_institution_sources(institutions) -> str:
+    """机构 Skill 权威信源表（可点击直达）"""
+    rows = []
+    for inst in institutions:
+        sources = inst.get("sources") or []
+        if not sources:
+            continue
+        links = " · ".join(
+            f"[{s.get('title', '信源')}]({s.get('url', '')})"
+            for s in sources
+            if s.get("url")
+        )
+        if links:
+            rows.append(f"| **{inst.get('institution_name', '')}** | {links} |")
+    if not rows:
+        return "_暂无信源数据_"
+    return "\n".join([
+        "### 🔗 权威信源（可点击直达）",
+        "",
+        "> 机构 Skill 条目的公开佐证来源，均已逐一校验可访问；官方页面与主流媒体报道优先。",
+        "",
+        "| 机构 | 信源 |",
+        "|------|------|",
+        *rows,
+    ])
+
+
+def generate_institution_sources_plain(institutions) -> str:
+    """llms.txt 用信源清单（纯文本 + 绝对链接）"""
+    out = []
+    for inst in institutions:
+        sources = inst.get("sources") or []
+        if not sources:
+            continue
+        out.append(f"- {inst.get('institution_name', '')}")
+        for s in sources:
+            if s.get("url"):
+                out.append(f"  - {s.get('title', '信源')}: {s['url']}")
+    return "\n".join(out) if out else "_暂无信源数据_"
+
+
 def generate_institution_dynamics(dyn) -> str:
     if not dyn:
         return "_暂无动态数据_"
@@ -521,6 +564,7 @@ def render_readme(tools, institutions, dyn, data_date) -> str:
             "金融数据商、基金公司与大厂 Agent 平台同步加速。以下为核心机构 Skill 矩阵："
         ),
         institution_matrix=generate_institution_matrix(institutions, data_date),
+        institution_sources=generate_institution_sources(institutions),
         dynamics_date=dyn.get("last_updated", data_date) if dyn else data_date,
         dynamics_source=dyn.get("source", "公开信息整理") if dyn else "公开信息整理",
         institution_dynamics=generate_institution_dynamics(dyn),
@@ -580,6 +624,10 @@ Awesome FinAI Tools 是中国金融 AI 工具全景图（{REPO_SLUG}），收录
 ## 机构 Skill 矩阵
 
 {chr(10).join(inst_lines)}
+
+## 机构 Skill 信源（可点击直达）
+
+{generate_institution_sources_plain(institutions)}
 
 ## 搜索关键词（命中词）
 

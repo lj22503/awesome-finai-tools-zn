@@ -2,7 +2,7 @@
 
 ## 网站/仓库简介
 
-Awesome FinAI Tools 是中国金融 AI 工具全景图（lj22503/awesome-finai-tools-zn），收录可接入 AI Agent 的 Market Data MCP、量化框架、券商 Skills、交易接口、数据 API，共 55 个工具、21 家机构 Skill。每周自动巡检 GitHub / npm / PyPI 更新。数据更新日期：2026-09-21。
+Awesome FinAI Tools 是中国金融 AI 工具全景图（lj22503/awesome-finai-tools-zn），收录可接入 AI Agent 的 Market Data MCP、量化框架、券商 Skills、交易接口、数据 API，共 55 个工具、24 家机构 Skill。每周自动巡检 GitHub / npm / PyPI 更新。数据更新日期：2026-09-21。
 
 ## 核心页面
 
@@ -106,7 +106,7 @@ Awesome FinAI Tools 是中国金融 AI 工具全景图（lj22503/awesome-finai-t
 | 华泰证券 | 券商 | 5 | 金融分析与资讯查询 / 金融指标与行情综合检索 / A股模拟交易 / 条件选股 |
 | 中金公司 | 券商 | 6 | 行情数据 / 财务分析 / 热榜资讯 / 分析师「老于」数字分身 |
 | 国信证券 | 券商 | 6 | 智能选股 / ETF筛选 / 基金对比 / 宏观数据查询 |
-| 中信建投 | 券商 | 2 | AI蜻蜓翼答 / 智研多资产配置 |
+| 中信建投 | 券商 | 5 | AI蜻蜓翼答 / 智研多资产配置 / 蜻蜓 Skill·ETF 筛选 / 蜻蜓 Skill·个股研判 |
 | 广东博众 | 券商 | 3 | 股票智能分析 / 量化成长选股助手 / 股票情绪分析 |
 | 兴业证券 | 券商 | 5 | 兴证智达 Skill Hub / 兴业证券八大 Skills / 兴业证券智能投资助手 / 知己管… |
 | 万得 (Wind) | 数据商 | 3 | WindClaw / AIFin Market / 万得 AI (Wind Alice) |
@@ -121,6 +121,68 @@ Awesome FinAI Tools 是中国金融 AI 工具全景图（lj22503/awesome-finai-t
 | 蚂蚁数科 | 平台 | 2 | Agentar 金融智能体平台 / 支小宝金融场景能力 |
 | 腾讯（WorkBuddy 金融版） | 平台 | 2 | WorkBuddy 金融版专家智能体 / 金融专家团协同能力 |
 | 阿里巴巴（千问开放平台） | 平台 | 2 | 千问金融智能体专区 / 机构智能体分发入口 |
+| 中国银河证券 | 券商 | 6 | 星耀数智金融数据 Skill / 星耀数智技术面指标 Skill / 星耀数智基本面指标 Skil… |
+| 国投证券 | 券商 | 4 | 智能选股 / 行情数据 / 基金对比 / 行业拥挤度 |
+| 东吴证券 | 券商 | 6 | 东吴秀财 GPT / 量化投研 Skills（金工团队） / 东吴之声（AI 投顾） / 智能「小… |
+
+## 机构 Skill 信源（可点击直达）
+
+- 广发证券
+  - 财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）: https://m.cls.cn/detail/2455726
+  - 财联社：券商密集上线 Skills，重构服务颗粒度: https://m.cls.cn/detail/2404777
+- 东方财富
+  - 财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）: https://m.cls.cn/detail/2455726
+- 国泰海通
+  - 财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）: https://m.cls.cn/detail/2455726
+  - 财联社：券商密集上线 Skills，重构服务颗粒度: https://m.cls.cn/detail/2404777
+  - 中国金融信息网：千问接入十余家金融类智能体（2026-09-07）: https://m.cnfin.com/kx//zixun/20260907/4465997_1.html
+- 华泰证券
+  - 财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）: https://m.cls.cn/detail/2455726
+  - 财联社：券商密集上线 Skills，重构服务颗粒度: https://m.cls.cn/detail/2404777
+- 中金公司
+  - 财联社：券商密集上线 Skills，重构服务颗粒度: https://m.cls.cn/detail/2404777
+  - 财联社：证券业扎堆布局 AI Skills 服务自家客户: https://m.cls.cn/detail/2450745
+- 国信证券
+  - 财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）: https://m.cls.cn/detail/2455726
+  - 财联社：券商密集上线 Skills，重构服务颗粒度: https://m.cls.cn/detail/2404777
+- 中信建投
+  - 央广网：中信建投蜻蜓 Skill 广场上线，三大核心技能（2026-07-17）: https://finance.cnr.cn/zghq/20260717/t20260717_527715007.shtml
+  - 搜狐：中信建投 Skill 上线，打造智能投研技能生态: https://www.sohu.com/a/1051460058_362042
+  - 财联社：券商密集上线 Skills，重构服务颗粒度: https://m.cls.cn/detail/2404777
+  - 腾讯新闻：中信建投蜻蜓点金 App「AI 翼答」升级（2026-05-12）: https://news.qq.com/rain/a/20260512A03NAD00
+- 兴业证券
+  - 腾讯新闻：在兴业证券工位，看到了三个 AI「新同事」（2026-09-03）: https://news.qq.com/rain/a/20260903A084LM00
+  - 中国金融信息网：兴业证券数智化转型的「兴」实践（2026-07-08）: https://cnfin.com/cmjj-lb/detail/20260708/4437429_1.html
+  - 澎湃：兴业证券 App「知己管家」上线: https://www.thepaper.cn/newsDetail_forward_33337849
+  - 中国经济新闻网：兴业证券知己管家智能投顾: https://www.cet.com.cn/wzsy/cyzx/10406398.shtml
+  - 中国金融信息网：千问接入十余家金融类智能体（2026-09-07）: https://m.cnfin.com/kx//zixun/20260907/4465997_1.html
+  - 财联社：证券业扎堆布局 AI Skills 服务自家客户: https://m.cls.cn/detail/2450745
+- 易方达基金
+  - 中国金融信息网：千问接入十余家金融类智能体（2026-09-07）: https://m.cnfin.com/kx//zixun/20260907/4465997_1.html
+- 腾讯（WorkBuddy 金融版）
+  - 财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）: https://m.cls.cn/detail/2455726
+  - 21 财经：券商涌入 WorkBuddy 等 AI 平台，角力下一个流量入口: https://m.21jingji.com/article/20260918/86c024019335cbb9245181c605a714aa.html
+- 阿里巴巴（千问开放平台）
+  - 中国金融信息网：千问接入十余家金融类智能体（2026-09-07）: https://m.cnfin.com/kx//zixun/20260907/4465997_1.html
+  - AIBase：千问开放平台再上新 10+ 金融服务智能体: https://news.aibase.com/tw/news/30865
+  - 太平洋科技：千问开放平台 10+ 金融智能体: https://www.pconline.com.cn/ai/2181/21816441.html
+- 中国银河证券
+  - 银河官网·星耀数智服务平台: https://www.chinastock.com.cn/newsite/cgs-services/strategyTrade/geWuInstitution.html
+  - 腾讯 SkillHub·中国银河证券企业主页: https://skillhub.cloud.tencent.com/enterprise/org-rwhv0nty?publisher=%E4%B8%AD%E5%9B%BD%E9%93%B6%E6%B2%B3%E8%AF%81%E5%88%B8
+  - 腾讯 SkillHub·星耀数智金融数据 Skill: https://skillhub.cloud.tencent.com/skills/ad-api
+  - 财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）: https://m.cls.cn/detail/2455726
+  - 银河证券 2026 半年度报告摘要（PB 三大中心 + 策略中心 MCP/Skill）: http://cdn.chinastock.com.cn/omc/investRelation/sh/601881_20260829_0ECY.pdf
+- 国投证券
+  - 国投证券官网·Skills 中心（智能选股 / 行情数据 / 基金对比 / 行业拥挤度）: https://www.sdicsc.com.cn/skills
+  - 财联社：证券业扎堆布局 AI Skills 服务自家客户: https://m.cls.cn/detail/2450745
+  - 壹览商业：国投证券金融 Skills 上线腾讯 SkillHub（2026-08-12）: https://www.yilantop.com/news/102030
+  - 财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）: https://m.cls.cn/detail/2455726
+- 东吴证券
+  - 中国经济网：东吴证券科技践行专业文化理念（秀财 GPT / 东吴之声 / 小水滴 / 秀捷）: https://finance.ce.cn/stock/gsgdbd/202511/t20251114_2580207.shtml
+  - 搜狐：东吴证券梁纯良谈「AI 即服务」，50+ AI 应用场景: https://m.sohu.com/a/969071386_120988576
+  - 财联社：证券业扎堆布局 AI Skills 服务自家客户: https://m.cls.cn/detail/2450745
+  - 中国金融信息网：千问接入十余家金融类智能体（2026-09-07）: https://m.cnfin.com/kx//zixun/20260907/4465997_1.html
+  - 同花顺财经：券商中期业绩说明会，AI 话题浓度飙升（2026-09-09）: https://m.10jqka.com.cn/20260909/c679746007.shtml
 
 ## 搜索关键词（命中词）
 

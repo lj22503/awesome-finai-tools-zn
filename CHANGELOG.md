@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.4.0] - 2026-09-21
+
+### Added
+
+- 机构 Skill 矩阵新增 3 家券商（21 → 24 家）：
+  - 中国银河证券：「星耀数智」系列 5 个 Skill（金融数据 / 技术面指标 56 项 / 基本面指标 90 项 / 因子分析 / 公告搜索），上架腾讯 SkillHub；PB「启睿」策略中心 MCP/Skill
+  - 国投证券：智能选股 / 行情数据 / 基金对比 / 行业拥挤度 四大 Skills，官网 Skills 中心 + 腾讯 SkillHub 双通道
+  - 东吴证券：东吴秀财 GPT（券业首个自研并备案的证券垂类大模型）/ 量化投研 Skills / 东吴之声 / 智能「小水滴」/ 千问智能体 / 秀捷
+- 新增 `sources` 字段与「🔗 权威信源（可点击直达）」章节：14 家机构补齐公开佐证信源，全部逐一校验可访问（官方页面 + 财联社 / 央广网 / 中国经济网 / 中国金融信息网 / 21 财经等），README 渲染为可点击链接，`llms.txt` 同步输出绝对链接清单
+- 机构动态新增 4 条变化与「趋势四：券商 Skill 供给开始分层」
+
+### Changed
+
+- 中信建投：Skill 由 2 个增至 5 个，补录「蜻蜓 Skill 广场」首发三大技能（ETF 筛选 / 个股研判 / 财报透视），获取方式由「未以独立 Skill 包发布」修正为「手机号注册领 API Key 轻量部署」
+- `scripts/generate_readme.py` 新增 `generate_institution_sources()` / `generate_institution_sources_plain()` 两个渲染函数，信源表进入 README 与 `llms.txt` 生成链路
+
+---
+
 ## [0.3.0] - 2026-09-21
 
 ### Added

@@ -1305,7 +1305,7 @@ GitHub Actions 每周一 09:00 UTC 自动执行：
 | **华泰证券** | 券商 | 5 个 | 金融分析与资讯查询 / 金融指标与行情综合检索 / A股模拟交易 / 条件选股 | 涨乐App / OpenClaw | AI涨乐App → 复制提示词&Key → 粘贴安装 |
 | **中金公司** | 券商 | 6 个 | 行情数据 / 财务分析 / 热榜资讯 / 分析师「老于」数字分身 | 中金点睛 / OpenClaw / 千问 | 中金财富 Skills 中心注册 → 获取 API Key → 一键安装 |
 | **国信证券** | 券商 | 6 个 | 智能选股 / ETF筛选 / 基金对比 / 宏观数据查询 | 小信助手 / OpenClaw / Coze | https://weixin.guosen.com.cn/gs/xxskill… |
-| **中信建投** | 券商 | 2 个 | AI蜻蜓翼答 / 智研多资产配置 | 蜻蜓点金App / 机构端平台 | App内置，暂未以独立Skill包发布 |
+| **中信建投** | 券商 | 5 个 | AI蜻蜓翼答 / 智研多资产配置 / 蜻蜓 Skill·ETF 筛选 / 蜻蜓 Skill·个股研判 | 蜻蜓点金 App / 机构端平台 / 蜻蜓 Skill 广场 | 蜻蜓点金 App 内置使用 |
 | **广东博众** | 券商 | 3 个 | 股票智能分析 / 量化成长选股助手 / 股票情绪分析 | Coze / 万得 AIFin Market | Coze技能商店 / 万得AIFin Market |
 | **兴业证券** | 券商 | 5 个 | 兴证智达 Skill Hub / 兴业证券八大 Skills / 兴业证券智能投资助手 / 知己管家（优理宝 App） | 兴证智达 / 自有平台 / 腾讯 SkillHub / WorkBuddy / 千问 | 内部投顾体系接入 |
 | **万得 (Wind)** | 数据商 | 3 个 | WindClaw / AIFin Market / 万得 AI (Wind Alice) | 桌面端 / WorkBuddy / OpenClaw / Hermes Agent / 独立App +… | 下载安装 |
@@ -1320,6 +1320,30 @@ GitHub Actions 每周一 09:00 UTC 自动执行：
 | **蚂蚁数科** | 平台 | 2 个 | Agentar 金融智能体平台 / 支小宝金融场景能力 | Agentar / 百宝箱 / 支付宝 | 蚂蚁数科官网申请试用 / 企业对接 |
 | **腾讯（WorkBuddy 金融版）** | 平台 | 2 个 | WorkBuddy 金融版专家智能体 / 金融专家团协同能力 | WorkBuddy | 腾讯 WorkBuddy 官网申请 / 企业对接 |
 | **阿里巴巴（千问开放平台）** | 平台 | 2 个 | 千问金融智能体专区 / 机构智能体分发入口 | 千问 | 千问开放平台搜索机构名直接使用 |
+| **中国银河证券** | 券商 | 6 个 | 星耀数智金融数据 Skill / 星耀数智技术面指标 Skill / 星耀数智基本面指标 Skill / 星耀数智因子… | 腾讯 SkillHub / WorkBuddy / 银河 PB 交易体系 / 机构端 | SkillHub 一键安装；或 gitee 克隆 xysz 项目，向营业部申请… |
+| **国投证券** | 券商 | 4 个 | 智能选股 / 行情数据 / 基金对比 / 行业拥挤度 | 国投证券 Skills 中心 / 腾讯 SkillHub | 官网 Skills 中心登录后下载；WorkBuddy 一键安装 |
+| **东吴证券** | 券商 | 6 个 | 东吴秀财 GPT / 量化投研 Skills（金工团队） / 东吴之声（AI 投顾） / 智能「小水滴」 | 东吴秀财 App / 公司内部体系 / 机构端 / 东吴金工 / 千问 | 自有 App 与内部业务体系接入 |
+
+### 🔗 权威信源（可点击直达）
+
+> 机构 Skill 条目的公开佐证来源，均已逐一校验可访问；官方页面与主流媒体报道优先。
+
+| 机构 | 信源 |
+|------|------|
+| **广发证券** | [财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）](https://m.cls.cn/detail/2455726) · [财联社：券商密集上线 Skills，重构服务颗粒度](https://m.cls.cn/detail/2404777) |
+| **东方财富** | [财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）](https://m.cls.cn/detail/2455726) |
+| **国泰海通** | [财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）](https://m.cls.cn/detail/2455726) · [财联社：券商密集上线 Skills，重构服务颗粒度](https://m.cls.cn/detail/2404777) · [中国金融信息网：千问接入十余家金融类智能体（2026-09-07）](https://m.cnfin.com/kx//zixun/20260907/4465997_1.html) |
+| **华泰证券** | [财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）](https://m.cls.cn/detail/2455726) · [财联社：券商密集上线 Skills，重构服务颗粒度](https://m.cls.cn/detail/2404777) |
+| **中金公司** | [财联社：券商密集上线 Skills，重构服务颗粒度](https://m.cls.cn/detail/2404777) · [财联社：证券业扎堆布局 AI Skills 服务自家客户](https://m.cls.cn/detail/2450745) |
+| **国信证券** | [财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）](https://m.cls.cn/detail/2455726) · [财联社：券商密集上线 Skills，重构服务颗粒度](https://m.cls.cn/detail/2404777) |
+| **中信建投** | [央广网：中信建投蜻蜓 Skill 广场上线，三大核心技能（2026-07-17）](https://finance.cnr.cn/zghq/20260717/t20260717_527715007.shtml) · [搜狐：中信建投 Skill 上线，打造智能投研技能生态](https://www.sohu.com/a/1051460058_362042) · [财联社：券商密集上线 Skills，重构服务颗粒度](https://m.cls.cn/detail/2404777) · [腾讯新闻：中信建投蜻蜓点金 App「AI 翼答」升级（2026-05-12）](https://news.qq.com/rain/a/20260512A03NAD00) |
+| **兴业证券** | [腾讯新闻：在兴业证券工位，看到了三个 AI「新同事」（2026-09-03）](https://news.qq.com/rain/a/20260903A084LM00) · [中国金融信息网：兴业证券数智化转型的「兴」实践（2026-07-08）](https://cnfin.com/cmjj-lb/detail/20260708/4437429_1.html) · [澎湃：兴业证券 App「知己管家」上线](https://www.thepaper.cn/newsDetail_forward_33337849) · [中国经济新闻网：兴业证券知己管家智能投顾](https://www.cet.com.cn/wzsy/cyzx/10406398.shtml) · [中国金融信息网：千问接入十余家金融类智能体（2026-09-07）](https://m.cnfin.com/kx//zixun/20260907/4465997_1.html) · [财联社：证券业扎堆布局 AI Skills 服务自家客户](https://m.cls.cn/detail/2450745) |
+| **易方达基金** | [中国金融信息网：千问接入十余家金融类智能体（2026-09-07）](https://m.cnfin.com/kx//zixun/20260907/4465997_1.html) |
+| **腾讯（WorkBuddy 金融版）** | [财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）](https://m.cls.cn/detail/2455726) · [21 财经：券商涌入 WorkBuddy 等 AI 平台，角力下一个流量入口](https://m.21jingji.com/article/20260918/86c024019335cbb9245181c605a714aa.html) |
+| **阿里巴巴（千问开放平台）** | [中国金融信息网：千问接入十余家金融类智能体（2026-09-07）](https://m.cnfin.com/kx//zixun/20260907/4465997_1.html) · [AIBase：千问开放平台再上新 10+ 金融服务智能体](https://news.aibase.com/tw/news/30865) · [太平洋科技：千问开放平台 10+ 金融智能体](https://www.pconline.com.cn/ai/2181/21816441.html) |
+| **中国银河证券** | [银河官网·星耀数智服务平台](https://www.chinastock.com.cn/newsite/cgs-services/strategyTrade/geWuInstitution.html) · [腾讯 SkillHub·中国银河证券企业主页](https://skillhub.cloud.tencent.com/enterprise/org-rwhv0nty?publisher=%E4%B8%AD%E5%9B%BD%E9%93%B6%E6%B2%B3%E8%AF%81%E5%88%B8) · [腾讯 SkillHub·星耀数智金融数据 Skill](https://skillhub.cloud.tencent.com/skills/ad-api) · [财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）](https://m.cls.cn/detail/2455726) · [银河证券 2026 半年度报告摘要（PB 三大中心 + 策略中心 MCP/Skill）](http://cdn.chinastock.com.cn/omc/investRelation/sh/601881_20260829_0ECY.pdf) |
+| **国投证券** | [国投证券官网·Skills 中心（智能选股 / 行情数据 / 基金对比 / 行业拥挤度）](https://www.sdicsc.com.cn/skills) · [财联社：证券业扎堆布局 AI Skills 服务自家客户](https://m.cls.cn/detail/2450745) · [壹览商业：国投证券金融 Skills 上线腾讯 SkillHub（2026-08-12）](https://www.yilantop.com/news/102030) · [财联社：哪些券商的 Skills 率先在 WorkBuddy 上线了（11 家券商 54 个 Skill）](https://m.cls.cn/detail/2455726) |
+| **东吴证券** | [中国经济网：东吴证券科技践行专业文化理念（秀财 GPT / 东吴之声 / 小水滴 / 秀捷）](https://finance.ce.cn/stock/gsgdbd/202511/t20251114_2580207.shtml) · [搜狐：东吴证券梁纯良谈「AI 即服务」，50+ AI 应用场景](https://m.sohu.com/a/969071386_120988576) · [财联社：证券业扎堆布局 AI Skills 服务自家客户](https://m.cls.cn/detail/2450745) · [中国金融信息网：千问接入十余家金融类智能体（2026-09-07）](https://m.cnfin.com/kx//zixun/20260907/4465997_1.html) · [同花顺财经：券商中期业绩说明会，AI 话题浓度飙升（2026-09-09）](https://m.10jqka.com.cn/20260909/c679746007.shtml) |
 
 > 📊 完整数据见 [data/institution-skills.json](./data/institution-skills.json)
 
@@ -1329,6 +1353,10 @@ GitHub Actions 每周一 09:00 UTC 自动执行：
 
 ### 变化摘要
 
+- 中国银河证券：Skills 体系化落地——「星耀数智」系列（金融数据 / 技术面指标 / 基本面指标 / 因子分析 / 公告搜索）上架腾讯 SkillHub，累计下载超 16 万次，下载量居券商第一梯队；PB 侧「启睿」策略中心 MCP/Skill 已随 2026 年半年报披露上线。
+- 国投证券：7 月 3 日推出智能选股、行情数据、基金对比、行业拥挤度四大 AI Skills，8 月 12 日上线腾讯 SkillHub，官网 Skills 中心已开放互联网用户登录下载。
+- 东吴证券：走机构侧差异化路线——8 月金工团队发布量化交易、主动研究、基金研究等四大类专业投研 Skill，优先对分仓机构与专业投资者开放；底座为券业首个自研并完成算法备案的「东吴秀财 GPT」，9 月 7 日「东吴秀财」智能体上线千问。
+- 中信建投：7 月 17 日正式推出「蜻蜓 Skill 广场」，首发 ETF 筛选、个股研判、财报透视三大技能，手机号注册领专属 API Key 即可轻量部署（此前仅有 App 内置「AI 蜻蜓翼答」）。
 - 兴业证券：7 月上线「兴证智达 Skill Hub」统一技能中台；八大投资者 Skills 已上架腾讯 SkillHub，WorkBuddy 可一键安装；「知己管家」上线两月超 20 万客户使用，「AI 老铁」100% 覆盖全司员工。
 - 腾讯：WorkBuddy 金融版（2026-09-03）上线 80+ 金融专属专家与专家团，主打开放式 AI 智能工作台，已服务中金公司、国投证券等 100+ 家金融机构。
 - 阿里巴巴：千问开放平台（2026-09-07）首批集中上线 12 个金融类智能体，兴业证券、国泰海通、中金财富、易方达基金等机构同步入驻。
@@ -1353,7 +1381,11 @@ GitHub Actions 每周一 09:00 UTC 自动执行：
 
 腾讯 WorkBuddy 金融版、阿里千问开放平台、蚂蚁数科 Agentar 等大厂平台 以「金融智能体开发平台 / 分发入口」定位集中下场：前者提供工作台底座与专家编排能力，后者提供流量入口与机构智能体分发。与券商自建 Skill 形成互补——大厂给底座和渠道，机构给专业内容与合规能力。
 
-**对开发者的启示**：优先接入 MCP 获取标准数据，再用券商 Skill 补齐方法论与观点；两者解耦后可按场景自由组合，避免绑定单一机构生态。
+**趋势四：券商 Skill 供给开始分层**
+
+同一家机构开始按客群拆分 Skill：东吴证券把整套量化投研 Skill 优先向分仓机构与专业投资者开放，华泰证券分别面向机构与零售推出两套体系，银河把因子分析、策略回测等能力放进机构 PB 通道。零售端拼「一句话可得」的普惠工具，机构端拼因子、回测、策略构建等专业工作流，Skill 矩阵出现明显的客群分层。
+
+**对开发者的启示**：优先接入 MCP 获取标准数据，再用券商 Skill 补齐方法论与观点；机构用户可关注银河「启睿」、东吴量化 Skills 等专业工作流类能力，零售场景则优先选有官方 Skill 中心与 SkillHub 双通道、且能一键安装的机构。
 
 
 ---
@@ -1376,4 +1408,4 @@ MIT — 详见 [LICENSE](./LICENSE)
 
 ---
 
-*本文件由 `scripts/generate_readme.py` 自动从 `data/tools.json` / `data/institution-skills.json` / `data/institution-dynamics.json` 生成，最后更新：2026-09-21 10:50*
+*本文件由 `scripts/generate_readme.py` 自动从 `data/tools.json` / `data/institution-skills.json` / `data/institution-dynamics.json` 生成，最后更新：2026-09-21 11:15*
