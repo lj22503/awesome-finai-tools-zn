@@ -2,7 +2,7 @@
 
 ## 网站/仓库简介
 
-Awesome FinAI Tools 是中国金融 AI 工具全景图（lj22503/awesome-finai-tools-zn），收录可接入 AI Agent 的 Market Data MCP、量化框架、券商 Skills、交易接口、数据 API，共 55 个工具、20 家机构 Skill。每周自动巡检 GitHub / npm / PyPI 更新。数据更新日期：2026-09-21。
+Awesome FinAI Tools 是中国金融 AI 工具全景图（lj22503/awesome-finai-tools-zn），收录可接入 AI Agent 的 Market Data MCP、量化框架、券商 Skills、交易接口、数据 API，共 55 个工具、21 家机构 Skill。每周自动巡检 GitHub / npm / PyPI 更新。数据更新日期：2026-09-21。
 
 ## 核心页面
 
@@ -108,6 +108,7 @@ Awesome FinAI Tools 是中国金融 AI 工具全景图（lj22503/awesome-finai-t
 | 国信证券 | 券商 | 6 | 智能选股 / ETF筛选 / 基金对比 / 宏观数据查询 |
 | 中信建投 | 券商 | 2 | AI蜻蜓翼答 / 智研多资产配置 |
 | 广东博众 | 券商 | 3 | 股票智能分析 / 量化成长选股助手 / 股票情绪分析 |
+| 兴业证券 | 券商 | 5 | 兴证智达 Skill Hub / 兴业证券八大 Skills / 兴业证券智能投资助手 / 知己管… |
 | 万得 (Wind) | 数据商 | 3 | WindClaw / AIFin Market / 万得 AI (Wind Alice) |
 | 同花顺 | 数据商 | 2 | iFinD MCP / 问财 SkillHub |
 | 盈米基金 | 数据商 | 1 | 盈米MCP |

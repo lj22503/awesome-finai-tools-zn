@@ -365,6 +365,49 @@
     "last_updated": "2026-07-13"
   },
   {
+    "institution_name": "兴业证券",
+    "category": "券商",
+    "skills": [
+      {
+        "skill_name": "兴证智达 Skill Hub",
+        "description": "统一技能中台，依托 ETF 与财富管理优势沉淀投研技能，核心服务内部投顾体系",
+        "platform": "兴证智达 / 自有平台",
+        "install_method": "内部投顾体系接入",
+        "evaluation": "2026-07 上线，券商自建 Skill 中台代表案例"
+      },
+      {
+        "skill_name": "兴业证券八大 Skills",
+        "description": "围绕投资者核心需求场景的八大技能，覆盖实时行情获取、股票及研报智能查询等技能项",
+        "platform": "腾讯 SkillHub / WorkBuddy",
+        "install_method": "WorkBuddy 一键安装调用",
+        "evaluation": "已正式上线腾讯 SkillHub，属券商投研 Skills 上架潮首批"
+      },
+      {
+        "skill_name": "兴业证券智能投资助手",
+        "description": "结合市场信息与机构研究视角，梳理当日 A股热点板块表现及背后的行业、政策或资金逻辑",
+        "platform": "千问 / 华为小艺",
+        "install_method": "千问对话中 @ 调用；小艺智能体广场搜索「兴业证券」",
+        "evaluation": "2026-09-07 千问开放平台金融智能体首批 4 款券商智能体之一"
+      },
+      {
+        "skill_name": "知己管家（优理宝 App）",
+        "description": "7×24 小时 AI 投资伙伴，贯通资讯解读、选股诊股、自选分析、盯盘预警到交易下单，支持自然语言一句话盯盘下单",
+        "platform": "优理宝 App / 鸿蒙",
+        "install_method": "App 首页 AI 图标进入；鸿蒙版支持小艺语音与悬浮窗常驻",
+        "evaluation": "上线两个月超 20 万客户使用，六大核心亮点含多因子智能诊断"
+      },
+      {
+        "skill_name": "AI 老铁（员工智能助手）",
+        "description": "面向投顾展业的内部智能助手，客户简报一键生成、制度与业务问答秒级响应、可生成可分享 H5 办理指引",
+        "platform": "企业微信",
+        "install_method": "内部员工企微入口",
+        "evaluation": "2026-04 上线，已 100% 覆盖全司员工，日问答量 100 → 近 2000 次"
+      }
+    ],
+    "data_source": "2026-09 巡检更新（官方披露 + 财联社/腾讯新闻/中国金融信息网报道）",
+    "last_updated": "2026-09-21"
+  },
+  {
     "institution_name": "万得 (Wind)",
     "category": "数据商",
     "skills": [

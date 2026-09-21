@@ -1307,6 +1307,7 @@ GitHub Actions 每周一 09:00 UTC 自动执行：
 | **国信证券** | 券商 | 6 个 | 智能选股 / ETF筛选 / 基金对比 / 宏观数据查询 | 小信助手 / OpenClaw / Coze | https://weixin.guosen.com.cn/gs/xxskill… |
 | **中信建投** | 券商 | 2 个 | AI蜻蜓翼答 / 智研多资产配置 | 蜻蜓点金App / 机构端平台 | App内置，暂未以独立Skill包发布 |
 | **广东博众** | 券商 | 3 个 | 股票智能分析 / 量化成长选股助手 / 股票情绪分析 | Coze / 万得 AIFin Market | Coze技能商店 / 万得AIFin Market |
+| **兴业证券** | 券商 | 5 个 | 兴证智达 Skill Hub / 兴业证券八大 Skills / 兴业证券智能投资助手 / 知己管家（优理宝 App） | 兴证智达 / 自有平台 / 腾讯 SkillHub / WorkBuddy / 千问 | 内部投顾体系接入 |
 | **万得 (Wind)** | 数据商 | 3 个 | WindClaw / AIFin Market / 万得 AI (Wind Alice) | 桌面端 / WorkBuddy / OpenClaw / Hermes Agent / 独立App +… | 下载安装 |
 | **同花顺** | 数据商 | 2 个 | iFinD MCP / 问财 SkillHub | MCP协议 / OpenClaw / Claude / ChatGPT / Cursor | MCP协议接入 |
 | **盈米基金** | 数据商 | 1 个 | 盈米MCP | MCP / Coze / Dify / Cursor | 联系盈米AI开放平台 |
@@ -1328,6 +1329,7 @@ GitHub Actions 每周一 09:00 UTC 自动执行：
 
 ### 变化摘要
 
+- 兴业证券：7 月上线「兴证智达 Skill Hub」统一技能中台；八大投资者 Skills 已上架腾讯 SkillHub，WorkBuddy 可一键安装；「知己管家」上线两月超 20 万客户使用，「AI 老铁」100% 覆盖全司员工。
 - 腾讯：WorkBuddy 金融版（2026-09-03）上线 80+ 金融专属专家与专家团，主打开放式 AI 智能工作台，已服务中金公司、国投证券等 100+ 家金融机构。
 - 阿里巴巴：千问开放平台（2026-09-07）首批集中上线 12 个金融类智能体，兴业证券、国泰海通、中金财富、易方达基金等机构同步入驻。
 - 广发证券：Skill 矩阵从 IMA / Coze / 华为小艺 / OpenClaw 扩展至 WorkBuddy、扣子等平台，接入面进一步铺开。
@@ -1374,4 +1376,4 @@ MIT — 详见 [LICENSE](./LICENSE)
 
 ---
 
-*本文件由 `scripts/generate_readme.py` 自动从 `data/tools.json` / `data/institution-skills.json` / `data/institution-dynamics.json` 生成，最后更新：2026-09-21 10:47*
+*本文件由 `scripts/generate_readme.py` 自动从 `data/tools.json` / `data/institution-skills.json` / `data/institution-dynamics.json` 生成，最后更新：2026-09-21 10:50*
