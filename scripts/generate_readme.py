@@ -16,6 +16,7 @@ import json
 import re
 import sys
 from datetime import datetime
+from urllib.parse import quote
 
 REPO_SLUG = "lj22503/awesome-finai-tools-zn"
 
@@ -169,12 +170,86 @@ def access_text(t: dict) -> str:
         return cmd
     if url:
         return url
+    acc = t.get("access", {})
+    if isinstance(acc, dict) and acc.get("method"):
+        return acc["method"]
     return "—"
 
 
 def trunc(text: str, n: int) -> str:
     text = (text or "").strip()
     return text if len(text) <= n else text[: n - 1] + "…"
+
+
+# ---- 链接安全：URL 不被截断，占位文本不做成链接 ----
+
+URL_RE = re.compile(r"https?://[^\s`）)，、；：\"'<>]+")
+MD_LINK_RE = re.compile(r"\[[^\]]*\]\([^)]*\)")
+_ATOM_RE = re.compile(r"(\[[^\]]*\]\([^)]*\)|https?://[^\s`）)，、；：\"'<>]+)")
+
+
+def is_url(text: str) -> bool:
+    return bool(URL_RE.fullmatch((text or "").strip()))
+
+
+def link_label(url: str) -> str:
+    """把长 URL 压成短标签，但 href 保持完整。"""
+    if "github.com" in url:
+        return "GitHub 仓库"
+    if "img.shields.io" in url:
+        return "badge"
+    host = re.sub(r"^https?://", "", url).split("/")[0]
+    return host
+
+
+def linkify_urls(text: str) -> str:
+    """把裸 URL 变成 markdown 链接（保留完整 href）；代码段与已带链接的片段不动。"""
+    if not text:
+        return text
+    segs = re.split(r"(`[^`]*`)", text)  # 奇数位 = 行内代码段
+    out = []
+    for i, s in enumerate(segs):
+        if i % 2 == 1 or "](" in s or not s:
+            out.append(s)
+        else:
+            out.append(URL_RE.sub(lambda m: f"[{link_label(m.group(0))}]({m.group(0)})", s))
+    return "".join(out)
+
+
+def link_or_text(value: str) -> str:
+    """真 URL → 可点击链接；域名 → 补 https；其余占位文本 → 纯文本（不生成死链）。"""
+    v = (value or "").strip()
+    if not v:
+        return ""
+    if is_url(v):
+        return f"[{link_label(v)}]({v})"
+    if re.fullmatch(r"[\w.-]+\.[a-z]{2,}(/\S*)?", v):
+        return f"[{v}](https://{v})"
+    return v
+
+
+def trunc_safe(text: str, n: int) -> str:
+    """截断文本，但绝不截断 markdown 链接 / URL。"""
+    text = (text or "").strip()
+    if len(text) <= n:
+        return text
+    out, used = "", 0
+    for tok in _ATOM_RE.split(text):
+        if not tok:
+            continue
+        if used + len(tok) <= n:
+            out += tok
+            used += len(tok)
+            continue
+        if _ATOM_RE.fullmatch(tok):  # 链接/URL 整体保留
+            out += tok
+            break
+        if not out:
+            out = tok[: max(n - 1, 1)] + "…"
+        elif not out.endswith("…"):
+            out += "…"
+        break
+    return out
 
 
 # ---------------------------------------------------------------- README
@@ -184,8 +259,8 @@ TEMPLATE_README = """# Awesome FinAI Tools
 
 [![Stars](https://img.shields.io/github/stars/{repo_slug}?style=flat-square)](https://github.com/{repo_slug})
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](./LICENSE)
-[![Tools](https://img.shields.io/badge/工具-{tool_count}-blue?style=flat-square)](#工具分类)
-[![更新](https://img.shields.io/badge/数据更新-{data_date}-brightgreen?style=flat-square)](#每周自动更新)
+[![Tools](https://img.shields.io/badge/{badge_tools}-{tool_count}-blue?style=flat-square)](#工具分类)
+[![Updated](https://img.shields.io/badge/{badge_updated}-{data_date}-brightgreen?style=flat-square)](#每周自动更新)
 
 > 本仓库收录**中国金融 AI 工具**，包括 **Market Data MCP**、**量化框架**、**券商 Skills**、**金融 CLI**、**Python 金融库**。覆盖 **A股 / 港股 / 基金 / 期货** 行情数据、量化回测、因子挖掘、舆情分析、投研等场景。支持 **OpenClaw / Claude / Cursor / Codex / WorkBuddy / Coze** 等 AI Agent 平台。每周自动巡检更新。
 
@@ -375,9 +450,14 @@ def generate_category_sections(tools) -> str:
         for t in cat_tools:
             name = t.get("name", "")
             ref = f"[{name}](#{slugify(name)})"
+            acc = access_text(t)
+            if "http" in acc:  # 含 URL：渲染为可点击链接，绝不截断 href
+                acc_cell = trunc_safe(linkify_urls(acc), 58)
+            else:
+                acc_cell = f"`{trunc_safe(acc, 44)}`"
             out.append(
                 f"| {ref} | {type_label(t)} | {cost_short(t)} | "
-                f"{trunc(t.get('description', ''), 56)} | `{trunc(access_text(t), 44)}` |"
+                f"{trunc_safe(t.get('description', ''), 56)} | {acc_cell} |"
             )
         out.append("")
     return "\n".join(out)
@@ -403,10 +483,13 @@ def generate_detail_blocks(tools) -> str:
             official = t.get("official_url", "")
             if github:
                 out.append(f"**GitHub**：[{github}](https://{github})  ")
+                if is_url(official):
+                    out.append(f"**官网**：[{official}]({official})  ")
             elif official:
-                out.append(f"**地址**：[{official}]({official})  ")
-            if github and official and official not in f"https://{github}":
-                out.append(f"**官网**：[{official}]({official})  ")
+                out.append(f"**地址**：{link_or_text(official)}  ")
+            for el in (t.get("entry_links") or []):
+                if el.get("url"):
+                    out.append(f"**平台入口**：[{el.get('title', el['url'])}]({el['url']})  ")
             if t.get("maintainer"):
                 out.append(f"**维护方**：{t['maintainer']}  ")
             out.append("")
@@ -426,7 +509,7 @@ def generate_detail_blocks(tools) -> str:
                     out.append(f"**输出格式**：{outp['format']}  ")
             acc = t.get("access", {})
             if isinstance(acc, dict) and acc.get("method"):
-                out.append(f"**接入方式**：{acc['method']}  ")
+                out.append(f"**接入方式**：{linkify_urls(acc['method'])}  ")
             if t.get("capabilities"):
                 out.append(f"**核心能力**：{' / '.join(t['capabilities'])}  ")
             out.append("")
@@ -434,7 +517,7 @@ def generate_detail_blocks(tools) -> str:
             if inst.get("command"):
                 out.append("**安装**：\n```bash\n" + inst["command"] + "\n```\n")
             elif inst.get("url"):
-                out.append(f"**接入**：[{inst['url']}]({inst['url']})\n")
+                out.append(f"**接入**：{link_or_text(inst['url'])}\n")
             if t.get("usage"):
                 lang = t.get("usage_lang", "bash")
                 out.append(f"**使用**：\n```{lang}\n" + "\n".join(t["usage"]) + "\n```\n")
@@ -468,10 +551,13 @@ def generate_institution_matrix(institutions, data_date) -> str:
             if g and g not in gets:
                 gets.append(g)
         abilities = " / ".join(s.get("skill_name", "") for s in skills[:4])
+        get_text = " / ".join(gets[:1]) or "—"
+        if "http" in get_text:
+            get_text = linkify_urls(get_text)
         rows.append(
             f"| **{name}** | {inst.get('category', '')} | {len(skills)} 个 | "
-            f"{trunc(abilities, 60)} | {trunc(' / '.join(platforms[:5]), 52) or '—'} | "
-            f"{trunc(' / '.join(gets[:1]), 40) or '—'} |"
+            f"{trunc_safe(abilities, 64)} | {trunc_safe(' / '.join(platforms[:5]), 58) or '—'} | "
+            f"{trunc_safe(get_text, 60)} |"
         )
     return "\n".join(rows)
 
@@ -551,6 +637,8 @@ def render_readme(tools, institutions, dyn, data_date) -> str:
         repo_slug=REPO_SLUG,
         tool_count=len(tools),
         data_date=data_date,
+        badge_tools=quote("工具"),
+        badge_updated=quote("数据更新"),
         seo_types=build_seo_types(tools),
         seo_scenes=" ".join(f"`{x}`" for x in SEO_SCENES),
         seo_platforms=" ".join(f"`{x}`" for x in SEO_PLATFORMS),

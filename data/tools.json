@@ -1099,10 +1099,10 @@
         "api_key_required": false
       },
       "installation": {
-        "url": "阿里云平台搜索「东方财富ClawBot」"
+        "url": "https://bailian.console.aliyun.com"
       },
       "cost": "free",
-      "official_url": "阿里云平台",
+      "official_url": "https://bailian.console.aliyun.com",
       "maintainer": "东方财富",
       "tags": [
         "东方财富",
@@ -1139,11 +1139,11 @@
       },
       "installation": {
         "command": "在 OpenClaw 搜索「华泰AI涨乐」一键部署",
-        "url": "华泰证券App"
+        "url": "https://www.htsc.com.cn"
       },
       "cost": "free_limited",
       "pricing_note": "新用户每日500-1000次调用额度",
-      "official_url": "华泰证券App",
+      "official_url": "https://www.htsc.com.cn",
       "maintainer": "华泰证券",
       "tags": [
         "华泰",
@@ -1181,10 +1181,10 @@
       },
       "installation": {
         "command": "在 ima 客户端搜索「广发证券」",
-        "url": "hd.gf.com.cn/gfwskill2026/#/index"
+        "url": "https://hd.gf.com.cn/gfwskill2026/"
       },
       "cost": "unknown",
-      "official_url": "hd.gf.com.cn/gfwskill2026/#/index",
+      "official_url": "https://hd.gf.com.cn/gfwskill2026/",
       "maintainer": "广发证券",
       "tags": [
         "广发",
@@ -1220,10 +1220,10 @@
         "api_key_required": false
       },
       "installation": {
-        "url": "https://weixin.guosen.com.cn/gs/xxskills/#architecture"
+        "url": "https://skillhub.cloud.tencent.com/enterprise/org-c35jqdjt"
       },
       "cost": "unknown",
-      "official_url": "https://weixin.guosen.com.cn/gs/xxskills/#architecture",
+      "official_url": "https://skillhub.cloud.tencent.com/enterprise/org-c35jqdjt",
       "maintainer": "国信证券",
       "tags": [
         "国信",
@@ -1258,11 +1258,11 @@
         "api_key_required": false
       },
       "installation": {
-        "url": "中金点睛平台"
+        "url": "https://www.ciccwm.com"
       },
       "cost": "institutional",
       "pricing_note": "面向机构付费用户",
-      "official_url": "中金点睛平台",
+      "official_url": "https://www.ciccwm.com",
       "maintainer": "中金公司",
       "tags": [
         "中金",
@@ -1294,15 +1294,12 @@
         ]
       },
       "access": {
-        "method": "国泰海通自有平台",
+        "method": "君弘 App 搜索「灵犀Skills」一键安装（千问 / 华为小艺同步可搜）",
         "auth_required": true,
         "api_key_required": false
       },
-      "installation": {
-        "url": "国泰海通自有平台"
-      },
+      "installation": {},
       "cost": "unknown",
-      "official_url": "国泰海通平台",
       "maintainer": "国泰海通证券",
       "tags": [
         "国泰海通",
@@ -1310,6 +1307,16 @@
         "研报",
         "行情",
         "选股"
+      ],
+      "entry_links": [
+        {
+          "title": "千问平台（灵犀 Skills 已入驻）",
+          "url": "https://www.qianwen.com"
+        },
+        {
+          "title": "华为小艺",
+          "url": "https://xiaoyi.huawei.com"
+        }
       ]
     },
     {
@@ -1338,10 +1345,10 @@
       },
       "installation": {
         "command": "通过盈米AI开放平台获取 MCP 接入",
-        "url": "盈米AI开放平台（入驻阿里云百炼等）"
+        "url": "https://www.yingmi.cn"
       },
       "cost": "contact_sales",
-      "official_url": "盈米AI开放平台",
+      "official_url": "https://www.yingmi.cn",
       "maintainer": "盈米基金",
       "tags": [
         "盈米",
@@ -1377,10 +1384,10 @@
         "api_key_required": false
       },
       "installation": {
-        "url": "天天基金App"
+        "url": "https://www.1234567.com.cn"
       },
       "cost": "free_partial",
-      "official_url": "天天基金App",
+      "official_url": "https://www.1234567.com.cn",
       "maintainer": "东方财富（天天基金）",
       "tags": [
         "天天基金",
@@ -1414,10 +1421,10 @@
         "broker_account_required": "需在兴业开户"
       },
       "installation": {
-        "url": "兴业证券优理宝App"
+        "url": "https://www.xyzq.com.cn"
       },
       "cost": "unknown",
-      "official_url": "兴业证券优理宝App",
+      "official_url": "https://www.xyzq.com.cn",
       "maintainer": "兴业证券",
       "tags": [
         "兴业",
@@ -1446,16 +1453,15 @@
         ]
       },
       "access": {
-        "method": "安装CLI工具将技能市场接入自己的AI Agent",
+        "method": "访问 fin-skills.finstep.cn 查看接入文档（站点仅支持 HTTP）",
         "auth_required": false,
         "api_key_required": false
       },
       "installation": {
-        "command": "访问 fin-skills.finstep.cn 查看接入文档",
-        "url": "https://fin-skills.finstep.cn"
+        "url": "http://fin-skills.finstep.cn"
       },
       "cost": "unknown",
-      "official_url": "https://fin-skills.finstep.cn",
+      "official_url": "http://fin-skills.finstep.cn",
       "maintainer": "财跃星辰",
       "tags": [
         "FIN-SKILLS",
@@ -1573,7 +1579,7 @@
         ]
       },
       "access": {
-        "method": "远程 HTTP MCP（https://stock.quicktiny.cn/api/mcp），需在 Developer Console 申请 API Key",
+        "method": "远程 HTTP MCP 接入（端点 `https://stock.quicktiny.cn/api/mcp`，仅接受 POST 请求），需在 Developer Console 申请 API Key",
         "auth_required": true,
         "api_key_required": true
       },

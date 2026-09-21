@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.4.1] - 2026-09-21
+
+### Fixed
+
+- **全站链接有效性修复**（88 条链接逐一实测）：
+  - 2 处真死链替换：国信证券 `weixin.guosen.com.cn`（TLS 旧重协商被禁，无法握手）→ 腾讯 SkillHub「国信证券」企业主页；FIN-SKILLS（财跃星辰）`https://fin-skills.finstep.cn`（HTTPS 不可达）→ 站内标注仅支持 HTTP 并改用 `http://` 可访问地址
+  - 13 处被 `…` 截断的 URL 全部还原为完整可点击链接（国信 / 同花顺 Financial-API / 多个 GitHub 仓库地址等）
+  - 8 处非 URL 占位文本（如「中金点睛平台」「华泰证券App」）不再渲染成 markdown 链接，改为纯文本或替换为实测可开官方入口：中金财富 `www.ciccwm.com`、华泰 `www.htsc.com.cn`、广发 `hd.gf.com.cn/gfwskill2026/`、盈米 `www.yingmi.cn`、天天基金 `www.1234567.com.cn`、兴业 `www.xyzq.com.cn`、东方财富 `mcp-eastmoney` → 阿里云百炼
+- 国泰海通：移除失效占位官网，详情页补「平台入口」千问 / 华为小艺可点击链接
+- shields.io 中文徽章 404（`数据更新` badge not found）：徽章文案改为 URL 编码（`%E5%B7%A5%E5%85%B7` / `%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0`），恢复 200
+- Wudao A-Share MCP 的 MCP 端点（仅接受 POST，GET 返回 405）不再渲染为可点击链接，改为行内代码展示，保留可开的 setup 页面链接
+
+### Changed
+
+- `scripts/generate_readme.py` 新增链接安全渲染：`is_url()` / `link_or_text()` / `linkify_urls()` / `trunc_safe()`，截断逻辑改为「按原子 token 截断」，确保 markdown 链接与 URL 永不被截断；表格内 URL 自动转为短标签可点击链接
+
+---
+
 ## [0.4.0] - 2026-09-21
 
 ### Added

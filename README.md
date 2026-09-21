@@ -3,8 +3,8 @@
 
 [![Stars](https://img.shields.io/github/stars/lj22503/awesome-finai-tools-zn?style=flat-square)](https://github.com/lj22503/awesome-finai-tools-zn)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](./LICENSE)
-[![Tools](https://img.shields.io/badge/工具-55-blue?style=flat-square)](#工具分类)
-[![更新](https://img.shields.io/badge/数据更新-2026-09-21-brightgreen?style=flat-square)](#每周自动更新)
+[![Tools](https://img.shields.io/badge/%E5%B7%A5%E5%85%B7-55-blue?style=flat-square)](#工具分类)
+[![Updated](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026-09-21-brightgreen?style=flat-square)](#每周自动更新)
 
 > 本仓库收录**中国金融 AI 工具**，包括 **Market Data MCP**、**量化框架**、**券商 Skills**、**金融 CLI**、**Python 金融库**。覆盖 **A股 / 港股 / 基金 / 期货** 行情数据、量化回测、因子挖掘、舆情分析、投研等场景。支持 **OpenClaw / Claude / Cursor / Codex / WorkBuddy / Coze** 等 AI Agent 平台。每周自动巡检更新。
 
@@ -70,18 +70,18 @@
 | [Tushare Pro](#tushare-pro) | Python | ⚠️ | 高质量A股数据，财务/指数/套利/港股，数据质量较高但需要积分 | `pip install tushare` |
 | [Wind API](#wind-api) | API | 💰 | 机构级金融数据，A股/债券/基金/宏观/衍生品全覆盖，机构标配，数据最全最准 | `Wind Terminal安装后自带Python接口 import WindPy` |
 | [东方财富 Choice](#东方财富-choice) | API | 💰 | 东方财富金融数据终端，A股/期货/期权/基金/宏观，Python API，机构级数据 | `安装 Choice 终端后通过 Python API 调用` |
-| [同花顺 iFinD](#同花顺-ifind) | API | 💰 | 同花顺投研数据，财报/估值/行业/宏观，Python API | `—` |
+| [同花顺 iFinD](#同花顺-ifind) | API | 💰 | 同花顺投研数据，财报/估值/行业/宏观，Python API | `Python API` |
 | [广发证券 Skill](#广发证券-skill) | Skill | ❓ | 广发证券官方技能，8大核心功能：股票基础信息、财务对比、龙虎榜追踪、基金定投计算、ETF资金异动监测与筛选、基… | `在 ima 客户端搜索「广发证券」` |
-| [国信证券 Skill](#国信证券-skill) | Skill | ❓ | 国信证券「小信智慧助手」官方技能，6大核心功能：智能选股、ETF筛选、基金对比、宏观/行情/财务数据查询 | `https://weixin.guosen.com.cn/gs/xxskills/#a…` |
-| [天天基金 Skill](#天天基金-skill) | Skill | ⚠️ | 天天基金App官方技能群，14个核心技能：基金信息查询、自选管理；第三方深度整合：天工「Fund Analyz… | `天天基金App` |
+| [国信证券 Skill](#国信证券-skill) | Skill | ❓ | 国信证券「小信智慧助手」官方技能，6大核心功能：智能选股、ETF筛选、基金对比、宏观/行情/财务数据查询 | [skillhub.cloud.tencent.com](https://skillhub.cloud.tencent.com/enterprise/org-c35jqdjt) |
+| [天天基金 Skill](#天天基金-skill) | Skill | ⚠️ | 天天基金App官方技能群，14个核心技能：基金信息查询、自选管理；第三方深度整合：天工「Fund Analyz… | [www.1234567.com.cn](https://www.1234567.com.cn) |
 | [mcp-eastmoney](#mcp-eastmoney) | MCP | ✅ | 东方财富 MCP 服务器，A股实时行情 + 主力资金 + 板块 + K线，使用官方公开延时接口，免 API K… | `uvx mcp-eastmoney` |
-| [Wudao A-Share MCP](#wudao-a-share-mcp) | MCP | ⚠️ | 63 个只读工具，覆盖 A股 K线/分时、指数 ETF 可转债、涨停梯队、板块轮动、资金流、龙虎榜、研报、公告… | `https://stock.quicktiny.cn/api/mcp/setup` |
-| [cn-financial-mcp](#cn-financial-mcp) | MCP | ✅ | cn 金融数据 MCP 服务器，工具包覆盖 A股行情、财报、估值、板块、市场全景、新闻及宏观指标 | `git clone https://github.com/ccq1/cn-financ…` |
+| [Wudao A-Share MCP](#wudao-a-share-mcp) | MCP | ⚠️ | 63 个只读工具，覆盖 A股 K线/分时、指数 ETF 可转债、涨停梯队、板块轮动、资金流、龙虎榜、研报、公告… | [stock.quicktiny.cn](https://stock.quicktiny.cn/api/mcp/setup) |
+| [cn-financial-mcp](#cn-financial-mcp) | MCP | ✅ | cn 金融数据 MCP 服务器，工具包覆盖 A股行情、财报、估值、板块、市场全景、新闻及宏观指标 | git clone [GitHub 仓库](https://github.com/ccq1/cn-financial-mcp) |
 | [akshare-one-mcp](#akshare-one-mcp) | MCP | ✅ | 基于 akshare-one 的中国股票市场数据 MCP Server，MIT 开源，支持 Smithery … | `npx -y @smithery/cli install @zwldarren/aks…` |
 | [AxData](#axdata) | 框架 | ✅ | 开源量化数据库框架，覆盖通达信、巨潮、腾讯财经、新浪财经、东方财富、财联社、开盘红等公开源接口，提供 Pyth… | `pip install axdata` |
-| [同花顺官方 Financial-API](#同花顺官方-financial-api) | API | ⚠️ | 同花顺（HiThink）官方 A股金融数据服务，提供股票实时行情、历史行情、财务报表、指数、板块、涨停等数据，… | `https://github.com/HiThink-Tech/Financial-A…` |
+| [同花顺官方 Financial-API](#同花顺官方-financial-api) | API | ⚠️ | 同花顺（HiThink）官方 A股金融数据服务，提供股票实时行情、历史行情、财务报表、指数、板块、涨停等数据，… | [GitHub 仓库](https://github.com/HiThink-Tech/Financial-API) |
 | [FQGate-agent](#fqgate-agent) | MCP | ✅ | 同花顺免费开源 AI 插件，为 Codex / Claude Code / WorkBuddy / OpenC… | `powershell.exe -NoProfile -ExecutionPolicy …` |
-| [easy-stock](#easy-stock) | 框架 | ✅ | 面向个人投资者的本地股票分析工具，自动抓取并整理行情、财务指标与技术形态，生成可视化看板 | `git clone https://github.com/jundizhou/easy…` |
+| [easy-stock](#easy-stock) | 框架 | ✅ | 面向个人投资者的本地股票分析工具，自动抓取并整理行情、财务指标与技术形态，生成可视化看板 | git clone [GitHub 仓库](https://github.com/jundizhou/easy-stock) |
 
 ### 💬 Sentiment（舆情/社区）
 
@@ -91,7 +91,7 @@
 |------|------|------|------|------|
 | [OpenCLI Xueqiu Search](#opencli-xueqiu-search) | CLI | ✅ | 雪球股票搜索（代码或中文名称），返回实时价格/涨跌幅/雪球主页 | `npm install -g @jackwener/opencli` |
 | [OpenCLI Xueqiu Hot Posts](#opencli-xueqiu-hot-posts) | CLI | ✅ | 雪球热门帖子，反映投资者社区讨论热点 | `npm install -g @jackwener/opencli` |
-| [TrendRadar](#trendradar) | 框架 | ✅ | 全网热点与舆情监控工具，聚合多平台热搜榜单，支持关键词热度趋势与 MCP 接入，可用于市场情绪与事件驱动监测 | `git clone https://github.com/sansan0/TrendR…` |
+| [TrendRadar](#trendradar) | 框架 | ✅ | 全网热点与舆情监控工具，聚合多平台热搜榜单，支持关键词热度趋势与 MCP 接入，可用于市场情绪与事件驱动监测 | git clone [GitHub 仓库](https://github.com/sansan0/TrendRadar) |
 
 ### 📈 Analysis（分析与因子）
 
@@ -101,9 +101,9 @@
 |------|------|------|------|------|
 | [FinanceMCP-Alpha](#financemcp-alpha) | MCP | ⚠️ | WorldQuant 101 Alpha 因子计算，TypeScript，基于Tushare，输出Alpha3… | `npm install finance-mcp-alpha && npm start` |
 | [Qlib](#qlib) | 框架 | ✅ | 微软AI量化投资平台，支持自动因子挖掘/机器学习/回测，数据结构专为量化设计 | `pip install pyqlib` |
-| [QuantaAlpha](#quantaalpha) | 框架 | ✅ | LLM + 进化策略自动挖掘、演化与验证量化 Alpha 因子，只需描述研究方向即可自动完成因子发现与自演化轨… | `git clone https://github.com/QuantaAlpha/Qu…` |
-| [QuantGPT](#quantgpt) | 框架 | ✅ | Agent 驱动的 Alpha 工厂：LLM 自主设计、回测并提交因子到 WorldQuant BRAIN，支… | `git clone https://github.com/Miasyster/Quan…` |
-| [tradex-hub](#tradex-hub) | MCP | ✅ | 面向量化与投研的 MCP 工具集线器，聚合 129 个 MCP 工具，统一接入数据、因子、回测与交易相关能力 | `git clone https://github.com/wolfjkd/tradex…` |
+| [QuantaAlpha](#quantaalpha) | 框架 | ✅ | LLM + 进化策略自动挖掘、演化与验证量化 Alpha 因子，只需描述研究方向即可自动完成因子发现与自演化轨… | git clone [GitHub 仓库](https://github.com/QuantaAlpha/QuantaAlpha) |
+| [QuantGPT](#quantgpt) | 框架 | ✅ | Agent 驱动的 Alpha 工厂：LLM 自主设计、回测并提交因子到 WorldQuant BRAIN，支… | git clone [GitHub 仓库](https://github.com/Miasyster/QuantGPT) |
+| [tradex-hub](#tradex-hub) | MCP | ✅ | 面向量化与投研的 MCP 工具集线器，聚合 129 个 MCP 工具，统一接入数据、因子、回测与交易相关能力 | git clone [GitHub 仓库](https://github.com/wolfjkd/tradex-hub) |
 | [Awesome Finance Skills](#awesome-finance-skills) | Skill | ✅ | 金融领域 Agent Skills 合集，以标准 Skill 形式封装财报分析、估值建模、行业研究等能力，一条… | `npx skills add RKiding/Awesome-finance-skil…` |
 
 ### 🔄 Trading（交易执行）
@@ -116,8 +116,8 @@
 | [VeighNa](#veighna) | 框架 | ✅ | 开源量化交易框架，事件驱动架构，支持数据管理/策略回测/实盘交易/风控，可对接多家券商 | `pip install vnpy` |
 | [FinRL](#finrl) | 框架 | ✅ | 深度强化学习量化交易框架，支持DDPG/PPO/SAC等算法，对接OpenAI Gym | `pip install finrl` |
 | [华泰 AI 涨乐](#华泰-ai-涨乐) | Skill | ⚠️ | 华泰证券官方技能，深度集成于华泰App，五大核心功能：金融分析与资讯、行情检索、A股模拟交易、条件选股、自选股… | `在 OpenClaw 搜索「华泰AI涨乐」一键部署` |
-| [TradingAgents-Astock](#tradingagents-astock) | 框架 | ✅ | 基于 TradingAgents 的多智能体 A股分析框架，集成 8 大维度 A股数据源（技术面/资金面/基本… | `git clone https://github.com/simonlin1212/T…` |
-| [WyckoffTradingAgent](#wyckofftradingagent) | 框架 | ✅ | 威科夫（Wyckoff）方法量化交易 Agent，自动识别吸筹/派发阶段、量价结构并给出结构买卖点信号 | `git clone https://github.com/YoungCan-Wang/…` |
+| [TradingAgents-Astock](#tradingagents-astock) | 框架 | ✅ | 基于 TradingAgents 的多智能体 A股分析框架，集成 8 大维度 A股数据源（技术面/资金面/基本… | git clone [GitHub 仓库](https://github.com/simonlin1212/TradingAgents-astock) |
+| [WyckoffTradingAgent](#wyckofftradingagent) | 框架 | ✅ | 威科夫（Wyckoff）方法量化交易 Agent，自动识别吸筹/派发阶段、量价结构并给出结构买卖点信号 | git clone [GitHub 仓库](https://github.com/YoungCan-Wang/WyckoffTradingAgent) |
 
 ### 🔬 Research（投研）
 
@@ -127,14 +127,14 @@
 |------|------|------|------|------|
 | [TradingAgents](#tradingagents) | 框架 | ✅ | 多Agent LLM量化投研框架，分析师团队（基本面/舆情/技术面/新闻）+ 交易员 + 风控，多模型支持（G… | `pip install tradingagents` |
 | [同花顺问财 SkillHub](#同花顺问财-skillhub) | Skill | ⚠️ | 同花顺官方技能市场，股基债期全品类数据查询与分析（选股、诊断、财经搜索、产业链），上百个社区技能（DCF估值/… | `在 OpenClaw 或对应 AI 平台搜索「同花顺问财」安装` |
-| [东方财富 ClawBot](#东方财富-clawbot) | Skill | ✅ | 东方财富数字员工，金融数据查询、智能选股、个股/基金诊断、财报解读、宏观研究 | `阿里云平台搜索「东方财富ClawBot」` |
-| [中金公司 Skill（中金点睛）](#中金公司-skill中金点睛) | Skill | 💰 | 中金公司「中金点睛」平台，覆盖计算机、策略、宏观、新能源等领域首席分析师专属Skill，面向机构投资者提供研投… | `中金点睛平台` |
-| [国泰海通 灵犀 Skills](#国泰海通-灵犀-skills) | Skill | ❓ | 国泰海通证券「灵犀」官方技能群，查研报、查行情、查数据、出榜单、筛股票、自选股管理 | `国泰海通自有平台` |
+| [东方财富 ClawBot](#东方财富-clawbot) | Skill | ✅ | 东方财富数字员工，金融数据查询、智能选股、个股/基金诊断、财报解读、宏观研究 | [bailian.console.aliyun.com](https://bailian.console.aliyun.com) |
+| [中金公司 Skill（中金点睛）](#中金公司-skill中金点睛) | Skill | 💰 | 中金公司「中金点睛」平台，覆盖计算机、策略、宏观、新能源等领域首席分析师专属Skill，面向机构投资者提供研投… | [www.ciccwm.com](https://www.ciccwm.com) |
+| [国泰海通 灵犀 Skills](#国泰海通-灵犀-skills) | Skill | ❓ | 国泰海通证券「灵犀」官方技能群，查研报、查行情、查数据、出榜单、筛股票、自选股管理 | `君弘 App 搜索「灵犀Skills」一键安装（千问 / 华为小艺同步可搜）` |
 | [盈米基金 MCP](#盈米基金-mcp) | MCP | 💰 | 盈米基金AI开放平台，69个标准化MCP工具 + 16项核心技能组件，涵盖金融数据、投研服务（组合回测、蒙特卡… | `通过盈米AI开放平台获取 MCP 接入` |
-| [兴业证券 知己管家 & 投研Agent](#兴业证券-知己管家-投研agent) | Skill | ❓ | 兴业证券「优理宝」App内置C端「知己管家」（一句话交易/智能诊断/资讯总结）+ B端 investor-ha… | `兴业证券优理宝App` |
-| [FIN-SKILLS（财跃星辰）](#fin-skills财跃星辰) | Skill | ❓ | 第三方金融技能市场，上架 finstep-mcp（金融数据）、龙虎榜解读、个股异动解读、基金分析、A股日报生成… | `访问 fin-skills.finstep.cn 查看接入文档` |
-| [FinClaw（上财AIFinLab）](#finclaw上财aifinlab) | 框架 | ✅ | 上海财经大学AIFinLab开源项目，超1000个自研Skills，按银行/证券/保险/基金/期货/信托六大行… | `git clone https://github.com/aifinlab/FinCl…` |
-| [AI Berkshire](#ai-berkshire) | 框架 | ✅ | 以巴菲特/芒格价值投资框架为核心的多智能体研究系统，覆盖商业模式、护城河、管理层、估值与能力圈判断，自动产出长… | `git clone https://github.com/xbtlin/ai-berk…` |
+| [兴业证券 知己管家 & 投研Agent](#兴业证券-知己管家-投研agent) | Skill | ❓ | 兴业证券「优理宝」App内置C端「知己管家」（一句话交易/智能诊断/资讯总结）+ B端 investor-ha… | [www.xyzq.com.cn](https://www.xyzq.com.cn) |
+| [FIN-SKILLS（财跃星辰）](#fin-skills财跃星辰) | Skill | ❓ | 第三方金融技能市场，上架 finstep-mcp（金融数据）、龙虎榜解读、个股异动解读、基金分析、A股日报生成… | [fin-skills.finstep.cn](http://fin-skills.finstep.cn) |
+| [FinClaw（上财AIFinLab）](#finclaw上财aifinlab) | 框架 | ✅ | 上海财经大学AIFinLab开源项目，超1000个自研Skills，按银行/证券/保险/基金/期货/信托六大行… | git clone [GitHub 仓库](https://github.com/aifinlab/FinClaw) |
+| [AI Berkshire](#ai-berkshire) | 框架 | ✅ | 以巴菲特/芒格价值投资框架为核心的多智能体研究系统，覆盖商业模式、护城河、管理层、估值与能力圈判断，自动产出长… | git clone [GitHub 仓库](https://github.com/xbtlin/ai-berkshire) |
 
 ### 📰 News（新闻资讯）
 
@@ -156,6 +156,7 @@
 
 **类型**：CLI　|　**费用**：✅ 免费  
 **GitHub**：[github.com/jackwener/opencli](https://github.com/jackwener/opencli)  
+**官网**：[https://github.com/jackwener/opencli](https://github.com/jackwener/opencli)  
 **维护方**：jackwener  
 
 实时行情查询（A股/港股/美股），含PE/市值/换手率/涨跌停状态
@@ -175,6 +176,7 @@ npm install -g @jackwener/opencli
 
 **类型**：CLI　|　**费用**：✅ 免费  
 **GitHub**：[github.com/jackwener/opencli](https://github.com/jackwener/opencli)  
+**官网**：[https://github.com/jackwener/opencli](https://github.com/jackwener/opencli)  
 
 主力资金净流入排行（今日/5日/10日），支持主超/大/中/小单拆分
 
@@ -292,6 +294,7 @@ npm install -g @jackwener/opencli
 
 **类型**：MCP　|　**费用**：✅ 免费  
 **GitHub**：[github.com/CharmYue/ashare-mcp](https://github.com/CharmYue/ashare-mcp)  
+**官网**：[https://github.com/CharmYue/ashare-mcp](https://github.com/CharmYue/ashare-mcp)  
 **维护方**：CharmYue  
 
 生产级中国A股 MCP server，30个tool，akshare主源+baostock/tushare降级，实时行情/K线/资金流/龙虎榜/两融/财报/涨停池/筹码分布
@@ -311,6 +314,7 @@ cd ashare-mcp && uv sync && uv run ashare-mcp
 
 **类型**：MCP　|　**费用**：✅ 免费  
 **GitHub**：[github.com/openstockdata/stock-data-mcp](https://github.com/openstockdata/stock-data-mcp)  
+**官网**：[https://github.com/openstockdata/stock-data-mcp](https://github.com/openstockdata/stock-data-mcp)  
 **维护方**：openstockdata  
 
 43个tool覆盖A股/港股/美股/加密货币，多源自动故障转移，pip安装
@@ -366,7 +370,7 @@ pip install astock-mcp-server && astock-mcp-server
 ### BaoStock
 
 **类型**：Python　|　**费用**：✅ 免费  
-**地址**：[https://baostock.com](https://baostock.com)  
+**地址**：[baostock.com](https://baostock.com)  
 **维护方**：BaoStock Team  
 
 免费开源A股数据平台，无需注册，历史K线/财务数据/宏观数据/板块成分股，1990年至今
@@ -386,7 +390,7 @@ pip install baostock
 ### AKShare
 
 **类型**：Python　|　**费用**：✅ 免费  
-**地址**：[https://akshare.akfamily.xyz](https://akshare.akfamily.xyz)  
+**地址**：[akshare.akfamily.xyz](https://akshare.akfamily.xyz)  
 **维护方**：AKFamily  
 
 东方财富/新浪/腾讯等数据源聚合，实时行情/期货/期权/债券/基金/宏观，覆盖广但数据归属各来源方
@@ -405,7 +409,7 @@ pip install akshare
 ### Tushare Pro
 
 **类型**：Python　|　**费用**：⚠️ 免费增值  
-**地址**：[https://tushare.pro](https://tushare.pro)  
+**地址**：[tushare.pro](https://tushare.pro)  
 **维护方**：Tushare  
 
 高质量A股数据，财务/指数/套利/港股，数据质量较高但需要积分
@@ -424,7 +428,7 @@ pip install tushare
 ### Wind API
 
 **类型**：API　|　**费用**：💰 付费  
-**地址**：[https://www.wind.com.cn](https://www.wind.com.cn)  
+**地址**：[www.wind.com.cn](https://www.wind.com.cn)  
 **维护方**：万得信息  
 
 机构级金融数据，A股/债券/基金/宏观/衍生品全覆盖，机构标配，数据最全最准
@@ -443,7 +447,7 @@ Wind Terminal安装后自带Python接口 import WindPy
 ### 东方财富 Choice
 
 **类型**：API　|　**费用**：💰 付费  
-**地址**：[https://choice.eastmoney.com](https://choice.eastmoney.com)  
+**地址**：[choice.eastmoney.com](https://choice.eastmoney.com)  
 **维护方**：东方财富  
 
 东方财富金融数据终端，A股/期货/期权/基金/宏观，Python API，机构级数据
@@ -462,7 +466,7 @@ Wind Terminal安装后自带Python接口 import WindPy
 ### 同花顺 iFinD
 
 **类型**：API　|　**费用**：💰 付费  
-**地址**：[https://www.10jqka.com.cn](https://www.10jqka.com.cn)  
+**地址**：[www.10jqka.com.cn](https://www.10jqka.com.cn)  
 **维护方**：同花顺  
 
 同花顺投研数据，财报/估值/行业/宏观，Python API
@@ -476,7 +480,7 @@ Wind Terminal安装后自带Python接口 import WindPy
 ### 广发证券 Skill
 
 **类型**：Skill　|　**费用**：❓ 未知  
-**地址**：[hd.gf.com.cn/gfwskill2026/#/index](hd.gf.com.cn/gfwskill2026/#/index)  
+**地址**：[hd.gf.com.cn](https://hd.gf.com.cn/gfwskill2026/)  
 **维护方**：广发证券  
 
 广发证券官方技能，8大核心功能：股票基础信息、财务对比、龙虎榜追踪、基金定投计算、ETF资金异动监测与筛选、基金产品信息查询、ETF实时榜单
@@ -496,7 +500,7 @@ Wind Terminal安装后自带Python接口 import WindPy
 ### 国信证券 Skill
 
 **类型**：Skill　|　**费用**：❓ 未知  
-**地址**：[https://weixin.guosen.com.cn/gs/xxskills/#architecture](https://weixin.guosen.com.cn/gs/xxskills/#architecture)  
+**地址**：[skillhub.cloud.tencent.com](https://skillhub.cloud.tencent.com/enterprise/org-c35jqdjt)  
 **维护方**：国信证券  
 
 国信证券「小信智慧助手」官方技能，6大核心功能：智能选股、ETF筛选、基金对比、宏观/行情/财务数据查询
@@ -506,14 +510,14 @@ Wind Terminal安装后自带Python接口 import WindPy
 **输出格式**：数据表格 + 榜单  
 **接入方式**：官方平台「小信智慧助手」/ 小艺Claw / Coze平台  
 
-**接入**：[https://weixin.guosen.com.cn/gs/xxskills/#architecture](https://weixin.guosen.com.cn/gs/xxskills/#architecture)
+**接入**：[skillhub.cloud.tencent.com](https://skillhub.cloud.tencent.com/enterprise/org-c35jqdjt)
 
 ---
 
 ### 天天基金 Skill
 
 **类型**：Skill　|　**费用**：⚠️ 免费部分  
-**地址**：[天天基金App](天天基金App)  
+**地址**：[www.1234567.com.cn](https://www.1234567.com.cn)  
 **维护方**：东方财富（天天基金）  
 
 天天基金App官方技能群，14个核心技能：基金信息查询、自选管理；第三方深度整合：天工「Fund Analyzer Pro」提供基金深度诊断、比较、持仓分析
@@ -523,7 +527,7 @@ Wind Terminal安装后自带Python接口 import WindPy
 **输出格式**：基金数据 / 诊断报告 / 持仓分析  
 **接入方式**：天天基金App官方 / 天工平台第三方  
 
-**接入**：[天天基金App](天天基金App)
+**接入**：[www.1234567.com.cn](https://www.1234567.com.cn)
 
 ---
 
@@ -531,6 +535,7 @@ Wind Terminal安装后自带Python接口 import WindPy
 
 **类型**：MCP　|　**费用**：✅ 免费  
 **GitHub**：[github.com/27dream/mcp-eastmoney](https://github.com/27dream/mcp-eastmoney)  
+**官网**：[https://github.com/27dream/mcp-eastmoney](https://github.com/27dream/mcp-eastmoney)  
 **维护方**：27dream  
 
 东方财富 MCP 服务器，A股实时行情 + 主力资金 + 板块 + K线，使用官方公开延时接口，免 API Key 开箱即用
@@ -560,9 +565,9 @@ uvx mcp-eastmoney
 **输入**：intent=A股盘后复盘 / 涨停梯队 / 板块轮动 / 资金流研究 / stock_code=可选  
 **输出覆盖**：K线 / 涨停梯队 / 资金流 / 龙虎榜 / 研报 / 公告 / 复盘  
 **输出格式**：远程 HTTP MCP（以 tools/list 为准）  
-**接入方式**：远程 HTTP MCP（https://stock.quicktiny.cn/api/mcp），需在 Developer Console 申请 API Key  
+**接入方式**：远程 HTTP MCP 接入（端点 `https://stock.quicktiny.cn/api/mcp`，仅接受 POST 请求），需在 Developer Console 申请 API Key  
 
-**接入**：[https://stock.quicktiny.cn/api/mcp/setup](https://stock.quicktiny.cn/api/mcp/setup)
+**接入**：[stock.quicktiny.cn](https://stock.quicktiny.cn/api/mcp/setup)
 
 ---
 
@@ -570,6 +575,7 @@ uvx mcp-eastmoney
 
 **类型**：MCP　|　**费用**：✅ 免费  
 **GitHub**：[github.com/ccq1/cn-financial-mcp](https://github.com/ccq1/cn-financial-mcp)  
+**官网**：[https://github.com/ccq1/cn-financial-mcp](https://github.com/ccq1/cn-financial-mcp)  
 **维护方**：ccq1  
 
 cn 金融数据 MCP 服务器，工具包覆盖 A股行情、财报、估值、板块、市场全景、新闻及宏观指标
@@ -590,6 +596,7 @@ git clone https://github.com/ccq1/cn-financial-mcp && pip install -e .
 
 **类型**：MCP　|　**费用**：✅ 免费  
 **GitHub**：[github.com/zwldarren/akshare-one-mcp](https://github.com/zwldarren/akshare-one-mcp)  
+**官网**：[https://github.com/zwldarren/akshare-one-mcp](https://github.com/zwldarren/akshare-one-mcp)  
 **维护方**：zwldarren  
 
 基于 akshare-one 的中国股票市场数据 MCP Server，MIT 开源，支持 Smithery / uvx 一键安装
@@ -611,6 +618,7 @@ npx -y @smithery/cli install @zwldarren/akshare-one-mcp --client claude
 **类型**：框架　|　**费用**：✅ 免费  
 **费用说明**：AxData Research-Only License，面向个人学习与非商业研究，商用需另行授权  
 **GitHub**：[github.com/electkismet/AxData](https://github.com/electkismet/AxData)  
+**官网**：[https://github.com/electkismet/AxData](https://github.com/electkismet/AxData)  
 **维护方**：electkismet  
 
 开源量化数据库框架，覆盖通达信、巨潮、腾讯财经、新浪财经、东方财富、财联社、开盘红等公开源接口，提供 Python SDK、CLI 与本地 API 服务
@@ -632,6 +640,7 @@ pip install axdata
 **类型**：API　|　**费用**：⚠️ 免费额度  
 **费用说明**：官网申请 API Key，免费额度与计费以官方说明为准  
 **GitHub**：[github.com/HiThink-Tech/Financial-API](https://github.com/HiThink-Tech/Financial-API)  
+**官网**：[https://github.com/HiThink-Tech/Financial-API](https://github.com/HiThink-Tech/Financial-API)  
 **维护方**：同花顺 HiThink（官方维护）  
 
 同花顺（HiThink）官方 A股金融数据服务，提供股票实时行情、历史行情、财务报表、指数、板块、涨停等数据，支持 API / MCP / CLI / Python 四种接入方式
@@ -641,7 +650,7 @@ pip install axdata
 **输出格式**：API / MCP / CLI / Python SDK  
 **接入方式**：API / MCP / CLI / Python，需在官方平台申请 Key  
 
-**接入**：[https://github.com/HiThink-Tech/Financial-API](https://github.com/HiThink-Tech/Financial-API)
+**接入**：[GitHub 仓库](https://github.com/HiThink-Tech/Financial-API)
 
 ---
 
@@ -672,6 +681,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./installer/runtime/inst
 **类型**：框架　|　**费用**：✅ 免费  
 **费用说明**：非商业许可证，禁止商业用途  
 **GitHub**：[github.com/jundizhou/easy-stock](https://github.com/jundizhou/easy-stock)  
+**官网**：[https://github.com/jundizhou/easy-stock](https://github.com/jundizhou/easy-stock)  
 **维护方**：jundizhou  
 
 面向个人投资者的本地股票分析工具，自动抓取并整理行情、财务指标与技术形态，生成可视化看板
@@ -730,6 +740,7 @@ npm install -g @jackwener/opencli
 **类型**：框架　|　**费用**：✅ 免费  
 **费用说明**：GPL-3.0 开源  
 **GitHub**：[github.com/sansan0/TrendRadar](https://github.com/sansan0/TrendRadar)  
+**官网**：[https://github.com/sansan0/TrendRadar](https://github.com/sansan0/TrendRadar)  
 **维护方**：sansan0  
 
 全网热点与舆情监控工具，聚合多平台热搜榜单，支持关键词热度趋势与 MCP 接入，可用于市场情绪与事件驱动监测
@@ -753,6 +764,7 @@ git clone https://github.com/sansan0/TrendRadar && pip install -r requirements.t
 
 **类型**：MCP　|　**费用**：⚠️ 免费额度  
 **GitHub**：[github.com/guangxiangdebizi/FinanceMCP-Alpha](https://github.com/guangxiangdebizi/FinanceMCP-Alpha)  
+**官网**：[https://github.com/guangxiangdebizi/FinanceMCP-Alpha](https://github.com/guangxiangdebizi/FinanceMCP-Alpha)  
 **维护方**：guangxiangdebizi  
 
 WorldQuant 101 Alpha 因子计算，TypeScript，基于Tushare，输出Alpha3/13/15/16/44/50/55因子值及分位数信号
@@ -772,6 +784,7 @@ npm install finance-mcp-alpha && npm start
 
 **类型**：框架　|　**费用**：✅ 免费  
 **GitHub**：[github.com/microsoft/qlib](https://github.com/microsoft/qlib)  
+**官网**：[https://github.com/microsoft/qlib](https://github.com/microsoft/qlib)  
 **维护方**：Microsoft  
 
 微软AI量化投资平台，支持自动因子挖掘/机器学习/回测，数据结构专为量化设计
@@ -792,6 +805,7 @@ pip install pyqlib
 **类型**：框架　|　**费用**：✅ 免费  
 **费用说明**：仓库未标注开源许可证，商用前请先确认授权  
 **GitHub**：[github.com/QuantaAlpha/QuantaAlpha](https://github.com/QuantaAlpha/QuantaAlpha)  
+**官网**：[https://github.com/QuantaAlpha/QuantaAlpha](https://github.com/QuantaAlpha/QuantaAlpha)  
 **维护方**：QuantaAlpha  
 
 LLM + 进化策略自动挖掘、演化与验证量化 Alpha 因子，只需描述研究方向即可自动完成因子发现与自演化轨迹验证
@@ -813,6 +827,7 @@ git clone https://github.com/QuantaAlpha/QuantaAlpha && SETUPTOOLS_SCM_PRETEND_V
 **类型**：框架　|　**费用**：✅ 免费  
 **费用说明**：MIT 开源；需自备 DeepSeek API Key（官方说明约 $0.001 / 次查询）  
 **GitHub**：[github.com/Miasyster/QuantGPT](https://github.com/Miasyster/QuantGPT)  
+**官网**：[https://github.com/Miasyster/QuantGPT](https://github.com/Miasyster/QuantGPT)  
 **维护方**：Miasyster  
 
 Agent 驱动的 Alpha 工厂：LLM 自主设计、回测并提交因子到 WorldQuant BRAIN，支持 HTTP 传输与前端控制台
@@ -834,6 +849,7 @@ git clone https://github.com/Miasyster/QuantGPT && pip install -e .
 **类型**：MCP　|　**费用**：✅ 免费  
 **费用说明**：各子工具许可证以仓库说明为准  
 **GitHub**：[github.com/wolfjkd/tradex-hub](https://github.com/wolfjkd/tradex-hub)  
+**官网**：[https://github.com/wolfjkd/tradex-hub](https://github.com/wolfjkd/tradex-hub)  
 **维护方**：wolfjkd  
 
 面向量化与投研的 MCP 工具集线器，聚合 129 个 MCP 工具，统一接入数据、因子、回测与交易相关能力
@@ -855,6 +871,7 @@ git clone https://github.com/wolfjkd/tradex-hub
 **类型**：Skill　|　**费用**：✅ 免费  
 **费用说明**：Apache-2.0 开源  
 **GitHub**：[github.com/RKiding/Awesome-finance-skills](https://github.com/RKiding/Awesome-finance-skills)  
+**官网**：[https://github.com/RKiding/Awesome-finance-skills](https://github.com/RKiding/Awesome-finance-skills)  
 **维护方**：RKiding  
 
 金融领域 Agent Skills 合集，以标准 Skill 形式封装财报分析、估值建模、行业研究等能力，一条 npx 命令即可安装到 Claude Code 等客户端
@@ -878,6 +895,7 @@ npx skills add RKiding/Awesome-finance-skills
 
 **类型**：Skill　|　**费用**：✅ 免费  
 **GitHub**：[github.com/moyang11111/qtrade](https://github.com/moyang11111/qtrade)  
+**官网**：[https://github.com/moyang11111/qtrade](https://github.com/moyang11111/qtrade)  
 **维护方**：moyang11111  
 
 A股量化交易框架，15种内置策略，支持数据获取/策略回测/参数优化/实盘模拟/风控/可视化完整工作流。Pullback20D 策略年化验证胜率42%
@@ -896,7 +914,7 @@ git clone && pip install -r requirements.txt
 ### VeighNa
 
 **类型**：框架　|　**费用**：✅ 免费  
-**地址**：[https://www.vnpy.com](https://www.vnpy.com)  
+**地址**：[www.vnpy.com](https://www.vnpy.com)  
 **维护方**：VeighNa Team  
 
 开源量化交易框架，事件驱动架构，支持数据管理/策略回测/实盘交易/风控，可对接多家券商
@@ -916,6 +934,7 @@ pip install vnpy
 
 **类型**：框架　|　**费用**：✅ 免费  
 **GitHub**：[github.com/AI4Finance-Foundation/FinRL](https://github.com/AI4Finance-Foundation/FinRL)  
+**官网**：[https://github.com/AI4Finance-Foundation/FinRL](https://github.com/AI4Finance-Foundation/FinRL)  
 **维护方**：AI4Finance  
 
 深度强化学习量化交易框架，支持DDPG/PPO/SAC等算法，对接OpenAI Gym
@@ -935,7 +954,7 @@ pip install finrl
 
 **类型**：Skill　|　**费用**：⚠️ 限时免费  
 **费用说明**：新用户每日500-1000次调用额度  
-**地址**：[华泰证券App](华泰证券App)  
+**地址**：[www.htsc.com.cn](https://www.htsc.com.cn)  
 **维护方**：华泰证券  
 
 华泰证券官方技能，深度集成于华泰App，五大核心功能：金融分析与资讯、行情检索、A股模拟交易、条件选股、自选股管理
@@ -957,6 +976,7 @@ pip install finrl
 **类型**：框架　|　**费用**：✅ 免费  
 **费用说明**：Apache-2.0 开源；LLM 调用成本自付  
 **GitHub**：[github.com/simonlin1212/TradingAgents-astock](https://github.com/simonlin1212/TradingAgents-astock)  
+**官网**：[https://github.com/simonlin1212/TradingAgents-astock](https://github.com/simonlin1212/TradingAgents-astock)  
 **维护方**：simonlin1212  
 
 基于 TradingAgents 的多智能体 A股分析框架，集成 8 大维度 A股数据源（技术面/资金面/基本面/新闻/公告/龙虎榜等），输出中文买卖与仓位建议
@@ -978,6 +998,7 @@ git clone https://github.com/simonlin1212/TradingAgents-astock && pip install -r
 **类型**：框架　|　**费用**：✅ 免费  
 **费用说明**：AGPL-3.0，注意网络服务场景的传染性条款  
 **GitHub**：[github.com/YoungCan-Wang/WyckoffTradingAgent](https://github.com/YoungCan-Wang/WyckoffTradingAgent)  
+**官网**：[https://github.com/YoungCan-Wang/WyckoffTradingAgent](https://github.com/YoungCan-Wang/WyckoffTradingAgent)  
 **维护方**：YoungCan-Wang  
 
 威科夫（Wyckoff）方法量化交易 Agent，自动识别吸筹/派发阶段、量价结构并给出结构买卖点信号
@@ -1001,6 +1022,7 @@ git clone https://github.com/YoungCan-Wang/WyckoffTradingAgent && pip install -r
 
 **类型**：框架　|　**费用**：✅ 免费  
 **GitHub**：[github.com/TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)  
+**官网**：[https://github.com/TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)  
 **维护方**：TauricResearch  
 
 多Agent LLM量化投研框架，分析师团队（基本面/舆情/技术面/新闻）+ 交易员 + 风控，多模型支持（GPT-5/Gemini/Claude/DeepSeek）
@@ -1019,7 +1041,7 @@ pip install tradingagents
 ### 同花顺问财 SkillHub
 
 **类型**：Skill　|　**费用**：⚠️ 免费部分  
-**地址**：[https://www.iwencai.com/skillhub](https://www.iwencai.com/skillhub)  
+**地址**：[www.iwencai.com](https://www.iwencai.com/skillhub)  
 **维护方**：同花顺  
 
 同花顺官方技能市场，股基债期全品类数据查询与分析（选股、诊断、财经搜索、产业链），上百个社区技能（DCF估值/量化策略等）
@@ -1039,7 +1061,7 @@ pip install tradingagents
 ### 东方财富 ClawBot
 
 **类型**：Skill　|　**费用**：✅ 免费  
-**地址**：[阿里云平台](阿里云平台)  
+**地址**：[bailian.console.aliyun.com](https://bailian.console.aliyun.com)  
 **维护方**：东方财富  
 
 东方财富数字员工，金融数据查询、智能选股、个股/基金诊断、财报解读、宏观研究
@@ -1049,7 +1071,7 @@ pip install tradingagents
 **输出格式**：自然语言 + 数据  
 **接入方式**：阿里云平台（搜索「东方财富ClawBot」）  
 
-**接入**：[阿里云平台搜索「东方财富ClawBot」](阿里云平台搜索「东方财富ClawBot」)
+**接入**：[bailian.console.aliyun.com](https://bailian.console.aliyun.com)
 
 ---
 
@@ -1057,7 +1079,7 @@ pip install tradingagents
 
 **类型**：Skill　|　**费用**：💰 机构付费  
 **费用说明**：面向机构付费用户  
-**地址**：[中金点睛平台](中金点睛平台)  
+**地址**：[www.ciccwm.com](https://www.ciccwm.com)  
 **维护方**：中金公司  
 
 中金公司「中金点睛」平台，覆盖计算机、策略、宏观、新能源等领域首席分析师专属Skill，面向机构投资者提供研投支持
@@ -1067,14 +1089,15 @@ pip install tradingagents
 **输出格式**：分析师研报 + 策略观点  
 **接入方式**：注册登录「中金点睛」平台  
 
-**接入**：[中金点睛平台](中金点睛平台)
+**接入**：[www.ciccwm.com](https://www.ciccwm.com)
 
 ---
 
 ### 国泰海通 灵犀 Skills
 
 **类型**：Skill　|　**费用**：❓ 未知  
-**地址**：[国泰海通平台](国泰海通平台)  
+**平台入口**：[千问平台（灵犀 Skills 已入驻）](https://www.qianwen.com)  
+**平台入口**：[华为小艺](https://xiaoyi.huawei.com)  
 **维护方**：国泰海通证券  
 
 国泰海通证券「灵犀」官方技能群，查研报、查行情、查数据、出榜单、筛股票、自选股管理
@@ -1082,16 +1105,14 @@ pip install tradingagents
 **输入**：intent=研报 / 行情 / 榜单 / 选股 / 自选股  
 **输出覆盖**：查研报 / 查行情 / 查数据 / 出榜单 / 筛股票 / 自选股管理  
 **输出格式**：研报摘要 / 行情数据 / 榜单  
-**接入方式**：国泰海通自有平台  
-
-**接入**：[国泰海通自有平台](国泰海通自有平台)
+**接入方式**：君弘 App 搜索「灵犀Skills」一键安装（千问 / 华为小艺同步可搜）  
 
 ---
 
 ### 盈米基金 MCP
 
 **类型**：MCP　|　**费用**：💰 联系销售  
-**地址**：[盈米AI开放平台](盈米AI开放平台)  
+**地址**：[www.yingmi.cn](https://www.yingmi.cn)  
 **维护方**：盈米基金  
 
 盈米基金AI开放平台，69个标准化MCP工具 + 16项核心技能组件，涵盖金融数据、投研服务（组合回测、蒙特卡洛模拟）、投顾内容与策略服务
@@ -1111,7 +1132,7 @@ pip install tradingagents
 ### 兴业证券 知己管家 & 投研Agent
 
 **类型**：Skill　|　**费用**：❓ 未知  
-**地址**：[兴业证券优理宝App](兴业证券优理宝App)  
+**地址**：[www.xyzq.com.cn](https://www.xyzq.com.cn)  
 **维护方**：兴业证券  
 
 兴业证券「优理宝」App内置C端「知己管家」（一句话交易/智能诊断/资讯总结）+ B端 investor-harness 投研Agent（27个技能模块）
@@ -1121,14 +1142,14 @@ pip install tradingagents
 **输出格式**：交易信号 / 诊断报告 / 资讯摘要  
 **接入方式**：C端：优理宝App；B端：investor-harness 投研Agent  
 
-**接入**：[兴业证券优理宝App](兴业证券优理宝App)
+**接入**：[www.xyzq.com.cn](https://www.xyzq.com.cn)
 
 ---
 
 ### FIN-SKILLS（财跃星辰）
 
 **类型**：Skill　|　**费用**：❓ 未知  
-**地址**：[https://fin-skills.finstep.cn](https://fin-skills.finstep.cn)  
+**地址**：[fin-skills.finstep.cn](http://fin-skills.finstep.cn)  
 **维护方**：财跃星辰  
 
 第三方金融技能市场，上架 finstep-mcp（金融数据）、龙虎榜解读、个股异动解读、基金分析、A股日报生成等技能，面向开发者标准化接入
@@ -1136,12 +1157,9 @@ pip install tradingagents
 **输入**：intent=龙虎榜解读 / 个股异动 / 基金分析 / A股日报  
 **输出覆盖**：龙虎榜解读 / 个股异动解读 / 基金分析 / A股日报生成  
 **输出格式**：MCP JSON / 自然语言报告  
-**接入方式**：安装CLI工具将技能市场接入自己的AI Agent  
+**接入方式**：访问 fin-skills.finstep.cn 查看接入文档（站点仅支持 HTTP）  
 
-**安装**：
-```bash
-访问 fin-skills.finstep.cn 查看接入文档
-```
+**接入**：[fin-skills.finstep.cn](http://fin-skills.finstep.cn)
 
 ---
 
@@ -1149,6 +1167,7 @@ pip install tradingagents
 
 **类型**：框架　|　**费用**：✅ 免费  
 **GitHub**：[github.com/aifinlab/FinClaw](https://github.com/aifinlab/FinClaw)  
+**官网**：[https://github.com/aifinlab/FinClaw](https://github.com/aifinlab/FinClaw)  
 **维护方**：上财AIFinLab  
 
 上海财经大学AIFinLab开源项目，超1000个自研Skills，按银行/证券/保险/基金/期货/信托六大行业划分，提供统一金融数据抽象层，原生兼容OpenClaw Agent OS
@@ -1170,6 +1189,7 @@ git clone https://github.com/aifinlab/FinClaw
 **类型**：框架　|　**费用**：✅ 免费  
 **费用说明**：MIT 开源；LLM 调用成本自付  
 **GitHub**：[github.com/xbtlin/ai-berkshire](https://github.com/xbtlin/ai-berkshire)  
+**官网**：[https://github.com/xbtlin/ai-berkshire](https://github.com/xbtlin/ai-berkshire)  
 **维护方**：xbtlin  
 
 以巴菲特/芒格价值投资框架为核心的多智能体研究系统，覆盖商业模式、护城河、管理层、估值与能力圈判断，自动产出长期价值研究报告
@@ -1304,14 +1324,14 @@ GitHub Actions 每周一 09:00 UTC 自动执行：
 | **国泰海通** | 券商 | 6 个 | 研报搜索 / 实时行情 / 金融数据 / 市场热榜 | 华为小艺 / OpenClaw / ClawHub / 千问 | 君弘APP搜索「灵犀Skills」→ 领资格 → 一键复制安装 |
 | **华泰证券** | 券商 | 5 个 | 金融分析与资讯查询 / 金融指标与行情综合检索 / A股模拟交易 / 条件选股 | 涨乐App / OpenClaw | AI涨乐App → 复制提示词&Key → 粘贴安装 |
 | **中金公司** | 券商 | 6 个 | 行情数据 / 财务分析 / 热榜资讯 / 分析师「老于」数字分身 | 中金点睛 / OpenClaw / 千问 | 中金财富 Skills 中心注册 → 获取 API Key → 一键安装 |
-| **国信证券** | 券商 | 6 个 | 智能选股 / ETF筛选 / 基金对比 / 宏观数据查询 | 小信助手 / OpenClaw / Coze | https://weixin.guosen.com.cn/gs/xxskill… |
+| **国信证券** | 券商 | 6 个 | 智能选股 / ETF筛选 / 基金对比 / 宏观数据查询 | 小信助手 / OpenClaw / Coze | [skillhub.cloud.tencent.com](https://skillhub.cloud.tencent.com/enterprise/org-c35jqdjt) |
 | **中信建投** | 券商 | 5 个 | AI蜻蜓翼答 / 智研多资产配置 / 蜻蜓 Skill·ETF 筛选 / 蜻蜓 Skill·个股研判 | 蜻蜓点金 App / 机构端平台 / 蜻蜓 Skill 广场 | 蜻蜓点金 App 内置使用 |
 | **广东博众** | 券商 | 3 个 | 股票智能分析 / 量化成长选股助手 / 股票情绪分析 | Coze / 万得 AIFin Market | Coze技能商店 / 万得AIFin Market |
 | **兴业证券** | 券商 | 5 个 | 兴证智达 Skill Hub / 兴业证券八大 Skills / 兴业证券智能投资助手 / 知己管家（优理宝 App） | 兴证智达 / 自有平台 / 腾讯 SkillHub / WorkBuddy / 千问 | 内部投顾体系接入 |
-| **万得 (Wind)** | 数据商 | 3 个 | WindClaw / AIFin Market / 万得 AI (Wind Alice) | 桌面端 / WorkBuddy / OpenClaw / Hermes Agent / 独立App +… | 下载安装 |
+| **万得 (Wind)** | 数据商 | 3 个 | WindClaw / AIFin Market / 万得 AI (Wind Alice) | 桌面端 / WorkBuddy / OpenClaw / Hermes Agent / 独立App + 微信 | 下载安装 |
 | **同花顺** | 数据商 | 2 个 | iFinD MCP / 问财 SkillHub | MCP协议 / OpenClaw / Claude / ChatGPT / Cursor | MCP协议接入 |
 | **盈米基金** | 数据商 | 1 个 | 盈米MCP | MCP / Coze / Dify / Cursor | 联系盈米AI开放平台 |
-| **易方达基金** | 基金 | 2 个 | ETF查询 / 场外指数基金查询 | WorkBuddy / OpenClaw / Hermes Agent / ArkClaw / 千问 | 微信小程序「指数直通车」→ AI Skills → 获取 API Key → … |
+| **易方达基金** | 基金 | 2 个 | ETF查询 / 场外指数基金查询 | WorkBuddy / OpenClaw / Hermes Agent / ArkClaw / 千问 | 微信小程序「指数直通车」→ AI Skills → 获取 API Key → 复制指令 → 发送给 WorkBuddy |
 | **南方基金** | 基金 | 2 个 | AI梦 / 南南FUND搭子 | 南方基金App | App内置，未开放外部Skill |
 | **天弘基金** | 基金 | 1 个 | FinAgent 金融智能体系统 | 内部系统 | 内部系统，未开放外部Skill |
 | **中国平安** | 银行保险 | 1 个 | 智小安AI保险顾问 | 平安旗下App | 内部平台为主，未明确开放外部Skill |
@@ -1320,7 +1340,7 @@ GitHub Actions 每周一 09:00 UTC 自动执行：
 | **蚂蚁数科** | 平台 | 2 个 | Agentar 金融智能体平台 / 支小宝金融场景能力 | Agentar / 百宝箱 / 支付宝 | 蚂蚁数科官网申请试用 / 企业对接 |
 | **腾讯（WorkBuddy 金融版）** | 平台 | 2 个 | WorkBuddy 金融版专家智能体 / 金融专家团协同能力 | WorkBuddy | 腾讯 WorkBuddy 官网申请 / 企业对接 |
 | **阿里巴巴（千问开放平台）** | 平台 | 2 个 | 千问金融智能体专区 / 机构智能体分发入口 | 千问 | 千问开放平台搜索机构名直接使用 |
-| **中国银河证券** | 券商 | 6 个 | 星耀数智金融数据 Skill / 星耀数智技术面指标 Skill / 星耀数智基本面指标 Skill / 星耀数智因子… | 腾讯 SkillHub / WorkBuddy / 银河 PB 交易体系 / 机构端 | SkillHub 一键安装；或 gitee 克隆 xysz 项目，向营业部申请… |
+| **中国银河证券** | 券商 | 6 个 | 星耀数智金融数据 Skill / 星耀数智技术面指标 Skill / 星耀数智基本面指标 Skill / 星耀数智因子分析 S… | 腾讯 SkillHub / WorkBuddy / 银河 PB 交易体系 / 机构端 | SkillHub 一键安装；或 gitee 克隆 xysz 项目，向营业部申请 API 账号密码 |
 | **国投证券** | 券商 | 4 个 | 智能选股 / 行情数据 / 基金对比 / 行业拥挤度 | 国投证券 Skills 中心 / 腾讯 SkillHub | 官网 Skills 中心登录后下载；WorkBuddy 一键安装 |
 | **东吴证券** | 券商 | 6 个 | 东吴秀财 GPT / 量化投研 Skills（金工团队） / 东吴之声（AI 投顾） / 智能「小水滴」 | 东吴秀财 App / 公司内部体系 / 机构端 / 东吴金工 / 千问 | 自有 App 与内部业务体系接入 |
 
@@ -1408,4 +1428,4 @@ MIT — 详见 [LICENSE](./LICENSE)
 
 ---
 
-*本文件由 `scripts/generate_readme.py` 自动从 `data/tools.json` / `data/institution-skills.json` / `data/institution-dynamics.json` 生成，最后更新：2026-09-21 11:15*
+*本文件由 `scripts/generate_readme.py` 自动从 `data/tools.json` / `data/institution-skills.json` / `data/institution-dynamics.json` 生成，最后更新：2026-09-21 11:54*
