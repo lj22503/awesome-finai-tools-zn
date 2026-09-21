@@ -1316,7 +1316,9 @@ GitHub Actions 每周一 09:00 UTC 自动执行：
 | **中国平安** | 银行保险 | 1 个 | 智小安AI保险顾问 | 平安旗下App | 内部平台为主，未明确开放外部Skill |
 | **招商银行** | 银行保险 | 1 个 | 「小助」系列智能体 | 内部使用 | 内部使用，未开放外部Skill |
 | **工商银行** | 银行保险 | 1 个 | AI数字员工 | 内部使用 | 内部使用，未开放外部Skill |
-| **蚂蚁数科** | 其他 | 2 个 | Agentar 金融智能体平台 / 支小宝金融场景能力 | Agentar / 百宝箱 / 支付宝 | 蚂蚁数科官网申请试用 / 企业对接 |
+| **蚂蚁数科** | 平台 | 2 个 | Agentar 金融智能体平台 / 支小宝金融场景能力 | Agentar / 百宝箱 / 支付宝 | 蚂蚁数科官网申请试用 / 企业对接 |
+| **腾讯（WorkBuddy 金融版）** | 平台 | 2 个 | WorkBuddy 金融版专家智能体 / 金融专家团协同能力 | WorkBuddy | 腾讯 WorkBuddy 官网申请 / 企业对接 |
+| **阿里巴巴（千问开放平台）** | 平台 | 2 个 | 千问金融智能体专区 / 机构智能体分发入口 | 千问 | 千问开放平台搜索机构名直接使用 |
 
 > 📊 完整数据见 [data/institution-skills.json](./data/institution-skills.json)
 
@@ -1326,6 +1328,8 @@ GitHub Actions 每周一 09:00 UTC 自动执行：
 
 ### 变化摘要
 
+- 腾讯：WorkBuddy 金融版（2026-09-03）上线 80+ 金融专属专家与专家团，主打开放式 AI 智能工作台，已服务中金公司、国投证券等 100+ 家金融机构。
+- 阿里巴巴：千问开放平台（2026-09-07）首批集中上线 12 个金融类智能体，兴业证券、国泰海通、中金财富、易方达基金等机构同步入驻。
 - 广发证券：Skill 矩阵从 IMA / Coze / 华为小艺 / OpenClaw 扩展至 WorkBuddy、扣子等平台，接入面进一步铺开。
 - 国泰海通：君弘「灵犀 Skills」在华为小艺 / OpenClaw 之外新增千问渠道，行情与研报能力多平台分发。
 - 中金公司：推出「点睛 AI 双引擎」——分析师专属 Skill（投研框架与观点）与 MCP（数据供给）分离，可组合接入外部 Agent。
@@ -1343,9 +1347,9 @@ GitHub Actions 每周一 09:00 UTC 自动执行：
 
 华为小艺、OpenClaw、IMA、Coze、WorkBuddy、扣子、千问等平台同时成为机构 Skill 的上架渠道。同一份 Skill 能力跨平台分发成为常态，接入说明中「一键复制安装」逐步替代传统 API Key 申请流程，普通用户的获取门槛持续下降。
 
-**趋势三：大厂 Agent 平台下场**
+**趋势三：大厂 Agent 平台集中下场**
 
-蚂蚁数科 Agentar 等大厂平台以「金融智能体开发平台」定位进入市场，提供知识库、工具编排、风控合规组件，与券商自建 Skill 形成互补——前者提供底座，后者提供专业内容。
+腾讯 WorkBuddy 金融版、阿里千问开放平台、蚂蚁数科 Agentar 等大厂平台 以「金融智能体开发平台 / 分发入口」定位集中下场：前者提供工作台底座与专家编排能力，后者提供流量入口与机构智能体分发。与券商自建 Skill 形成互补——大厂给底座和渠道，机构给专业内容与合规能力。
 
 **对开发者的启示**：优先接入 MCP 获取标准数据，再用券商 Skill 补齐方法论与观点；两者解耦后可按场景自由组合，避免绑定单一机构生态。
 
@@ -1370,4 +1374,4 @@ MIT — 详见 [LICENSE](./LICENSE)
 
 ---
 
-*本文件由 `scripts/generate_readme.py` 自动从 `data/tools.json` / `data/institution-skills.json` / `data/institution-dynamics.json` 生成，最后更新：2026-09-21 10:32*
+*本文件由 `scripts/generate_readme.py` 自动从 `data/tools.json` / `data/institution-skills.json` / `data/institution-dynamics.json` 生成，最后更新：2026-09-21 10:47*

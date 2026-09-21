@@ -2,7 +2,7 @@
 
 ## 网站/仓库简介
 
-Awesome FinAI Tools 是中国金融 AI 工具全景图（lj22503/awesome-finai-tools-zn），收录可接入 AI Agent 的 Market Data MCP、量化框架、券商 Skills、交易接口、数据 API，共 55 个工具、18 家机构 Skill。每周自动巡检 GitHub / npm / PyPI 更新。数据更新日期：2026-09-21。
+Awesome FinAI Tools 是中国金融 AI 工具全景图（lj22503/awesome-finai-tools-zn），收录可接入 AI Agent 的 Market Data MCP、量化框架、券商 Skills、交易接口、数据 API，共 55 个工具、20 家机构 Skill。每周自动巡检 GitHub / npm / PyPI 更新。数据更新日期：2026-09-21。
 
 ## 核心页面
 
@@ -117,7 +117,9 @@ Awesome FinAI Tools 是中国金融 AI 工具全景图（lj22503/awesome-finai-t
 | 中国平安 | 银行保险 | 1 | 智小安AI保险顾问 |
 | 招商银行 | 银行保险 | 1 | 「小助」系列智能体 |
 | 工商银行 | 银行保险 | 1 | AI数字员工 |
-| 蚂蚁数科 | 其他 | 2 | Agentar 金融智能体平台 / 支小宝金融场景能力 |
+| 蚂蚁数科 | 平台 | 2 | Agentar 金融智能体平台 / 支小宝金融场景能力 |
+| 腾讯（WorkBuddy 金融版） | 平台 | 2 | WorkBuddy 金融版专家智能体 / 金融专家团协同能力 |
+| 阿里巴巴（千问开放平台） | 平台 | 2 | 千问金融智能体专区 / 机构智能体分发入口 |
 
 ## 搜索关键词（命中词）
 
