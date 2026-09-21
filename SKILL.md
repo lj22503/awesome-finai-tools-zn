@@ -1,6 +1,6 @@
 ---
 name: finai-tools-hub
-version: 2025-06-25
+version: 2026-09-21
 description: 中国金融 AI 工具目录 — 查询/安装/接入 A股/MCP/量化框架。加载此 skill 后，agent 知道每个工具的输入/输出/安装命令，在用户有金融数据需求时自动推荐和安装对应工具。
 triggers:
   - "帮我查一下A股"
@@ -47,6 +47,22 @@ triggers:
 | 强化学习量化 | `finrl` | DDPG/PPO/SAC |
 | 机构级最全数据 | `wind` | 昂贵但最全 |
 | 实时A股（最完整MCP） | `ashare-mcp` | 30 tool，生产级 |
+| 免 Key 查 A股行情（MCP） | `mcp-eastmoney` | 东方财富公开延时接口，uvx 即用 |
+| A股盘后复盘/涨停梯队 | `wudao-mcp` | 63 工具远程 MCP，需 API Key |
+| A股财报/估值/宏观（MCP） | `cn-financial-mcp` | 42 工具，Apache-2.0 可自建 |
+| akshare 数据 MCP 封装 | `akshare-one-mcp` | Smithery / uvx 一键安装 |
+| 多源行情本地入库 | `AxData` | Python SDK + CLI + 本地 API |
+| 同花顺官方数据接口 | `hithink-financial-api` | 官方 API / MCP / CLI / Python |
+| 本机 Level-2 行情插件 | `fqgate-agent` | 同花顺非官方，Windows 插件 |
+| 自动挖掘 Alpha 因子 | `quantaalpha` | LLM + 进化策略自动演化 |
+| WorldQuant BRAIN 因子 | `quantgpt` | Agent 自动设计并回测提交 |
+| 量化 MCP 工具集线器 | `tradex-hub` | 129 个 MCP 工具聚合 |
+| 金融 Agent Skills 合集 | `awesome-finance-skills` | `npx skills add` 一键安装 |
+| A股多智能体投研（中文） | `tradingagents-astock` | 8 维数据源，输出买卖与仓位建议 |
+| 威科夫量价结构信号 | `wyckoff-trading-agent` | 吸筹/派发阶段识别 |
+| 价值投资公司研究 | `ai-berkshire` | 巴菲特/芒格框架多智能体 |
+| 全网热点舆情监控 | `trendradar` | 多平台热榜聚合 + MCP |
+| 个人持仓看板 | `easy-stock` | 非商业许可 |
 
 ---
 

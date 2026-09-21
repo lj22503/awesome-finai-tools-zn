@@ -1,6 +1,6 @@
 {
-  "version": "2025-06-25",
-  "last_updated": "2025-06-25",
+  "version": "2026-09-21",
+  "last_updated": "2026-09-21",
   "tools": [
     {
       "id": "opencli-eastmoney-quote",
@@ -12,14 +12,32 @@
         "stock_codes": "必需，股票代码，支持 sh600000/sz000001/hk00700/usAAPL 等格式，多个用逗号分隔"
       },
       "output": {
-        "fields": ["price", "changePercent", "change", "open", "high", "low", "prevClose", "volume", "turnover", "turnoverRate", "amplitude", "peDynamic", "priceBook", "marketCap", "floatMarketCap"],
+        "fields": [
+          "price",
+          "changePercent",
+          "change",
+          "open",
+          "high",
+          "low",
+          "prevClose",
+          "volume",
+          "turnover",
+          "turnoverRate",
+          "amplitude",
+          "peDynamic",
+          "priceBook",
+          "marketCap",
+          "floatMarketCap"
+        ],
         "example": "{\"code\":\"600519\",\"name\":\"贵州茅台\",\"price\":1212.72,\"changePercent\":0.42}"
       },
       "access": {
         "method": "直接运行",
         "auth_required": false,
         "api_key_required": false,
-        "dependencies": ["opencli (npm global)"]
+        "dependencies": [
+          "opencli (npm global)"
+        ]
       },
       "installation": {
         "command": "npm install -g @jackwener/opencli",
@@ -29,7 +47,13 @@
       "official_url": "https://github.com/jackwener/opencli",
       "github": "github.com/jackwener/opencli",
       "maintainer": "jackwener",
-      "tags": ["a股", "港股", "美股", "实时行情", "东方财富"]
+      "tags": [
+        "a股",
+        "港股",
+        "美股",
+        "实时行情",
+        "东方财富"
+      ]
     },
     {
       "id": "opencli-eastmoney-money-flow",
@@ -43,7 +67,19 @@
         "limit": "可选，返回数量，默认20，max 100"
       },
       "output": {
-        "fields": ["rank", "code", "name", "price", "changePercent", "mainNet", "mainNetRatio", "superNet", "bigNet", "mediumNet", "smallNet"],
+        "fields": [
+          "rank",
+          "code",
+          "name",
+          "price",
+          "changePercent",
+          "mainNet",
+          "mainNetRatio",
+          "superNet",
+          "bigNet",
+          "mediumNet",
+          "smallNet"
+        ],
         "example": "{\"rank\":1,\"code\":\"600584\",\"name\":\"长电科技\",\"mainNet\":4222603920}"
       },
       "access": {
@@ -57,7 +93,12 @@
       "cost": "free",
       "official_url": "https://github.com/jackwener/opencli",
       "github": "github.com/jackwener/opencli",
-      "tags": ["资金流", "主力", "大单", "A股"]
+      "tags": [
+        "资金流",
+        "主力",
+        "大单",
+        "A股"
+      ]
     },
     {
       "id": "opencli-eastmoney-sectors",
@@ -71,7 +112,18 @@
         "limit": "可选，默认20，max 100"
       },
       "output": {
-        "fields": ["rank", "code", "name", "price", "changePercent", "mainNet", "leadStock", "leadChangePercent", "upCount", "downCount"],
+        "fields": [
+          "rank",
+          "code",
+          "name",
+          "price",
+          "changePercent",
+          "mainNet",
+          "leadStock",
+          "leadChangePercent",
+          "upCount",
+          "downCount"
+        ],
         "example": "{\"rank\":1,\"code\":\"BK0877\",\"name\":\"PCB\",\"changePercent\":1.52,\"mainNet\":8346727168}"
       },
       "access": {
@@ -82,7 +134,13 @@
         "command": "npm install -g @jackwener/opencli"
       },
       "cost": "free",
-      "tags": ["板块", "概念", "行业", "资金流", "A股"]
+      "tags": [
+        "板块",
+        "概念",
+        "行业",
+        "资金流",
+        "A股"
+      ]
     },
     {
       "id": "opencli-eastmoney-northbound",
@@ -92,7 +150,12 @@
       "description": "北向资金（沪深港通）逐分钟实时净流入数据",
       "input": {},
       "output": {
-        "fields": ["time", "minuteNetYi", "cumulativeNetYi", "totalNetYi"],
+        "fields": [
+          "time",
+          "minuteNetYi",
+          "cumulativeNetYi",
+          "totalNetYi"
+        ],
         "example": "{\"time\":\"11:36\",\"cumulativeNetYi\":240.8261,\"minuteNetYi\":15.6222}"
       },
       "access": {
@@ -103,7 +166,11 @@
         "command": "npm install -g @jackwener/opencli"
       },
       "cost": "free",
-      "tags": ["北向资金", "沪深港通", "外资"]
+      "tags": [
+        "北向资金",
+        "沪深港通",
+        "外资"
+      ]
     },
     {
       "id": "opencli-eastmoney-longhu",
@@ -115,7 +182,17 @@
         "date": "可选，查询日期，格式 YYYY-MM-DD，默认前一交易日"
       },
       "output": {
-        "fields": ["tradeDate", "code", "name", "closePrice", "changeRate", "buyAmt", "sellAmt", "netAmt", "reason"],
+        "fields": [
+          "tradeDate",
+          "code",
+          "name",
+          "closePrice",
+          "changeRate",
+          "buyAmt",
+          "sellAmt",
+          "netAmt",
+          "reason"
+        ],
         "example": "{\"code\":\"000004\",\"name\":\"国华退\",\"reason\":\"退市整理期\"}"
       },
       "access": {
@@ -126,7 +203,12 @@
         "command": "npm install -g @jackwener/opencli"
       },
       "cost": "free",
-      "tags": ["龙虎榜", "营业部", "机构席位", "A股"]
+      "tags": [
+        "龙虎榜",
+        "营业部",
+        "机构席位",
+        "A股"
+      ]
     },
     {
       "id": "opencli-eastmoney-hot-rank",
@@ -136,7 +218,14 @@
       "description": "东方财富人气排行榜（热度/关注度），反映散户关注度",
       "input": {},
       "output": {
-        "fields": ["rank", "symbol", "name", "price", "changePercent", "heat"],
+        "fields": [
+          "rank",
+          "symbol",
+          "name",
+          "price",
+          "changePercent",
+          "heat"
+        ],
         "example": "{\"rank\":1,\"symbol\":\"600584\",\"name\":\"长电科技\",\"heat\":\"25.99%\"}"
       },
       "access": {
@@ -147,7 +236,12 @@
         "command": "npm install -g @jackwener/opencli"
       },
       "cost": "free",
-      "tags": ["人气榜", "热度", "散户", "关注度"]
+      "tags": [
+        "人气榜",
+        "热度",
+        "散户",
+        "关注度"
+      ]
     },
     {
       "id": "opencli-xueqiu-search",
@@ -159,7 +253,14 @@
         "query": "必需，搜索关键词，如 茅台、AAPL、腾讯"
       },
       "output": {
-        "fields": ["symbol", "name", "exchange", "price", "changePercent", "url"],
+        "fields": [
+          "symbol",
+          "name",
+          "exchange",
+          "price",
+          "changePercent",
+          "url"
+        ],
         "example": "{\"symbol\":\"SH600519\",\"name\":\"贵州茅台\",\"price\":\"1212.72\",\"changePercent\":\"0.42%\"}"
       },
       "access": {
@@ -170,7 +271,11 @@
         "command": "npm install -g @jackwener/opencli"
       },
       "cost": "free",
-      "tags": ["雪球", "股票搜索", "舆情"]
+      "tags": [
+        "雪球",
+        "股票搜索",
+        "舆情"
+      ]
     },
     {
       "id": "opencli-xueqiu-hot",
@@ -182,7 +287,14 @@
         "limit": "可选，默认10"
       },
       "output": {
-        "fields": ["id", "title", "text", "author", "likes", "url"],
+        "fields": [
+          "id",
+          "title",
+          "text",
+          "author",
+          "likes",
+          "url"
+        ],
         "example": "{\"title\":\"某帖子标题\",\"author\":\"用户名\",\"likes\":234}"
       },
       "access": {
@@ -193,7 +305,12 @@
         "command": "npm install -g @jackwener/opencli"
       },
       "cost": "free",
-      "tags": ["雪球", "帖子", "社区", "舆情"]
+      "tags": [
+        "雪球",
+        "帖子",
+        "社区",
+        "舆情"
+      ]
     },
     {
       "id": "opencli-sinafinance",
@@ -203,7 +320,12 @@
       "description": "新浪财经新闻/滚动资讯/个股新闻",
       "input": {},
       "output": {
-        "fields": ["title", "url", "publishTime", "source"],
+        "fields": [
+          "title",
+          "url",
+          "publishTime",
+          "source"
+        ],
         "example": "{\"title\":\"财经标题\",\"source\":\"新浪财经\"}"
       },
       "access": {
@@ -214,7 +336,12 @@
         "command": "npm install -g @jackwener/opencli"
       },
       "cost": "free",
-      "tags": ["新浪", "财经", "新闻", "资讯"]
+      "tags": [
+        "新浪",
+        "财经",
+        "新闻",
+        "资讯"
+      ]
     },
     {
       "id": "opencli-ths-hot-rank",
@@ -224,7 +351,13 @@
       "description": "同花顺热门股票排行",
       "input": {},
       "output": {
-        "fields": ["rank", "symbol", "name", "price", "changePercent"],
+        "fields": [
+          "rank",
+          "symbol",
+          "name",
+          "price",
+          "changePercent"
+        ],
         "example": "{\"rank\":1,\"name\":\"某股票\"}"
       },
       "access": {
@@ -235,7 +368,11 @@
         "command": "npm install -g @jackwener/opencli"
       },
       "cost": "free",
-      "tags": ["同花顺", "人气", "热门股"]
+      "tags": [
+        "同花顺",
+        "人气",
+        "热门股"
+      ]
     },
     {
       "id": "opencli-yahoo-finance",
@@ -247,7 +384,17 @@
         "symbol": "必需，美股代码，如 AAPL、MSFT"
       },
       "output": {
-        "fields": ["symbol", "price", "change", "changePercent", "open", "high", "low", "volume", "marketCap"],
+        "fields": [
+          "symbol",
+          "price",
+          "change",
+          "changePercent",
+          "open",
+          "high",
+          "low",
+          "volume",
+          "marketCap"
+        ],
         "example": "{\"symbol\":\"AAPL\",\"price\":178.5}"
       },
       "access": {
@@ -258,7 +405,11 @@
         "command": "npm install -g @jackwener/opencli"
       },
       "cost": "free",
-      "tags": ["美股", "Yahoo", "行情"]
+      "tags": [
+        "美股",
+        "Yahoo",
+        "行情"
+      ]
     },
     {
       "id": "ashare-mcp",
@@ -272,7 +423,15 @@
       },
       "output": {
         "format": "JSON via MCP protocol",
-        "example_tools": ["get_realtime_quote", "get_daily_kline", "get_lhb_daily", "get_margin_summary", "get_financial_report", "get_zt_pool", "get_sector_fund_flow_rank"]
+        "example_tools": [
+          "get_realtime_quote",
+          "get_daily_kline",
+          "get_lhb_daily",
+          "get_margin_summary",
+          "get_financial_report",
+          "get_zt_pool",
+          "get_sector_fund_flow_rank"
+        ]
       },
       "access": {
         "method": "stdio 或 Streamable HTTP",
@@ -281,13 +440,29 @@
       },
       "installation": {
         "command": "cd ashare-mcp && uv sync && uv run ashare-mcp",
-        "alternatives": ["pip install ashare-mcp"]
+        "alternatives": [
+          "pip install ashare-mcp"
+        ]
       },
       "cost": "free",
       "official_url": "https://github.com/CharmYue/ashare-mcp",
       "github": "github.com/CharmYue/ashare-mcp",
       "maintainer": "CharmYue",
-      "tags": ["mcp", "akshare", "baostock", "tushare", "A股", "实时", "K线", "资金流", "龙虎榜", "两融", "财报", "涨停池", "筹码"]
+      "tags": [
+        "mcp",
+        "akshare",
+        "baostock",
+        "tushare",
+        "A股",
+        "实时",
+        "K线",
+        "资金流",
+        "龙虎榜",
+        "两融",
+        "财报",
+        "涨停池",
+        "筹码"
+      ]
     },
     {
       "id": "stock-data-mcp",
@@ -301,7 +476,14 @@
       },
       "output": {
         "format": "JSON via MCP protocol",
-        "coverage": ["A股指数/个股K线/实时行情", "港股/美股K线", "龙虎榜/资金流/两融", "北向资金/大宗交易", "财务对比/股东人数", "ETF/板块/行业PE"]
+        "coverage": [
+          "A股指数/个股K线/实时行情",
+          "港股/美股K线",
+          "龙虎榜/资金流/两融",
+          "北向资金/大宗交易",
+          "财务对比/股东人数",
+          "ETF/板块/行业PE"
+        ]
       },
       "access": {
         "method": "stdio 或 HTTP",
@@ -315,7 +497,14 @@
       "official_url": "https://github.com/openstockdata/stock-data-mcp",
       "github": "github.com/openstockdata/stock-data-mcp",
       "maintainer": "openstockdata",
-      "tags": ["mcp", "A股", "港股", "美股", "加密货币", "多源"]
+      "tags": [
+        "mcp",
+        "A股",
+        "港股",
+        "美股",
+        "加密货币",
+        "多源"
+      ]
     },
     {
       "id": "china-stock-mcp",
@@ -337,7 +526,11 @@
       "cost": "free",
       "github": "github.com/wax0629/china-stock-mcp",
       "maintainer": "wax0629",
-      "tags": ["mcp", "A股", "市场研究"]
+      "tags": [
+        "mcp",
+        "A股",
+        "市场研究"
+      ]
     },
     {
       "id": "astock-mcp-server",
@@ -362,7 +555,13 @@
       "cost": "free",
       "github": "github.com/jiangyj545/astock-mcp-server",
       "maintainer": "jiangyj545",
-      "tags": ["mcp", "A股", "baostock", "sina", "零配置"]
+      "tags": [
+        "mcp",
+        "A股",
+        "baostock",
+        "sina",
+        "零配置"
+      ]
     },
     {
       "id": "finance-mcp-alpha",
@@ -378,7 +577,12 @@
       },
       "output": {
         "format": "Markdown 报告，含因子值/分位数/买卖信号",
-        "example_fields": ["factor_name", "value", "percentile", "signal (BUY/SELL/HOLD)"]
+        "example_fields": [
+          "factor_name",
+          "value",
+          "percentile",
+          "signal (BUY/SELL/HOLD)"
+        ]
       },
       "access": {
         "method": "npm / Streamable HTTP",
@@ -392,7 +596,14 @@
       "official_url": "https://github.com/guangxiangdebizi/FinanceMCP-Alpha",
       "github": "github.com/guangxiangdebizi/FinanceMCP-Alpha",
       "maintainer": "guangxiangdebizi",
-      "tags": ["mcp", "alpha", "因子", "WorldQuant", "量化", "Tushare"]
+      "tags": [
+        "mcp",
+        "alpha",
+        "因子",
+        "WorldQuant",
+        "量化",
+        "Tushare"
+      ]
     },
     {
       "id": "qtrade",
@@ -413,7 +624,9 @@
       "access": {
         "method": "Python CLI",
         "auth_required": false,
-        "data_sources": ["通达信(pytdx) / 腾讯HTTP / AkShare / CSV"]
+        "data_sources": [
+          "通达信(pytdx) / 腾讯HTTP / AkShare / CSV"
+        ]
       },
       "installation": {
         "command": "git clone && pip install -r requirements.txt",
@@ -423,7 +636,14 @@
       "official_url": "https://github.com/moyang11111/qtrade",
       "github": "github.com/moyang11111/qtrade",
       "maintainer": "moyang11111",
-      "tags": ["量化", "策略", "回测", "实盘", "Python", "15种策略"]
+      "tags": [
+        "量化",
+        "策略",
+        "回测",
+        "实盘",
+        "Python",
+        "15种策略"
+      ]
     },
     {
       "id": "baostock",
@@ -439,8 +659,23 @@
       },
       "output": {
         "format": "Python DataFrame",
-        "fields": ["date", "code", "open", "high", "low", "close", "volume", "amount"],
-        "financial": ["盈利能力", "成长能力", "偿债能力", "现金流量", "杜邦分析"]
+        "fields": [
+          "date",
+          "code",
+          "open",
+          "high",
+          "low",
+          "close",
+          "volume",
+          "amount"
+        ],
+        "financial": [
+          "盈利能力",
+          "成长能力",
+          "偿债能力",
+          "现金流量",
+          "杜邦分析"
+        ]
       },
       "access": {
         "method": "pip install baostock",
@@ -454,7 +689,14 @@
       "cost": "free",
       "official_url": "https://baostock.com",
       "maintainer": "BaoStock Team",
-      "tags": ["A股", "历史K线", "财务数据", "宏观", "板块", "无需注册"]
+      "tags": [
+        "A股",
+        "历史K线",
+        "财务数据",
+        "宏观",
+        "板块",
+        "无需注册"
+      ]
     },
     {
       "id": "akshare",
@@ -468,7 +710,18 @@
       },
       "output": {
         "format": "Python DataFrame / JSON",
-        "coverage": ["实时行情", "日K线", "分钟K线", "期货", "期权", "债券", "基金", "宏观", "伦港通", "外汇"]
+        "coverage": [
+          "实时行情",
+          "日K线",
+          "分钟K线",
+          "期货",
+          "期权",
+          "债券",
+          "基金",
+          "宏观",
+          "伦港通",
+          "外汇"
+        ]
       },
       "access": {
         "method": "pip install akshare",
@@ -480,7 +733,15 @@
       "cost": "free",
       "official_url": "https://akshare.akfamily.xyz",
       "maintainer": "AKFamily",
-      "tags": ["A股", "期货", "期权", "债券", "基金", "宏观", "聚合"]
+      "tags": [
+        "A股",
+        "期货",
+        "期权",
+        "债券",
+        "基金",
+        "宏观",
+        "聚合"
+      ]
     },
     {
       "id": "tushare",
@@ -509,7 +770,14 @@
       "cost": "freemium",
       "official_url": "https://tushare.pro",
       "maintainer": "Tushare",
-      "tags": ["A股", "高质量", "财务", "指数", "港股", "积分"]
+      "tags": [
+        "A股",
+        "高质量",
+        "财务",
+        "指数",
+        "港股",
+        "积分"
+      ]
     },
     {
       "id": "vnpy",
@@ -535,7 +803,13 @@
       "cost": "free",
       "official_url": "https://www.vnpy.com",
       "maintainer": "VeighNa Team",
-      "tags": ["量化", "框架", "实盘", "回测", "Python"]
+      "tags": [
+        "量化",
+        "框架",
+        "实盘",
+        "回测",
+        "Python"
+      ]
     },
     {
       "id": "wind",
@@ -563,7 +837,15 @@
       "cost": "expensive",
       "official_url": "https://www.wind.com.cn",
       "maintainer": "万得信息",
-      "tags": ["机构", "最全", "债券", "基金", "宏观", "期货", "期权"]
+      "tags": [
+        "机构",
+        "最全",
+        "债券",
+        "基金",
+        "宏观",
+        "期货",
+        "期权"
+      ]
     },
     {
       "id": "choice",
@@ -590,7 +872,13 @@
       "cost": "expensive",
       "official_url": "https://choice.eastmoney.com",
       "maintainer": "东方财富",
-      "tags": ["机构", "数据全", "A股", "基金", "宏观"]
+      "tags": [
+        "机构",
+        "数据全",
+        "A股",
+        "基金",
+        "宏观"
+      ]
     },
     {
       "id": "ifind",
@@ -616,7 +904,13 @@
       "cost": "expensive",
       "official_url": "https://www.10jqka.com.cn",
       "maintainer": "同花顺",
-      "tags": ["机构", "投研", "财报", "估值", "行业"]
+      "tags": [
+        "机构",
+        "投研",
+        "财报",
+        "估值",
+        "行业"
+      ]
     },
     {
       "id": "tradingagents",
@@ -631,7 +925,14 @@
       },
       "output": {
         "format": "Markdown分析报告 / 交易信号 / 回测结果",
-        "agents": ["基本面分析师", "舆情分析师", "技术分析师", "新闻分析师", "交易员", "风控团队"]
+        "agents": [
+          "基本面分析师",
+          "舆情分析师",
+          "技术分析师",
+          "新闻分析师",
+          "交易员",
+          "风控团队"
+        ]
       },
       "access": {
         "method": "pip install tradingagents",
@@ -646,7 +947,16 @@
       "official_url": "https://github.com/TauricResearch/TradingAgents",
       "github": "github.com/TauricResearch/TradingAgents",
       "maintainer": "TauricResearch",
-      "tags": ["多Agent", "LLM", "量化", "投研", "GPT", "Claude", "舆情", "技术面"]
+      "tags": [
+        "多Agent",
+        "LLM",
+        "量化",
+        "投研",
+        "GPT",
+        "Claude",
+        "舆情",
+        "技术面"
+      ]
     },
     {
       "id": "qlib",
@@ -662,7 +972,12 @@
       },
       "output": {
         "format": "因子值/预测信号/回测结果",
-        "capabilities": ["Alpha因子挖掘", "LightGBM/XGBoost", "深度学习", "因子分析"]
+        "capabilities": [
+          "Alpha因子挖掘",
+          "LightGBM/XGBoost",
+          "深度学习",
+          "因子分析"
+        ]
       },
       "access": {
         "method": "pip install pyqlib",
@@ -676,7 +991,13 @@
       "official_url": "https://github.com/microsoft/qlib",
       "github": "github.com/microsoft/qlib",
       "maintainer": "Microsoft",
-      "tags": ["微软", "量化", "AI", "因子挖掘", "机器学习"]
+      "tags": [
+        "微软",
+        "量化",
+        "AI",
+        "因子挖掘",
+        "机器学习"
+      ]
     },
     {
       "id": "finrl",
@@ -704,7 +1025,14 @@
       "official_url": "https://github.com/AI4Finance-Foundation/FinRL",
       "github": "github.com/AI4Finance-Foundation/FinRL",
       "maintainer": "AI4Finance",
-      "tags": ["强化学习", "深度学习", "量化", "交易", "DDPG", "PPO"]
+      "tags": [
+        "强化学习",
+        "深度学习",
+        "量化",
+        "交易",
+        "DDPG",
+        "PPO"
+      ]
     },
     {
       "id": "ths-iwencabi-skillhub",
@@ -717,7 +1045,13 @@
       },
       "output": {
         "format": "自然语言回答 + 数据表格",
-        "覆盖": ["选股", "个股诊断", "财经搜索", "产业链", "基金/债券/期货数据"]
+        "覆盖": [
+          "选股",
+          "个股诊断",
+          "财经搜索",
+          "产业链",
+          "基金/债券/期货数据"
+        ]
       },
       "access": {
         "method": "OpenClaw / Claude / ChatGPT / Cursor 等主流AI平台",
@@ -732,7 +1066,13 @@
       "cost": "free_partial",
       "official_url": "https://www.iwencai.com/skillhub",
       "maintainer": "同花顺",
-      "tags": ["同花顺", "选股", "诊断", "产业链", "SkillHub"]
+      "tags": [
+        "同花顺",
+        "选股",
+        "诊断",
+        "产业链",
+        "SkillHub"
+      ]
     },
     {
       "id": "eastmoney-clawbot",
@@ -745,7 +1085,13 @@
       },
       "output": {
         "format": "自然语言 + 数据",
-        "覆盖": ["智能选股", "个股诊断", "基金诊断", "财报解读", "宏观研究"]
+        "覆盖": [
+          "智能选股",
+          "个股诊断",
+          "基金诊断",
+          "财报解读",
+          "宏观研究"
+        ]
       },
       "access": {
         "method": "阿里云平台（搜索「东方财富ClawBot」）",
@@ -758,7 +1104,13 @@
       "cost": "free",
       "official_url": "阿里云平台",
       "maintainer": "东方财富",
-      "tags": ["东方财富", "数字员工", "选股", "诊断", "财报"]
+      "tags": [
+        "东方财富",
+        "数字员工",
+        "选股",
+        "诊断",
+        "财报"
+      ]
     },
     {
       "id": "huatai-zhangle-skill",
@@ -771,7 +1123,13 @@
       },
       "output": {
         "format": "行情数据 / 交易信号 / 自选股管理",
-        "覆盖": ["金融资讯", "行情检索", "A股模拟交易", "条件选股", "自选股管理"]
+        "覆盖": [
+          "金融资讯",
+          "行情检索",
+          "A股模拟交易",
+          "条件选股",
+          "自选股管理"
+        ]
       },
       "access": {
         "method": "华泰证券App（集成）或一键部署至 OpenClaw",
@@ -787,7 +1145,13 @@
       "pricing_note": "新用户每日500-1000次调用额度",
       "official_url": "华泰证券App",
       "maintainer": "华泰证券",
-      "tags": ["华泰", "涨乐", "模拟交易", "条件选股", "自选股"]
+      "tags": [
+        "华泰",
+        "涨乐",
+        "模拟交易",
+        "条件选股",
+        "自选股"
+      ]
     },
     {
       "id": "gfsec-skill",
@@ -800,7 +1164,14 @@
       },
       "output": {
         "format": "数据表格 + 榜单",
-        "覆盖": ["股票基础信息", "财务对比", "龙虎榜", "基金定投", "ETF监测", "ETF榜单"]
+        "覆盖": [
+          "股票基础信息",
+          "财务对比",
+          "龙虎榜",
+          "基金定投",
+          "ETF监测",
+          "ETF榜单"
+        ]
       },
       "access": {
         "method": "官方平台 hd.gf.com.cn 或 腾讯ima Skill广场",
@@ -815,7 +1186,13 @@
       "cost": "unknown",
       "official_url": "hd.gf.com.cn/gfwskill2026/#/index",
       "maintainer": "广发证券",
-      "tags": ["广发", "龙虎榜", "基金定投", "ETF", "财务对比"]
+      "tags": [
+        "广发",
+        "龙虎榜",
+        "基金定投",
+        "ETF",
+        "财务对比"
+      ]
     },
     {
       "id": "guosen-skill",
@@ -828,7 +1205,14 @@
       },
       "output": {
         "format": "数据表格 + 榜单",
-        "覆盖": ["智能选股", "ETF筛选", "基金对比", "宏观数据", "行情查询", "财务数据"]
+        "覆盖": [
+          "智能选股",
+          "ETF筛选",
+          "基金对比",
+          "宏观数据",
+          "行情查询",
+          "财务数据"
+        ]
       },
       "access": {
         "method": "官方平台「小信智慧助手」/ 小艺Claw / Coze平台",
@@ -841,7 +1225,13 @@
       "cost": "unknown",
       "official_url": "https://weixin.guosen.com.cn/gs/xxskills/#architecture",
       "maintainer": "国信证券",
-      "tags": ["国信", "选股", "ETF", "基金", "宏观"]
+      "tags": [
+        "国信",
+        "选股",
+        "ETF",
+        "基金",
+        "宏观"
+      ]
     },
     {
       "id": "cicc-skill",
@@ -854,7 +1244,13 @@
       },
       "output": {
         "format": "分析师研报 + 策略观点",
-        "覆盖": ["计算机", "策略", "宏观", "新能源", "首席分析师观点"]
+        "覆盖": [
+          "计算机",
+          "策略",
+          "宏观",
+          "新能源",
+          "首席分析师观点"
+        ]
       },
       "access": {
         "method": "注册登录「中金点睛」平台",
@@ -868,7 +1264,14 @@
       "pricing_note": "面向机构付费用户",
       "official_url": "中金点睛平台",
       "maintainer": "中金公司",
-      "tags": ["中金", "点睛", "首席分析师", "宏观", "策略", "机构"]
+      "tags": [
+        "中金",
+        "点睛",
+        "首席分析师",
+        "宏观",
+        "策略",
+        "机构"
+      ]
     },
     {
       "id": "guotai-haitong-lingxi",
@@ -881,7 +1284,14 @@
       },
       "output": {
         "format": "研报摘要 / 行情数据 / 榜单",
-        "覆盖": ["查研报", "查行情", "查数据", "出榜单", "筛股票", "自选股管理"]
+        "覆盖": [
+          "查研报",
+          "查行情",
+          "查数据",
+          "出榜单",
+          "筛股票",
+          "自选股管理"
+        ]
       },
       "access": {
         "method": "国泰海通自有平台",
@@ -894,7 +1304,13 @@
       "cost": "unknown",
       "official_url": "国泰海通平台",
       "maintainer": "国泰海通证券",
-      "tags": ["国泰海通", "灵犀", "研报", "行情", "选股"]
+      "tags": [
+        "国泰海通",
+        "灵犀",
+        "研报",
+        "行情",
+        "选股"
+      ]
     },
     {
       "id": "yingmi-mcp",
@@ -907,7 +1323,13 @@
       },
       "output": {
         "format": "MCP JSON / 投顾报告",
-        "覆盖": ["金融数据", "组合回测", "蒙特卡洛模拟", "投顾内容", "策略服务"]
+        "覆盖": [
+          "金融数据",
+          "组合回测",
+          "蒙特卡洛模拟",
+          "投顾内容",
+          "策略服务"
+        ]
       },
       "access": {
         "method": "MCP 或 OpenAPI，兼容 Coze / Dify / Cursor 等平台",
@@ -921,7 +1343,14 @@
       "cost": "contact_sales",
       "official_url": "盈米AI开放平台",
       "maintainer": "盈米基金",
-      "tags": ["盈米", "MCP", "基金", "投顾", "回测", "蒙特卡洛"]
+      "tags": [
+        "盈米",
+        "MCP",
+        "基金",
+        "投顾",
+        "回测",
+        "蒙特卡洛"
+      ]
     },
     {
       "id": "tiengan-fund-skill",
@@ -934,7 +1363,13 @@
       },
       "output": {
         "format": "基金数据 / 诊断报告 / 持仓分析",
-        "覆盖": ["基金信息查询", "自选管理", "深度诊断", "基金比较", "持仓分析"]
+        "覆盖": [
+          "基金信息查询",
+          "自选管理",
+          "深度诊断",
+          "基金比较",
+          "持仓分析"
+        ]
       },
       "access": {
         "method": "天天基金App官方 / 天工平台第三方",
@@ -947,7 +1382,12 @@
       "cost": "free_partial",
       "official_url": "天天基金App",
       "maintainer": "东方财富（天天基金）",
-      "tags": ["天天基金", "基金", "持仓分析", "诊断"]
+      "tags": [
+        "天天基金",
+        "基金",
+        "持仓分析",
+        "诊断"
+      ]
     },
     {
       "id": "xingye-skill",
@@ -960,7 +1400,12 @@
       },
       "output": {
         "format": "交易信号 / 诊断报告 / 资讯摘要",
-        "覆盖": ["一句话交易", "智能诊断", "资讯总结", "投研27模块"]
+        "覆盖": [
+          "一句话交易",
+          "智能诊断",
+          "资讯总结",
+          "投研27模块"
+        ]
       },
       "access": {
         "method": "C端：优理宝App；B端：investor-harness 投研Agent",
@@ -974,7 +1419,13 @@
       "cost": "unknown",
       "official_url": "兴业证券优理宝App",
       "maintainer": "兴业证券",
-      "tags": ["兴业", "知己管家", "投研", "交易", "诊断"]
+      "tags": [
+        "兴业",
+        "知己管家",
+        "投研",
+        "交易",
+        "诊断"
+      ]
     },
     {
       "id": "fin-skills-marketplace",
@@ -987,7 +1438,12 @@
       },
       "output": {
         "format": "MCP JSON / 自然语言报告",
-        "覆盖": ["龙虎榜解读", "个股异动解读", "基金分析", "A股日报生成"]
+        "覆盖": [
+          "龙虎榜解读",
+          "个股异动解读",
+          "基金分析",
+          "A股日报生成"
+        ]
       },
       "access": {
         "method": "安装CLI工具将技能市场接入自己的AI Agent",
@@ -1001,7 +1457,13 @@
       "cost": "unknown",
       "official_url": "https://fin-skills.finstep.cn",
       "maintainer": "财跃星辰",
-      "tags": ["FIN-SKILLS", "第三方市场", "龙虎榜", "基金", "A股日报"]
+      "tags": [
+        "FIN-SKILLS",
+        "第三方市场",
+        "龙虎榜",
+        "基金",
+        "A股日报"
+      ]
     },
     {
       "id": "finclaw-aifinlab",
@@ -1015,7 +1477,15 @@
       },
       "output": {
         "format": "统一数据抽象层返回",
-        "覆盖": ["银行", "证券", "保险", "基金", "期货", "信托", "投研"]
+        "覆盖": [
+          "银行",
+          "证券",
+          "保险",
+          "基金",
+          "期货",
+          "信托",
+          "投研"
+        ]
       },
       "access": {
         "method": "本地安装或 Docker 容器化部署，原生兼容 OpenClaw",
@@ -1030,7 +1500,679 @@
       "official_url": "https://github.com/aifinlab/FinClaw",
       "github": "github.com/aifinlab/FinClaw",
       "maintainer": "上财AIFinLab",
-      "tags": ["上财", "FinClaw", "开源", "1000+Skills", "六大行业", "OpenClaw"]
+      "tags": [
+        "上财",
+        "FinClaw",
+        "开源",
+        "1000+Skills",
+        "六大行业",
+        "OpenClaw"
+      ]
+    },
+    {
+      "id": "mcp-eastmoney",
+      "name": "mcp-eastmoney",
+      "category": "market_data",
+      "type": "mcp",
+      "description": "东方财富 MCP 服务器，A股实时行情 + 主力资金 + 板块 + K线，使用官方公开延时接口，免 API Key 开箱即用",
+      "input": {
+        "intent": "A股行情 / 资金流 / 板块 / K线查询",
+        "stock_code": "可选，如 600519"
+      },
+      "output": {
+        "format": "MCP tool 结构化返回",
+        "覆盖": [
+          "实时行情",
+          "主力资金",
+          "板块数据",
+          "K线"
+        ]
+      },
+      "access": {
+        "method": "MCP（stdio），Claude Code / Cursor / Codex 等客户端",
+        "auth_required": false,
+        "api_key_required": false
+      },
+      "installation": {
+        "command": "uvx mcp-eastmoney",
+        "url": "https://github.com/27dream/mcp-eastmoney"
+      },
+      "cost": "free",
+      "official_url": "https://github.com/27dream/mcp-eastmoney",
+      "github": "github.com/27dream/mcp-eastmoney",
+      "maintainer": "27dream",
+      "tags": [
+        "东方财富",
+        "A股",
+        "实时行情",
+        "MCP",
+        "免Key",
+        "uvx"
+      ]
+    },
+    {
+      "id": "wudao-mcp",
+      "name": "Wudao A-Share MCP",
+      "category": "market_data",
+      "type": "mcp",
+      "description": "63 个只读工具，覆盖 A股 K线/分时、指数 ETF 可转债、涨停梯队、板块轮动、资金流、龙虎榜、研报、公告、估值快照与盘后复盘",
+      "input": {
+        "intent": "A股盘后复盘 / 涨停梯队 / 板块轮动 / 资金流研究",
+        "stock_code": "可选"
+      },
+      "output": {
+        "format": "远程 HTTP MCP（以 tools/list 为准）",
+        "覆盖": [
+          "K线",
+          "涨停梯队",
+          "资金流",
+          "龙虎榜",
+          "研报",
+          "公告",
+          "复盘"
+        ]
+      },
+      "access": {
+        "method": "远程 HTTP MCP（https://stock.quicktiny.cn/api/mcp），需在 Developer Console 申请 API Key",
+        "auth_required": true,
+        "api_key_required": true
+      },
+      "installation": {
+        "url": "https://stock.quicktiny.cn/api/mcp/setup"
+      },
+      "cost": "free_tier",
+      "pricing_note": "Developer Console 注册领取 API Key，免费额度以官方说明为准",
+      "official_url": "https://data.quicktiny.cn/",
+      "github": "github.com/jcdreamjc/wudao-mcp",
+      "maintainer": "QuickTiny / Wudao Data",
+      "tags": [
+        "A股",
+        "63工具",
+        "涨停梯队",
+        "龙虎榜",
+        "远程MCP",
+        "复盘"
+      ]
+    },
+    {
+      "id": "cn-financial-mcp",
+      "name": "cn-financial-mcp",
+      "category": "market_data",
+      "type": "mcp",
+      "description": "cn 金融数据 MCP 服务器，工具包覆盖 A股行情、财报、估值、板块、市场全景、新闻及宏观指标",
+      "input": {
+        "intent": "A股行情 / 财报 / 估值 / 板块 / 宏观指标",
+        "stock_code": "可选，如 600519"
+      },
+      "output": {
+        "format": "MCP tool 结构化返回",
+        "覆盖": [
+          "行情",
+          "财报",
+          "估值",
+          "板块",
+          "市场全景",
+          "新闻",
+          "宏观"
+        ]
+      },
+      "access": {
+        "method": "MCP（stdio / HTTP），Apache-2.0 开源可自建",
+        "auth_required": false,
+        "api_key_required": false
+      },
+      "installation": {
+        "command": "git clone https://github.com/ccq1/cn-financial-mcp && pip install -e .",
+        "url": "https://github.com/ccq1/cn-financial-mcp"
+      },
+      "cost": "free",
+      "official_url": "https://github.com/ccq1/cn-financial-mcp",
+      "github": "github.com/ccq1/cn-financial-mcp",
+      "maintainer": "ccq1",
+      "tags": [
+        "A股",
+        "财报",
+        "估值",
+        "宏观",
+        "MCP",
+        "Apache-2.0"
+      ]
+    },
+    {
+      "id": "akshare-one-mcp",
+      "name": "akshare-one-mcp",
+      "category": "market_data",
+      "type": "mcp",
+      "description": "基于 akshare-one 的中国股票市场数据 MCP Server，MIT 开源，支持 Smithery / uvx 一键安装",
+      "input": {
+        "intent": "A股行情与基础数据查询",
+        "stock_code": "可选"
+      },
+      "output": {
+        "format": "MCP tool 结构化返回",
+        "覆盖": [
+          "行情",
+          "K线",
+          "基础数据"
+        ]
+      },
+      "access": {
+        "method": "MCP，支持 Smithery CLI / uvx",
+        "auth_required": false,
+        "api_key_required": false
+      },
+      "installation": {
+        "command": "npx -y @smithery/cli install @zwldarren/akshare-one-mcp --client claude",
+        "url": "https://github.com/zwldarren/akshare-one-mcp"
+      },
+      "cost": "free",
+      "official_url": "https://github.com/zwldarren/akshare-one-mcp",
+      "github": "github.com/zwldarren/akshare-one-mcp",
+      "maintainer": "zwldarren",
+      "tags": [
+        "akshare",
+        "A股",
+        "MCP",
+        "MIT",
+        "Smithery"
+      ]
+    },
+    {
+      "id": "axdata",
+      "name": "AxData",
+      "category": "market_data",
+      "type": "framework",
+      "description": "开源量化数据库框架，覆盖通达信、巨潮、腾讯财经、新浪财经、东方财富、财联社、开盘红等公开源接口，提供 Python SDK、CLI 与本地 API 服务",
+      "input": {
+        "intent": "多公开源行情/财务数据批量入库与查询",
+        "stock_code": "可选"
+      },
+      "output": {
+        "format": "本地数据库 + Python SDK / REST API",
+        "覆盖": [
+          "通达信",
+          "巨潮",
+          "腾讯财经",
+          "新浪财经",
+          "东方财富",
+          "财联社",
+          "开盘红"
+        ]
+      },
+      "access": {
+        "method": "pip 安装 SDK，或完整项目安装启用 Web 控制台与本地 API",
+        "auth_required": false,
+        "api_key_required": false
+      },
+      "installation": {
+        "command": "pip install axdata",
+        "url": "https://github.com/electkismet/AxData"
+      },
+      "cost": "free",
+      "pricing_note": "AxData Research-Only License，面向个人学习与非商业研究，商用需另行授权",
+      "official_url": "https://github.com/electkismet/AxData",
+      "github": "github.com/electkismet/AxData",
+      "maintainer": "electkismet",
+      "tags": [
+        "量化数据库",
+        "Python SDK",
+        "多数据源",
+        "Research-Only"
+      ]
+    },
+    {
+      "id": "hithink-financial-api",
+      "name": "同花顺官方 Financial-API",
+      "category": "market_data",
+      "type": "api",
+      "description": "同花顺（HiThink）官方 A股金融数据服务，提供股票实时行情、历史行情、财务报表、指数、板块、涨停等数据，支持 API / MCP / CLI / Python 四种接入方式",
+      "input": {
+        "intent": "A股行情 / 财务报表 / 指数 / 板块 / 涨停数据",
+        "stock_code": "可选"
+      },
+      "output": {
+        "format": "API / MCP / CLI / Python SDK",
+        "覆盖": [
+          "实时行情",
+          "历史行情",
+          "财务报表",
+          "指数",
+          "板块",
+          "涨停"
+        ]
+      },
+      "access": {
+        "method": "API / MCP / CLI / Python，需在官方平台申请 Key",
+        "auth_required": true,
+        "api_key_required": true
+      },
+      "installation": {
+        "url": "https://github.com/HiThink-Tech/Financial-API"
+      },
+      "cost": "free_tier",
+      "pricing_note": "官网申请 API Key，免费额度与计费以官方说明为准",
+      "official_url": "https://github.com/HiThink-Tech/Financial-API",
+      "github": "github.com/HiThink-Tech/Financial-API",
+      "maintainer": "同花顺 HiThink（官方维护）",
+      "tags": [
+        "同花顺",
+        "官方",
+        "A股",
+        "财报",
+        "MCP",
+        "CLI",
+        "Python"
+      ]
+    },
+    {
+      "id": "fqgate-agent",
+      "name": "FQGate-agent",
+      "category": "market_data",
+      "type": "mcp",
+      "description": "同花顺免费开源 AI 插件，为 Codex / Claude Code / WorkBuddy / OpenClaw / 豆包 / 千问提供本机 A股实时行情、分时、K线、Level-2 逐笔、资讯公告与证券资料",
+      "input": {
+        "intent": "本机 A股行情 / 分时 / K线 / Level-2 / 资讯查询",
+        "stock_code": "可选"
+      },
+      "output": {
+        "format": "本机网关 + AI 插件工具列表",
+        "覆盖": [
+          "实时行情",
+          "分时",
+          "K线",
+          "Level-2",
+          "资讯公告",
+          "证券资料"
+        ]
+      },
+      "access": {
+        "method": "安装 FQGate 本机网关 + 对应 AI 工具插件（Windows），无需订阅或试用额度",
+        "auth_required": false,
+        "api_key_required": false
+      },
+      "installation": {
+        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./installer/runtime/install-fqgate.ps1",
+        "url": "https://github.com/zhuyifang/tonghuasun-agent"
+      },
+      "cost": "free",
+      "pricing_note": "插件入口 AGPL-3.0 完全免费；FQGate 网关主程序单独提供编译包。1.0.0 起不再提供交易 API 与交易工具",
+      "official_url": "https://github.com/zhuyifang/tonghuasun-agent",
+      "github": "github.com/fqgate/FQGate-agent",
+      "maintainer": "独立开发者（非同花顺官方）",
+      "tags": [
+        "同花顺",
+        "Level-2",
+        "本机网关",
+        "AI插件",
+        "AGPL-3.0",
+        "Windows"
+      ]
+    },
+    {
+      "id": "quantaalpha",
+      "name": "QuantaAlpha",
+      "category": "analysis",
+      "type": "framework",
+      "description": "LLM + 进化策略自动挖掘、演化与验证量化 Alpha 因子，只需描述研究方向即可自动完成因子发现与自演化轨迹验证",
+      "input": {
+        "intent": "按研究方向自动挖掘与验证 Alpha 因子",
+        "research_direction": "自然语言描述"
+      },
+      "output": {
+        "format": "因子表达式 + 回测报告",
+        "覆盖": [
+          "因子挖掘",
+          "因子演化",
+          "因子验证",
+          "回测"
+        ]
+      },
+      "access": {
+        "method": "本地安装，Python 环境",
+        "auth_required": false,
+        "api_key_required": false
+      },
+      "installation": {
+        "command": "git clone https://github.com/QuantaAlpha/QuantaAlpha && SETUPTOOLS_SCM_PRETEND_VERSION=0.1.0 pip install -e .",
+        "url": "https://github.com/QuantaAlpha/QuantaAlpha"
+      },
+      "cost": "free",
+      "pricing_note": "仓库未标注开源许可证，商用前请先确认授权",
+      "official_url": "https://github.com/QuantaAlpha/QuantaAlpha",
+      "github": "github.com/QuantaAlpha/QuantaAlpha",
+      "maintainer": "QuantaAlpha",
+      "tags": [
+        "Alpha因子",
+        "LLM",
+        "进化策略",
+        "因子挖掘",
+        "回测"
+      ]
+    },
+    {
+      "id": "quantgpt",
+      "name": "QuantGPT",
+      "category": "analysis",
+      "type": "framework",
+      "description": "Agent 驱动的 Alpha 工厂：LLM 自主设计、回测并提交因子到 WorldQuant BRAIN，支持 HTTP 传输与前端控制台",
+      "input": {
+        "intent": "自动设计并提交 WorldQuant BRAIN 因子",
+        "api_key": "DeepSeek API Key（写入 .env）"
+      },
+      "output": {
+        "format": "因子提案 + 回测结果 + MCP / HTTP 服务",
+        "覆盖": [
+          "因子设计",
+          "因子回测",
+          "BRAIN 提交"
+        ]
+      },
+      "access": {
+        "method": "本地安装（Python + 前端），HTTP 传输：python -m quantgpt --transport http",
+        "auth_required": true,
+        "api_key_required": true
+      },
+      "installation": {
+        "command": "git clone https://github.com/Miasyster/QuantGPT && pip install -e .",
+        "url": "https://github.com/Miasyster/QuantGPT"
+      },
+      "cost": "free",
+      "pricing_note": "MIT 开源；需自备 DeepSeek API Key（官方说明约 $0.001 / 次查询）",
+      "official_url": "https://github.com/Miasyster/QuantGPT",
+      "github": "github.com/Miasyster/QuantGPT",
+      "maintainer": "Miasyster",
+      "tags": [
+        "WorldQuant",
+        "BRAIN",
+        "Alpha因子",
+        "LLM",
+        "MIT"
+      ]
+    },
+    {
+      "id": "tradingagents-astock",
+      "name": "TradingAgents-Astock",
+      "category": "trading",
+      "type": "framework",
+      "description": "基于 TradingAgents 的多智能体 A股分析框架，集成 8 大维度 A股数据源（技术面/资金面/基本面/新闻/公告/龙虎榜等），输出中文买卖与仓位建议",
+      "input": {
+        "intent": "多智能体协作的 A股个股投研与交易建议",
+        "stock_code": "股票代码，如 600519"
+      },
+      "output": {
+        "format": "中文投研报告 + 买卖/仓位建议",
+        "覆盖": [
+          "技术面",
+          "资金面",
+          "基本面",
+          "新闻",
+          "公告",
+          "龙虎榜"
+        ]
+      },
+      "access": {
+        "method": "本地部署，需自备 LLM API Key（OpenAI / DeepSeek 等）",
+        "auth_required": true,
+        "api_key_required": true
+      },
+      "installation": {
+        "command": "git clone https://github.com/simonlin1212/TradingAgents-astock && pip install -r requirements.txt",
+        "url": "https://github.com/simonlin1212/TradingAgents-astock"
+      },
+      "cost": "free",
+      "pricing_note": "Apache-2.0 开源；LLM 调用成本自付",
+      "official_url": "https://github.com/simonlin1212/TradingAgents-astock",
+      "github": "github.com/simonlin1212/TradingAgents-astock",
+      "maintainer": "simonlin1212",
+      "tags": [
+        "多智能体",
+        "A股",
+        "投研",
+        "TradingAgents",
+        "Apache-2.0"
+      ]
+    },
+    {
+      "id": "wyckoff-trading-agent",
+      "name": "WyckoffTradingAgent",
+      "category": "trading",
+      "type": "framework",
+      "description": "威科夫（Wyckoff）方法量化交易 Agent，自动识别吸筹/派发阶段、量价结构并给出结构买卖点信号",
+      "input": {
+        "intent": "威科夫量价结构分析与交易信号",
+        "stock_code": "可选，A股/美股"
+      },
+      "output": {
+        "format": "阶段判定 + 结构信号 + 图表",
+        "覆盖": [
+          "吸筹阶段",
+          "派发阶段",
+          "量价结构",
+          "买卖点"
+        ]
+      },
+      "access": {
+        "method": "本地部署，Python 环境",
+        "auth_required": false,
+        "api_key_required": false
+      },
+      "installation": {
+        "command": "git clone https://github.com/YoungCan-Wang/WyckoffTradingAgent && pip install -r requirements.txt",
+        "url": "https://github.com/YoungCan-Wang/WyckoffTradingAgent"
+      },
+      "cost": "free",
+      "pricing_note": "AGPL-3.0，注意网络服务场景的传染性条款",
+      "official_url": "https://github.com/YoungCan-Wang/WyckoffTradingAgent",
+      "github": "github.com/YoungCan-Wang/WyckoffTradingAgent",
+      "maintainer": "YoungCan-Wang",
+      "tags": [
+        "威科夫",
+        "量价结构",
+        "交易信号",
+        "Agent",
+        "AGPL-3.0"
+      ]
+    },
+    {
+      "id": "ai-berkshire",
+      "name": "AI Berkshire",
+      "category": "research",
+      "type": "framework",
+      "description": "以巴菲特/芒格价值投资框架为核心的多智能体研究系统，覆盖商业模式、护城河、管理层、估值与能力圈判断，自动产出长期价值研究报告",
+      "input": {
+        "intent": "价值投资视角的公司深度研究与长期跟踪",
+        "company": "公司名称 / 代码"
+      },
+      "output": {
+        "format": "多智能体协同的价值投资研报",
+        "覆盖": [
+          "商业模式",
+          "护城河",
+          "管理层",
+          "估值",
+          "能力圈"
+        ]
+      },
+      "access": {
+        "method": "本地部署，需自备 LLM API Key",
+        "auth_required": true,
+        "api_key_required": true
+      },
+      "installation": {
+        "command": "git clone https://github.com/xbtlin/ai-berkshire && pip install -r requirements.txt",
+        "url": "https://github.com/xbtlin/ai-berkshire"
+      },
+      "cost": "free",
+      "pricing_note": "MIT 开源；LLM 调用成本自付",
+      "official_url": "https://github.com/xbtlin/ai-berkshire",
+      "github": "github.com/xbtlin/ai-berkshire",
+      "maintainer": "xbtlin",
+      "tags": [
+        "价值投资",
+        "巴菲特",
+        "多智能体",
+        "公司研究",
+        "MIT"
+      ]
+    },
+    {
+      "id": "trendradar",
+      "name": "TrendRadar",
+      "category": "sentiment",
+      "type": "framework",
+      "description": "全网热点与舆情监控工具，聚合多平台热搜榜单，支持关键词热度趋势与 MCP 接入，可用于市场情绪与事件驱动监测",
+      "input": {
+        "intent": "全网热点/舆情监控与关键词热度趋势",
+        "keywords": "关注的关键词列表"
+      },
+      "output": {
+        "format": "热榜聚合 + 趋势分析 + 定时推送（含 MCP 接口）",
+        "覆盖": [
+          "多平台热搜",
+          "关键词趋势",
+          "舆情预警"
+        ]
+      },
+      "access": {
+        "method": "本地 / 服务器部署，支持 MCP 接入 AI 客户端",
+        "auth_required": false,
+        "api_key_required": false
+      },
+      "installation": {
+        "command": "git clone https://github.com/sansan0/TrendRadar && pip install -r requirements.txt",
+        "url": "https://github.com/sansan0/TrendRadar"
+      },
+      "cost": "free",
+      "pricing_note": "GPL-3.0 开源",
+      "official_url": "https://github.com/sansan0/TrendRadar",
+      "github": "github.com/sansan0/TrendRadar",
+      "maintainer": "sansan0",
+      "tags": [
+        "舆情",
+        "热点监控",
+        "热搜榜",
+        "MCP",
+        "GPL-3.0"
+      ]
+    },
+    {
+      "id": "tradex-hub",
+      "name": "tradex-hub",
+      "category": "analysis",
+      "type": "mcp",
+      "description": "面向量化与投研的 MCP 工具集线器，聚合 129 个 MCP 工具，统一接入数据、因子、回测与交易相关能力",
+      "input": {
+        "intent": "一站式接入量化/投研类 MCP 工具",
+        "tool_name": "按 hub 目录选择"
+      },
+      "output": {
+        "format": "MCP 工具集合（129 个）",
+        "覆盖": [
+          "数据",
+          "因子",
+          "回测",
+          "交易辅助"
+        ]
+      },
+      "access": {
+        "method": "MCP 接入，本地部署",
+        "auth_required": false,
+        "api_key_required": false
+      },
+      "installation": {
+        "command": "git clone https://github.com/wolfjkd/tradex-hub",
+        "url": "https://github.com/wolfjkd/tradex-hub"
+      },
+      "cost": "free",
+      "pricing_note": "各子工具许可证以仓库说明为准",
+      "official_url": "https://github.com/wolfjkd/tradex-hub",
+      "github": "github.com/wolfjkd/tradex-hub",
+      "maintainer": "wolfjkd",
+      "tags": [
+        "MCP Hub",
+        "129工具",
+        "量化",
+        "投研"
+      ]
+    },
+    {
+      "id": "awesome-finance-skills",
+      "name": "Awesome Finance Skills",
+      "category": "analysis",
+      "type": "skill",
+      "description": "金融领域 Agent Skills 合集，以标准 Skill 形式封装财报分析、估值建模、行业研究等能力，一条 npx 命令即可安装到 Claude Code 等客户端",
+      "input": {
+        "intent": "为 AI 客户端快速装配金融分析 Skill 能力",
+        "skill_name": "按需选择"
+      },
+      "output": {
+        "format": "Agent Skills 包（可组合调用）",
+        "覆盖": [
+          "财报分析",
+          "估值建模",
+          "行业研究"
+        ]
+      },
+      "access": {
+        "method": "npx skills 安装到 Claude Code / 兼容客户端",
+        "auth_required": false,
+        "api_key_required": false
+      },
+      "installation": {
+        "command": "npx skills add RKiding/Awesome-finance-skills",
+        "url": "https://github.com/RKiding/Awesome-finance-skills"
+      },
+      "cost": "free",
+      "pricing_note": "Apache-2.0 开源",
+      "official_url": "https://github.com/RKiding/Awesome-finance-skills",
+      "github": "github.com/RKiding/Awesome-finance-skills",
+      "maintainer": "RKiding",
+      "tags": [
+        "Agent Skills",
+        "金融分析",
+        "估值建模",
+        "财报",
+        "Apache-2.0"
+      ]
+    },
+    {
+      "id": "easy-stock",
+      "name": "easy-stock",
+      "category": "market_data",
+      "type": "framework",
+      "description": "面向个人投资者的本地股票分析工具，自动抓取并整理行情、财务指标与技术形态，生成可视化看板",
+      "input": {
+        "intent": "个人视角的持仓跟踪与个股看板",
+        "stock_code": "可选"
+      },
+      "output": {
+        "format": "本地可视化看板 + 数据表",
+        "覆盖": [
+          "行情",
+          "财务指标",
+          "技术形态"
+        ]
+      },
+      "access": {
+        "method": "本地部署，Python 环境",
+        "auth_required": false,
+        "api_key_required": false
+      },
+      "installation": {
+        "command": "git clone https://github.com/jundizhou/easy-stock && pip install -r requirements.txt",
+        "url": "https://github.com/jundizhou/easy-stock"
+      },
+      "cost": "free",
+      "pricing_note": "非商业许可证，禁止商业用途",
+      "official_url": "https://github.com/jundizhou/easy-stock",
+      "github": "github.com/jundizhou/easy-stock",
+      "maintainer": "jundizhou",
+      "tags": [
+        "个人投资",
+        "看板",
+        "财务指标",
+        "非商业许可"
+      ]
     }
   ]
 }
