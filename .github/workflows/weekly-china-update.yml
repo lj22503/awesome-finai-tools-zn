@@ -16,6 +16,9 @@ on:
     - cron: '30 9 * * 1'
   workflow_dispatch:  # 支持手动触发
 
+permissions:
+  contents: write
+
 jobs:
   china-platforms:
     runs-on: ubuntu-latest
@@ -36,44 +39,17 @@ jobs:
       - name: Run China platforms scanner
         run: python scripts/update_china_platforms.py
 
-      - name: Check for changes
-        id: changed
+      - name: Regenerate README and llms.txt
+        run: python scripts/generate_readme.py
+
+      - name: Commit and push changes
         run: |
-          if git diff --quiet data/tools.json; then
-            echo "changed=false" >> $GITHUB_OUTPUT
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data README.md llms.txt
+          if git diff --cached --quiet; then
+            echo "本次无变更，跳过提交"
           else
-            echo "changed=true" >> $GITHUB_OUTPUT
-            echo "msg=$(git diff --stat data/tools.json)" >> $GITHUB_OUTPUT
+            git commit -m "chore(data): 国内平台周更 $(date -u +%Y-%m-%d)"
+            git push
           fi
-
-      - name: Create PR with changes
-        if: steps.changed.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v7
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: update/china-weekly-$(date +%Y-%m-%d)
-          title: '📡 国内平台周更: ClawHub 新金融 Skill ($(date +%Y-%m-%d))'
-          body: |
-            ## 本周国内平台新增
-
-            自动生成 by GitHub Actions
-
-            ### 数据来源
-            - ClawHub Public API（公开只读端点，遵守限流规范）
-            - npm Registry
-
-            ### 变更
-            ${{ steps.changed.outputs.msg }}
-
-            ### 操作
-            - [ ] 确认新增 Skill 描述准确
-            - [ ] 补充缺失字段（input/output/安装命令）
-            - [ ] 合并前删除 pending_review 标记
-
-            ---
-            *由 [awesome-finai-tools-zn](https://github.com/lj22503/awesome-finai-tools-zn) 自动生成*
-          delete-branch: false
-          labels: |
-            automated pr
-            finai-tools
-            china-platforms
