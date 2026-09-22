@@ -1131,7 +1131,7 @@
         "link": "https://github.com/cloudQuant/backtrader",
         "notes": [],
         "level": "PASS",
-        "stars": 185,
+        "stars": 187,
         "desc": "High-performance Python backtesting & live-trading framework: 45%+ faster than u",
         "last_push_days": 1
       },
@@ -1149,10 +1149,8 @@
         "kind": "github",
         "name": "ignaciohermosillacornejo/copilot-money-mcp",
         "link": "https://github.com/ignaciohermosillacornejo/copilot-money-mcp",
-        "notes": [
-          "星数不足 100（当前 81）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "stars": 81,
         "desc": "MCP server for Copilot Money App - AI powered personal finance queries using loc",
         "last_push_days": 1
@@ -1161,10 +1159,8 @@
         "kind": "github",
         "name": "finlynq/finlynq",
         "link": "https://github.com/finlynq/finlynq",
-        "notes": [
-          "星数不足 100（当前 17）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "stars": 17,
         "desc": "Open-source (AGPL v3) personal finance app with a first-party MCP server. Track ",
         "last_push_days": 5
@@ -1173,10 +1169,8 @@
         "kind": "github",
         "name": "vikassharma545/Historical-Market-data-From-Zerodha",
         "link": "https://github.com/vikassharma545/Historical-Market-data-From-Zerodha",
-        "notes": [
-          "星数不足 100（当前 32）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "stars": 32,
         "desc": "pyzdata: download historical and intraday stock, index and options data from Zer",
         "last_push_days": 1
@@ -1186,8 +1180,7 @@
         "name": "SoDevLog/PyTrading",
         "link": "https://github.com/SoDevLog/PyTrading",
         "notes": [
-          "星数不足 100（当前 10）",
-          "无 license"
+          "星数不足 100（当前 10）且无 license"
         ],
         "level": "WARN",
         "stars": 10,
@@ -1198,10 +1191,8 @@
         "kind": "github",
         "name": "MarketDataApp/sdk-py",
         "link": "https://github.com/MarketDataApp/sdk-py",
-        "notes": [
-          "星数不足 100（当前 6）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "stars": 6,
         "desc": "Official Python SDK for the Market Data API providing real-time and historical U",
         "last_push_days": 1

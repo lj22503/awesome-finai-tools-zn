@@ -5,8 +5,8 @@
 ## 总览
 
 - 检测候选：**204** 条（平台技能 109 / GitHub 10 / npm 70 / 机构技能 15）
-- ✅ PASS 建议收录：**192** 条
-- ⚠️ WARN 需人工判断：**12** 条
+- ✅ PASS 建议收录：**196** 条
+- ⚠️ WARN 需人工判断：**8** 条
 - ❌ REJECT 不建议收录：**0** 条
 - 待审池版本：2026-09-22
 
@@ -126,6 +126,10 @@
 - [GitHub] **daniel3303/Equibles**
 - [GitHub] **cloudQuant/backtrader**
 - [GitHub] **tomfunk/fungible**
+- [GitHub] **ignaciohermosillacornejo/copilot-money-mcp**
+- [GitHub] **finlynq/finlynq**
+- [GitHub] **vikassharma545/Historical-Market-data-From-Zerodha**
+- [GitHub] **MarketDataApp/sdk-py**
 - [npm] **stock-sdk**
 - [npm] **yahoo-finance-mcp-server**
 - [npm] **@fre4x/yahoo-finance**
@@ -207,7 +211,7 @@
 
 ---
 
-## ✅ PASS — 建议收录（192 条）
+## ✅ PASS — 建议收录（196 条）
 
 - [clawhub] **金融分析技能**
   利用免费数据源进行多资产投资组合的风险平价分析、动态调仓和回测，提供文字报告与图表可视化。
@@ -554,11 +558,27 @@
 
 - [GitHub] **cloudQuant/backtrader**
   High-performance Python backtesting & live-trading framework: 45%+ faster than u
-  185 ⭐ · 最近推送 1 天前
+  187 ⭐ · 最近推送 1 天前
 
 - [GitHub] **tomfunk/fungible**
   Terminal UI and Desktop GUI for personal finance — Plaid sync, CSV import, AI as
   113 ⭐ · 最近推送 0 天前
+
+- [GitHub] **ignaciohermosillacornejo/copilot-money-mcp**
+  MCP server for Copilot Money App - AI powered personal finance queries using loc
+  81 ⭐ · 最近推送 1 天前
+
+- [GitHub] **finlynq/finlynq**
+  Open-source (AGPL v3) personal finance app with a first-party MCP server. Track 
+  17 ⭐ · 最近推送 5 天前
+
+- [GitHub] **vikassharma545/Historical-Market-data-From-Zerodha**
+  pyzdata: download historical and intraday stock, index and options data from Zer
+  32 ⭐ · 最近推送 1 天前
+
+- [GitHub] **MarketDataApp/sdk-py**
+  Official Python SDK for the Market Data API providing real-time and historical U
+  6 ⭐ · 最近推送 1 天前
 
 - [npm] **stock-sdk**
   零依赖股票行情 SDK：A股/港股/美股/基金/期货/期权，浏览器 + Node.js 双端，内置 CLI 与 MCP server。Zero-dependen
@@ -858,32 +878,12 @@
   判定依据：机构已有档案（需确认是否新增能力）
 
 
-## ⚠️ WARN — 需人工判断（12 条）
-
-- [GitHub] **ignaciohermosillacornejo/copilot-money-mcp**
-  MCP server for Copilot Money App - AI powered personal finance queries using loc
-  81 ⭐ · 最近推送 1 天前
-  判定依据：星数不足 100（当前 81）
-
-- [GitHub] **finlynq/finlynq**
-  Open-source (AGPL v3) personal finance app with a first-party MCP server. Track 
-  17 ⭐ · 最近推送 5 天前
-  判定依据：星数不足 100（当前 17）
-
-- [GitHub] **vikassharma545/Historical-Market-data-From-Zerodha**
-  pyzdata: download historical and intraday stock, index and options data from Zer
-  32 ⭐ · 最近推送 1 天前
-  判定依据：星数不足 100（当前 32）
+## ⚠️ WARN — 需人工判断（8 条）
 
 - [GitHub] **SoDevLog/PyTrading**
   Discover the trading in Python with many strategies, including deep learning app
   10 ⭐ · 最近推送 1 天前
-  判定依据：星数不足 100（当前 10）；无 license
-
-- [GitHub] **MarketDataApp/sdk-py**
-  Official Python SDK for the Market Data API providing real-time and historical U
-  6 ⭐ · 最近推送 1 天前
-  判定依据：星数不足 100（当前 6）
+  判定依据：星数不足 100（当前 10）且无 license
 
 - [npm] **xueqiu-api**
   A node.js wrapper for the [xueqiu](https://xueqiu.com/) api to fetch data.
@@ -929,4 +929,4 @@
 2. 人工确认后，将条目写入 `data/tools.json` / `data/institution-skills.json` 并归入正式分类
 3. 跑 `python scripts/generate_readme.py` 重新生成 README / llms.txt
 
-*报告生成时间：2026-09-22 14:40:10*
+*报告生成时间：2026-09-22 15:47:24*

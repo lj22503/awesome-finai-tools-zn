@@ -15,7 +15,9 @@ awesome-finai-tools-zn 候选质量检测（入库前把关）
   GitHub 候选
     - 仓库是否存在 / 是否已 archived
     - 是否与现有收录重复
-    - 活跃度（最近推送时间）、完整性（description / license / stars）
+    - 低星判定（组合式）：星数 < MIN_STARS_WARN 且（超 STALE_DAYS_REPO 未推送 或 无 license）才 WARN；
+      单看星数不作为扣分项，避免误伤小众但活跃的垂直项目
+    - 完整性：无 description / 无 license / 长期停更 → WARN
   npm 候选
     - 包是否存在 / 是否 deprecated
     - 活跃度（最近发布时间）、查重
@@ -60,7 +62,7 @@ UA = {"User-Agent": "Mozilla/5.0 (compatible; awesome-finai-tools-zn-review/1.0)
 # ---- 判定阈值（可调） ----------------------------------------------------
 STALE_DAYS_REPO = 365        # 仓库超过这么久没推送 → WARN
 STALE_DAYS_PKG = 365         # npm 包超过这么久没发版 → WARN
-MIN_STARS_WARN = 100         # 星数低于此 → WARN
+MIN_STARS_WARN = 100         # 星数低于此 且（超期未推送 或 无 license）→ WARN
 
 PASS, WARN, REJECT = "PASS", "WARN", "REJECT"
 _ORDER = {PASS: 0, WARN: 1, REJECT: 2}
@@ -232,21 +234,34 @@ def review_github(cands: list, idx: dict, sess: requests.Session) -> list:
             stars = repo.get("stargazers_count", 0)
             rec["stars"] = stars
             rec["desc"] = (repo.get("description") or "")[:80]
-            if stars < MIN_STARS_WARN:
+            has_license = bool(repo.get("license"))
+            days = _days_since(repo.get("pushed_at", ""))
+            rec["last_push_days"] = days
+
+            stale = days > STALE_DAYS_REPO
+            low_star = stars < MIN_STARS_WARN
+
+            # 低星只在叠加风险时才扣分：低星 +（停更 或 无 license）
+            if low_star and (stale or not has_license):
                 rec["level"] = worst(rec["level"], WARN)
-                rec["notes"].append(f"星数不足 {MIN_STARS_WARN}（当前 {stars}）")
+                combo = []
+                if stale:
+                    combo.append(f"最近推送距今 {days} 天")
+                if not has_license:
+                    combo.append("无 license")
+                rec["notes"].append(
+                    f"星数不足 {MIN_STARS_WARN}（当前 {stars}）且{'、'.join(combo)}")
+            else:
+                if stale:
+                    rec["level"] = worst(rec["level"], WARN)
+                    rec["notes"].append(f"最近推送距今 {days} 天，活跃度存疑")
+                if not has_license:
+                    rec["level"] = worst(rec["level"], WARN)
+                    rec["notes"].append("无 license")
+
             if not (repo.get("description") or "").strip():
                 rec["level"] = worst(rec["level"], WARN)
                 rec["notes"].append("无仓库描述")
-            if not repo.get("license"):
-                rec["level"] = worst(rec["level"], WARN)
-                rec["notes"].append("无 license")
-
-            days = _days_since(repo.get("pushed_at", ""))
-            rec["last_push_days"] = days
-            if days > STALE_DAYS_REPO:
-                rec["level"] = worst(rec["level"], WARN)
-                rec["notes"].append(f"最近推送距今 {days} 天，活跃度存疑")
         except Exception as exc:
             rec["level"] = WARN
             rec["notes"].append(f"核验异常：{type(exc).__name__}")

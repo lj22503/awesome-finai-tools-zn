@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.4.6] - 2026-09-22
+
+### Changed
+
+- `scripts/review_candidates.py` GitHub 低星判定改为**组合式**：星数不再单独扣分，只有「星数 < 100 **且**（超 365 天未推送 **或** 无 license）」才判 WARN。依据是现有正式收录的 28 个带 GitHub 工具中有 10 个星数不足 100（含 2 个 0 星的中文金融数据 MCP），单点门槛会把这类"小众但垂直可用"的项目一并否定
+- `data/candidate-review-2026-09-22.md` / `.json`：按新口径重新全量检测，结论由 PASS 192 / WARN 12 / REJECT 0 变为 **PASS 196 / WARN 8 / REJECT 0**
+  - GitHub 候选 WARN 由 5 条降至 1 条（仅 `SoDevLog/PyTrading`：10 星 + 无 license）；81 / 32 / 17 / 6 星但活跃且元数据完整的项目转为 PASS
+  - npm 7 条停更项维持不变
+
+---
+
 ## [0.4.5] - 2026-09-22
 
 ### Changed
