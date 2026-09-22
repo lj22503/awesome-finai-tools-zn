@@ -1168,6 +1168,39 @@
       "downloads": 4821,
       "found_date": "2026-09-22",
       "status": "pending_review"
+    },
+    {
+      "id": "clawhub-slzq-trading",
+      "slug": "slzq-trading",
+      "name": "三立期货AI交易助手",
+      "description": "三立期货「三立智期」官方技能：对话领取模拟盘密钥，查行情、持仓、资讯与龙虎榜；模拟盘可下单；实盘可设条件单与止盈止损（服务端托管，不用盯盘）。问是否正规、开户也可答。实盘请去 App 复制密钥。",
+      "link": "https://clawhub.ai/slzq-trading",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-market-customer-analysis",
+      "slug": "market-customer-analysis",
+      "name": "Market Customer Analysis",
+      "description": "基于ST、APPEALS和KANO模型，系统分析市场细分、客户需求与痛点，挖掘高价值与蓝海机会，输出交互式报告。",
+      "link": "https://clawhub.ai/market-customer-analysis",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-deep-skill-finder",
+      "slug": "deep-skill-finder",
+      "name": "deep-skill-finder",
+      "description": "最好的find skill的方式，能够基于你的任务，从实测效果和用户评价等真实使用反馈出发，寻找最匹配的高质量Skill，而不是只看下载量等热门数据。以下两种情况下都应使用本技能：① 当用户需要查找、搜索、推荐或安装 Skill，或者需要借助他人经验时——当用户说\"找个 xxx 技能\"\"股票分析别人怎么做的\"\"找一找有没有现成的技能\"等表达寻找意图，或直接表达想 find a skill / fi",
+      "link": "https://clawhub.ai/deep-skill-finder",
+      "source": "clawhub",
+      "downloads": 4794,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
     }
   ],
   "npm_candidates": [
@@ -1349,6 +1382,14 @@
       "source": "ClawHub",
       "inferred_org": "股海罗盘",
       "link": "https://clawhub.ai/gh-data",
+      "found_date": "2026-09-22"
+    },
+    {
+      "name": "三立期货AI交易助手",
+      "desc": "三立期货「三立智期」官方技能：对话领取模拟盘密钥，查行情、持仓、资讯与龙虎榜；模拟盘可下单；实盘可设条件单与止盈止损（服务端托管，不用盯盘）。问是否正规、开户也可答。实盘请去 App 复制密钥。",
+      "source": "ClawHub",
+      "inferred_org": "三立期货",
+      "link": "https://clawhub.ai/slzq-trading",
       "found_date": "2026-09-22"
     }
   ]
