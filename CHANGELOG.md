@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.4.4] - 2026-09-22
+
+### Fixed
+
+- **ClawHub 候选链接格式错误**（109 条 items + 7 条疑似机构候选此前全部 404 死链）：详情页真实格式为 `https://clawhub.ai/{ownerHandle}/skills/{slug}`，旧代码统一拼成 `https://clawhub.ai/{slug}`，导致这批候选在质量检测中整体判为 REJECT
+  - `scripts/update_china_platforms.py` 新增 `clawhub_link()` 统一收敛链接生成：优先取接口返回的 `canonicalUrl`，其次用 `ownerHandle` + `slug` 拼接，两者都取不到时回退站点首页，从源头杜绝再次写入死链；两处链接生成点改为调用该函数
+  - `downloads` 兼容 search 接口顶层字段与 `v1/skills` 的 `stats.downloads` 两种返回形态（此前 ClawHub 候选下载量恒为 0）
+
+### Added
+
+- `scripts/review_candidates.py`：**入库前质量检测**（只读，不改动任何正式数据）。用法 `python scripts/review_candidates.py --scope {items,github,npm,institution,all} --json`，产出 `data/candidate-review-YYYY-MM-DD.md` 与 `.json`，按 PASS / WARN / REJECT 三档给结论：
+  - 平台技能候选：详情页可达性（404 → REJECT）、与正式清单查重、描述完整性
+  - GitHub 候选：仓库存在性与 archived / disabled 状态、星标、license、最近推送时间
+  - npm 候选：包存在性与 deprecated 状态、周下载量、最近发布时间、查重
+  - 机构技能候选：机构是否已建档、skill 是否重复、描述完整性、链接可达性
+- `scripts/fix_clawhub_links.py`：存量 ClawHub 链接修复工具（`--apply` 写盘），按 slug 经 search 接口反查 `canonicalUrl` / `ownerHandle` 就地重写 link，并顺带回填下载量
+
+### Changed
+
+- `data/pending-review.json`：109 条 items 与 7 条疑似机构候选的链接全部重建为可访问详情页并回填下载量（本次修复 116 条，0 失败）
+
+---
+
 ## [0.4.3] - 2026-09-22
 
 ### Fixed

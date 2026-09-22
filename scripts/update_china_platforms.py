@@ -319,6 +319,32 @@ def get_recent_skills(limit: int = 50) -> list:
     return []
 
 
+def clawhub_link(item) -> str:
+    """
+    生成 ClawHub 技能详情页的真实链接。
+
+    真实格式为 https://clawhub.ai/{ownerHandle}/skills/{slug}：
+    - search 接口返回 canonicalUrl（形如 /{ownerHandle}/skills/{slug}）与 native.ownerHandle
+    - v1/skills 列表接口返回顶层 ownerHandle，无 canonicalUrl
+    旧写法 https://clawhub.ai/{slug} 是死链（404），故统一在此收敛。
+    """
+    if isinstance(item, str):
+        item = {"slug": item}
+    if not isinstance(item, dict):
+        return "https://clawhub.ai"
+
+    slug = item.get("slug") or ""
+    canonical = item.get("canonicalUrl") or (item.get("links") or {}).get("canonical") or ""
+    owner = item.get("ownerHandle") or (item.get("native") or {}).get("ownerHandle") or ""
+
+    if canonical:
+        return canonical if canonical.startswith("http") else f"https://clawhub.ai{canonical}"
+    if owner and slug:
+        return f"https://clawhub.ai/{owner}/skills/{slug}"
+    # 兜底：已知格式不完整时返回站点首页，避免再次写入死链
+    return "https://clawhub.ai"
+
+
 def is_finance_related(item: dict) -> bool:
     """判断 skill 是否与金融/量化相关（含黑名单过滤）"""
     parts = [
@@ -566,9 +592,9 @@ def update_pending_review(
             "slug": slug,
             "name": item.get("displayName", slug),
             "description": (item.get("summary", "") or "")[:200],
-            "link": f"https://clawhub.ai/{slug}",
+            "link": clawhub_link(item),
             "source": "clawhub",
-            "downloads": item.get("stats", {}).get("downloads", 0),
+            "downloads": item.get("downloads") or (item.get("stats") or {}).get("downloads", 0),
             "found_date": today,
             "status": "pending_review",
         })
@@ -689,7 +715,7 @@ def main():
                         "desc": desc,
                         "source": "ClawHub",
                         "inferred_org": inferred,
-                        "link": f"https://clawhub.ai/{slug}",
+                        "link": clawhub_link(item),
                     })
 
         # 3b. 匹配 npm 新包
