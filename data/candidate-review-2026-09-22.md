@@ -5,8 +5,8 @@
 ## 总览
 
 - 检测候选：**204** 条（平台技能 109 / GitHub 10 / npm 70 / 机构技能 15）
-- ✅ PASS 建议收录：**180** 条
-- ⚠️ WARN 需人工判断：**24** 条
+- ✅ PASS 建议收录：**192** 条
+- ⚠️ WARN 需人工判断：**12** 条
 - ❌ REJECT 不建议收录：**0** 条
 - 待审池版本：2026-09-22
 
@@ -126,9 +126,6 @@
 - [GitHub] **daniel3303/Equibles**
 - [GitHub] **cloudQuant/backtrader**
 - [GitHub] **tomfunk/fungible**
-- [GitHub] **ignaciohermosillacornejo/copilot-money-mcp**
-- [GitHub] **finlynq/finlynq**
-- [GitHub] **vikassharma545/Historical-Market-data-From-Zerodha**
 - [npm] **stock-sdk**
 - [npm] **yahoo-finance-mcp-server**
 - [npm] **@fre4x/yahoo-finance**
@@ -147,27 +144,42 @@
 - [npm] **tokenized-stock-mcp**
 - [npm] **alphavantage-stock-mcp**
 - [npm] **@drfirst/korea-stock-mcp**
+- [npm] **stock-mcp**
+- [npm] **@bashcat/taiwan-stock-mcp**
+- [npm] **a-share-after-hours-brief-skill**
 - [npm] **@apocdata-info/mcp-server**
 - [npm] **@evatick/cli**
 - [npm] **@evatick/skill**
 - [npm] **@openfinclaw/cli**
+- [npm] **quantclaw**
 - [npm] **dsh-quant**
 - [npm] **crypto-quant-signal-mcp**
 - [npm] **@itick/browser-sdk**
+- [npm] **@metaharness/trading**
 - [npm] **@itick/node-sdk**
 - [npm] **@openduo/finflow**
 - [npm] **xueqiu-mcp**
+- [npm] **xueqiu-mcp-server**
+- [npm] **snowball-cli**
 - [npm] **xueqiu-cli**
+- [npm] **cn-stock-api**
 - [npm] **@dshtrading/connector-eastmoney**
 - [npm] **eastmoney-quant-mcp**
 - [npm] **dsh-fund-research**
 - [npm] **eastmoney-data-sdk**
+- [npm] **@wbavon/china-market-data**
+- [npm] **mcp-cn-news**
+- [npm] **@touzi-tech/eastmoney**
 - [npm] **@chuizii/tushare**
 - [npm] **@dshtrading/connector-tushare**
 - [npm] **tushare-mcp-server**
+- [npm] **@hestudy/tushare-mcp**
+- [npm] **@hestudy/tushare-sdk**
 - [npm] **akshare-ts**
 - [npm] **@dshtrading/connector-akshare**
 - [npm] **quanters-akshare-mcp**
+- [npm] **fund-screener**
+- [npm] **akshare-cb**
 - [npm] **dsh-financial-analysis**
 - [npm] **ahshare-mcp**
 - [npm] **@weaxs/stock-analysis-plugin**
@@ -195,7 +207,7 @@
 
 ---
 
-## ✅ PASS — 建议收录（180 条）
+## ✅ PASS — 建议收录（192 条）
 
 - [clawhub] **金融分析技能**
   利用免费数据源进行多资产投资组合的风险平价分析、动态调仓和回测，提供文字报告与图表可视化。
@@ -548,189 +560,237 @@
   Terminal UI and Desktop GUI for personal finance — Plaid sync, CSV import, AI as
   113 ⭐ · 最近推送 0 天前
 
-- [GitHub] **ignaciohermosillacornejo/copilot-money-mcp**
-  MCP server for Copilot Money App - AI powered personal finance queries using loc
-  81 ⭐ · 最近推送 1 天前
-
-- [GitHub] **finlynq/finlynq**
-  Open-source (AGPL v3) personal finance app with a first-party MCP server. Track 
-  17 ⭐ · 最近推送 5 天前
-
-- [GitHub] **vikassharma545/Historical-Market-data-From-Zerodha**
-  pyzdata: download historical and intraday stock, index and options data from Zer
-  32 ⭐ · 最近推送 1 天前
-
 - [npm] **stock-sdk**
   零依赖股票行情 SDK：A股/港股/美股/基金/期货/期权，浏览器 + Node.js 双端，内置 CLI 与 MCP server。Zero-dependen
-  周下载 2608 · 最近发布 10 天前 · v2.4.4
+  最近发布 10 天前 · v2.4.4
 
 - [npm] **yahoo-finance-mcp-server**
   Yahoo Finance MCP Server - Real-time stock data, company info, financial stateme
-  周下载 168 · 最近发布 14 天前 · v1.3.1
+  最近发布 14 天前 · v1.3.1
 
 - [npm] **@fre4x/yahoo-finance**
   A Yahoo Finance MCP server for LLMs.
-  周下载 80 · 最近发布 11 天前 · v1.1.13
+  最近发布 11 天前 · v1.1.13
 
 - [npm] **@venlyfinance/settlement-mcp**
   Venly Finance MCP: SDK-backed tools, resources and prompts for building internat
-  周下载 342 · 最近发布 4 天前 · v0.11.0
+  最近发布 4 天前 · v0.11.0
 
 - [npm] **next-finance-mcp**
   MCP Server para o NEXT Finance (finance.net.br) — login via browser, listagem de
-  周下载 640 · 最近发布 1 天前 · v0.9.181
+  最近发布 1 天前 · v0.9.181
 
 - [npm] **finance-mcp**
   Multi-source financial data MCP server with Tushare, optional Qveris routing, an
-  周下载 59 · 最近发布 18 天前 · v4.11.2
+  最近发布 18 天前 · v4.11.2
 
 - [npm] **@arcadia-finance/mcp-server**
   MCP server for Arcadia Finance. Deploy concentrated liquidity on Uniswap, Aerodr
-  周下载 102 · 最近发布 43 天前 · v0.5.1
+  最近发布 43 天前 · v0.5.1
 
 - [npm] **korea-finance-mcp**
   Korea Finance MCP ??ECOS · Real Estate · DART · KRX. Korea's first legally-safe 
-  周下载 10 · 最近发布 120 天前 · v1.0.0
+  最近发布 120 天前 · v1.0.0
 
 - [npm] **@compute-finance/mcp**
   Live AI compute pricing oracle MCP server — real-time LLM model prices across pr
-  周下载 225 · 最近发布 0 天前 · v0.12.0
+  最近发布 0 天前 · v0.12.0
 
 - [npm] **verdict-finance-mcp**
   MCP server for Verdict, the due-diligence house for DeFi. Keyless access to Verd
-  周下载 61 · 最近发布 25 天前 · v0.4.0
+  最近发布 25 天前 · v0.4.0
 
 - [npm] **@leviai/publicfinance-mcp**
   Public finance MCP server — SEC EDGAR filings, US Treasury rates, BLS labor stat
-  周下载 23 · 最近发布 173 天前 · v1.0.0
+  最近发布 173 天前 · v1.0.0
 
 - [npm] **yahoo-stock-mcp**
   MCP server for stock information with unofficial Yahoo Finance + Investing.com i
-  周下载 45 · 最近发布 1 天前 · v0.3.1
+  最近发布 1 天前 · v0.3.1
 
 - [npm] **@zeam-labs/x402-mcp-bridge**
   Put a wallet in front of any x402-paid MCP server, and hold a metered line on th
-  周下载 536 · 最近发布 4 天前 · v2.4.4
+  最近发布 4 天前 · v2.4.4
 
 - [npm] **korea-stock-mcp**
   MCP server for korea stock
-  周下载 129 · 最近发布 72 天前 · v1.4.1
+  最近发布 72 天前 · v1.4.1
 
 - [npm] **india-stock-mcp**
   MCP server for Indian stock market — NSE/BSE quotes, MF NAV, fundamentals
-  周下载 51 · 最近发布 102 天前 · v1.0.1
+  最近发布 102 天前 · v1.0.1
 
 - [npm] **tokenized-stock-mcp**
   MCP server to buy/sell tokenized US stocks (Dinari dShares) paying directly in U
-  周下载 29 · 最近发布 123 天前 · v0.1.6
+  最近发布 123 天前 · v0.1.6
 
 - [npm] **alphavantage-stock-mcp**
   Design for free tier account, MCP server for Stock data and analysis server usin
-  周下载 10 · 最近发布 143 天前 · v2.0.2
+  最近发布 143 天前 · v2.0.2
 
 - [npm] **@drfirst/korea-stock-mcp**
   한국 주식 시장 데이터 조회 MCP 서버 (완전 Node.js)
-  周下载 16 · 最近发布 109 天前 · v1.0.5
+  最近发布 109 天前 · v1.0.5
+
+- [npm] **stock-mcp**
+  MCP server for Alpha Vantage stock market data
+  最近发布 241 天前 · v1.0.1
+
+- [npm] **@bashcat/taiwan-stock-mcp**
+  MCP server for Taiwan stock market data - 台灣股市資料查詢 MCP 工具
+  最近发布 163 天前 · v1.5.0
+
+- [npm] **a-share-after-hours-brief-skill**
+  Codex skill for A-share after-hours stock review with portable JSON history.
+  最近发布 82 天前 · v0.1.8
 
 - [npm] **@apocdata-info/mcp-server**
   天启至数 Apocdata MCP Server — 46 tools, AI-native A-share data (announcements, quot
-  周下载 92 · 最近发布 11 天前 · v0.1.6
+  最近发布 11 天前 · v0.1.6
 
 - [npm] **@evatick/cli**
   EVA Tick CLI for deterministic A-share, Chinese index, domestic and global futur
-  周下载 28 · 最近发布 19 天前 · v0.4.4
+  最近发布 19 天前 · v0.4.4
 
 - [npm] **@evatick/skill**
   Codex Skill for querying A-share, Chinese index, domestic and global futures, ex
-  周下载 26 · 最近发布 19 天前 · v0.4.4
+  最近发布 19 天前 · v0.4.4
 
 - [npm] **@openfinclaw/cli**
   One-stop quant-trading AI agent for any coding assistant — MCP server + CLI
-  周下载 44 · 最近发布 130 天前 · v1.0.0
+  最近发布 130 天前 · v1.0.0
+
+- [npm] **quantclaw**
+  Open-source quant trading superagent harness
+  最近发布 170 天前 · v0.1.5
 
 - [npm] **dsh-quant**
   🐳 The Everything-Plugin Quant OS — AI-native & DSH-native: 46 tools, 6 pluggable
-  周下载 210 · 最近发布 30 天前 · v0.90.0
+  最近发布 30 天前 · v0.90.0
 
 - [npm] **crypto-quant-signal-mcp**
   The Brain Layer for AI Trading Agents — one MCP call returns a composite trade v
-  周下载 190 · 最近发布 12 天前 · v1.30.0
+  最近发布 12 天前 · v1.30.0
 
 - [npm] **@itick/browser-sdk**
   Official iTick API SDK for browser. Real-time & historical data for global Stock
-  周下载 66 · 最近发布 164 天前 · v1.0.2
+  最近发布 164 天前 · v1.0.2
+
+- [npm] **@metaharness/trading**
+  MetaHarness example — quant trading harness with non-bypassable risk gate, paper
+  最近发布 100 天前 · v0.1.0
 
 - [npm] **@itick/node-sdk**
   Official iTick API SDK for Node.js. Real-time & historical data for global Stock
-  周下载 12 · 最近发布 164 天前 · v1.0.3
+  最近发布 164 天前 · v1.0.3
 
 - [npm] **@openduo/finflow**
   Unified financial CLI — jin10, cls, xueqiu, gelonghui
-  周下载 50 · 最近发布 12 天前 · v1.10.6
+  最近发布 12 天前 · v1.10.6
 
 - [npm] **xueqiu-mcp**
   雪球股票数据 MCP Server
-  周下载 86 · 最近发布 145 天前 · v1.1.1
+  最近发布 145 天前 · v1.1.1
+
+- [npm] **xueqiu-mcp-server**
+  MCP server for Xueqiu finance data
+  最近发布 279 天前 · v0.1.0
+
+- [npm] **snowball-cli**
+  Xueqiu (雪球) stock data CLI for AI agents — quotes, klines, financials, KOL senti
+  最近发布 172 天前 · v0.3.1
 
 - [npm] **xueqiu-cli**
   雪球（xueqiu.com）组合调仓命令行工具：复用浏览器 Cookie，支持整体调仓、单笔买卖、批量配置文件调仓。
-  周下载 27 · 最近发布 158 天前 · v0.1.1
+  最近发布 158 天前 · v0.1.1
+
+- [npm] **cn-stock-api**
+  中国与美股常用行情数据源封装，支持东方财富、新浪、雪球
+  最近发布 90 天前 · v0.1.3
 
 - [npm] **@dshtrading/connector-eastmoney**
   【模板】交易所连接器插件脚手架：Eastmoney（eastmoney）v2 插件骨架 —— 市场数据服务 + 交易服务 + 三态闸门 + BYOK 凭证 re
-  周下载 314 · 最近发布 5 天前 · v0.4.1
+  最近发布 5 天前 · v0.4.1
 
 - [npm] **eastmoney-quant-mcp**
   A-share quantitative analysis MCP server — Eastmoney data, stock screening, sect
-  周下载 48 · 最近发布 58 天前 · v0.1.0
+  最近发布 58 天前 · v0.1.0
 
 - [npm] **dsh-fund-research**
   Research plugin for Chinese public mutual funds on DeepSeek Harness: collects fu
-  周下载 587 · 最近发布 3 天前 · v0.4.13
+  最近发布 3 天前 · v0.4.13
 
 - [npm] **eastmoney-data-sdk**
   东方财富数据 SDK - 获取 A 股历史 K 线、实时行情、分时线等数据
-  周下载 14 · 最近发布 246 天前 · v1.0.5
+  最近发布 246 天前 · v1.0.5
+
+- [npm] **@wbavon/china-market-data**
+  Free Chinese market data MCP server — A-shares, indices, fundamentals, sectors. 
+  最近发布 168 天前 · v0.2.0
+
+- [npm] **mcp-cn-news**
+  MCP server for Chinese financial news: real-time headlines, stock announcements,
+  最近发布 196 天前 · v1.0.0
+
+- [npm] **@touzi-tech/eastmoney**
+  东方财富数据 SDK — K线、行情、分时、财报、股票列表
+  最近发布 147 天前 · v1.0.1
 
 - [npm] **@chuizii/tushare**
   A typescript lib to call tushare api
-  周下载 15 · 最近发布 9 天前 · v1.0.15
+  最近发布 9 天前 · v1.0.15
 
 - [npm] **@dshtrading/connector-tushare**
   【模板】交易所连接器插件脚手架：Tushare（tushare）v2 插件骨架 —— 市场数据服务 + 交易服务 + 三态闸门 + BYOK 凭证 ref。生成
-  周下载 279 · 最近发布 5 天前 · v0.4.1
+  最近发布 5 天前 · v0.4.1
 
 - [npm] **tushare-mcp-server**
   MCP server for Tushare Pro financial data API — A-shares, indices, funds, future
-  周下载 100 · 最近发布 11 天前 · v1.0.2
+  最近发布 11 天前 · v1.0.2
+
+- [npm] **@hestudy/tushare-mcp**
+  Tushare MCP Server - Model Context Protocol server for Tushare financial data ac
+  最近发布 342 天前 · v1.1.1
+
+- [npm] **@hestudy/tushare-sdk**
+  TypeScript SDK for Tushare Pro API
+  最近发布 343 天前 · v1.0.0
 
 - [npm] **akshare-ts**
   AKShare TypeScript - 量化数据获取接口库
-  周下载 210 · 最近发布 104 天前 · v1.0.1
+  最近发布 104 天前 · v1.0.1
 
 - [npm] **@dshtrading/connector-akshare**
   【模板】交易所连接器插件脚手架：Akshare（akshare）v2 插件骨架 —— 市场数据服务 + 交易服务 + 三态闸门 + BYOK 凭证 ref。生成
-  周下载 293 · 最近发布 5 天前 · v0.4.1
+  最近发布 5 天前 · v0.4.1
 
 - [npm] **quanters-akshare-mcp**
   AKShare MCP Server (Node.js): A-shares, ETF, futures, commodities, gold — no Pyt
-  周下载 16 · 最近发布 117 天前 · v0.2.0
+  最近发布 117 天前 · v0.2.0
+
+- [npm] **fund-screener**
+  固收+基金筛选器 - 基于AkShare的基金分析工具
+  最近发布 219 天前 · v1.2.0
+
+- [npm] **akshare-cb**
+  TypeScript/Node.js library for Chinese convertible bond data
+  最近发布 161 天前 · v0.3.1
 
 - [npm] **dsh-financial-analysis**
   DeepSeek Harness 财务报表分析插件：基于财务分析规则，提供「财报分析师」Agent preset 与5项分析技能（资产负债表/利润表/现金流量表
-  周下载 38 · 最近发布 37 天前 · v0.1.1
+  最近发布 37 天前 · v0.1.1
 
 - [npm] **ahshare-mcp**
   MCP server providing Chinese A-share stock market data — pure TypeScript, zero P
-  周下载 10 · 最近发布 89 天前 · v1.0.0
+  最近发布 89 天前 · v1.0.0
 
 - [npm] **@weaxs/stock-analysis-plugin**
   Pi Agent extension for stock analysis, screening, and strategy backtesting acros
-  周下载 849 · 最近发布 1 天前 · v0.2.2
+  最近发布 1 天前 · v0.2.2
 
 - [npm] **stock-analysis-plugin**
   Pi Agent extension for stock analysis, screening, and strategy backtesting acros
-  周下载 779 · 最近发布 1 天前 · v0.2.2
+  最近发布 1 天前 · v0.2.2
 
 - [npm] **futu-api**
   Futu Websocket API for Node.js
@@ -738,7 +798,7 @@
 
 - [npm] **@dshtrading/connector-futu**
   【模板】交易所连接器插件脚手架：Futu（futu）v2 插件骨架 —— 市场数据服务 + 交易服务 + 三态闸门 + BYOK 凭证 ref。生成器：node
-  周下载 289 · 最近发布 5 天前 · v0.4.1
+  最近发布 5 天前 · v0.4.1
 
 - [npm] **@yangzhe1991/dsh-futu-mcp**
   DSH plugin: connect to Futu (富途) MCP via OAuth 2.1 and expose its tools to the a
@@ -798,107 +858,47 @@
   判定依据：机构已有档案（需确认是否新增能力）
 
 
-## ⚠️ WARN — 需人工判断（24 条）
+## ⚠️ WARN — 需人工判断（12 条）
+
+- [GitHub] **ignaciohermosillacornejo/copilot-money-mcp**
+  MCP server for Copilot Money App - AI powered personal finance queries using loc
+  81 ⭐ · 最近推送 1 天前
+  判定依据：星数不足 100（当前 81）
+
+- [GitHub] **finlynq/finlynq**
+  Open-source (AGPL v3) personal finance app with a first-party MCP server. Track 
+  17 ⭐ · 最近推送 5 天前
+  判定依据：星数不足 100（当前 17）
+
+- [GitHub] **vikassharma545/Historical-Market-data-From-Zerodha**
+  pyzdata: download historical and intraday stock, index and options data from Zer
+  32 ⭐ · 最近推送 1 天前
+  判定依据：星数不足 100（当前 32）
 
 - [GitHub] **SoDevLog/PyTrading**
   Discover the trading in Python with many strategies, including deep learning app
   10 ⭐ · 最近推送 1 天前
-  判定依据：无 license
+  判定依据：星数不足 100（当前 10）；无 license
 
 - [GitHub] **MarketDataApp/sdk-py**
   Official Python SDK for the Market Data API providing real-time and historical U
   6 ⭐ · 最近推送 1 天前
-  判定依据：星数偏低（6）
-
-- [npm] **stock-mcp**
-  MCP server for Alpha Vantage stock market data
-  周下载 6 · 最近发布 241 天前 · v1.0.1
-  判定依据：周下载量极低（6）
-
-- [npm] **@bashcat/taiwan-stock-mcp**
-  MCP server for Taiwan stock market data - 台灣股市資料查詢 MCP 工具
-  周下载 4 · 最近发布 163 天前 · v1.5.0
-  判定依据：周下载量极低（4）
-
-- [npm] **a-share-after-hours-brief-skill**
-  Codex skill for A-share after-hours stock review with portable JSON history.
-  周下载 3 · 最近发布 82 天前 · v0.1.8
-  判定依据：周下载量极低（3）
-
-- [npm] **quantclaw**
-  Open-source quant trading superagent harness
-  周下载 4 · 最近发布 170 天前 · v0.1.5
-  判定依据：周下载量极低（4）
-
-- [npm] **@metaharness/trading**
-  MetaHarness example — quant trading harness with non-bypassable risk gate, paper
-  周下载 3 · 最近发布 100 天前 · v0.1.0
-  判定依据：周下载量极低（3）
+  判定依据：星数不足 100（当前 6）
 
 - [npm] **xueqiu-api**
   A node.js wrapper for the [xueqiu](https://xueqiu.com/) api to fetch data.
-  周下载 5 · 最近发布 1581 天前 · v0.5.3
-  判定依据：最近发布距今 1581 天，可能已停更；周下载量极低（5）
-
-- [npm] **xueqiu-mcp-server**
-  MCP server for Xueqiu finance data
-  周下载 2 · 最近发布 279 天前 · v0.1.0
-  判定依据：周下载量极低（2）
-
-- [npm] **snowball-cli**
-  Xueqiu (雪球) stock data CLI for AI agents — quotes, klines, financials, KOL senti
-  周下载 3 · 最近发布 172 天前 · v0.3.1
-  判定依据：周下载量极低（3）
-
-- [npm] **cn-stock-api**
-  中国与美股常用行情数据源封装，支持东方财富、新浪、雪球
-  周下载 3 · 最近发布 90 天前 · v0.1.3
-  判定依据：周下载量极低（3）
-
-- [npm] **@wbavon/china-market-data**
-  Free Chinese market data MCP server — A-shares, indices, fundamentals, sectors. 
-  周下载 2 · 最近发布 168 天前 · v0.2.0
-  判定依据：周下载量极低（2）
-
-- [npm] **mcp-cn-news**
-  MCP server for Chinese financial news: real-time headlines, stock announcements,
-  周下载 8 · 最近发布 196 天前 · v1.0.0
-  判定依据：周下载量极低（8）
-
-- [npm] **@touzi-tech/eastmoney**
-  东方财富数据 SDK — K线、行情、分时、财报、股票列表
-  周下载 2 · 最近发布 147 天前 · v1.0.1
-  判定依据：周下载量极低（2）
+  最近发布 1581 天前 · v0.5.3
+  判定依据：最近发布距今 1581 天，可能已停更
 
 - [npm] **@tushare/mcp**
   Tushare MCP 服务 - 基于 @tushare/sdk 的 Model Context Protocol 实现
-  周下载 18 · 最近发布 386 天前 · v0.2.1
+  最近发布 386 天前 · v0.2.1
   判定依据：最近发布距今 386 天，可能已停更
 
 - [npm] **@tushare/sdk**
   Tushare Pro SDK
-  周下载 7 · 最近发布 386 天前 · v1.2.0
-  判定依据：最近发布距今 386 天，可能已停更；周下载量极低（7）
-
-- [npm] **@hestudy/tushare-mcp**
-  Tushare MCP Server - Model Context Protocol server for Tushare financial data ac
-  周下载 1 · 最近发布 342 天前 · v1.1.1
-  判定依据：周下载量极低（1）
-
-- [npm] **@hestudy/tushare-sdk**
-  TypeScript SDK for Tushare Pro API
-  周下载 1 · 最近发布 343 天前 · v1.0.0
-  判定依据：周下载量极低（1）
-
-- [npm] **fund-screener**
-  固收+基金筛选器 - 基于AkShare的基金分析工具
-  周下载 2 · 最近发布 219 天前 · v1.2.0
-  判定依据：周下载量极低（2）
-
-- [npm] **akshare-cb**
-  TypeScript/Node.js library for Chinese convertible bond data
-  周下载 1 · 最近发布 161 天前 · v0.3.1
-  判定依据：周下载量极低（1）
+  最近发布 386 天前 · v1.2.0
+  判定依据：最近发布距今 386 天，可能已停更
 
 - [npm] **futu**
   A Web development framework
@@ -929,4 +929,4 @@
 2. 人工确认后，将条目写入 `data/tools.json` / `data/institution-skills.json` 并归入正式分类
 3. 跑 `python scripts/generate_readme.py` 重新生成 README / llms.txt
 
-*报告生成时间：2026-09-22 13:51:55*
+*报告生成时间：2026-09-22 14:40:10*

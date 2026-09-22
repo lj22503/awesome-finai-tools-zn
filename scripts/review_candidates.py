@@ -18,7 +18,7 @@ awesome-finai-tools-zn 候选质量检测（入库前把关）
     - 活跃度（最近推送时间）、完整性（description / license / stars）
   npm 候选
     - 包是否存在 / 是否 deprecated
-    - 周下载量、活跃度（最近发布时间）、查重
+    - 活跃度（最近发布时间）、查重
   机构技能候选
     - 机构是否已有档案、skill 是否重复、描述完整性、链接可达性
 
@@ -60,8 +60,7 @@ UA = {"User-Agent": "Mozilla/5.0 (compatible; awesome-finai-tools-zn-review/1.0)
 # ---- 判定阈值（可调） ----------------------------------------------------
 STALE_DAYS_REPO = 365        # 仓库超过这么久没推送 → WARN
 STALE_DAYS_PKG = 365         # npm 包超过这么久没发版 → WARN
-MIN_WEEKLY_DOWNLOADS = 10    # npm 周下载量低于此 → WARN
-MIN_STARS_WARN = 10          # 星数低于此 → WARN
+MIN_STARS_WARN = 100         # 星数低于此 → WARN
 
 PASS, WARN, REJECT = "PASS", "WARN", "REJECT"
 _ORDER = {PASS: 0, WARN: 1, REJECT: 2}
@@ -235,7 +234,7 @@ def review_github(cands: list, idx: dict, sess: requests.Session) -> list:
             rec["desc"] = (repo.get("description") or "")[:80]
             if stars < MIN_STARS_WARN:
                 rec["level"] = worst(rec["level"], WARN)
-                rec["notes"].append(f"星数偏低（{stars}）")
+                rec["notes"].append(f"星数不足 {MIN_STARS_WARN}（当前 {stars}）")
             if not (repo.get("description") or "").strip():
                 rec["level"] = worst(rec["level"], WARN)
                 rec["notes"].append("无仓库描述")
@@ -295,17 +294,6 @@ def review_npm(cands: list, idx: dict, sess: requests.Session) -> list:
             if days > STALE_DAYS_PKG:
                 rec["level"] = worst(rec["level"], WARN)
                 rec["notes"].append(f"最近发布距今 {days} 天，可能已停更")
-
-            try:
-                d = sess.get(f"https://api.npmjs.org/downloads/point/last-week/{name}", timeout=20)
-                if d.status_code == 200:
-                    dl = d.json().get("downloads", 0)
-                    rec["weekly_downloads"] = dl
-                    if dl < MIN_WEEKLY_DOWNLOADS:
-                        rec["level"] = worst(rec["level"], WARN)
-                        rec["notes"].append(f"周下载量极低（{dl}）")
-            except Exception:
-                pass
         except Exception as exc:
             rec["level"] = WARN
             rec["notes"].append(f"核验异常：{type(exc).__name__}")
@@ -395,8 +383,6 @@ def render_md(groups: dict, meta: dict) -> str:
             bits = []
             if x.get("stars") is not None:
                 bits.append(f"{x['stars']} ⭐")
-            if x.get("weekly_downloads") is not None:
-                bits.append(f"周下载 {x['weekly_downloads']}")
             if x.get("last_push_days") is not None:
                 bits.append(f"最近推送 {x['last_push_days']} 天前")
             if x.get("last_publish_days") is not None:

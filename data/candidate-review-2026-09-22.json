@@ -1149,8 +1149,10 @@
         "kind": "github",
         "name": "ignaciohermosillacornejo/copilot-money-mcp",
         "link": "https://github.com/ignaciohermosillacornejo/copilot-money-mcp",
-        "notes": [],
-        "level": "PASS",
+        "notes": [
+          "星数不足 100（当前 81）"
+        ],
+        "level": "WARN",
         "stars": 81,
         "desc": "MCP server for Copilot Money App - AI powered personal finance queries using loc",
         "last_push_days": 1
@@ -1159,8 +1161,10 @@
         "kind": "github",
         "name": "finlynq/finlynq",
         "link": "https://github.com/finlynq/finlynq",
-        "notes": [],
-        "level": "PASS",
+        "notes": [
+          "星数不足 100（当前 17）"
+        ],
+        "level": "WARN",
         "stars": 17,
         "desc": "Open-source (AGPL v3) personal finance app with a first-party MCP server. Track ",
         "last_push_days": 5
@@ -1169,8 +1173,10 @@
         "kind": "github",
         "name": "vikassharma545/Historical-Market-data-From-Zerodha",
         "link": "https://github.com/vikassharma545/Historical-Market-data-From-Zerodha",
-        "notes": [],
-        "level": "PASS",
+        "notes": [
+          "星数不足 100（当前 32）"
+        ],
+        "level": "WARN",
         "stars": 32,
         "desc": "pyzdata: download historical and intraday stock, index and options data from Zer",
         "last_push_days": 1
@@ -1180,6 +1186,7 @@
         "name": "SoDevLog/PyTrading",
         "link": "https://github.com/SoDevLog/PyTrading",
         "notes": [
+          "星数不足 100（当前 10）",
           "无 license"
         ],
         "level": "WARN",
@@ -1192,7 +1199,7 @@
         "name": "MarketDataApp/sdk-py",
         "link": "https://github.com/MarketDataApp/sdk-py",
         "notes": [
-          "星数偏低（6）"
+          "星数不足 100（当前 6）"
         ],
         "level": "WARN",
         "stars": 6,
@@ -1209,8 +1216,7 @@
         "level": "PASS",
         "version": "2.4.4",
         "desc": "零依赖股票行情 SDK：A股/港股/美股/基金/期货/期权，浏览器 + Node.js 双端，内置 CLI 与 MCP server。Zero-dependen",
-        "last_publish_days": 10,
-        "weekly_downloads": 2608
+        "last_publish_days": 10
       },
       {
         "kind": "npm",
@@ -1220,8 +1226,7 @@
         "level": "PASS",
         "version": "1.3.1",
         "desc": "Yahoo Finance MCP Server - Real-time stock data, company info, financial stateme",
-        "last_publish_days": 14,
-        "weekly_downloads": 168
+        "last_publish_days": 14
       },
       {
         "kind": "npm",
@@ -1231,8 +1236,7 @@
         "level": "PASS",
         "version": "1.1.13",
         "desc": "A Yahoo Finance MCP server for LLMs.",
-        "last_publish_days": 11,
-        "weekly_downloads": 80
+        "last_publish_days": 11
       },
       {
         "kind": "npm",
@@ -1242,8 +1246,7 @@
         "level": "PASS",
         "version": "0.11.0",
         "desc": "Venly Finance MCP: SDK-backed tools, resources and prompts for building internat",
-        "last_publish_days": 4,
-        "weekly_downloads": 342
+        "last_publish_days": 4
       },
       {
         "kind": "npm",
@@ -1253,8 +1256,7 @@
         "level": "PASS",
         "version": "0.9.181",
         "desc": "MCP Server para o NEXT Finance (finance.net.br) — login via browser, listagem de",
-        "last_publish_days": 1,
-        "weekly_downloads": 640
+        "last_publish_days": 1
       },
       {
         "kind": "npm",
@@ -1264,8 +1266,7 @@
         "level": "PASS",
         "version": "4.11.2",
         "desc": "Multi-source financial data MCP server with Tushare, optional Qveris routing, an",
-        "last_publish_days": 18,
-        "weekly_downloads": 59
+        "last_publish_days": 18
       },
       {
         "kind": "npm",
@@ -1275,8 +1276,7 @@
         "level": "PASS",
         "version": "0.5.1",
         "desc": "MCP server for Arcadia Finance. Deploy concentrated liquidity on Uniswap, Aerodr",
-        "last_publish_days": 43,
-        "weekly_downloads": 102
+        "last_publish_days": 43
       },
       {
         "kind": "npm",
@@ -1286,8 +1286,7 @@
         "level": "PASS",
         "version": "1.0.0",
         "desc": "Korea Finance MCP ??ECOS · Real Estate · DART · KRX. Korea's first legally-safe ",
-        "last_publish_days": 120,
-        "weekly_downloads": 10
+        "last_publish_days": 120
       },
       {
         "kind": "npm",
@@ -1297,8 +1296,7 @@
         "level": "PASS",
         "version": "0.12.0",
         "desc": "Live AI compute pricing oracle MCP server — real-time LLM model prices across pr",
-        "last_publish_days": 0,
-        "weekly_downloads": 225
+        "last_publish_days": 0
       },
       {
         "kind": "npm",
@@ -1308,8 +1306,7 @@
         "level": "PASS",
         "version": "0.4.0",
         "desc": "MCP server for Verdict, the due-diligence house for DeFi. Keyless access to Verd",
-        "last_publish_days": 25,
-        "weekly_downloads": 61
+        "last_publish_days": 25
       },
       {
         "kind": "npm",
@@ -1319,8 +1316,7 @@
         "level": "PASS",
         "version": "1.0.0",
         "desc": "Public finance MCP server — SEC EDGAR filings, US Treasury rates, BLS labor stat",
-        "last_publish_days": 173,
-        "weekly_downloads": 23
+        "last_publish_days": 173
       },
       {
         "kind": "npm",
@@ -1330,8 +1326,7 @@
         "level": "PASS",
         "version": "0.3.1",
         "desc": "MCP server for stock information with unofficial Yahoo Finance + Investing.com i",
-        "last_publish_days": 1,
-        "weekly_downloads": 45
+        "last_publish_days": 1
       },
       {
         "kind": "npm",
@@ -1341,8 +1336,7 @@
         "level": "PASS",
         "version": "2.4.4",
         "desc": "Put a wallet in front of any x402-paid MCP server, and hold a metered line on th",
-        "last_publish_days": 4,
-        "weekly_downloads": 536
+        "last_publish_days": 4
       },
       {
         "kind": "npm",
@@ -1352,8 +1346,7 @@
         "level": "PASS",
         "version": "1.4.1",
         "desc": "MCP server for korea stock",
-        "last_publish_days": 72,
-        "weekly_downloads": 129
+        "last_publish_days": 72
       },
       {
         "kind": "npm",
@@ -1363,8 +1356,7 @@
         "level": "PASS",
         "version": "1.0.1",
         "desc": "MCP server for Indian stock market — NSE/BSE quotes, MF NAV, fundamentals",
-        "last_publish_days": 102,
-        "weekly_downloads": 51
+        "last_publish_days": 102
       },
       {
         "kind": "npm",
@@ -1374,8 +1366,7 @@
         "level": "PASS",
         "version": "0.1.6",
         "desc": "MCP server to buy/sell tokenized US stocks (Dinari dShares) paying directly in U",
-        "last_publish_days": 123,
-        "weekly_downloads": 29
+        "last_publish_days": 123
       },
       {
         "kind": "npm",
@@ -1385,8 +1376,7 @@
         "level": "PASS",
         "version": "2.0.2",
         "desc": "Design for free tier account, MCP server for Stock data and analysis server usin",
-        "last_publish_days": 143,
-        "weekly_downloads": 10
+        "last_publish_days": 143
       },
       {
         "kind": "npm",
@@ -1396,47 +1386,37 @@
         "level": "PASS",
         "version": "1.0.5",
         "desc": "한국 주식 시장 데이터 조회 MCP 서버 (완전 Node.js)",
-        "last_publish_days": 109,
-        "weekly_downloads": 16
+        "last_publish_days": 109
       },
       {
         "kind": "npm",
         "name": "stock-mcp",
         "link": "https://www.npmjs.com/package/stock-mcp",
-        "notes": [
-          "周下载量极低（6）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "1.0.1",
         "desc": "MCP server for Alpha Vantage stock market data",
-        "last_publish_days": 241,
-        "weekly_downloads": 6
+        "last_publish_days": 241
       },
       {
         "kind": "npm",
         "name": "@bashcat/taiwan-stock-mcp",
         "link": "https://www.npmjs.com/package/@bashcat/taiwan-stock-mcp",
-        "notes": [
-          "周下载量极低（4）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "1.5.0",
         "desc": "MCP server for Taiwan stock market data - 台灣股市資料查詢 MCP 工具",
-        "last_publish_days": 163,
-        "weekly_downloads": 4
+        "last_publish_days": 163
       },
       {
         "kind": "npm",
         "name": "a-share-after-hours-brief-skill",
         "link": "https://www.npmjs.com/package/a-share-after-hours-brief-skill",
-        "notes": [
-          "周下载量极低（3）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "0.1.8",
         "desc": "Codex skill for A-share after-hours stock review with portable JSON history.",
-        "last_publish_days": 82,
-        "weekly_downloads": 3
+        "last_publish_days": 82
       },
       {
         "kind": "npm",
@@ -1446,8 +1426,7 @@
         "level": "PASS",
         "version": "0.1.6",
         "desc": "天启至数 Apocdata MCP Server — 46 tools, AI-native A-share data (announcements, quot",
-        "last_publish_days": 11,
-        "weekly_downloads": 92
+        "last_publish_days": 11
       },
       {
         "kind": "npm",
@@ -1457,8 +1436,7 @@
         "level": "PASS",
         "version": "0.4.4",
         "desc": "EVA Tick CLI for deterministic A-share, Chinese index, domestic and global futur",
-        "last_publish_days": 19,
-        "weekly_downloads": 28
+        "last_publish_days": 19
       },
       {
         "kind": "npm",
@@ -1468,8 +1446,7 @@
         "level": "PASS",
         "version": "0.4.4",
         "desc": "Codex Skill for querying A-share, Chinese index, domestic and global futures, ex",
-        "last_publish_days": 19,
-        "weekly_downloads": 26
+        "last_publish_days": 19
       },
       {
         "kind": "npm",
@@ -1479,21 +1456,17 @@
         "level": "PASS",
         "version": "1.0.0",
         "desc": "One-stop quant-trading AI agent for any coding assistant — MCP server + CLI",
-        "last_publish_days": 130,
-        "weekly_downloads": 44
+        "last_publish_days": 130
       },
       {
         "kind": "npm",
         "name": "quantclaw",
         "link": "https://www.npmjs.com/package/quantclaw",
-        "notes": [
-          "周下载量极低（4）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "0.1.5",
         "desc": "Open-source quant trading superagent harness",
-        "last_publish_days": 170,
-        "weekly_downloads": 4
+        "last_publish_days": 170
       },
       {
         "kind": "npm",
@@ -1503,8 +1476,7 @@
         "level": "PASS",
         "version": "0.90.0",
         "desc": "🐳 The Everything-Plugin Quant OS — AI-native & DSH-native: 46 tools, 6 pluggable",
-        "last_publish_days": 30,
-        "weekly_downloads": 210
+        "last_publish_days": 30
       },
       {
         "kind": "npm",
@@ -1514,8 +1486,7 @@
         "level": "PASS",
         "version": "1.30.0",
         "desc": "The Brain Layer for AI Trading Agents — one MCP call returns a composite trade v",
-        "last_publish_days": 12,
-        "weekly_downloads": 190
+        "last_publish_days": 12
       },
       {
         "kind": "npm",
@@ -1525,21 +1496,17 @@
         "level": "PASS",
         "version": "1.0.2",
         "desc": "Official iTick API SDK for browser. Real-time & historical data for global Stock",
-        "last_publish_days": 164,
-        "weekly_downloads": 66
+        "last_publish_days": 164
       },
       {
         "kind": "npm",
         "name": "@metaharness/trading",
         "link": "https://www.npmjs.com/package/@metaharness/trading",
-        "notes": [
-          "周下载量极低（3）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "0.1.0",
         "desc": "MetaHarness example — quant trading harness with non-bypassable risk gate, paper",
-        "last_publish_days": 100,
-        "weekly_downloads": 3
+        "last_publish_days": 100
       },
       {
         "kind": "npm",
@@ -1549,8 +1516,7 @@
         "level": "PASS",
         "version": "1.0.3",
         "desc": "Official iTick API SDK for Node.js. Real-time & historical data for global Stock",
-        "last_publish_days": 164,
-        "weekly_downloads": 12
+        "last_publish_days": 164
       },
       {
         "kind": "npm",
@@ -1560,22 +1526,19 @@
         "level": "PASS",
         "version": "1.10.6",
         "desc": "Unified financial CLI — jin10, cls, xueqiu, gelonghui",
-        "last_publish_days": 12,
-        "weekly_downloads": 50
+        "last_publish_days": 12
       },
       {
         "kind": "npm",
         "name": "xueqiu-api",
         "link": "https://www.npmjs.com/package/xueqiu-api",
         "notes": [
-          "最近发布距今 1581 天，可能已停更",
-          "周下载量极低（5）"
+          "最近发布距今 1581 天，可能已停更"
         ],
         "level": "WARN",
         "version": "0.5.3",
         "desc": "A node.js wrapper for the [xueqiu](https://xueqiu.com/) api to fetch data.",
-        "last_publish_days": 1581,
-        "weekly_downloads": 5
+        "last_publish_days": 1581
       },
       {
         "kind": "npm",
@@ -1585,34 +1548,27 @@
         "level": "PASS",
         "version": "1.1.1",
         "desc": "雪球股票数据 MCP Server",
-        "last_publish_days": 145,
-        "weekly_downloads": 86
+        "last_publish_days": 145
       },
       {
         "kind": "npm",
         "name": "xueqiu-mcp-server",
         "link": "https://www.npmjs.com/package/xueqiu-mcp-server",
-        "notes": [
-          "周下载量极低（2）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "0.1.0",
         "desc": "MCP server for Xueqiu finance data",
-        "last_publish_days": 279,
-        "weekly_downloads": 2
+        "last_publish_days": 279
       },
       {
         "kind": "npm",
         "name": "snowball-cli",
         "link": "https://www.npmjs.com/package/snowball-cli",
-        "notes": [
-          "周下载量极低（3）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "0.3.1",
         "desc": "Xueqiu (雪球) stock data CLI for AI agents — quotes, klines, financials, KOL senti",
-        "last_publish_days": 172,
-        "weekly_downloads": 3
+        "last_publish_days": 172
       },
       {
         "kind": "npm",
@@ -1622,21 +1578,17 @@
         "level": "PASS",
         "version": "0.1.1",
         "desc": "雪球（xueqiu.com）组合调仓命令行工具：复用浏览器 Cookie，支持整体调仓、单笔买卖、批量配置文件调仓。",
-        "last_publish_days": 158,
-        "weekly_downloads": 27
+        "last_publish_days": 158
       },
       {
         "kind": "npm",
         "name": "cn-stock-api",
         "link": "https://www.npmjs.com/package/cn-stock-api",
-        "notes": [
-          "周下载量极低（3）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "0.1.3",
         "desc": "中国与美股常用行情数据源封装，支持东方财富、新浪、雪球",
-        "last_publish_days": 90,
-        "weekly_downloads": 3
+        "last_publish_days": 90
       },
       {
         "kind": "npm",
@@ -1646,8 +1598,7 @@
         "level": "PASS",
         "version": "0.4.1",
         "desc": "【模板】交易所连接器插件脚手架：Eastmoney（eastmoney）v2 插件骨架 —— 市场数据服务 + 交易服务 + 三态闸门 + BYOK 凭证 re",
-        "last_publish_days": 5,
-        "weekly_downloads": 314
+        "last_publish_days": 5
       },
       {
         "kind": "npm",
@@ -1657,8 +1608,7 @@
         "level": "PASS",
         "version": "0.1.0",
         "desc": "A-share quantitative analysis MCP server — Eastmoney data, stock screening, sect",
-        "last_publish_days": 58,
-        "weekly_downloads": 48
+        "last_publish_days": 58
       },
       {
         "kind": "npm",
@@ -1668,8 +1618,7 @@
         "level": "PASS",
         "version": "0.4.13",
         "desc": "Research plugin for Chinese public mutual funds on DeepSeek Harness: collects fu",
-        "last_publish_days": 3,
-        "weekly_downloads": 587
+        "last_publish_days": 3
       },
       {
         "kind": "npm",
@@ -1679,47 +1628,37 @@
         "level": "PASS",
         "version": "1.0.5",
         "desc": "东方财富数据 SDK - 获取 A 股历史 K 线、实时行情、分时线等数据",
-        "last_publish_days": 246,
-        "weekly_downloads": 14
+        "last_publish_days": 246
       },
       {
         "kind": "npm",
         "name": "@wbavon/china-market-data",
         "link": "https://www.npmjs.com/package/@wbavon/china-market-data",
-        "notes": [
-          "周下载量极低（2）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "0.2.0",
         "desc": "Free Chinese market data MCP server — A-shares, indices, fundamentals, sectors. ",
-        "last_publish_days": 168,
-        "weekly_downloads": 2
+        "last_publish_days": 168
       },
       {
         "kind": "npm",
         "name": "mcp-cn-news",
         "link": "https://www.npmjs.com/package/mcp-cn-news",
-        "notes": [
-          "周下载量极低（8）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "1.0.0",
         "desc": "MCP server for Chinese financial news: real-time headlines, stock announcements,",
-        "last_publish_days": 196,
-        "weekly_downloads": 8
+        "last_publish_days": 196
       },
       {
         "kind": "npm",
         "name": "@touzi-tech/eastmoney",
         "link": "https://www.npmjs.com/package/@touzi-tech/eastmoney",
-        "notes": [
-          "周下载量极低（2）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "1.0.1",
         "desc": "东方财富数据 SDK — K线、行情、分时、财报、股票列表",
-        "last_publish_days": 147,
-        "weekly_downloads": 2
+        "last_publish_days": 147
       },
       {
         "kind": "npm",
@@ -1729,8 +1668,7 @@
         "level": "PASS",
         "version": "1.0.15",
         "desc": "A typescript lib to call tushare api",
-        "last_publish_days": 9,
-        "weekly_downloads": 15
+        "last_publish_days": 9
       },
       {
         "kind": "npm",
@@ -1742,8 +1680,7 @@
         "level": "WARN",
         "version": "0.2.1",
         "desc": "Tushare MCP 服务 - 基于 @tushare/sdk 的 Model Context Protocol 实现",
-        "last_publish_days": 386,
-        "weekly_downloads": 18
+        "last_publish_days": 386
       },
       {
         "kind": "npm",
@@ -1753,8 +1690,7 @@
         "level": "PASS",
         "version": "0.4.1",
         "desc": "【模板】交易所连接器插件脚手架：Tushare（tushare）v2 插件骨架 —— 市场数据服务 + 交易服务 + 三态闸门 + BYOK 凭证 ref。生成",
-        "last_publish_days": 5,
-        "weekly_downloads": 279
+        "last_publish_days": 5
       },
       {
         "kind": "npm",
@@ -1764,48 +1700,39 @@
         "level": "PASS",
         "version": "1.0.2",
         "desc": "MCP server for Tushare Pro financial data API — A-shares, indices, funds, future",
-        "last_publish_days": 11,
-        "weekly_downloads": 100
+        "last_publish_days": 11
       },
       {
         "kind": "npm",
         "name": "@tushare/sdk",
         "link": "https://www.npmjs.com/package/@tushare/sdk",
         "notes": [
-          "最近发布距今 386 天，可能已停更",
-          "周下载量极低（7）"
+          "最近发布距今 386 天，可能已停更"
         ],
         "level": "WARN",
         "version": "1.2.0",
         "desc": "Tushare Pro SDK",
-        "last_publish_days": 386,
-        "weekly_downloads": 7
+        "last_publish_days": 386
       },
       {
         "kind": "npm",
         "name": "@hestudy/tushare-mcp",
         "link": "https://www.npmjs.com/package/@hestudy/tushare-mcp",
-        "notes": [
-          "周下载量极低（1）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "1.1.1",
         "desc": "Tushare MCP Server - Model Context Protocol server for Tushare financial data ac",
-        "last_publish_days": 342,
-        "weekly_downloads": 1
+        "last_publish_days": 342
       },
       {
         "kind": "npm",
         "name": "@hestudy/tushare-sdk",
         "link": "https://www.npmjs.com/package/@hestudy/tushare-sdk",
-        "notes": [
-          "周下载量极低（1）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "1.0.0",
         "desc": "TypeScript SDK for Tushare Pro API",
-        "last_publish_days": 343,
-        "weekly_downloads": 1
+        "last_publish_days": 343
       },
       {
         "kind": "npm",
@@ -1815,8 +1742,7 @@
         "level": "PASS",
         "version": "1.0.1",
         "desc": "AKShare TypeScript - 量化数据获取接口库",
-        "last_publish_days": 104,
-        "weekly_downloads": 210
+        "last_publish_days": 104
       },
       {
         "kind": "npm",
@@ -1826,8 +1752,7 @@
         "level": "PASS",
         "version": "0.4.1",
         "desc": "【模板】交易所连接器插件脚手架：Akshare（akshare）v2 插件骨架 —— 市场数据服务 + 交易服务 + 三态闸门 + BYOK 凭证 ref。生成",
-        "last_publish_days": 5,
-        "weekly_downloads": 293
+        "last_publish_days": 5
       },
       {
         "kind": "npm",
@@ -1837,34 +1762,27 @@
         "level": "PASS",
         "version": "0.2.0",
         "desc": "AKShare MCP Server (Node.js): A-shares, ETF, futures, commodities, gold — no Pyt",
-        "last_publish_days": 117,
-        "weekly_downloads": 16
+        "last_publish_days": 117
       },
       {
         "kind": "npm",
         "name": "fund-screener",
         "link": "https://www.npmjs.com/package/fund-screener",
-        "notes": [
-          "周下载量极低（2）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "1.2.0",
         "desc": "固收+基金筛选器 - 基于AkShare的基金分析工具",
-        "last_publish_days": 219,
-        "weekly_downloads": 2
+        "last_publish_days": 219
       },
       {
         "kind": "npm",
         "name": "akshare-cb",
         "link": "https://www.npmjs.com/package/akshare-cb",
-        "notes": [
-          "周下载量极低（1）"
-        ],
-        "level": "WARN",
+        "notes": [],
+        "level": "PASS",
         "version": "0.3.1",
         "desc": "TypeScript/Node.js library for Chinese convertible bond data",
-        "last_publish_days": 161,
-        "weekly_downloads": 1
+        "last_publish_days": 161
       },
       {
         "kind": "npm",
@@ -1874,8 +1792,7 @@
         "level": "PASS",
         "version": "0.1.1",
         "desc": "DeepSeek Harness 财务报表分析插件：基于财务分析规则，提供「财报分析师」Agent preset 与5项分析技能（资产负债表/利润表/现金流量表",
-        "last_publish_days": 37,
-        "weekly_downloads": 38
+        "last_publish_days": 37
       },
       {
         "kind": "npm",
@@ -1885,8 +1802,7 @@
         "level": "PASS",
         "version": "1.0.0",
         "desc": "MCP server providing Chinese A-share stock market data — pure TypeScript, zero P",
-        "last_publish_days": 89,
-        "weekly_downloads": 10
+        "last_publish_days": 89
       },
       {
         "kind": "npm",
@@ -1896,8 +1812,7 @@
         "level": "PASS",
         "version": "0.2.2",
         "desc": "Pi Agent extension for stock analysis, screening, and strategy backtesting acros",
-        "last_publish_days": 1,
-        "weekly_downloads": 849
+        "last_publish_days": 1
       },
       {
         "kind": "npm",
@@ -1907,8 +1822,7 @@
         "level": "PASS",
         "version": "0.2.2",
         "desc": "Pi Agent extension for stock analysis, screening, and strategy backtesting acros",
-        "last_publish_days": 1,
-        "weekly_downloads": 779
+        "last_publish_days": 1
       },
       {
         "kind": "npm",
@@ -1928,8 +1842,7 @@
         "level": "PASS",
         "version": "0.4.1",
         "desc": "【模板】交易所连接器插件脚手架：Futu（futu）v2 插件骨架 —— 市场数据服务 + 交易服务 + 三态闸门 + BYOK 凭证 ref。生成器：node",
-        "last_publish_days": 5,
-        "weekly_downloads": 289
+        "last_publish_days": 5
       },
       {
         "kind": "npm",

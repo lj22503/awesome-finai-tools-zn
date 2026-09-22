@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.4.5] - 2026-09-22
+
+### Changed
+
+- `scripts/review_candidates.py` 质检口径调整（阈值集中在脚本顶部常量，便于持续微调）：
+  - **移除 npm 周下载量校验**：原 `MIN_WEEKLY_DOWNLOADS = 10` 过于苛刻，一批小众但可用的金融数据包被误判为 WARN；npm 端现只保留「包存在性 / deprecated / 最近发布时间 / 查重」四项判定
+  - **GitHub 星数门槛由 10 提高到 100**（`MIN_STARS_WARN = 100`）：低于 100 星仍判 WARN 交人工判断，不直接 REJECT；判定依据文案同步写明门槛值
+- `data/candidate-review-2026-09-22.md` / `.json`：按新口径重新全量检测，结论由 PASS 180 / WARN 24 / REJECT 0 变为 **PASS 192 / WARN 12 / REJECT 0**
+  - WARN 构成：GitHub 5 条（星数不足 100，当前 81 / 32 / 17 / 10 / 6）；npm 7 条（停更，xueqiu-api 1581 天、futu 系 1603 天、tushare 系 386 天等）
+
+---
+
 ## [0.4.4] - 2026-09-22
 
 ### Fixed
