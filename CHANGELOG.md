@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.4.3] - 2026-09-22
+
+### Fixed
+
+- `scripts/update_tools.py` **重写三个数据源**（此前实际全部失效，周更长期空转）：
+  - GitHub 检索原用 `gh api search/repositories -q "关键词"`（误把查询串当 jq 表达式），改为 **GitHub Search API 直连**（`requests`），不再依赖 `gh` CLI
+  - npm 巡检原按 `{"objects": [...]}` 解包，新版 npm 返回数组导致 `'list' object has no attribute 'get'`；改为兼容两种返回形态，并改用 **npm Registry Search API**
+  - PyPI 段原为 `pip index versions <包名>`（只能查版本号，无法发现新工具），已移除；Python 生态候选改由 GitHub 搜索的 `language:python` 维度覆盖
+
+### Added
+
+- `scripts/update_tools.py` 新增**待审隔离**：巡检结果写入 `data/pending-review.json` 的 `github_candidates` / `npm_candidates`（与国内平台巡检共用同一待审池），不再直写 `data/tools.json`
+- 过滤规则升级：金融信号 + 工具形态双重判定、黑名单排除（教程 / 摄影 / 卡片等）、GitHub 星标门槛 5、npm 空壳包剔除、自引用仓库排除
+- 候选新增 `scope` 字段（`cn` / `global`），便于按站点定位人工筛选
+
+### Changed
+
+- 周报结构重写：新增巡检概览、待审池累计、处置说明
+
+---
+
 ## [0.4.2] - 2026-09-22
 
 ### Added
