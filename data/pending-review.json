@@ -1212,6 +1212,696 @@
       "source": "npm",
       "found_date": "2026-09-22",
       "status": "pending_review"
+    },
+    {
+      "name": "yahoo-finance-mcp-server",
+      "version": "1.3.1",
+      "description": "Yahoo Finance MCP Server - Real-time stock data, company info, financial statements, and market analysis via Model Context Protocol",
+      "link": "https://www.npmjs.com/package/yahoo-finance-mcp-server",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@fre4x/yahoo-finance",
+      "version": "1.1.13",
+      "description": "A Yahoo Finance MCP server for LLMs.",
+      "link": "https://www.npmjs.com/package/@fre4x/yahoo-finance",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@venlyfinance/settlement-mcp",
+      "version": "0.11.0",
+      "description": "Venly Finance MCP: SDK-backed tools, resources and prompts for building international money products safely.",
+      "link": "https://www.npmjs.com/package/@venlyfinance/settlement-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "next-finance-mcp",
+      "version": "0.9.181",
+      "description": "MCP Server para o NEXT Finance (finance.net.br) — login via browser, listagem de carteiras, contas e lançamentos",
+      "link": "https://www.npmjs.com/package/next-finance-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "finance-mcp",
+      "version": "4.11.2",
+      "description": "Multi-source financial data MCP server with Tushare, optional Qveris routing, and Binance crypto data",
+      "link": "https://www.npmjs.com/package/finance-mcp",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@arcadia-finance/mcp-server",
+      "version": "0.5.1",
+      "description": "MCP server for Arcadia Finance. Deploy concentrated liquidity on Uniswap, Aerodrome, and Velodrome with automated rebalancing, compounding, yield optimization, and leverage, or single-sided liquidity into lending pools. Base, Unichain, and Optimism.",
+      "link": "https://www.npmjs.com/package/@arcadia-finance/mcp-server",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "korea-finance-mcp",
+      "version": "1.0.0",
+      "description": "Korea Finance MCP ??ECOS · Real Estate · DART · KRX. Korea's first legally-safe (Capital Markets Act compliant) MCP server with 15 tools + 2 synergy tools (Korea-unique).",
+      "link": "https://www.npmjs.com/package/korea-finance-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@compute-finance/mcp",
+      "version": "0.12.0",
+      "description": "Live AI compute pricing oracle MCP server — real-time LLM model prices across providers. Includes Claude Code skills for session cost analysis.",
+      "link": "https://www.npmjs.com/package/@compute-finance/mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "verdict-finance-mcp",
+      "version": "0.4.0",
+      "description": "MCP server for Verdict, the due-diligence house for DeFi. Keyless access to Verdict's independent ratings (letter grade plus composite score across protocols, chains, tokens, oracles, vaults, organisations and bridges), the published methodology, post-qua",
+      "link": "https://www.npmjs.com/package/verdict-finance-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@leviai/publicfinance-mcp",
+      "version": "1.0.0",
+      "description": "Public finance MCP server — SEC EDGAR filings, US Treasury rates, BLS labor statistics, and economic indicators. Zero API keys required.",
+      "link": "https://www.npmjs.com/package/@leviai/publicfinance-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "yahoo-stock-mcp",
+      "version": "0.3.1",
+      "description": "MCP server for stock information with unofficial Yahoo Finance + Investing.com integrations, backed by MySQL",
+      "link": "https://www.npmjs.com/package/yahoo-stock-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@zeam-labs/x402-mcp-bridge",
+      "version": "2.4.4",
+      "description": "Put a wallet in front of any x402-paid MCP server, and hold a metered line on the ones that sell time. Stock MCP clients cannot construct x402 payments; this one does, and proxies your existing client through it.",
+      "link": "https://www.npmjs.com/package/@zeam-labs/x402-mcp-bridge",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "korea-stock-mcp",
+      "version": "1.4.1",
+      "description": "MCP server for korea stock",
+      "link": "https://www.npmjs.com/package/korea-stock-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "india-stock-mcp",
+      "version": "1.0.1",
+      "description": "MCP server for Indian stock market — NSE/BSE quotes, MF NAV, fundamentals",
+      "link": "https://www.npmjs.com/package/india-stock-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "tokenized-stock-mcp",
+      "version": "0.1.6",
+      "description": "MCP server to buy/sell tokenized US stocks (Dinari dShares) paying directly in USDC. Daily USD cap guard built in. Sandbox-only by default. Sibling to alpaca-guard-mcp and pay-per-call-mcp.",
+      "link": "https://www.npmjs.com/package/tokenized-stock-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "alphavantage-stock-mcp",
+      "version": "2.0.2",
+      "description": "Design for free tier account, MCP server for Stock data and analysis server using Alpha Vantage API ",
+      "link": "https://www.npmjs.com/package/alphavantage-stock-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@drfirst/korea-stock-mcp",
+      "version": "1.0.5",
+      "description": "한국 주식 시장 데이터 조회 MCP 서버 (완전 Node.js)",
+      "link": "https://www.npmjs.com/package/@drfirst/korea-stock-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "stock-mcp",
+      "version": "1.0.1",
+      "description": "MCP server for Alpha Vantage stock market data",
+      "link": "https://www.npmjs.com/package/stock-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@bashcat/taiwan-stock-mcp",
+      "version": "1.5.0",
+      "description": "MCP server for Taiwan stock market data - 台灣股市資料查詢 MCP 工具",
+      "link": "https://www.npmjs.com/package/@bashcat/taiwan-stock-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "a-share-after-hours-brief-skill",
+      "version": "0.1.8",
+      "description": "Codex skill for A-share after-hours stock review with portable JSON history.",
+      "link": "https://www.npmjs.com/package/a-share-after-hours-brief-skill",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@apocdata-info/mcp-server",
+      "version": "0.1.6",
+      "description": "天启至数 Apocdata MCP Server — 46 tools, AI-native A-share data (announcements, quotes, financials, capital flows)",
+      "link": "https://www.npmjs.com/package/@apocdata-info/mcp-server",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@evatick/cli",
+      "version": "0.4.4",
+      "description": "EVA Tick CLI for deterministic A-share, Chinese index, domestic and global futures, exchange-scoped crypto, and server-local data",
+      "link": "https://www.npmjs.com/package/@evatick/cli",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@evatick/skill",
+      "version": "0.4.4",
+      "description": "Codex Skill for querying A-share, Chinese index, domestic and global futures, exchange-scoped crypto, and server-local data through EVA Tick",
+      "link": "https://www.npmjs.com/package/@evatick/skill",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@openfinclaw/cli",
+      "version": "1.0.0",
+      "description": "One-stop quant-trading AI agent for any coding assistant — MCP server + CLI",
+      "link": "https://www.npmjs.com/package/@openfinclaw/cli",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "quantclaw",
+      "version": "0.1.5",
+      "description": "Open-source quant trading superagent harness",
+      "link": "https://www.npmjs.com/package/quantclaw",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "dsh-quant",
+      "version": "0.90.0",
+      "description": "🐳 The Everything-Plugin Quant OS — AI-native & DSH-native: 46 tools, 6 pluggable domains (data/alpha/ML/risk/execution), one end-to-end PDAT→PET pipeline. Methods open, secrets internal.",
+      "link": "https://www.npmjs.com/package/dsh-quant",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "crypto-quant-signal-mcp",
+      "version": "1.30.0",
+      "description": "The Brain Layer for AI Trading Agents — one MCP call returns a composite trade verdict (direction, confidence, regime) across major crypto perp venues. On-chain Merkle-verified track record.",
+      "link": "https://www.npmjs.com/package/crypto-quant-signal-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@itick/browser-sdk",
+      "version": "1.0.2",
+      "description": "Official iTick API SDK for browser. Real-time & historical data for global Stocks, Forex, Crypto, Indices, Futures, Funds, Precious Metals. REST (OHLCV/K-line) + low-latency WebSocket. Promise-based, TypeScript-ready. For quant trading & fintech",
+      "link": "https://www.npmjs.com/package/@itick/browser-sdk",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@metaharness/trading",
+      "version": "0.1.0",
+      "description": "MetaHarness example — quant trading harness with non-bypassable risk gate, paper-by-default (npx @metaharness/trading my-bot)",
+      "link": "https://www.npmjs.com/package/@metaharness/trading",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@itick/node-sdk",
+      "version": "1.0.3",
+      "description": "Official iTick API SDK for Node.js. Real-time & historical data for global Stocks, Forex, Crypto, Indices, Futures, Funds, Precious Metals. REST (OHLCV/K-line) + low-latency WebSocket. Promise-based, TypeScript-ready. For quant trading & fintech",
+      "link": "https://www.npmjs.com/package/@itick/node-sdk",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@openduo/finflow",
+      "version": "1.10.6",
+      "description": "Unified financial CLI — jin10, cls, xueqiu, gelonghui",
+      "link": "https://www.npmjs.com/package/@openduo/finflow",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "xueqiu-api",
+      "version": "0.5.3",
+      "description": "A node.js wrapper for the [xueqiu](https://xueqiu.com/) api to fetch data.",
+      "link": "https://www.npmjs.com/package/xueqiu-api",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "xueqiu-mcp",
+      "version": "1.1.1",
+      "description": "雪球股票数据 MCP Server",
+      "link": "https://www.npmjs.com/package/xueqiu-mcp",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "xueqiu-mcp-server",
+      "version": "0.1.0",
+      "description": "MCP server for Xueqiu finance data",
+      "link": "https://www.npmjs.com/package/xueqiu-mcp-server",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "snowball-cli",
+      "version": "0.3.1",
+      "description": "Xueqiu (雪球) stock data CLI for AI agents — quotes, klines, financials, KOL sentiment, live news, and more",
+      "link": "https://www.npmjs.com/package/snowball-cli",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "xueqiu-cli",
+      "version": "0.1.1",
+      "description": "雪球（xueqiu.com）组合调仓命令行工具：复用浏览器 Cookie，支持整体调仓、单笔买卖、批量配置文件调仓。",
+      "link": "https://www.npmjs.com/package/xueqiu-cli",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "cn-stock-api",
+      "version": "0.1.3",
+      "description": "中国与美股常用行情数据源封装，支持东方财富、新浪、雪球",
+      "link": "https://www.npmjs.com/package/cn-stock-api",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@dshtrading/connector-eastmoney",
+      "version": "0.4.1",
+      "description": "【模板】交易所连接器插件脚手架：Eastmoney（eastmoney）v2 插件骨架 —— 市场数据服务 + 交易服务 + 三态闸门 + BYOK 凭证 ref。生成器：node scripts/new-connector.mjs --slug <exchange>",
+      "link": "https://www.npmjs.com/package/@dshtrading/connector-eastmoney",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "eastmoney-quant-mcp",
+      "version": "0.1.0",
+      "description": "A-share quantitative analysis MCP server — Eastmoney data, stock screening, sector analysis, technical reports",
+      "link": "https://www.npmjs.com/package/eastmoney-quant-mcp",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "dsh-fund-research",
+      "version": "0.4.13",
+      "description": "Research plugin for Chinese public mutual funds on DeepSeek Harness: collects fund data from public sources (Tiantian Fund / Eastmoney), computes deterministic metrics (manager profile, holdings penetration, style attribution, performance decomposition), ",
+      "link": "https://www.npmjs.com/package/dsh-fund-research",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "eastmoney-data-sdk",
+      "version": "1.0.5",
+      "description": "东方财富数据 SDK - 获取 A 股历史 K 线、实时行情、分时线等数据",
+      "link": "https://www.npmjs.com/package/eastmoney-data-sdk",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@wbavon/china-market-data",
+      "version": "0.2.0",
+      "description": "Free Chinese market data MCP server — A-shares, indices, fundamentals, sectors. Multi-source with automatic fallback (Tencent/Baostock/Eastmoney/Sina).",
+      "link": "https://www.npmjs.com/package/@wbavon/china-market-data",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "mcp-cn-news",
+      "version": "1.0.0",
+      "description": "MCP server for Chinese financial news: real-time headlines, stock announcements, hot topics from Eastmoney (东方财富). No API key needed.",
+      "link": "https://www.npmjs.com/package/mcp-cn-news",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@touzi-tech/eastmoney",
+      "version": "1.0.1",
+      "description": "东方财富数据 SDK — K线、行情、分时、财报、股票列表",
+      "link": "https://www.npmjs.com/package/@touzi-tech/eastmoney",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@chuizii/tushare",
+      "version": "1.0.15",
+      "description": "A typescript lib to call tushare api",
+      "link": "https://www.npmjs.com/package/@chuizii/tushare",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@tushare/mcp",
+      "version": "0.2.1",
+      "description": "Tushare MCP 服务 - 基于 @tushare/sdk 的 Model Context Protocol 实现",
+      "link": "https://www.npmjs.com/package/@tushare/mcp",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@dshtrading/connector-tushare",
+      "version": "0.4.1",
+      "description": "【模板】交易所连接器插件脚手架：Tushare（tushare）v2 插件骨架 —— 市场数据服务 + 交易服务 + 三态闸门 + BYOK 凭证 ref。生成器：node scripts/new-connector.mjs --slug <exchange>",
+      "link": "https://www.npmjs.com/package/@dshtrading/connector-tushare",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "tushare-mcp-server",
+      "version": "1.0.2",
+      "description": "MCP server for Tushare Pro financial data API — A-shares, indices, funds, futures, options, bonds, HK/US stocks, macroeconomics",
+      "link": "https://www.npmjs.com/package/tushare-mcp-server",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@tushare/sdk",
+      "version": "1.2.0",
+      "description": "Tushare Pro SDK",
+      "link": "https://www.npmjs.com/package/@tushare/sdk",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@hestudy/tushare-mcp",
+      "version": "1.1.1",
+      "description": "Tushare MCP Server - Model Context Protocol server for Tushare financial data access",
+      "link": "https://www.npmjs.com/package/@hestudy/tushare-mcp",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@hestudy/tushare-sdk",
+      "version": "1.0.0",
+      "description": "TypeScript SDK for Tushare Pro API",
+      "link": "https://www.npmjs.com/package/@hestudy/tushare-sdk",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "akshare-ts",
+      "version": "1.0.1",
+      "description": "AKShare TypeScript - 量化数据获取接口库",
+      "link": "https://www.npmjs.com/package/akshare-ts",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@dshtrading/connector-akshare",
+      "version": "0.4.1",
+      "description": "【模板】交易所连接器插件脚手架：Akshare（akshare）v2 插件骨架 —— 市场数据服务 + 交易服务 + 三态闸门 + BYOK 凭证 ref。生成器：node scripts/new-connector.mjs --slug <exchange>",
+      "link": "https://www.npmjs.com/package/@dshtrading/connector-akshare",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "quanters-akshare-mcp",
+      "version": "0.2.0",
+      "description": "AKShare MCP Server (Node.js): A-shares, ETF, futures, commodities, gold — no Python required",
+      "link": "https://www.npmjs.com/package/quanters-akshare-mcp",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "fund-screener",
+      "version": "1.2.0",
+      "description": "固收+基金筛选器 - 基于AkShare的基金分析工具",
+      "link": "https://www.npmjs.com/package/fund-screener",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "akshare-cb",
+      "version": "0.3.1",
+      "description": "TypeScript/Node.js library for Chinese convertible bond data",
+      "link": "https://www.npmjs.com/package/akshare-cb",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "dsh-financial-analysis",
+      "version": "0.1.1",
+      "description": "DeepSeek Harness 财务报表分析插件：基于财务分析规则，提供「财报分析师」Agent preset 与5项分析技能（资产负债表/利润表/现金流量表/三表勾稽关系/财报获取）；新案例分析通过财经数据 API（AKShare/Tushare）与网络公开信息（新浪财经/东方财富/web_search）获取最新财报数据。",
+      "link": "https://www.npmjs.com/package/dsh-financial-analysis",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "ahshare-mcp",
+      "version": "1.0.0",
+      "description": "MCP server providing Chinese A-share stock market data — pure TypeScript, zero Python dependency",
+      "link": "https://www.npmjs.com/package/ahshare-mcp",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@weaxs/stock-analysis-plugin",
+      "version": "0.2.2",
+      "description": "Pi Agent extension for stock analysis, screening, and strategy backtesting across A/HK/US markets",
+      "link": "https://www.npmjs.com/package/@weaxs/stock-analysis-plugin",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "stock-analysis-plugin",
+      "version": "0.2.2",
+      "description": "Pi Agent extension for stock analysis, screening, and strategy backtesting across A/HK/US markets",
+      "link": "https://www.npmjs.com/package/stock-analysis-plugin",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "futu-api",
+      "version": "10.11.7108",
+      "description": "Futu Websocket API for Node.js",
+      "link": "https://www.npmjs.com/package/futu-api",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@dshtrading/connector-futu",
+      "version": "0.4.1",
+      "description": "【模板】交易所连接器插件脚手架：Futu（futu）v2 插件骨架 —— 市场数据服务 + 交易服务 + 三态闸门 + BYOK 凭证 ref。生成器：node scripts/new-connector.mjs --slug <exchange>",
+      "link": "https://www.npmjs.com/package/@dshtrading/connector-futu",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "futu",
+      "version": "1.0.0",
+      "description": "A Web development framework",
+      "link": "https://www.npmjs.com/package/futu",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "@yangzhe1991/dsh-futu-mcp",
+      "version": "0.1.1",
+      "description": "DSH plugin: connect to Futu (富途) MCP via OAuth 2.1 and expose its tools to the agent; tokens persisted outside the workspace",
+      "link": "https://www.npmjs.com/package/@yangzhe1991/dsh-futu-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "futu-api-js",
+      "version": "6.3.1513",
+      "description": "Futu Websocket API for Node.js",
+      "link": "https://www.npmjs.com/package/futu-api-js",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "futu-rx",
+      "version": "1.0.3",
+      "description": "Futu Open API rxjs client",
+      "link": "https://www.npmjs.com/package/futu-rx",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "futu-proto",
+      "version": "9.4.5409",
+      "description": "基于 futu-api/proto/*.proto 静态编译，提供完整的 TypeScript 类型支持，可用于 nodejs 和 Web 环境",
+      "link": "https://www.npmjs.com/package/futu-proto",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "node-futu-api",
+      "version": "6.6.3108",
+      "description": "Futu Websocket API for Node.js",
+      "link": "https://www.npmjs.com/package/node-futu-api",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "futu-sdk",
+      "version": "0.2.6",
+      "description": "futu-api 的高性能精简易用版；基于*.proto静态编译，提供高性能的多层封装但层层开放的易用接口，获取最原始最完整的量化数据；相较于Python, nodejs更接近Web, 从而轻而易举搭建一个可视化交易站点，这是进行可控量化交易的不二选择。",
+      "link": "https://www.npmjs.com/package/futu-sdk",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
     }
   ],
   "institution_candidates": {
@@ -1391,6 +2081,128 @@
       "inferred_org": "三立期货",
       "link": "https://clawhub.ai/slzq-trading",
       "found_date": "2026-09-22"
+    }
+  ],
+  "github_candidates": [
+    {
+      "name": "maverick-mcp",
+      "full_name": "wshobson/maverick-mcp",
+      "description": "MaverickMCP - Personal Stock Analysis MCP Server",
+      "link": "https://github.com/wshobson/maverick-mcp",
+      "stars": 676,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "yahoo-finance-mcp",
+      "full_name": "Alex2Yang97/yahoo-finance-mcp",
+      "description": "This is a Model Context Protocol (MCP) server that provides comprehensive financial data from Yahoo Finance. It allows you to retrieve detailed information about stocks, including historical prices, c",
+      "link": "https://github.com/Alex2Yang97/yahoo-finance-mcp",
+      "stars": 355,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "Equibles",
+      "full_name": "daniel3303/Equibles",
+      "description": "Self-hosted, open-source financial data MCP server for AI agents — SEC filings, XBRL financials, 13F holdings, insider & congressional trades, short interest, FRED, CFTC/CBOE and daily prices across 6",
+      "link": "https://github.com/daniel3303/Equibles",
+      "stars": 230,
+      "language": "C#",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "backtrader",
+      "full_name": "cloudQuant/backtrader",
+      "description": "High-performance Python backtesting & live-trading framework: 45%+ faster than upstream, 50+ indicators, tick-to-daily strategies, plus an AI-native workflow (MCP server, agent skills, web platform).",
+      "link": "https://github.com/cloudQuant/backtrader",
+      "stars": 185,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "fungible",
+      "full_name": "tomfunk/fungible",
+      "description": "Terminal UI and Desktop GUI for personal finance — Plaid sync, CSV import, AI assistant, and MCP server",
+      "link": "https://github.com/tomfunk/fungible",
+      "stars": 113,
+      "language": "TypeScript",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "copilot-money-mcp",
+      "full_name": "ignaciohermosillacornejo/copilot-money-mcp",
+      "description": "MCP server for Copilot Money App - AI powered personal finance queries using local data",
+      "link": "https://github.com/ignaciohermosillacornejo/copilot-money-mcp",
+      "stars": 81,
+      "language": "TypeScript",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "finlynq",
+      "full_name": "finlynq/finlynq",
+      "description": "Open-source (AGPL v3) personal finance app with a first-party MCP server. Track your money here, analyze it anywhere — query your finances from Claude, Cursor, or any MCP client. Self-host with Docker",
+      "link": "https://github.com/finlynq/finlynq",
+      "stars": 17,
+      "language": "TypeScript",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "Historical-Market-data-From-Zerodha",
+      "full_name": "vikassharma545/Historical-Market-data-From-Zerodha",
+      "description": "pyzdata: download historical and intraday stock, index and options data from Zerodha. Python library, CLI and web app. NSE, BSE, NFO, MCX.",
+      "link": "https://github.com/vikassharma545/Historical-Market-data-From-Zerodha",
+      "stars": 32,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "PyTrading",
+      "full_name": "SoDevLog/PyTrading",
+      "description": "Discover the trading in Python with many strategies, including deep learning approaches. TradingInPython is an open software platform that empowers traders with advanced tools for stock market analysi",
+      "link": "https://github.com/SoDevLog/PyTrading",
+      "stars": 10,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "sdk-py",
+      "full_name": "MarketDataApp/sdk-py",
+      "description": "Official Python SDK for the Market Data API providing real-time and historical U.S. stock and options market data. Access prices, quotes, options chains, and time series data for trading, quantitative",
+      "link": "https://github.com/MarketDataApp/sdk-py",
+      "stars": 6,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
     }
   ]
 }

@@ -1428,4 +1428,4 @@ MIT — 详见 [LICENSE](./LICENSE)
 
 ---
 
-*本文件由 `scripts/generate_readme.py` 自动从 `data/tools.json` / `data/institution-skills.json` / `data/institution-dynamics.json` 生成，最后更新：2026-09-22 03:56*
+*本文件由 `scripts/generate_readme.py` 自动从 `data/tools.json` / `data/institution-skills.json` / `data/institution-dynamics.json` 生成，最后更新：2026-09-22 04:14*
