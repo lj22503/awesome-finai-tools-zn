@@ -25,6 +25,7 @@ import requests
 REPO_DIR = Path(__file__).parent.parent
 TOOLS_JSON = REPO_DIR / "data" / "tools.json"
 INSTITUTION_SKILLS_JSON = REPO_DIR / "data" / "institution-skills.json"
+PENDING_REVIEW_JSON = REPO_DIR / "data" / "pending-review.json"
 
 # 机构名中会被过滤的泛化词（不参与关键词匹配）
 INSTITUTION_GENERIC_WORDS = {
@@ -62,6 +63,53 @@ FINANCE_FILTER = [
     "stock", "finance", "quant", "market", "portfolio",
     "财报", "K线", "因子", "回测", "龙虎榜", "北向",
 ]
+
+# 明确与金融无关的黑名单（命中即丢弃，连待审清单都不进）
+IRRELEVANT_BLOCKLIST = [
+    "storybook", "webpack", "babel", "eslint", "prettier", "jest", "vitest",
+    "react", "vue", "svelte", "next.js", "nuxt", "tailwind", "figma",
+    "boilerplate", "scaffold", "starter template", "chrome extension",
+    "vscode", "obsidian", "wordpress", "shopify", "e-commerce",
+    "nft", "game engine", "music player",
+]
+
+# 伪机构名过滤：命中这些虚词/泛化词的候选一律不算机构
+ORG_STOPWORDS = (
+    "的", "提供", "支持", "来源", "接口", "查询", "数据", "服务", "系统",
+    "平台", "官方", "通过", "基于", "覆盖", "实现", "自动", "对话", "包括",
+    "以及", "等多", "为", "与", "和", "及", "在", "了", "可", "请", "全",
+    "给", "只", "一键", "自测", "清单", "穿透", "同步", "值得", "买", "值",
+    "投顾", "组合", "研究", "自选", "选股", "盯盘", "复盘", "持仓", "净值",
+)
+
+# 金融领域泛化词：不能当作机构名
+GENERIC_FINANCE_WORDS = {
+    "港股", "美股", "A股", "股票", "投研", "量化", "智能", "数据", "行情",
+    "基金", "证券", "期货", "期权", "分析", "策略", "报告", "助手", "工具",
+    "服务", "金融", "财经", "交易", "指数", "板块", "概念", "标的",
+}
+
+# 机构归属的强特征词：只有出现这些词，才允许推断机构名
+INSTITUTION_STRONG_WORDS = (
+    "证券", "基金", "银行", "保险", "信托", "期货", "资管", "投顾",
+    "交易所", "财富管理", "金科", "数科", "券商",
+)
+
+
+def is_relevant(text: str) -> bool:
+    """金融相关性判定：先过黑名单，再命中金融关键词"""
+    t = (text or "").lower()
+    if not t:
+        return False
+    if any(b in t for b in IRRELEVANT_BLOCKLIST):
+        return False
+    return any(kw.lower() in t for kw in FINANCE_FILTER)
+
+
+def has_institution_signal(text: str) -> bool:
+    """文本中是否包含机构归属的强特征词"""
+    t = text or ""
+    return any(w in t for w in INSTITUTION_STRONG_WORDS)
 
 
 def load_existing_tools() -> tuple[list, set]:
@@ -272,14 +320,13 @@ def get_recent_skills(limit: int = 50) -> list:
 
 
 def is_finance_related(item: dict) -> bool:
-    """判断 skill 是否与金融/量化相关"""
+    """判断 skill 是否与金融/量化相关（含黑名单过滤）"""
     parts = [
         item.get("displayName") or "",
         item.get("summary") or "",
         item.get("description") or "",
     ]
-    text = " ".join(parts).lower()
-    return any(kw.lower() in text for kw in FINANCE_FILTER)
+    return is_relevant(" ".join(parts))
 
 
 def match_existing(slug: str, existing_slugs: set) -> bool:
@@ -343,14 +390,22 @@ def scan_npm_extra(existing_slugs: set) -> list:
             for obj in r.json().get("objects", []):
                 pkg = obj["package"]
                 name = pkg["name"]
-                if not match_existing(name, existing_slugs):
-                    found.append({
-                        "name": name,
-                        "version": pkg.get("version", ""),
-                        "description": (pkg.get("description", "") or "")[:200],
-                        "url": pkg.get("links", {}).get("npm", ""),
-                        "source": "npm",
-                    })
+                desc = pkg.get("description", "") or ""
+                if match_existing(name, existing_slugs):
+                    continue
+                text = f"{name} {desc}"
+                # npm 结果同样要过金融相关性 + 黑名单，且必须带机构信号
+                if not is_relevant(text):
+                    continue
+                if not has_institution_signal(text):
+                    continue
+                found.append({
+                    "name": name,
+                    "version": pkg.get("version", ""),
+                    "description": desc[:200],
+                    "url": pkg.get("links", {}).get("npm", ""),
+                    "source": "npm",
+                })
             time.sleep(0.5)
         except Exception as e:
             print(f"  ⚠ npm 搜索 '{kw}' 失败: {e}")
@@ -468,47 +523,109 @@ def generate_report(
     return "\n".join(lines)
 
 
-def update_tools_json(clawhub_new: list) -> int:
-    """将 ClawHub 新工具追加到 tools.json（标记 pending_review）"""
-    with open(TOOLS_JSON, "r", encoding="utf-8") as f:
-        data = json.load(f)
+def load_pending_review() -> dict:
+    """读取待审清单；不存在则返回空结构"""
+    if PENDING_REVIEW_JSON.exists():
+        try:
+            with open(PENDING_REVIEW_JSON, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {
+        "version": "", "last_updated": "",
+        "note": "", "items": [], "npm_candidates": [],
+        "institution_candidates": {}, "suspected_new_institutions": [],
+    }
 
-    count = 0
+
+def update_pending_review(
+    clawhub_new: list,
+    npm_new: list,
+    institution_candidates: dict = None,
+    new_institution_tools: list = None,
+) -> tuple:
+    """
+    将巡检发现写入 data/pending-review.json（不再写 tools.json）。
+
+    设计原因：自动巡检的过滤精度不足以直接进首页，
+    待审数据必须与正式收录物理隔离，避免污染 README 与徽章计数。
+    返回 (新增 ClawHub 条数, 新增 npm 条数)。
+    """
+    data = load_pending_review()
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    existing_ids = {it.get("id") for it in data.get("items", [])}
+    added_clawhub = 0
     for item in clawhub_new:
         slug = item["slug"]
-        entry = {
-            "id": f"clawhub-{slug}",
+        entry_id = f"clawhub-{slug}"
+        if entry_id in existing_ids:
+            continue
+        data.setdefault("items", []).append({
+            "id": entry_id,
+            "slug": slug,
             "name": item.get("displayName", slug),
-            "category": "pending_review",
-            "type": "skill",
             "description": (item.get("summary", "") or "")[:200],
-            "input": {},
-            "output": {"format": "待确认"},
-            "access": {
-                "method": "ClawHub 一键安装",
-                "auth_required": "待确认",
-            },
-            "installation": {
-                "command": f"clawhub install {slug}"
-            },
-            "cost": "unknown",
-            "official_url": f"https://clawhub.ai/{slug}",
-            "clawhub_slug": slug,
-            "stars": item.get("stats", {}).get("downloads", 0),
+            "link": f"https://clawhub.ai/{slug}",
+            "source": "clawhub",
+            "downloads": item.get("stats", {}).get("downloads", 0),
+            "found_date": today,
             "status": "pending_review",
-            "found_date": datetime.now().strftime("%Y-%m-%d"),
-            "tags": ["待分类"],
-        }
-        data["tools"].append(entry)
-        count += 1
+        })
+        existing_ids.add(entry_id)
+        added_clawhub += 1
 
-    data["last_updated"] = datetime.now().strftime("%Y-%m-%d")
-    data["version"] = datetime.now().strftime("%Y-%m-%d")
+    existing_npm = {it.get("name") for it in data.get("npm_candidates", [])}
+    added_npm = 0
+    for pkg in npm_new:
+        name = pkg.get("name", "")
+        if not name or name in existing_npm:
+            continue
+        data.setdefault("npm_candidates", []).append({
+            "name": name,
+            "version": pkg.get("version", ""),
+            "description": pkg.get("description", ""),
+            "link": pkg.get("url", ""),
+            "source": "npm",
+            "found_date": today,
+            "status": "pending_review",
+        })
+        existing_npm.add(name)
+        added_npm += 1
 
-    with open(TOOLS_JSON, "w", encoding="utf-8") as f:
+    if institution_candidates:
+        merged = data.get("institution_candidates") or {}
+        for inst, skills in institution_candidates.items():
+            bucket = merged.setdefault(inst, [])
+            known = {s.get("skill_name") for s in bucket}
+            for cand in skills:
+                if cand.get("skill_name") not in known:
+                    bucket.append(cand)
+        data["institution_candidates"] = merged
+
+    if new_institution_tools:
+        seen = {(x.get("source"), x.get("name")) for x in data.get("suspected_new_institutions", [])}
+        for sus in new_institution_tools:
+            key = (sus.get("source"), sus.get("name"))
+            if key in seen:
+                continue
+            entry = dict(sus)
+            entry["found_date"] = today
+            data.setdefault("suspected_new_institutions", []).append(entry)
+            seen.add(key)
+
+    data["version"] = today
+    data["last_updated"] = today
+    data["note"] = (
+        "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；"
+        "本文件不参与 README / llms.txt 生成。"
+    )
+    data["items"] = sorted(data.get("items", []), key=lambda x: x.get("found_date", ""), reverse=True)
+
+    with open(PENDING_REVIEW_JSON, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    return count
+    return added_clawhub, added_npm
 
 
 def main():
@@ -626,10 +743,12 @@ def main():
         f.write(report)
     print(f"报告已生成: {report_file}")
 
-    # 5. 更新 tools.json
-    if clawhub_new:
-        count = update_tools_json(clawhub_new)
-        print(f"已将 {count} 个新 Skill 追加到 tools.json (pending_review)")
+    # 5. 写入待审清单（与正式数据物理隔离，不触碰 tools.json）
+    added_clawhub, added_npm = update_pending_review(
+        clawhub_new, npm_new, institution_candidates, new_institution_tools
+    )
+    print(f"待审清单更新: ClawHub +{added_clawhub} 条, npm +{added_npm} 条")
+    print(f"待审文件: data/pending-review.json（不参与 README 生成）")
 
     print(f"\n{'='*50}")
     print(report)
@@ -650,29 +769,42 @@ def _infer_org_name(name: str, desc: str) -> str | None:
 
     text = f"{name} {desc}"
 
-    # 模式1: 匹配「XX证券」「XX基金」「XX银行」「XX保险」「XX信托」
+    # 模式1: 匹配「XX证券」「XX基金」「XX银行」「XX保险」「XX信托」等
+    # 遍历全部候选，跳过含虚词/泛化词的伪机构名（如「提供基金」「来源证券」）
     patterns = [
-        (r'([\u4e00-\u9fff]{2,6})(?:证券|基金|银行|保险|信托|期货)', r'\1\2'),
-        (r'([\u4e00-\u9fff]{2,4})(?:金科|数科|财富|资管|投顾)', r'\1\2'),
+        r'([\u4e00-\u9fff]{2,6})(?:证券|基金|银行|保险|信托|期货)',
+        r'([\u4e00-\u9fff]{2,4})(?:金科|数科|财富|资管|投顾)',
     ]
-    for pat, repl in patterns:
-        m = re.search(pat, text)
-        if m:
-            return m.group(0)
+    for pat in patterns:
+        for m in re.finditer(pat, text):
+            cand = m.group(0)
+            if any(w in cand for w in ORG_STOPWORDS):
+                continue
+            if cand in GENERIC_FINANCE_WORDS:
+                continue
+            return cand
 
     # 模式2: 英文大写缩写（如 CITIC / HTSC / CICC）
-    m = re.search(r'\b([A-Z]{2,6})\b', desc)
-    if m:
-        abbr = m.group(1)
-        # 排除常见非机构缩写
-        exclude = {'API', 'MCP', 'HTTP', 'URL', 'JSON', 'XML', 'HTML', 'CSS', 'JS', 'TS', 'AI', 'ML', 'OK', 'ID'}
-        if abbr not in exclude:
-            return abbr
+    # 收紧：缩写长度 >= 3，且文本必须带机构强特征词，否则不推断
+    if has_institution_signal(text):
+        m = re.search(r'\b([A-Z]{3,6})\b', name)
+        if m:
+            abbr = m.group(1)
+            exclude = {
+                'API', 'MCP', 'HTTP', 'HTTPS', 'URL', 'JSON', 'XML', 'HTML',
+                'CSS', 'SQL', 'REST', 'SDK', 'CLI', 'APP', 'PDF', 'CSV', 'YAML',
+                'LLM', 'GPT', 'GPU', 'CPU', 'RAM', 'SSD', 'OS', 'UI', 'UX',
+                'ID', 'OK', 'AI', 'ML', 'DB', 'IO', 'FAQ', 'MIT', 'BSD', 'ENV',
+            }
+            if abbr not in exclude:
+                return abbr
 
-    # 模式3: 工具名首段中文（可能是机构简称）
+    # 模式3: 工具名首段中文（可能是机构简称），排除泛化词
     m = re.match(r'^([\u4e00-\u9fff]{2,4})[\-\s·]', name)
     if m:
-        return m.group(1)
+        cand = m.group(1)
+        if not any(w in cand for w in ORG_STOPWORDS) and cand not in GENERIC_FINANCE_WORDS:
+            return cand
 
     return None
 

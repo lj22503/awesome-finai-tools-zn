@@ -738,7 +738,8 @@ def main():
         print(f"❌ 找不到 {TOOLS_PATH}，请在仓库根目录运行本脚本")
         sys.exit(1)
 
-    tools = tools_data.get("tools", [])
+    # 只统计正式分类条目：pending_review 等未审核数据不参与渲染与计数
+    tools = [t for t in tools_data.get("tools", []) if t.get("category") in CATEGORY_META]
     data_date = tools_data.get("last_updated") or datetime.now().strftime("%Y-%m-%d")
 
     institutions = []

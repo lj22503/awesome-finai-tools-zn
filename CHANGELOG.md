@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.4.2] - 2026-09-22
+
+### Added
+
+- `scripts/update_china_platforms.py` 新增**待审隔离机制**：自动巡检发现的候选不再直接写入 `data/tools.json`，统一写入新增的 `data/pending-review.json`（`status: pending_review`），经人工确认后再并入正式数据，避免未经审核的条目污染线上清单
+
+### Changed
+
+- `scripts/update_china_platforms.py` **收紧相关性过滤**：新增 `IRRELEVANT_BLOCKLIST` / `is_relevant()` / `has_institution_signal()` / `ORG_STOPWORDS` / `GENERIC_FINANCE_WORDS`；ClawHub 与 npm 抓取结果需同时命中「金融 + 机构」双重信号才收录
+- `scripts/update_china_platforms.py` 收敛 `_infer_org_name`：疑似新机构名由伪名（如「提供基金」「数据来源证券」）收敛为合理机构名
+- `scripts/generate_readme.py` 统计口径调整：README / llms.txt 仅统计正式分类条目，`pending_review` 条目不参与生成
+
+---
+
 ## [0.4.1] - 2026-09-21
 
 ### Fixed

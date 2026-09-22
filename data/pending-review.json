@@ -1,0 +1,1355 @@
+{
+  "version": "2026-09-22",
+  "last_updated": "2026-09-22",
+  "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
+  "items": [
+    {
+      "id": "clawhub-financial-analysis",
+      "slug": "financial-analysis",
+      "name": "金融分析技能",
+      "description": "利用免费数据源进行多资产投资组合的风险平价分析、动态调仓和回测，提供文字报告与图表可视化。",
+      "link": "https://clawhub.ai/financial-analysis",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-westock-data",
+      "slug": "westock-data",
+      "name": "腾讯自选股-金融数据查询",
+      "description": "金融市场结构化数据查询的权威入口。支持股票（A股/港股/美股）、ETF、指数、板块、期货、外汇、可转债的 K 线、技术指标、筹码、财报、研报、公告、风险事件、股东、分红、ETF 持仓、新股/投资日历、龙虎榜等数据查询(不同标的与市场支持的维度不同)；同时支持行业经营数据、申万行业估值/盈利预测/财务、全球宏观经济等数据查询；微信搜索\"腾讯微证券\"小程序，获取更多专业服务～",
+      "link": "https://clawhub.ai/westock-data",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-fin-pipl",
+      "slug": "fin-pipl",
+      "name": "Fin PIPL -金融行业个人信息保护合规检查工具",
+      "description": "金融行业个人信息保护（PIPL）合规检查工具。\n基于《个人信息保护法》《个人金融信息保护规范》(JR/T 0171)、\n《金融数据安全 数据安全分级指南》(JR/T 0197) 等行业法规，\n提供银行、证券、保险、支付四大场景的合规评估。\n\nUse when: 需要进行金融行业PIPL合规自查、\n个人金融信息保护评估、金融数据安全分级检查、\n金融产品营销合规检查、金融自动化决策合规评估。\n\n🎉 v",
+      "link": "https://clawhub.ai/fin-pipl",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-collect-market-data",
+      "slug": "collect-market-data",
+      "name": "金融市场数据采集工具",
+      "description": "采集全球金融市场数据，用于生成每日金融日报。 覆盖地区：美国、中国、中国香港、欧洲、亚太（日本、韩国） 内容分类：①市场表现类 ②政策类 ③企业类 ④经济数据类 ⑤汇总类（每日环球市场速览） 当用户要求\"采集数据\"、\"获取今日市场数据\"、\"查询行情\"、\"生成日报前准备数据\"、 或触发\"生成每日金融日报\"流程时使用。",
+      "link": "https://clawhub.ai/collect-market-data",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-finloop-mktdata-skills",
+      "slug": "finloop-mktdata-skills",
+      "name": "F-AI 金融数据",
+      "description": "提供全球股票、指数、基金、债券等多品类金融数据的实时与历史行情查询及公司基本面分析服务。",
+      "link": "https://clawhub.ai/finloop-mktdata-skills",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-financial-literacy-tool-free",
+      "slug": "financial-literacy-tool-free",
+      "name": "金融素养学习工具",
+      "description": "个人金融素养教育工具，提供基础金融概念、理财入门与风险意识培养。Use when 用户需要financial-literacy-tool-free相关功能时使用。不适用于超出本技能能力范围的复杂需求。适用于独立开发者、企业团队和自动化工作流场景。支持中文交互，无需复杂配置即开即用。输出结果可直接使用，减少二次加工成本。",
+      "link": "https://clawhub.ai/financial-literacy-tool-free",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-fin-literacy-free",
+      "slug": "fin-literacy-free",
+      "name": "金融知识问答",
+      "description": "提供A股交易相关金融知识问答与分层教育，依据用户水平智能推荐内容并给出个性化投资建议。",
+      "link": "https://clawhub.ai/fin-literacy-free",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-fin-literacy",
+      "slug": "fin-literacy",
+      "name": "金融知识问答",
+      "description": "基于深度学习的A股专业金融知识问答和多层次教育，提升投资决策效率，支持风险管理与个性化建议。",
+      "link": "https://clawhub.ai/fin-literacy",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-fin-terminal",
+      "slug": "fin-terminal",
+      "name": "金融数据终端",
+      "description": "|- 功能涵盖: fin,。Use when 需要数据分析、报表生成、统计洞察、数据可视化时使用。不适用于实时流数据处理。适用于独立开发者、企业团队和自动化工作流场景。支持中文交互，无需复杂配置即开即用。输出结果可直接使用，减少二次加工成本。提供结构化输出和错误处理机制。支持多场景应用和灵活配置。具备完整的输入输出规范。 功能涵盖: terminal。",
+      "link": "https://clawhub.ai/fin-terminal",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-ths-financial-data",
+      "slug": "ths-financial-data",
+      "name": "股票",
+      "description": "该skill用于获取股票市场数据，包括实时行情、中文名称查询、键盘缩写转换、资金流向和日K线数据。使用thsdk库提供同花顺数据接口支持。支持自动将中文、缩写、短代码转换为thsdk所需的完整ths_code格式。当匹配到多只股票时，会返回候选列表供用户选择。如未安装thsdk，会自动安装。",
+      "link": "https://clawhub.ai/ths-financial-data",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-ths-advanced-analysis",
+      "slug": "ths-advanced-analysis",
+      "name": "同花顺股票接口",
+      "description": "基于 thsdk 进行高级股票分析：分钟K线（1m/5m/15m/30m/60m/120m）、板块/指数行情（主要指数/申万行业/概念板块成分股）、多股票批量对比（表格+归一化走势图+相关性热力图）、盘口深度、大单流向、集合竞价异动、日内分时、历史分时。当用户提到\"分钟K线\"、\"日内走势\"、\"盘口\"、\"大单\"、\"...",
+      "link": "https://clawhub.ai/ths-advanced-analysis",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-price-query",
+      "slug": "stock-price-query",
+      "name": "股票查询 / Stock Price Query",
+      "description": "股票查询 / Stock price query. 实时查询股票、股价、行情数据，支持 A 股（沪深）、港股、美股及大盘指数（上证、深证、恒生、纳斯达克、道琼斯、标普500），支持批量查询，零配置开箱即用。Real-time stock price, quote and market index query fo...",
+      "link": "https://clawhub.ai/stock-price-query",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-xiapi-stock-analysis",
+      "slug": "xiapi-stock-analysis",
+      "name": "个股分析大师：面向A股支持单股深度分析与多股对比（综合/技术面/财报/价值面）。触发词：个股分析、个股对比、财报对比、价值分析、技术分析、买卖点、基本面、选时、ST分析。适用场景：用户需要对一个或多个明确股票标的做结构化分析与对比。",
+      "description": "个股分析大师：面向A股支持单股深度分析与多股对比（综合/技术面/财报/价值面）。触发词：个股分析、个股对比、财报对比、价值分析、技术分析、买卖点、基本面、选时、ST分析。适用场景：用户需要对一个或多个明确股票标的做结构化分析与对比。不适用场景：未提供股票标的、仅做盘口超短交易指令、非A股标的。",
+      "link": "https://clawhub.ai/xiapi-stock-analysis",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-analyst",
+      "slug": "stock-analyst",
+      "name": "股票分析",
+      "description": "股票综合分析，融合基本面分析、技术分析、量化与行为金融分析三大体系，为投资者提供多维度的选股和择时建议。当用户询问某只股票（给出股票代码或名称）、市场整体情况、个股看法、能否买入/卖出、选股建议时使用此技能。",
+      "link": "https://clawhub.ai/stock-analyst",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-cn-stock-analyst",
+      "slug": "cn-stock-analyst",
+      "name": "CN Stock Analyst 股票智能分析师",
+      "description": "股票智能分析助手，支持A股、港股、美股的行情抓取、技术指标解读和研报生成。触发场景：用户提到\"股票分析\"、\"看一下XX股\"、\"XX的技术面\"、\"买不买XX\"、\"研报\"、\"财报解读\"、\"帮我分析XX\"、\"XX值不值得买\"、\"XX的走势\"、\"技术分析\"、\"MACD\"、\"RSI\"、\"K线\"、\"均线\"、\"PE\"、\"PB\"...",
+      "link": "https://clawhub.ai/cn-stock-analyst",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-recommend",
+      "slug": "stock-recommend",
+      "name": "Stock Recommend By News 股票推荐-支持 A股、港股、美股",
+      "description": "根据最新国际新闻分析并预测A股、港股或美股中可能异动的股票，提供原因和相关新闻链接。",
+      "link": "https://clawhub.ai/stock-recommend",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-openclaw-stock-data-skill",
+      "slug": "openclaw-stock-data-skill",
+      "name": "股票数据API",
+      "description": "使用 data.diemeng.chat 提供的接口查询股票日线、分钟线、财务指标等数据，支持 A 股等市场。",
+      "link": "https://clawhub.ai/openclaw-stock-data-skill",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-eastmoney-tech-analysis",
+      "slug": "eastmoney-tech-analysis",
+      "name": "股票技术分析 (Stock Technical Analysis)",
+      "description": "提供股票K线数据及计算KDJ、MACD、BOLL、MA技术指标，支持资金流向排名和综合买卖信号分析。",
+      "link": "https://clawhub.ai/eastmoney-tech-analysis",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-privora-cn-quant",
+      "slug": "privora-cn-quant",
+      "name": "Privora · A股/港股/黄金/基金 多资产 量化分析 · 量化回测 · 模拟盘 · 实时告警 · 风险监控 · Python 策略 · AI Agent",
+      "description": "Privora · AI Agent 投资工作流平台 — Bearer Token 即接入 /agent/skills/execute 通用 dispatcher，覆盖 A 股/港股/美股/黄金/基金/财报数据 + Python 回测（含 sandbox）+ 模拟交易 + 组合归因（α/β TWR）+ 云端告警 + 流程编排。Hermes / Claude / GPT / OpenClaw 全兼容",
+      "link": "https://clawhub.ai/privora-cn-quant",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-cue-fund-advisory",
+      "slug": "cue-fund-advisory",
+      "name": "基金投顾",
+      "description": "用 Cue 跑「基金投顾」场景的深度研究：穿透公募基金底仓，深度透视基金经理真实管理能力与风格漂移，量化评估选股与择时能力。覆盖大类资产配置月报、公募基金全维尽调、固收+与纯债基金排雷优选、基金业绩归因与能力评估、基金组合穿透与重复配置排雷等核心搭子，产出基金遴选与投后跟踪可用的归因评估与配置建议底稿。",
+      "link": "https://clawhub.ai/cue-fund-advisory",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-privora-alert",
+      "slug": "privora-alert",
+      "name": "Privora · 实时监控 · 黄金实时监控 / 基金净值监控 / 股价预警 · 越线飞书/微信 Webhook · AI Agent",
+      "description": "Privora 实时监控——黄金实时监控 / 基金净值监控 / 多资产阈值告警，给一个已订阅资产字段配一条阈值规则（跌破/突破/等于），越线即飞书/微信/通用 Webhook 通知你；港股/美股/A股同样支持。建渠道→建规则→验证→上线，一份文档 11 步走完；Bearer Token 直连 /agent/skills/execute。",
+      "link": "https://clawhub.ai/privora-alert",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-project-fund-screening",
+      "slug": "project-fund-screening",
+      "name": "BP 融资自测清单 · 双轨版（VC × 政府基金）",
+      "description": "为寻求融资的初创或成长期项目做初步筛选诊断——同时对照 VC/PE 分阶段 BP 标准与政府引导/产投基金落地要求，输出结构化达标度、红旗清单与整改建议。当用户需要判断某项目能否拿到财务投资人或政府基金的钱、BP 哪里不达标、政府基金落地可行性或返投能否达成、帮项目做融资前体检时使用本技能。",
+      "link": "https://clawhub.ai/project-fund-screening",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-portfolio-tool",
+      "slug": "portfolio-tool",
+      "name": "Portfolio Tool-基金组合研究工具",
+      "description": "用自然语言对话式操作 Portfolio_tool 基金组合研究工具——查组合、同步净值、看跟踪、搜基金、管账号，本机指纹自动身份、免登录，MCP 封装 19 个工具即装即用。\n\n把繁琐的基金组合研究变成一句对话。装上这个技能，你无需写代码、也无需手动调接口，直接用自然语言就能「列出我的组合」「同步基金净值」「看某只基金的跟踪状态」「搜基金 000001」「绑定账号」——后端 REST 能力被封装",
+      "link": "https://clawhub.ai/portfolio-tool",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-cue-fund-penetration",
+      "slug": "cue-fund-penetration",
+      "name": "基金组合持仓穿透分析",
+      "description": "用 Cue 穿透你的基金组合持仓——你以为分散了，其实买了一篮子同样的东西。逐层拆解股票/行业/风格暴露，检测重复配置与集中度风险，逐只排雷。",
+      "link": "https://clawhub.ai/cue-fund-penetration",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-cue-fund-due-diligence",
+      "slug": "cue-fund-due-diligence",
+      "name": "基金值不值得买",
+      "description": "用 Cue 一键给一只基金做全维度深度体检——基金经理画像、业绩归因、风格一致性、风险指标、费率与规模，告诉你\"这只基金的历史业绩是靠运气还是靠能力\"，买之前心里有底。",
+      "link": "https://clawhub.ai/cue-fund-due-diligence",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-xg-fund-quant",
+      "slug": "xg-fund-quant",
+      "name": "小果基金量化分析助手",
+      "description": "小果(微信:xg_quant)基金量化分析助手专注于基金量化分析工具，基于小果量化策略系统，提供基金历史行情数据、基金因子数据、基金策略回测、基金组合分析等核心功能。适用于基金投资者、资产配置研究员和量化策略开发者。",
+      "link": "https://clawhub.ai/xg-fund-quant",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-hua-personal-strategy",
+      "slug": "hua-personal-strategy",
+      "name": "花花个人基金仓位管家",
+      "description": "以 HuahuaDaily 真实基金持仓和 quant_strategy_context.v2 为数据底座，为每个用户先建立版本化投资目标、风险、现金流和资产限制，再联合东方财富研究与 serenity-skill 形成有证据和反证的 AI 投资观点，最后由确定性资金内核输出单一、果断、可审计的场外基金持有、加仓...",
+      "link": "https://clawhub.ai/hua-personal-strategy",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-fund-knowledge-query",
+      "slug": "fund-knowledge-query",
+      "name": "基金知识查询服务",
+      "description": "一个基于Model Context Protocol (MCP)的基金知识库服务器，提供基金相关知识的查询和检索功能，支持多种部署模式和协议。",
+      "link": "https://clawhub.ai/fund-knowledge-query",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stockstar-investor",
+      "slug": "stockstar-investor",
+      "name": "StockStar Investor - 证券之星投资者互动",
+      "description": "查询上市公司投资者互动（董秘问答）与线索挖掘数据，数据来源证券之星（stockstar.com）。 支持两类视图：线索挖掘（结构化投资信号、重要性评级、边际变化追踪）和 投资者互动原始问答（含标签筛选、语义倾向、回复质量）。 触发词：投资者互动、董秘问答、董秘、问答、线索、信号、线索挖掘、 信号挖掘、边际变化、投资线索、公司回复、投资者提问、 证券之星、stockstar investor",
+      "link": "https://clawhub.ai/stockstar-investor",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stockstar-fund-rating",
+      "slug": "stockstar-fund-rating",
+      "name": "Stockstar Fund Rating - 证券之星基金评级",
+      "description": "查询公募基金评级数据，数据来源证券之星（fund.stockstar.com）， 涵盖上海证券、国泰海通、银河证券、招商证券、晨星、济安金信、 天相投顾七家评级机构。支持输入基金代码查询各机构星级评级。 触发词：基金、评级、基金评级、星级、基金推荐、五星基金、 晨星评级、上海证券评级、银河证券评级、招商证券评级、 济安金信评级、天相投顾评级、国泰海通评级、证券之星基金",
+      "link": "https://clawhub.ai/stockstar-fund-rating",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-lingxi-watchlist-skill",
+      "slug": "lingxi-watchlist-skill",
+      "name": "国泰海通证券-灵犀自选股管理",
+      "description": "国泰海通证券-灵犀自选管理 skill，支持查询自选股行情、添加、删除自选股。**本期仅支持管理【我的自选】分组中的自选股，其他分组中的自选股管理仍在开发中。** 当用户表达查看自选股、查看自选股行情、关注某只股票、从自选股中移除某只股票等意图时，必须使用本 Skill。**Agent 只需读取此文件，无需读取其...",
+      "link": "https://clawhub.ai/lingxi-watchlist-skill",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-lingxi-ranklist-skill",
+      "slug": "lingxi-ranklist-skill",
+      "name": "国泰海通证券-灵犀市场热榜查询",
+      "description": "国泰海通证券-灵犀市场热榜查询skill，支持涨跌幅、成交额、成交量、换手率、当日资金净流入等市场排行榜查询。当用户查询市场榜单时，优先使用本Skill获取数据。触发关键词包括：涨幅榜，跌幅榜，热榜，排行榜，涨幅前10, 资金流向。",
+      "link": "https://clawhub.ai/lingxi-ranklist-skill",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-lingxi-realtimemarketdata-skill",
+      "slug": "lingxi-realtimemarketdata-skill",
+      "name": "国泰海通证券-灵犀实时行情",
+      "description": "国泰海通证券-灵犀实时行情 skill：标的覆盖 A 股、港股、美股、ETF与指数；支持单只或多只标的的实时行情，数据维度包括最新价、涨跌幅、涨跌额、成交量、成交额、换手率、当日资金净流入、量比等。 当用户询问股价、涨跌幅、行情走势、资金流向或相关证券行情时，优先通过本 Skill 取数，若本 Skill 无有效...",
+      "link": "https://clawhub.ai/lingxi-realtimemarketdata-skill",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-securities-monitor",
+      "slug": "securities-monitor",
+      "name": "证券监管监控",
+      "description": "证券监管页面批量监控系统。自动监控深交所、上交所、北交所、股转系统、中国结算、证券业协会等21个证券监管页面，检测页面变化并生成通知。触发词：证券监管监控、深交所监控、上交所监控、北交所监控、证监会监控、证券页面监控。",
+      "link": "https://clawhub.ai/securities-monitor",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-futures",
+      "slug": "futures",
+      "name": "期货查询 - Futures Inquiry",
+      "description": "查询上期所、大商所、郑商所、中金所、广期所期货实时行情及历史 K 线。当用户说：螺纹钢主力什么价？豆粕期货涨了吗？SC 原油最近一周走势？或类似期货行情问题时，使用本技能。",
+      "link": "https://clawhub.ai/futures",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-futures-quant",
+      "slug": "futures-quant",
+      "name": "期货量化系统",
+      "description": "支持多市场CTP接口的期货量化系统，提供自动化数据处理、策略开发、风险管理和交易执行，提升财务分析效率3倍。",
+      "link": "https://clawhub.ai/futures-quant",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-futures-panda",
+      "slug": "futures-panda",
+      "name": "futures-panda",
+      "description": "通过AKShare财经数据接口库封装，提供股期货、期权的实时数据、历史行情数据、仓单数据、席位数据、基差数据、期货合约基础数据和期货交易费用参照表数据。",
+      "link": "https://clawhub.ai/futures-panda",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-slzq-trading-preview",
+      "slug": "slzq-trading-preview",
+      "name": "三立智期 抢先版",
+      "description": "三立期货「三立智期」官方技能：对话领取模拟盘密钥，查行情与持仓，模拟盘可下单；问是否正规、开户也可答。实盘请去 App 复制密钥。",
+      "link": "https://clawhub.ai/slzq-trading-preview",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-quant-trading",
+      "slug": "quant-trading",
+      "name": "量化交易知识",
+      "description": "量化交易知识与技能。包括多因子选股、技术指标、经典策略（双均线、网格交易、突破策略）、套利策略、回测框架（Backtrader）、风险指标等。用于回答量化交易相关问题、股票分析、策略建议等。",
+      "link": "https://clawhub.ai/quant-trading",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-finance-toolkit",
+      "slug": "finance-toolkit",
+      "name": "A股量化工具包",
+      "description": "股票数据获取、分析和可视化工具包。支持A股、港股、美股数据，提供技术分析、基本面分析和投资组合管理功能。",
+      "link": "https://clawhub.ai/finance-toolkit",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-quant-trading-signals",
+      "slug": "quant-trading-signals",
+      "name": "量化交易信号",
+      "description": "量化交易信号系统。基于MACD、RSI、KDJ、均线、布林带等技术指标生成买卖信号。支持港股、美股、加密货币。",
+      "link": "https://clawhub.ai/quant-trading-signals",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-factorhub",
+      "slug": "factorhub",
+      "name": "FactorHub A股量化数据",
+      "description": "提供 5500+ 只 A 股的量化因子数据和财经指标，支持因子分析、行情查询、资金流向、财务分析及策略回测",
+      "link": "https://clawhub.ai/factorhub",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-quant-research-lab",
+      "slug": "quant-research-lab",
+      "name": "量化策略研发实验室",
+      "description": "量化策略研发实验室 — 让 Claude 按顶级机构角色分工（高盛策略架构师、文艺复兴回测引擎、Two Sigma 风控、Citadel Alpha 研究、Jane Street 做市、AQR 因子模型...共 15 个角色）系统性地设计、验证、风控、执行量化交易策略。当用户要求设计量化策略、做回测、构建因子、风...",
+      "link": "https://clawhub.ai/quant-research-lab",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-quant-stock-selector",
+      "slug": "quant-stock-selector",
+      "name": "量化选股系统 - 基于 AKShare + 多因子模型的 A 股选股工具",
+      "description": "量化选股系统 - 基于 AKShare + 多因子模型的 A 股选股工具 【核心功能】 - 六大维度综合评分（技术面 30%+ 基本面 25%+ 资金面 15%+ 筹码峰 10%+90% 集中度 10%+ 成交量震荡 10%） - 消息面分析（财联社 + 新浪财经，自动去重） - 每日自动选股（Top 3 推荐）...",
+      "link": "https://clawhub.ai/quant-stock-selector",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-gh-data",
+      "slug": "gh-data",
+      "name": "股海罗盘 - A股股票量化分析",
+      "description": "🧠 自学习量化引擎，每只股票60W+历史信号回测，输出历史匹配率+规律挖掘(5类规律图谱)+17维全量数据+自动生成DOCX报告。独家ETF四象联动资金分析、券商研报观点交叉验证。不只是查数据——给你的信号附上\"过去准不准\"的答案。",
+      "link": "https://clawhub.ai/gh-data",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-g2-trading-strategy",
+      "slug": "g2-trading-strategy",
+      "name": "G2量化交易策略",
+      "description": "基于21组策略回测，提供沪深300量化交易系统，年化收益21.2%，夏普率1.12，含智能选股和严格风控。",
+      "link": "https://clawhub.ai/g2-trading-strategy",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-niuniu-quant",
+      "slug": "niuniu-quant",
+      "name": "牛牛量化股票系统",
+      "description": "专业股票量化交易技能，支持实时数据查询、策略回测、智能选股及交易信号提示。",
+      "link": "https://clawhub.ai/niuniu-quant",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-tencent-finance",
+      "slug": "tencent-finance",
+      "name": "腾讯财经行情接口",
+      "description": "腾讯财经实时行情接口，查询A股、港股、美股、期货、外汇、ETF的实时行情数据。触发关键词：查股价、查行情、查指数、腾讯接口、股票报价、实时行情",
+      "link": "https://clawhub.ai/tencent-finance",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-dfcf-stock-intraday",
+      "slug": "dfcf-stock-intraday",
+      "name": "东方财富日内行情 dfcf-stock-intraday",
+      "description": "使用东方财富 API 获取 A 股（沪市/深市）及指数的日内分时数据。当用户询问某只 A 股或指数的日内走势、分时数据、当日行情、实时价格、分时图数据时，必须使用此 skill。触发关键词包括：分时数据、日内数据、今日行情、分时走势、intraday、当日走势、东方财富获取数据。支持沪市（market=1）和深市...",
+      "link": "https://clawhub.ai/dfcf-stock-intraday",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-market-analysis-cloud",
+      "slug": "market-analysis-cloud",
+      "name": "行情研判（云端版）",
+      "description": "每日A股行情研判编排器（纯云端版，无需MCP连接器，无需电脑开机）。分步执行：日历检查→行情数据→新闻简报→持股诊断→自选股分析→ERP计算→组装报告→上传IMA知识库。运行前请确保已安装依赖技能：stock-price-query-mx、tecent-finance、eastmoney-mx-skills-su...",
+      "link": "https://clawhub.ai/market-analysis-cloud",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-redquant-ashare-quant",
+      "slug": "redquant-ashare-quant",
+      "name": "中国A股股票智能分析大师",
+      "description": "面向中国A股研究场景的只读投研技能，提供行情、财务、行业、新闻、策略概览与量化选股查询；仅输出研究信息与风险提示。",
+      "link": "https://clawhub.ai/redquant-ashare-quant",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-bytesagain-crypto",
+      "slug": "bytesagain-crypto",
+      "name": "Bytesagain Crypto",
+      "description": "Real-time crypto prices and 100+ technical indicators (RSI, MACD, etc.) using Binance API. 支持实时行情监控、指标计算及全网资产扫描。Pure technical reference, zero external ads.",
+      "link": "https://clawhub.ai/bytesagain-crypto",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-astock-api",
+      "slug": "astock-api",
+      "name": "A-Share Stock Data API",
+      "description": "A股实时行情、K线技术指标、资金流向、财务数据查询。支持任意A股代码，返回结构化数据。",
+      "link": "https://clawhub.ai/astock-api",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-a-stock-market-sentiment",
+      "slug": "a-stock-market-sentiment",
+      "name": "A股市场情绪量化",
+      "description": "用数据判断市场处于\"亢奋/分歧/冰点/修复\"哪个阶段。用于A股短线交易，辅助判断仓位和交易策略。",
+      "link": "https://clawhub.ai/a-stock-market-sentiment",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-a-stock-fundamental-screening",
+      "slug": "a-stock-fundamental-screening",
+      "name": "A股基本面筛选",
+      "description": "用财务指标快速排除垃圾股，找到有基本面支撑的标的。用于A股基本面选股。",
+      "link": "https://clawhub.ai/a-stock-fundamental-screening",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-a-stock-portfolio-monitor",
+      "slug": "a-stock-portfolio-monitor",
+      "name": "A股持仓监控助手",
+      "description": "A股持仓监控助手 - 每日自动持仓报告、止损止盈提醒、实时盈亏跟踪。适合个人投资者管理多只股票持仓。",
+      "link": "https://clawhub.ai/a-stock-portfolio-monitor",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-a-share-real-time-data",
+      "slug": "a-share-real-time-data",
+      "name": "A股实时行情数据",
+      "description": "Fetch China A-share stock market data (bars, realtime quotes, tick-by-tick transactions) via mootdx/TDX protocol. Use when working with Chinese stock data, mootdx library, TDX quotes, intraday minute ",
+      "link": "https://clawhub.ai/a-share-real-time-data",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-feed-redfox",
+      "slug": "stock-feed-redfox",
+      "name": "A股每日新闻",
+      "description": "A股每日新闻。从小红书、抖音、公众号三大平台搜索A股相关短讯，内置17个A股核心关键词一次性查询，默认近7天数据，自动过滤非股票内容，跨平台对比分析股市舆情。当用户需要研究A股舆情、股市讨论、大盘分析、选股策略、涨跌复盘时使用。触发词：A股、A股舆情、股市新闻、大盘分析、涨停、选股、A股复盘、股票讨论、股市热点。",
+      "link": "https://clawhub.ai/stock-feed-redfox",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-biga",
+      "slug": "biga",
+      "name": "A股智能选股 · BigA（A股实时行情·股票分析·基本面筛选·AI选股·买卖信号）",
+      "description": "🐂 A股智能选股 · BigA — A股实时行情、A股基本面筛选、A股量化选股、A股个股诊断、A股实时盯盘、A股买卖信号与短线择时一站式。A股行情分析、A股情绪与资金流向、A股板块轮动、A股股票池监控；量化评分+技术面分析，自主研发 -10~+10 择时分体系判断买卖时机，动态股票池(≤30支)，按高科技×中小市值×好业绩原则筛选。A股投资、股市分析、量化选股、股票池管理、短线择时、A股择时。| ",
+      "link": "https://clawhub.ai/biga",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-a-share-dragon-tiger-report",
+      "slug": "a-share-dragon-tiger-report",
+      "name": "A股涨停板龙虎榜深度研判+财富密码策略",
+      "description": "生成 A 股「涨停板龙虎榜深度研判报告」v2.0（21 章结构编号 0–21 + 22 条计算口径 + 财富密码融合层）， 按四层漏斗 L1→L2→L2.5→L3 框架（六条已确认口径 v2，含半年口径 + 增速红线）， 输出 HTML / PDF / PPTX 三件套；内置「十五五 18 方向跟踪池（102 板块 + 12 SW1 + 70 股）」 及三层核验生成器（reports/build_",
+      "link": "https://clawhub.ai/a-share-dragon-tiger-report",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-monitor-hkus",
+      "slug": "stock-monitor-hkus",
+      "name": "港股美股监控",
+      "description": "港股/美股/加密货币实时监控。使用 Yahoo Finance (yfinance) 获取实时价格、技术指标监控。支持自定义股票池、涨跌提醒、均线/RSI/MACD信号。",
+      "link": "https://clawhub.ai/stock-monitor-hkus",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-hk-stock-monitor",
+      "slug": "hk-stock-monitor",
+      "name": "港股+A股盯盘系统",
+      "description": "港股+A股实时盯盘系统，支持技术分析、涨跌幅告警、飞书推送。使用场景：(1) 查询港股/A股实时行情，(2) 监控股票涨跌幅告警，(3) 生成技术分析报告，(4) 定时推送盯盘报告。触发关键词：盯盘、股票监控、港股行情、A股行情、涨跌告警、技术分析。",
+      "link": "https://clawhub.ai/hk-stock-monitor",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-hk-ai-stock-expert",
+      "slug": "hk-ai-stock-expert",
+      "name": "港股 AI 概念板块专属投研顾问。结合宏观流动性、南向资金博弈与 AI 产业基本面，提供深度的个股挖掘与风控策略。",
+      "description": "港股 AI 概念板块专属投研顾问。结合宏观流动性、南向资金博弈与 AI 产业基本面，提供深度的个股挖掘与风控策略。",
+      "link": "https://clawhub.ai/hk-ai-stock-expert",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-analysis-best",
+      "slug": "stock-analysis-best",
+      "name": "对上市公司进行系统性投资价值分析，支持 A 股、港股、美股",
+      "description": "对上市公司进行系统性投资价值分析，支持 A 股、港股、美股",
+      "link": "https://clawhub.ai/stock-analysis-best",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-monitor-orange",
+      "slug": "stock-monitor-orange",
+      "name": "A股和港股股票分析助手",
+      "description": "股票监控分析技能 - 自定义股票池监控、实时行情、技术指标分析、涨跌趋势预测、信号提醒",
+      "link": "https://clawhub.ai/stock-monitor-orange",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-gaoren-stock-analyst-hk-us",
+      "slug": "gaoren-stock-analyst-hk-us",
+      "name": "港股美股分析",
+      "description": "智能股票分析系统 v2.1 - 港股/美股/A股实时行情 + 富途数据源 + 技术指标 + 综合报告(7大板块)",
+      "link": "https://clawhub.ai/gaoren-stock-analyst-hk-us",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-daily-report-hk",
+      "slug": "stock-daily-report-hk",
+      "name": "港股日报Agent",
+      "description": "港股日报分析Agent - 每日发送《港股每日动量报告》到飞书",
+      "link": "https://clawhub.ai/stock-daily-report-hk",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-investment-report",
+      "slug": "investment-report",
+      "name": "投资报告生成器",
+      "description": "生成A股个股深度投资报告。当用户要求撰写股票/公司投资报告、个股分析、估值分析时使用。支持批量生成多份报告。报告包含：公司概况、详细业务构成、财务分析与预测、分部估值(SOTP)、投资逻辑、交易计划、多维度深度分析（政策面/基本面/技术面/情绪面/消息面/资金面）、风险提示、总结。用户只需提供公司名称列表即可触发。",
+      "link": "https://clawhub.ai/investment-report",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-eyes",
+      "slug": "eyes",
+      "name": "Eyes · 大眼看世界（全球新闻·热点新闻·投资分析）- Global News Monitor",
+      "description": "👁️ Eyes · 全球新闻与国际热点监控助手 — 每日新闻摘要+热点追踪+投资影响分析。覆盖全球局势、地缘冲突、重大政策、创新技术等可能影响经济、市场和投资的事件，并按行业、汇率、大宗商品链路分析影响。全球新闻、国际新闻、热点新闻、每日简报，含定时消息推送与全渠道分段推送能力，用于 Cron 定时推送热点摘要(早8点/晚8点/整点扫描)。| Global news monitor & hotsp",
+      "link": "https://clawhub.ai/eyes",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-j-investment-checklist",
+      "slug": "j-investment-checklist",
+      "name": "Investment Checklist | 投资决策清单",
+      "description": "投资决策清单，每次买入/卖出前必须走一遍，确保决策质量",
+      "link": "https://clawhub.ai/j-investment-checklist",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-equity-method-investment-check-free",
+      "slug": "equity-method-investment-check-free",
+      "name": "长期股权投资权益法核对（免费版）",
+      "description": "权益法核算表逐项核对（逐行复算、合计勾稽、重复与空缺检测），每条结论引用原文。本免费版执行引擎声明的免费检查项。触发词包括 长期股权投资权益法核对、权益法核算表对不上。",
+      "link": "https://clawhub.ai/equity-method-investment-check-free",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-cue-equity-research",
+      "slug": "cue-equity-research",
+      "name": "投资研究",
+      "description": "用 Cue 跑「投资研究」场景的深度研究：覆盖个股估值与股价分析、产业链潜力股挖掘、财报分析、个股基本面与风险体检、个股快评、指数估值与宽基对比、可转债强赎预警等核心搭子，多源公开数据交叉、结论带来源。从短线资金流向到中长线估值模型全周期分析，产出含估值击球区判断、可复核的深度投研底稿。",
+      "link": "https://clawhub.ai/cue-equity-research",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-duan-yongping-investing",
+      "slug": "duan-yongping-investing",
+      "name": "段永平投资判断 · 价值投资方法论",
+      "description": "【价值投资·段永平方法论】把《大道：段永平投资问答录》蒸馏成可执行的 AI 投资判断框架——买股票就是买公司、不懂不碰、不做空不借钱、好生意优先、市场先生常错。用户问\"XX股票值得投吗\"\"这笔投资该不该做\"\"段永平会怎么看XX\"时，本 Skill 按 R1–R6 决策规则逐条套，帮你把\"懂不懂、好不好、贵不贵、该不该碰\"想清楚。不构成投资建议。",
+      "link": "https://clawhub.ai/duan-yongping-investing",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-enterprise-investment-value-assessment",
+      "slug": "enterprise-investment-value-assessment",
+      "name": "企业投资价值评估",
+      "description": "围绕目标企业行业赛道空间、行业竞争地位、经营成长能力、技术产品壁垒、客户资源质量、 资本市场关注度、信用风险水平及长期发展潜力等核心维度，依托公开合规信息，搭建覆盖 “行业空间—企业竞争力—经营成长性—资本关注度—风险约束—投资价值定级—场景化建议” 的全维度企业投资价值分析体系。本技能核心解决“企业是否具备投资与招引价值、核心价值来源、 成长可持续性、风险约束等级、是否值得深度尽调与合作对接”等",
+      "link": "https://clawhub.ai/enterprise-investment-value-assessment",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-portfolio-monitor",
+      "slug": "portfolio-monitor",
+      "name": "投资组合监控",
+      "description": "投资组合监控系统。管理股票、加密货币持仓，跟踪成本、盈亏，设置价格提醒，生成组合报告。支持港股、美股、加密货币。",
+      "link": "https://clawhub.ai/portfolio-monitor",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-global-company-shareholder-zh",
+      "slug": "global-company-shareholder-zh",
+      "name": "支持海外公司股东查询 、高管查询、股权结构穿透，按公司ID从全球企业数据库获取含持股比例、股份类型与股东层级的股东名单。帮助投资者、分析师、业务销售人员、风控研究股权结构、实际控制人穿透/最终受益人——适合尽职调查、投资研究、竞品与集团关系分析、关联交易排查，常用于判断目标公司控制人与公司资本实力",
+      "description": "调取全球企业资料库查询股东信息以及实际受益所有人（Beneficial Owner），梳理企业股权架构、投资关联关系，协助销售、风控人员摸清企业真实管控背景。",
+      "link": "https://clawhub.ai/global-company-shareholder-zh",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-investment-decision-system",
+      "slug": "investment-decision-system",
+      "name": "INVEST 投资决策系统",
+      "description": "个人投资决策辅助系统。基于 INVEST 六维决策框架（意图/数字/价值/优势/安全/时机）， 将分散的市场信息、持仓数据、投资目标和风控纪律串成一个完整的决策闭环。 提供持仓管理、决策评分、仓位计算、风控检查和交互式 HTML 可视化报告。 触发词：投资决策, 买卖决策, 持仓分析, 投资复盘, 仓位计算, 风...",
+      "link": "https://clawhub.ai/investment-decision-system",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-poly",
+      "slug": "poly",
+      "name": "Trading",
+      "description": "Trade Polymarket BTC 5-minute and 15-minute fast markets using CEX price momentum signals via Simmer API. Default signal is Binance BTC/USDT klines. Use when...",
+      "link": "https://clawhub.ai/poly",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-vibe-trading",
+      "slug": "vibe-trading",
+      "name": "vibe-trading",
+      "description": "Professional finance research toolkit — backtesting (10 engines + benchmark comparison panel), factor analysis, Alpha Zoo (462 pre-built alphas across qlib158/alpha101/gtja191/academic/fundamental), o",
+      "link": "https://clawhub.ai/vibe-trading",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-trading-coach",
+      "slug": "trading-coach",
+      "name": "Trading Coach",
+      "description": "🏆 AI交易复盘教练 — 把你的券商CSV变成可执行的改进洞察！\n自动FIFO配对持仓，8维度质量评分(入场/出场/趋势/风险...)，10维度AI洞察。\n支持富途(中/英)、老虎、中信、华泰等主流券商。\n触发条件: 用户提供交易CSV、要求分析交易表现、评估交易质量、生成复盘报告、\n计算盈亏统计、识别交易模式问题、\"帮我复盘\"、\"分析我的交易\"。",
+      "link": "https://clawhub.ai/trading-coach",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-hyperliquid-place",
+      "slug": "hyperliquid-place",
+      "name": "Hyperliquid Trading Place",
+      "description": "hyperliquid place — Place Hyperliquid perps on explicit trade/place/execute. REQUIRED after install: cd skills/hyperliquid-place/scripts && npm install (postinstall runs setup.mjs; wires MCP + Approve",
+      "link": "https://clawhub.ai/hyperliquid-place",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-trading-quant",
+      "slug": "trading-quant",
+      "name": "Trading Quant",
+      "description": "量化交易数据分析工具。A股/美股/港股/贵金属实时行情，多维度评分(技术面+资金面+基本面)，涨跌停池，北向资金，分钟级资金流。Use when: (1) 查询任何股票实时行情和评分, (2) 分析A股涨跌停异动, (3) 查看北向资金流向, (4) 美股港股贵金属行情, (5) 全球市场概览, (6) 个股资金...",
+      "link": "https://clawhub.ai/trading-quant",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-trading-backtest-viewer",
+      "slug": "trading-backtest-viewer",
+      "name": "trading-backtest-viewer",
+      "description": "Parse and summarize backtest results from D:/Stock/ — win rate, Sharpe, drawdown, returns",
+      "link": "https://clawhub.ai/trading-backtest-viewer",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-trading-sop",
+      "slug": "trading-sop",
+      "name": "trading-sop",
+      "description": "A股交易标准操作程序（SOP）总编排。从用户的自然语言输入出发，识别当前交易意图（盘前准备、盘中复盘、盘后复盘、个股深度研究、首板隔夜），按需编排调用现有技能流水线，最终输出可操作的决策建议。当用户提出日常交易操作、盘前准备、盘中复盘、盘后总结、全流程投研或个股深研请求时触发（包含触发词：今天怎么操作, 帮我做盘前, 复盘一下, 研究一下, 首板今晚要不要留, 当前市场适合买吗, 给我一套完整分析",
+      "link": "https://clawhub.ai/trading-sop",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-hyperliquid-trading-place",
+      "slug": "hyperliquid-trading-place",
+      "name": "Hyperliquid Trading Place",
+      "description": "hyperliquid trading place — Place Hyperliquid perps on explicit trade intent. REQUIRED: cd skills/hyperliquid-trading-place/scripts && npm install (postinstall runs setup.mjs; start-mcp REFUSED until ",
+      "link": "https://clawhub.ai/hyperliquid-trading-place",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-drt-trading",
+      "slug": "drt-trading",
+      "name": "drt-trading",
+      "description": "Dealing Range Theory (DRT) — complete ICT structure: Type 1 (continuation), Type 2 (reversal), Type 3 (consolidation), quadrant levels (25/50/75), entry models, SMT confirmation and news filter. For m",
+      "link": "https://clawhub.ai/drt-trading",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-mx",
+      "slug": "stock-mx",
+      "name": "stock",
+      "description": "基于东方财富权威数据库，提供股票选股、行情、财务及关联关系等金融数据的智能查询与筛选服务。",
+      "link": "https://clawhub.ai/stock-mx",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-xiaoding-stock",
+      "slug": "xiaoding-stock",
+      "name": "Stock",
+      "description": "Retrieve real-time stock data including price, change, volume, and turnover for A-share, Hong Kong, and US markets via Sina Finance.",
+      "link": "https://clawhub.ai/xiaoding-stock",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-ai-analyzer",
+      "slug": "stock-ai-analyzer",
+      "name": "Stock AI Analyzer",
+      "description": "A股股票基本面投研分析方法论。当用户要求按股票名称或代码分析中国A股、判断公司成长性与核心亮点、评估估值阶段与隐含预期、分析财务质量与业务结构、判断股票是否处于当前市场主线内、做竞争格局分析或风险排查，或基于Tushare/公开市场数据生成股票基本面分析时使用。用户提问形式包括\"帮我分析XX股票\"\"XX的基本面怎...",
+      "link": "https://clawhub.ai/stock-ai-analyzer",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-terminal",
+      "slug": "stock-terminal",
+      "name": "stock-terminal",
+      "description": "Answer stock-terminal commands and market research questions with compact, sourced views of price, sentiment, SentiSense Score, news, filings, analyst ratings, earnings, and end-of-day options analyti",
+      "link": "https://clawhub.ai/stock-terminal",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-analysis-cellcog",
+      "slug": "stock-analysis-cellcog",
+      "name": "Stock Analysis",
+      "description": "AI financial analysis and stock research powered by CellCog. Stock analysis, valuation models, portfolio optimization, earnings breakdowns, investment research, financial statements, tax planning, DCF",
+      "link": "https://clawhub.ai/stock-analysis-cellcog",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-deep-report",
+      "slug": "stock-deep-report",
+      "name": "Stock Deep Report",
+      "description": "生成个股三维深度分析单页HTML报告。支持A股、港股、美股，从基本面、新闻面、资金面、技术面、估值、同行对比、股东结构等多个维度进行全面分析，输出精美可打印的HTML报告。触发关键词：三维深度分析、个股分析报告、股票深度报告、生成股票HTML报告、Deep Stock Analysis Report。",
+      "link": "https://clawhub.ai/stock-deep-report",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-openclaw-tavily-search",
+      "slug": "openclaw-tavily-search",
+      "name": "Tavily Search",
+      "description": "Search the public web through Tavily and return structured results with URLs and snippets. Use when an agent needs current information, source discovery, link lookup, news or finance search, or a fall",
+      "link": "https://clawhub.ai/openclaw-tavily-search",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-koompi-finance",
+      "slug": "koompi-finance",
+      "name": "Finance",
+      "description": "Use for finance and accounting operations — AP/AR tracking, invoicing, bank reconciliation, budgeting, financial reporting, expense management, tax prep, pay...",
+      "link": "https://clawhub.ai/koompi-finance",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-financial-literacy",
+      "slug": "financial-literacy",
+      "name": "Finance",
+      "description": "Support financial understanding from personal budgeting to professional analysis and research.",
+      "link": "https://clawhub.ai/financial-literacy",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-finance-lite",
+      "slug": "finance-lite",
+      "name": "Finance Lite (Beta): Daily Macro + Market Move Brief",
+      "description": "Daily macro + market brief (FRED + benchmarks + watchlist ticker) with critical-headline triage, explicit source/freshness notes, and graceful fallback behav...",
+      "link": "https://clawhub.ai/finance-lite",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-finance-news-brief",
+      "slug": "finance-news-brief",
+      "name": "dabai/finance-news-brief",
+      "description": "搜集过去 24 小时全球重要财经新闻，生成中文简报，输出为 Markdown 和正式 PDF 文件（含封面）。 覆盖全球宏观（美联储、汇率、大宗商品）、美股、港股、A股四大板块。 当用户提到\"财经简报\"、\"财经新闻\"、\"市场资讯\"、\"今日行情\"、\"最新财经\"、\"生成财经报告\" 等关键词时，必须使用此 skill。...",
+      "link": "https://clawhub.ai/finance-news-brief",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-market-data",
+      "slug": "market-data",
+      "name": "market-data",
+      "description": "Provides financial market data including stock prices, crypto prices, economic events, and latest news headlines for analysis and updates.",
+      "link": "https://clawhub.ai/market-data",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-mx-finance-data",
+      "slug": "mx-finance-data",
+      "name": "All-Market Financial Data Hub",
+      "description": "基于东方财富数据库，支持自然语言查询金融数据，覆盖A港美、基金、债券等多种资产，含实时行情、公司信息、估值、财务报表等，可用于投资研究、交易复盘、市场监控、行业分析、信用研究、财报审计、资产配置等场景，适配机构与个人多元需求。返回结果包含 xlsx 与 Markdown 文件。Natural language q...",
+      "link": "https://clawhub.ai/mx-finance-data",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-ftshare-market-data",
+      "slug": "ftshare-market-data",
+      "name": "Skills of A-share market data released by ft.tech.",
+      "description": "非凸科技金融数据技能集(https://market.ft.tech/gateway/doc)。覆盖 A 股股票列表、行情、IPO、大宗交易、融资融券、单股行情估值、可转债、ETF、基金、指数（含分页指数描述、下载描述 PDF、权重汇总/成份明细、下载权重 xlsx、详情/K 线/分时）、宏观经济，以及港股公司介绍/估值分析/基础视图/K线、东财美股列表/历史K线/最新行情、 美股基础信息/利润表",
+      "link": "https://clawhub.ai/ftshare-market-data",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-data912",
+      "slug": "data912",
+      "name": "Data 912 Market Data",
+      "description": "Query Data912 market data endpoints for Argentina and USA instruments. Use when the user asks for MEP/CCL quotes, live Argentine market panels (stocks, optio...",
+      "link": "https://clawhub.ai/data912",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-tickdb-market-data",
+      "slug": "tickdb-market-data",
+      "name": "TickDB Real-time Market Data API",
+      "description": "TickDB 统一实时行情数据 API。覆盖外汇、贵金属、指数、美股、港股、A股、加密货币，提供实时行情、K线、订单簿、资金流向、股票基本面等数据查询。 当用户提及价格、行情、K线、买卖盘、市值、市盈率、资金流向、分时走势、交易日历等金融数据相关话题时触发。",
+      "link": "https://clawhub.ai/tickdb-market-data",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-guaikei-douyin-public-data-for-market-analysis",
+      "slug": "guaikei-douyin-public-data-for-market-analysis",
+      "name": "guaikei-douyin-public-data-for-market-analysis",
+      "description": "当用户需要公开数据支撑抖音相关决策时，使用本技能：关键词搜索排序、博主作品批量抓取、评论抓取分析、实时热榜查询。适用于营销选品、内容策划、流量研究，即使用户没说出\"抖音数据分析\"这类术语。不适用于需要登录权限的私域数据（如后台播放量）。",
+      "link": "https://clawhub.ai/guaikei-douyin-public-data-for-market-analysis",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-crypto-market-data",
+      "slug": "crypto-market-data",
+      "name": "Crypto Market",
+      "description": "Fetches live cryptocurrency prices, market data, historical trends, and comparative analysis. Use when the user asks about crypto prices, coin values, market cap, trading volume, price history, portfo",
+      "link": "https://clawhub.ai/crypto-market-data",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-open-market-data",
+      "slug": "open-market-data",
+      "name": "open-market-data",
+      "description": "Query free financial data APIs — stocks, crypto, macro, SEC filings",
+      "link": "https://clawhub.ai/open-market-data",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-pc-builder-assistant",
+      "slug": "pc-builder-assistant",
+      "name": "PC Build Assistant",
+      "description": "Use for budget desktop PC build planning and recommendations, PC hardware DIY, upgrades, configuration completion, compatibility checks, hardware guidance, local LLM GPU/VRAM/RAM sizing, and gaming, s",
+      "link": "https://clawhub.ai/pc-builder-assistant",
+      "source": "clawhub",
+      "downloads": 4821,
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    }
+  ],
+  "npm_candidates": [
+    {
+      "name": "stock-sdk",
+      "version": "2.4.4",
+      "description": "零依赖股票行情 SDK：A股/港股/美股/基金/期货/期权，浏览器 + Node.js 双端，内置 CLI 与 MCP server。Zero-dependency stock market data SDK (CLI + MCP) for browser & Node.js.",
+      "link": "https://www.npmjs.com/package/stock-sdk",
+      "source": "npm",
+      "found_date": "2026-09-22",
+      "status": "pending_review"
+    }
+  ],
+  "institution_candidates": {
+    "腾讯（WorkBuddy 金融版）": [
+      {
+        "skill_name": "腾讯自选股-金融数据查询",
+        "description": "金融市场结构化数据查询的权威入口。支持股票（A股/港股/美股）、ETF、指数、板块、期货、外汇、可转债的 K 线、技术指标、筹码、财报、研报、公告、风险事件、股东、分红、ETF 持仓、新股/投资日历、龙虎榜等数据查询(不同标的与市场支持的维度不同)；同时支持行业经营数据、申万行业估值/盈利预测/财务、全球宏观经济等数据查询；微信搜索\"腾讯微证券\"小程序，获取更多专业服务～",
+        "platform": "ClawHub",
+        "install_method": "clawhub install westock-data",
+        "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "腾讯财经行情接口",
+        "description": "腾讯财经实时行情接口，查询A股、港股、美股、期货、外汇、ETF的实时行情数据。触发关键词：查股价、查行情、查指数、腾讯接口、股票报价、实时行情",
+        "platform": "ClawHub",
+        "install_method": "clawhub install tencent-finance",
+        "evaluation": "自动发现，待人工评估"
+      }
+    ],
+    "同花顺": [
+      {
+        "skill_name": "股票",
+        "description": "该skill用于获取股票市场数据，包括实时行情、中文名称查询、键盘缩写转换、资金流向和日K线数据。使用thsdk库提供同花顺数据接口支持。支持自动将中文、缩写、短代码转换为thsdk所需的完整ths_code格式。当匹配到多只股票时，会返回候选列表供用户选择。如未安装thsdk，会自动安装。",
+        "platform": "ClawHub",
+        "install_method": "clawhub install ths-financial-data",
+        "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "同花顺股票接口",
+        "description": "基于 thsdk 进行高级股票分析：分钟K线（1m/5m/15m/30m/60m/120m）、板块/指数行情（主要指数/申万行业/概念板块成分股）、多股票批量对比（表格+归一化走势图+相关性热力图）、盘口深度、大单流向、集合竞价异动、日内分时、历史分时。当用户提到\"分钟K线\"、\"日内走势\"、\"盘口\"、\"大单\"、\"...",
+        "platform": "ClawHub",
+        "install_method": "clawhub install ths-advanced-analysis",
+        "evaluation": "自动发现，待人工评估"
+      }
+    ],
+    "东方财富": [
+      {
+        "skill_name": "花花个人基金仓位管家",
+        "description": "以 HuahuaDaily 真实基金持仓和 quant_strategy_context.v2 为数据底座，为每个用户先建立版本化投资目标、风险、现金流和资产限制，再联合东方财富研究与 serenity-skill 形成有证据和反证的 AI 投资观点，最后由确定性资金内核输出单一、果断、可审计的场外基金持有、加仓...",
+        "platform": "ClawHub",
+        "install_method": "clawhub install hua-personal-strategy",
+        "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "东方财富日内行情 dfcf-stock-intraday",
+        "description": "使用东方财富 API 获取 A 股（沪市/深市）及指数的日内分时数据。当用户询问某只 A 股或指数的日内走势、分时数据、当日行情、实时价格、分时图数据时，必须使用此 skill。触发关键词包括：分时数据、日内数据、今日行情、分时走势、intraday、当日走势、东方财富获取数据。支持沪市（market=1）和深市...",
+        "platform": "ClawHub",
+        "install_method": "clawhub install dfcf-stock-intraday",
+        "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "stock",
+        "description": "基于东方财富权威数据库，提供股票选股、行情、财务及关联关系等金融数据的智能查询与筛选服务。",
+        "platform": "ClawHub",
+        "install_method": "clawhub install stock-mx",
+        "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "All-Market Financial Data Hub",
+        "description": "基于东方财富数据库，支持自然语言查询金融数据，覆盖A港美、基金、债券等多种资产，含实时行情、公司信息、估值、财务报表等，可用于投资研究、交易复盘、市场监控、行业分析、信用研究、财报审计、资产配置等场景，适配机构与个人多元需求。返回结果包含 xlsx 与 Markdown 文件。Natural language q...",
+        "platform": "ClawHub",
+        "install_method": "clawhub install mx-finance-data",
+        "evaluation": "自动发现，待人工评估"
+      }
+    ],
+    "国泰海通": [
+      {
+        "skill_name": "Stockstar Fund Rating - 证券之星基金评级",
+        "description": "查询公募基金评级数据，数据来源证券之星（fund.stockstar.com）， 涵盖上海证券、国泰海通、银河证券、招商证券、晨星、济安金信、 天相投顾七家评级机构。支持输入基金代码查询各机构星级评级。 触发词：基金、评级、基金评级、星级、基金推荐、五星基金、 晨星评级、上海证券评级、银河证券评级、招商证券评级、 济安金信评级、天相投顾评级、国泰海通评级、证券之星基金",
+        "platform": "ClawHub",
+        "install_method": "clawhub install stockstar-fund-rating",
+        "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "国泰海通证券-灵犀自选股管理",
+        "description": "国泰海通证券-灵犀自选管理 skill，支持查询自选股行情、添加、删除自选股。**本期仅支持管理【我的自选】分组中的自选股，其他分组中的自选股管理仍在开发中。** 当用户表达查看自选股、查看自选股行情、关注某只股票、从自选股中移除某只股票等意图时，必须使用本 Skill。**Agent 只需读取此文件，无需读取其...",
+        "platform": "ClawHub",
+        "install_method": "clawhub install lingxi-watchlist-skill",
+        "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "国泰海通证券-灵犀市场热榜查询",
+        "description": "国泰海通证券-灵犀市场热榜查询skill，支持涨跌幅、成交额、成交量、换手率、当日资金净流入等市场排行榜查询。当用户查询市场榜单时，优先使用本Skill获取数据。触发关键词包括：涨幅榜，跌幅榜，热榜，排行榜，涨幅前10, 资金流向。",
+        "platform": "ClawHub",
+        "install_method": "clawhub install lingxi-ranklist-skill",
+        "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "国泰海通证券-灵犀实时行情",
+        "description": "国泰海通证券-灵犀实时行情 skill：标的覆盖 A 股、港股、美股、ETF与指数；支持单只或多只标的的实时行情，数据维度包括最新价、涨跌幅、涨跌额、成交量、成交额、换手率、当日资金净流入、量比等。 当用户询问股价、涨跌幅、行情走势、资金流向或相关证券行情时，优先通过本 Skill 取数，若本 Skill 无有效...",
+        "platform": "ClawHub",
+        "install_method": "clawhub install lingxi-realtimemarketdata-skill",
+        "evaluation": "自动发现，待人工评估"
+      }
+    ],
+    "中金公司": [
+      {
+        "skill_name": "期货查询 - Futures Inquiry",
+        "description": "查询上期所、大商所、郑商所、中金所、广期所期货实时行情及历史 K 线。当用户说：螺纹钢主力什么价？豆粕期货涨了吗？SC 原油最近一周走势？或类似期货行情问题时，使用本技能。",
+        "platform": "ClawHub",
+        "install_method": "clawhub install futures",
+        "evaluation": "自动发现，待人工评估"
+      }
+    ],
+    "招商银行": [
+      {
+        "skill_name": "企业投资价值评估",
+        "description": "围绕目标企业行业赛道空间、行业竞争地位、经营成长能力、技术产品壁垒、客户资源质量、 资本市场关注度、信用风险水平及长期发展潜力等核心维度，依托公开合规信息，搭建覆盖 “行业空间—企业竞争力—经营成长性—资本关注度—风险约束—投资价值定级—场景化建议” 的全维度企业投资价值分析体系。本技能核心解决“企业是否具备投资与招引价值、核心价值来源、 成长可持续性、风险约束等级、是否值得深度尽调与合作对接”等",
+        "platform": "ClawHub",
+        "install_method": "clawhub install enterprise-investment-value-assessment",
+        "evaluation": "自动发现，待人工评估"
+      }
+    ],
+    "华泰证券": [
+      {
+        "skill_name": "Trading Coach",
+        "description": "🏆 AI交易复盘教练 — 把你的券商CSV变成可执行的改进洞察！\n自动FIFO配对持仓，8维度质量评分(入场/出场/趋势/风险...)，10维度AI洞察。\n支持富途(中/英)、老虎、中信、华泰等主流券商。\n触发条件: 用户提供交易CSV、要求分析交易表现、评估交易质量、生成复盘报告、\n计算盈亏统计、识别交易模式问题、\"帮我复盘\"、\"分析我的交易\"。",
+        "platform": "ClawHub",
+        "install_method": "clawhub install trading-coach",
+        "evaluation": "自动发现，待人工评估"
+      }
+    ]
+  },
+  "suspected_new_institutions": [
+    {
+      "name": "Fin PIPL -金融行业个人信息保护合规检查工具",
+      "desc": "金融行业个人信息保护（PIPL）合规检查工具。\n基于《个人信息保护法》《个人金融信息保护规范》(JR/T 0171)、\n《金融数据安全 数据安全分级指南》(JR/T 0197) 等行业法规，\n提供银行、证券、保险、支付四大场景的合规评估。\n\nUse when: 需要进行金融行业PIPL合规自查、\n个人金融信息保护评估、金融数据安全分级检查、\n金融产品营销合规检查、金融自动化决策合规评估。\n\n🎉 v1.0.0 首发：\n- 📋 20+ 金融场景专属检查项\n- 🏦 覆盖银行/证券/保险/支付四大业务\n- 📊 支持 Markdown / JSON / HTML 多格式报告\n- 🔒 纯本地运行",
+      "source": "ClawHub",
+      "inferred_org": "PIPL",
+      "link": "https://clawhub.ai/fin-pipl",
+      "found_date": "2026-09-22"
+    },
+    {
+      "name": "基金投顾",
+      "desc": "用 Cue 跑「基金投顾」场景的深度研究：穿透公募基金底仓，深度透视基金经理真实管理能力与风格漂移，量化评估选股与择时能力。覆盖大类资产配置月报、公募基金全维尽调、固收+与纯债基金排雷优选、基金业绩归因与能力评估、基金组合穿透与重复配置排雷等核心搭子，产出基金遴选与投后跟踪可用的归因评估与配置建议底稿。",
+      "source": "ClawHub",
+      "inferred_org": "深度透视基金",
+      "link": "https://clawhub.ai/cue-fund-advisory",
+      "found_date": "2026-09-22"
+    },
+    {
+      "name": "BP 融资自测清单 · 双轨版（VC × 政府基金）",
+      "desc": "为寻求融资的初创或成长期项目做初步筛选诊断——同时对照 VC/PE 分阶段 BP 标准与政府引导/产投基金落地要求，输出结构化达标度、红旗清单与整改建议。当用户需要判断某项目能否拿到财务投资人或政府基金的钱、BP 哪里不达标、政府基金落地可行性或返投能否达成、帮项目做融资前体检时使用本技能。",
+      "source": "ClawHub",
+      "inferred_org": "政府基金",
+      "link": "https://clawhub.ai/project-fund-screening",
+      "found_date": "2026-09-22"
+    },
+    {
+      "name": "小果基金量化分析助手",
+      "desc": "小果(微信:xg_quant)基金量化分析助手专注于基金量化分析工具，基于小果量化策略系统，提供基金历史行情数据、基金因子数据、基金策略回测、基金组合分析等核心功能。适用于基金投资者、资产配置研究员和量化策略开发者。",
+      "source": "ClawHub",
+      "inferred_org": "小果基金",
+      "link": "https://clawhub.ai/xg-fund-quant",
+      "found_date": "2026-09-22"
+    },
+    {
+      "name": "三立智期 抢先版",
+      "desc": "三立期货「三立智期」官方技能：对话领取模拟盘密钥，查行情与持仓，模拟盘可下单；问是否正规、开户也可答。实盘请去 App 复制密钥。",
+      "source": "ClawHub",
+      "inferred_org": "三立期货",
+      "link": "https://clawhub.ai/slzq-trading-preview",
+      "found_date": "2026-09-22"
+    },
+    {
+      "name": "股海罗盘 - A股股票量化分析",
+      "desc": "🧠 自学习量化引擎，每只股票60W+历史信号回测，输出历史匹配率+规律挖掘(5类规律图谱)+17维全量数据+自动生成DOCX报告。独家ETF四象联动资金分析、券商研报观点交叉验证。不只是查数据——给你的信号附上\"过去准不准\"的答案。",
+      "source": "ClawHub",
+      "inferred_org": "股海罗盘",
+      "link": "https://clawhub.ai/gh-data",
+      "found_date": "2026-09-22"
+    }
+  ]
+}
