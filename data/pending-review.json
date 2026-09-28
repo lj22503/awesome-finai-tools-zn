@@ -1,6 +1,6 @@
 {
-  "version": "2026-09-22",
-  "last_updated": "2026-09-22",
+  "version": "2026-09-28",
+  "last_updated": "2026-09-28",
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
@@ -2011,6 +2011,26 @@
       "source": "npm",
       "found_date": "2026-09-22",
       "status": "pending_review"
+    },
+    {
+      "name": "fiu-finance-mcp",
+      "version": "1.0.0",
+      "description": "FIU Finance MCP stdio client for the hosted Streamable HTTP service",
+      "link": "https://www.npmjs.com/package/fiu-finance-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "name": "tushare-js",
+      "version": "1.3.0",
+      "description": "tushare pro node.js sdk",
+      "link": "https://www.npmjs.com/package/tushare-js",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-09-28",
+      "status": "pending_review"
     }
   ],
   "institution_candidates": {
@@ -2332,6 +2352,90 @@
       "scope": "global",
       "source": "github_search",
       "found_date": "2026-09-22",
+      "status": "pending_review"
+    },
+    {
+      "name": "mcp-yahoo-finance",
+      "full_name": "maxscheijen/mcp-yahoo-finance",
+      "description": "A Model Context Protocol (MCP) server for Yahoo Finance.",
+      "link": "https://github.com/maxscheijen/mcp-yahoo-finance",
+      "stars": 29,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "name": "avanza-mcp",
+      "full_name": "AnteWall/avanza-mcp",
+      "description": "A Model Context Protocol (MCP) server providing access to Avanza's API. Get real-time Swedish stock quotes, fund information, charts, and comprehensive market data.",
+      "link": "https://github.com/AnteWall/avanza-mcp",
+      "stars": 25,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "name": "datasinking",
+      "full_name": "heubme2020/datasinking",
+      "description": "Full-text Asian financial reports (China, Japan, Korea, Taiwan) as clean Markdown — REST API + MCP server for LLMs, RAG and quant",
+      "link": "https://github.com/heubme2020/datasinking",
+      "stars": 19,
+      "language": "Python",
+      "scope": "cn",
+      "source": "github_search",
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "name": "OpenTraderWorld",
+      "full_name": "G-OTW/OpenTraderWorld",
+      "description": "Free and source-available, self-hostable trading workspace: data, backtest, trading journal, news aggregator, rich-doc editor, portfolio, 20+ modules with a built-in MCP server and AI agent.",
+      "link": "https://github.com/G-OTW/OpenTraderWorld",
+      "stars": 17,
+      "language": "Rust",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "name": "driggsby",
+      "full_name": "driggsby/driggsby",
+      "description": "The MCP server for personal finance",
+      "link": "https://github.com/driggsby/driggsby",
+      "stars": 13,
+      "language": "TypeScript",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "name": "ai-day-trader-agent",
+      "full_name": "Ap6pack/ai-day-trader-agent",
+      "description": "A modular Python bot that analyzes real-time stock market data and news sentiment to generate actionable trade recommendations. ",
+      "link": "https://github.com/Ap6pack/ai-day-trader-agent",
+      "stars": 13,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "name": "tvkit",
+      "full_name": "lumduan/tvkit",
+      "description": "tvkit is a Python library for accessing real-time and historical market data from TradingView, including OHLCV price data, financial metrics, and global stock market information.",
+      "link": "https://github.com/lumduan/tvkit",
+      "stars": 12,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-09-28",
       "status": "pending_review"
     }
   ]
