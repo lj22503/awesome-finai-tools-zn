@@ -4,6 +4,94 @@
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
+      "id": "clawhub-financial-literacy-tool-pro",
+      "slug": "financial-literacy-tool-pro",
+      "name": "金融素养专业版",
+      "description": "提供专业金融教育与理财规划，支持个性化方案、从业认证培训、企业内训管理与学习进度追踪。",
+      "link": "https://clawhub.ai/thcjp/skills/financial-literacy-tool-pro",
+      "source": "clawhub",
+      "downloads": 225,
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-finance-consumer-guard",
+      "slug": "finance-consumer-guard",
+      "name": "Finance Consumer Guard - 金融消保合规护栏",
+      "description": "金融消保合规护栏 (finance-consumer-guard) v1.0.0。\n在银行理财 / 保险 / 基金 / 资管等金融产品的营销文案、销售话术、广告投放、官网介绍、\n对外宣传发布前，实时检测\"保本保收益（刚兑）、收益承诺夸大、风险弱化误导、\n过往业绩误导、无资质代客理财、广告极限词\"相关的高频违规 / 高风险表述，\n按风险分级输出命中与整改建议，供 Agent 主动调用。区别于事后深度",
+      "link": "https://clawhub.ai/wwumit/skills/finance-consumer-guard",
+      "source": "clawhub",
+      "downloads": 276,
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-valuation-analysis",
+      "slug": "valuation-analysis",
+      "name": "股票价值投资分析",
+      "description": "A股和港股价值投资分析系统。基于《股市真规则》方法论，提供完整的投资分析框架：护城河分析、财务健康检查、DCF估值、管理层评估、行业分析、投资决策整合。Use when user needs to (1) analyze stock investment value comprehensively, (2) ev...",
+      "link": "https://clawhub.ai/frankski818/skills/valuation-analysis",
+      "source": "clawhub",
+      "downloads": 2492,
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-lobster-quant-company",
+      "slug": "lobster-quant-company",
+      "name": "龙虾量化研究公司",
+      "description": "龙虾量化研究公司 multi-agent 架构。一键召唤完整的量化投研团队，包含直属、研究、执行、内容四大部门共17名专家。触发词：召唤团队、公司架构、龙虾公司、量化团队、研究团队。",
+      "link": "https://clawhub.ai/swyxh/skills/lobster-quant-company",
+      "source": "clawhub",
+      "downloads": 1484,
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-trading-brain",
+      "slug": "trading-brain",
+      "name": "Trading Brain",
+      "description": "Load Travis's personal trading strategy and rules to guide aggressive trades, focusing on early-stage next-wave market opportunities and strict risk limits.",
+      "link": "https://clawhub.ai/travislius/skills/trading-brain",
+      "source": "clawhub",
+      "downloads": 2878,
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-candor-finance",
+      "slug": "candor-finance",
+      "name": "candor-finance",
+      "description": "Use Candor for personal finance: organize the user's accounts and spending, remember approved budgets and goals, review investments, investigate possible savings, and keep evidence and follow-up toget",
+      "link": "https://clawhub.ai/candor/skills/candor-finance",
+      "source": "clawhub",
+      "downloads": 2352,
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-finance-markets-research",
+      "slug": "finance-markets-research",
+      "name": "finance-markets-research",
+      "description": "Researches stocks, crypto, SEC filings, insider/congressional trading, and private-market (VC/PE) profiles via the Crawlora API — Yahoo Finance quotes/financials/history/options, SEC EDGAR filings and",
+      "link": "https://clawhub.ai/crawlora-org/skills/finance-markets-research",
+      "source": "clawhub",
+      "downloads": 930,
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-upbit-market-data-skill",
+      "slug": "upbit-market-data-skill",
+      "name": "UPBIT market data get skill",
+      "description": "Fetch market data from Upbit via CLI commands including pairs, candles, trades, tickers, orderbooks, and watchlist with JSON output.",
+      "link": "https://clawhub.ai/kuns9/skills/upbit-market-data-skill",
+      "source": "clawhub",
+      "downloads": 1712,
+      "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
       "id": "clawhub-financial-analysis",
       "slug": "financial-analysis",
       "name": "金融分析技能",
