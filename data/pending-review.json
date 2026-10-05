@@ -1,6 +1,6 @@
 {
-  "version": "2026-09-28",
-  "last_updated": "2026-09-28",
+  "version": "2026-10-05",
+  "last_updated": "2026-10-05",
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
@@ -2118,6 +2118,26 @@
       "scope": "cn",
       "source": "npm",
       "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "name": "@mseep/korea-finance-mcp",
+      "version": "1.4.0",
+      "description": "Korea Finance MCP ??ECOS · Real Estate · DART · KRX. Korea's first legally-safe (Capital Markets Act compliant) MCP server with 15 tools + 2 synergy tools (Korea-unique).",
+      "link": "https://www.npmjs.com/package/@mseep/korea-finance-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "name": "zizhenghua-quant",
+      "version": "1.0.1",
+      "description": "Official JavaScript/TypeScript SDK for Quant Data API (A-share market data)",
+      "link": "https://www.npmjs.com/package/zizhenghua-quant",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-10-05",
       "status": "pending_review"
     }
   ],
