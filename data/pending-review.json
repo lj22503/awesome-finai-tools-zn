@@ -4,6 +4,215 @@
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
+      "id": "clawhub-daily-financial-report",
+      "slug": "daily-financial-report",
+      "name": "生成每日金融日报",
+      "description": "完整流程：采集数据 → 生成 Word 日报 → 生成 PPT 简报 → 发送邮件。 当用户说\"生成每日金融日报\"、\"生成今日日报\"、\"生成晨报\"时触发。",
+      "link": "https://clawhub.ai/szrw1825/skills/daily-financial-report",
+      "source": "clawhub",
+      "downloads": 564,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-a-share-stock-radar",
+      "slug": "a-share-stock-radar",
+      "name": "股票雷达",
+      "description": "A股短线选股「股票雷达」——先判市场情绪环境 → 锁定主线板块 → 挑低位/启动位置 → 看形态与资金 → 输出带止损的候选名单，并附仓位、卖点与次日复核。适用于：A股短线选股（1–5 个交易日）、\"今天买什么/明天买什么\"、强势股与龙头筛选、市场情绪与连板梯队、主力资金流与实时大单、龙虎榜席位、涨停板质量、板块资金接力、竞价雷达（9:15–9:25）、公告/减持/解禁排雷、按风险自动算仓位、持仓",
+      "link": "https://clawhub.ai/bjjch/skills/a-share-stock-radar",
+      "source": "clawhub",
+      "downloads": 126,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-gaoren-stock-simple",
+      "slug": "gaoren-stock-simple",
+      "name": "股票简单查询",
+      "description": "股票简单分析 - A股/港股/美股实时行情快速查询",
+      "link": "https://clawhub.ai/gaoren36-arch/skills/gaoren-stock-simple",
+      "source": "clawhub",
+      "downloads": 1248,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-quant-free-datafeed",
+      "slug": "quant-free-datafeed",
+      "name": "量化交易免费数据源替换",
+      "description": "量化交易系统免费数据源替换方法论，替换付费数据源，保持接口完全兼容",
+      "link": "https://clawhub.ai/peterliu-512/skills/quant-free-datafeed",
+      "source": "clawhub",
+      "downloads": 178,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-ashare-financial-report-analysis",
+      "slug": "ashare-financial-report-analysis",
+      "name": "A股财报结构化拆解系统",
+      "description": "A股上市公司财报结构化拆解系统。基于16节固定模板，对季报/年报进行一手数据提取、自算核验、跨季度可比的结构化分析。数据源优先级与racing-quant-ai一致（Tushare > akshare > baostock > 东方财富API）。触发词：财报拆解，财报分析，季报分析，年报分析，财报拆解模板，earnings report，财报解读。",
+      "link": "https://clawhub.ai/chenxyzcyxpp/skills/ashare-financial-report-analysis",
+      "source": "clawhub",
+      "downloads": 398,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-a-share-stock-diagnosis",
+      "slug": "a-share-stock-diagnosis",
+      "name": "A股个股诊断 (A-Share Stock Diagnosis)",
+      "description": "A股个股自上而下综合诊断 — 先调用 china-macro-climate 获取宏观分析， 再识别所属申万一级行业并调用 industry-diagnosis 获取行业分析， 然后从基本面/技术面/资金面/消息面四维度进行个股分析， 最后综合宏观+行业+个股三层面给出投资星级和操作建议。 触发场景：(1) 个股...",
+      "link": "https://clawhub.ai/stevenge791/skills/a-share-stock-diagnosis",
+      "source": "clawhub",
+      "downloads": 1125,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-dashu-investment-1-0-0",
+      "slug": "dashu-investment-1-0-0",
+      "name": "大数投资选股",
+      "description": "大数投资理论选股技能。当用户提到\"大数投资\"、\"用大数投资理论选股\"、\"大数投资30个行业\"、\"齐东平投资法\"时激活。执行低估值行业龙头股筛选，输出30个行业配置方案。",
+      "link": "https://clawhub.ai/dewen2018/skills/dashu-investment-1-0-0",
+      "source": "clawhub",
+      "downloads": 817,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-j-portfolio-monitor",
+      "slug": "j-portfolio-monitor",
+      "name": "Portfolio Monitor | 投资组合监控",
+      "description": "定期监控投资组合，检查持仓公司基本面变化，生成周报",
+      "link": "https://clawhub.ai/jearrylee/skills/j-portfolio-monitor",
+      "source": "clawhub",
+      "downloads": 1034,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-investment-system",
+      "slug": "stock-investment-system",
+      "name": "Stock Investment System",
+      "description": "# 🦞 股票投资决策系统\n\n> 五维贝叶斯框架 × 六层镜头决策矩阵 × 行为金融纠偏\n> 适合A股/港股中长线投资者\n\n## 这是什么？\n\n这不是一个简单的「问股价」工具。这是一套完整、可执行的**投资决策操作系统**，把专业投资者的方法论封装成了AI可以直接调用的流水线。\n\n## 核心能力\n\n### 五维贝叶斯投资法\n1. **本末** — 先验校准，知道自己知道什么、不知道什么\n2. **终",
+      "link": "https://clawhub.ai/managaman-ship-it/skills/stock-investment-system",
+      "source": "clawhub",
+      "downloads": 759,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-openclaw-aisa-market-pulse",
+      "slug": "openclaw-aisa-market-pulse",
+      "name": "MarketPulse (Stocks + Crypto Data)",
+      "description": "Query real-time and historical financial data across equities and crypto—prices, market moves, metrics, and trends for analysis, alerts, and reporting.",
+      "link": "https://clawhub.ai/chaimengphp/skills/openclaw-aisa-market-pulse",
+      "source": "clawhub",
+      "downloads": 1863,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-redfin",
+      "slug": "redfin",
+      "name": "redfin",
+      "description": "Look up real-estate listings, property details, market reports, and your saved homes/searches on Redfin via MCP. Triggers on phrases like \"find homes on redfin in\", \"redfin property details for\", \"sho",
+      "link": "https://clawhub.ai/chrischall/skills/redfin",
+      "source": "clawhub",
+      "downloads": 1337,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-redfin-fpx",
+      "slug": "redfin-fpx",
+      "name": "redfin-fpx",
+      "description": "Query redfin.com (US real-estate portal) from a shell with the fpx CLI (@fetchproxy/cli) instead of running the redfin-mcp server — resolve locations/addresses, search for-sale listings, read property",
+      "link": "https://clawhub.ai/chrischall/skills/redfin-fpx",
+      "source": "clawhub",
+      "downloads": 1324,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-zillow-fpx",
+      "slug": "zillow-fpx",
+      "name": "zillow-fpx",
+      "description": "Query zillow.com (US real-estate portal) from a shell with the fpx CLI (@fetchproxy/cli) instead of running the zillow-mcp server — search listings, pull a full property record by zpid, price/tax/Zest",
+      "link": "https://clawhub.ai/chrischall/skills/zillow-fpx",
+      "source": "clawhub",
+      "downloads": 1267,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-zillow",
+      "slug": "zillow",
+      "name": "zillow",
+      "description": "Look up real-estate listings, property details, Zestimates, saved searches/homes, and market reports on Zillow via MCP. Triggers on phrases like \"find homes in\", \"what's the Zestimate for\", \"show my s",
+      "link": "https://clawhub.ai/chrischall/skills/zillow",
+      "source": "clawhub",
+      "downloads": 445,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-prescription-price-research",
+      "slug": "prescription-price-research",
+      "name": "prescription-price-research",
+      "description": "Compare public GoodRx pharmacy price snapshots using Crawlora drug and option discovery. Use to compare posted prices for a specified medication, form, strength, quantity, and US location; excludes di",
+      "link": "https://clawhub.ai/crawlora-org/skills/prescription-price-research",
+      "source": "clawhub",
+      "downloads": 55,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-destination-architect",
+      "slug": "destination-architect",
+      "name": "AI 文旅目的地架构师",
+      "description": "AI 文旅目的地架构师。模拟 20+ 年经验文旅操盘专家的认知系统。先做价值判断，判断通过后组装可落地的参数化文旅策划案。用于文旅项目价值判断、目的地战略构建、游客体验设计、商业闭环建立、运营增长规划、投资可行性审查、失败风险预测、最小成本证伪实验设计、决策校准、预测登记与反合理化、输出可落地文旅策划案（含实施路线图、参数化财务测算模型、运营组织与合规清单、空间与招商产品清单）。当用户需要做文旅项",
+      "link": "https://clawhub.ai/qomob/skills/destination-architect",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-refi-break-even-ranger",
+      "slug": "refi-break-even-ranger",
+      "name": "refi-break-even-ranger",
+      "description": "Use when evaluating a mortgage refinance — computes true break-even months from closing costs and points vs monthly savings, net lifetime saving at your actual stay-horizon, compares multiple lender o",
+      "link": "https://clawhub.ai/voronindenis5/skills/refi-break-even-ranger",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-first-aid-kit-auditor",
+      "slug": "first-aid-kit-auditor",
+      "name": "first-aid-kit-auditor",
+      "description": "Use when building, restocking, or auditing a home/car/travel first-aid kit — profiles the household (kids, pets, allergies, adventure level), checks the inventory against a 46-item evidence-based cata",
+      "link": "https://clawhub.ai/voronindenis5/skills/first-aid-kit-auditor",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-swot-analysis",
+      "slug": "swot-analysis",
+      "name": "swot-analysis",
+      "description": "Use for SWOT analysis, or when the user wants to assess where a team, product or company stands: \"strengths and weaknesses\", \"should we enter this market?\", \"review our position\", \"competitor comparis",
+      "link": "https://clawhub.ai/ysskrishna/skills/swot-analysis",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-10-05",
+      "status": "pending_review"
+    },
+    {
       "id": "clawhub-financial-literacy-tool-pro",
       "slug": "financial-literacy-tool-pro",
       "name": "金融素养专业版",
@@ -2202,6 +2411,13 @@
         "platform": "ClawHub",
         "install_method": "clawhub install mx-finance-data",
         "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "A股财报结构化拆解系统",
+        "description": "A股上市公司财报结构化拆解系统。基于16节固定模板，对季报/年报进行一手数据提取、自算核验、跨季度可比的结构化分析。数据源优先级与racing-quant-ai一致（Tushare > akshare > baostock > 东方财富API）。触发词：财报拆解，财报分析，季报分析，年报分析，财报拆解模板，earnings report，财报解读。",
+        "platform": "ClawHub",
+        "install_method": "clawhub install ashare-financial-report-analysis",
+        "evaluation": "自动发现，待人工评估"
       }
     ],
     "国泰海通": [
@@ -2249,6 +2465,13 @@
         "description": "围绕目标企业行业赛道空间、行业竞争地位、经营成长能力、技术产品壁垒、客户资源质量、 资本市场关注度、信用风险水平及长期发展潜力等核心维度，依托公开合规信息，搭建覆盖 “行业空间—企业竞争力—经营成长性—资本关注度—风险约束—投资价值定级—场景化建议” 的全维度企业投资价值分析体系。本技能核心解决“企业是否具备投资与招引价值、核心价值来源、 成长可持续性、风险约束等级、是否值得深度尽调与合作对接”等",
         "platform": "ClawHub",
         "install_method": "clawhub install enterprise-investment-value-assessment",
+        "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "AI 文旅目的地架构师",
+        "description": "AI 文旅目的地架构师。模拟 20+ 年经验文旅操盘专家的认知系统。先做价值判断，判断通过后组装可落地的参数化文旅策划案。用于文旅项目价值判断、目的地战略构建、游客体验设计、商业闭环建立、运营增长规划、投资可行性审查、失败风险预测、最小成本证伪实验设计、决策校准、预测登记与反合理化、输出可落地文旅策划案（含实施路线图、参数化财务测算模型、运营组织与合规清单、空间与招商产品清单）。当用户需要做文旅项",
+        "platform": "ClawHub",
+        "install_method": "clawhub install destination-architect",
         "evaluation": "自动发现，待人工评估"
       }
     ],
