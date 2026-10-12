@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-05",
-  "last_updated": "2026-10-05",
+  "version": "2026-10-12",
+  "last_updated": "2026-10-12",
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
@@ -2348,6 +2348,16 @@
       "source": "npm",
       "found_date": "2026-10-05",
       "status": "pending_review"
+    },
+    {
+      "name": "test-tushare-cli",
+      "version": "0.0.7",
+      "description": "tushare CLI",
+      "link": "https://www.npmjs.com/package/test-tushare-cli",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-10-12",
+      "status": "pending_review"
     }
   ],
   "institution_candidates": {
@@ -2767,6 +2777,54 @@
       "scope": "global",
       "source": "github_search",
       "found_date": "2026-09-28",
+      "status": "pending_review"
+    },
+    {
+      "name": "EasyQuant",
+      "full_name": "AlanFokCo/EasyQuant",
+      "description": "📊 EasyQuant - Event-driven quantitative trading framework for China A-share market. Backtest strategies, analyze   risk metrics, and deploy with eqlib core library.",
+      "link": "https://github.com/AlanFokCo/EasyQuant",
+      "stars": 16,
+      "language": "HTML",
+      "scope": "cn",
+      "source": "github_search",
+      "found_date": "2026-10-12",
+      "status": "pending_review"
+    },
+    {
+      "name": "moneymatter",
+      "full_name": "letehaha/moneymatter",
+      "description": "Open-source, self-hosted budget tracker and personal finance app. Bank sync, multi-currency, investments, and a built-in MCP server for Claude and ChatGPT.",
+      "link": "https://github.com/letehaha/moneymatter",
+      "stars": 169,
+      "language": "TypeScript",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-10-12",
+      "status": "pending_review"
+    },
+    {
+      "name": "lifeos",
+      "full_name": "edrisranjbar/lifeos",
+      "description": "Self-hosted life OS: habits, goals, Kanban, finance and focus, with an MCP server for AI.",
+      "link": "https://github.com/edrisranjbar/lifeos",
+      "stars": 68,
+      "language": "JavaScript",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-10-12",
+      "status": "pending_review"
+    },
+    {
+      "name": "eodhd-claude-skills",
+      "full_name": "EodHistoricalData/eodhd-claude-skills",
+      "description": "Claude Code plugin for EODHD financial data — 150k+ tickers, 70+ exchanges, OAuth MCP server with 80 tools, 7 workflow skills, financial-analyst agent, 5 slash commands. MIT.",
+      "link": "https://github.com/EodHistoricalData/eodhd-claude-skills",
+      "stars": 46,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-10-12",
       "status": "pending_review"
     }
   ]
