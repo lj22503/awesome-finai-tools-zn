@@ -4,6 +4,94 @@
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
+      "id": "clawhub-stock-portfolio-advisor",
+      "slug": "stock-portfolio-advisor",
+      "name": "股票投资价值评分 / Stock Portfolio Investment Scoring",
+      "description": "分析A股自选与持仓，获取行情、财报、风险与新闻，按行业计算价值评分和独立交易环境分，输出基本面情景估值、数据缺口及受用户风险政策约束的配置参考，并生成离线HTML报告。适用于股票诊断、持仓复盘、投资价值评分和组合配置请求；不自动下单。 English — Deterministic value scoring and allocation for China A-share watchlists ",
+      "link": "https://clawhub.ai/holauv/skills/stock-portfolio-advisor",
+      "source": "clawhub",
+      "downloads": 573,
+      "found_date": "2026-10-12",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-xg-bond-quant",
+      "slug": "xg-bond-quant",
+      "name": "小果可转债量化分析助手",
+      "description": "小果(微信:xg_quant)可转债量化分析助手专注于可转债量化分析工具，基于小果量化策略系统，提供可转债历史行情数据、可转债因子数据、可转债策略回测、可转债组合分析等核心功能。适用于可转债投资者、量化研究员和策略开发者。 触发关键词：可转债量化、可转债回测、可转债分析、可转债策略、可转债数据、转债策略。",
+      "link": "https://clawhub.ai/li152/skills/xg-bond-quant",
+      "source": "clawhub",
+      "downloads": 270,
+      "found_date": "2026-10-12",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-xg-factor-analysis",
+      "slug": "xg-factor-analysis",
+      "name": "小果量化因子分析系统助手",
+      "description": "小果量化因子分析系统助手,作者(微信:xg_quant)基于 Alphalens 和自定义分析框架，提供因子数据清洗、IC分析、分层收益、多空组合、换手率、Fama-MacBeth回归、综合评分等完整因子评价功能。 触发关键词：因子分析、因子评价、Alphalens、IC分析、分层收益、多空组合、因子回测、因子评分、xg_alphalens、量化因子、因子有效性。",
+      "link": "https://clawhub.ai/li152/skills/xg-factor-analysis",
+      "source": "clawhub",
+      "downloads": 280,
+      "found_date": "2026-10-12",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-trading-news-guard",
+      "slug": "trading-news-guard",
+      "name": "trading-news-guard",
+      "description": "News blackout awareness for trading: local reference for high-impact events (NFP/CPI/FOMC) and blackout-window logic. The agent decides whether to trade. 100% lokal reference — ingen netværkskald, ing",
+      "link": "https://clawhub.ai/northcap-group/skills/trading-news-guard",
+      "source": "clawhub",
+      "downloads": 681,
+      "found_date": "2026-10-12",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-screener-pro",
+      "slug": "stock-screener-pro",
+      "name": "stock-screener",
+      "description": "A股行情、量化筛选、回测、因子挖掘、同花顺 iFinD、AI4Trade 与受限多智能体投研 MCP。",
+      "link": "https://clawhub.ai/frontier-ai-vl/skills/stock-screener-pro",
+      "source": "clawhub",
+      "downloads": 854,
+      "found_date": "2026-10-12",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-short-form-market-research-brain",
+      "slug": "short-form-market-research-brain",
+      "name": "Short Form Market Research Brain",
+      "description": "Short-form video market research via the Virlo API — viral niche research, trend tracking, creator vetting, hashtag, sound, and hook intelligence across TikT...",
+      "link": "https://clawhub.ai/virlo-ai/skills/short-form-market-research-brain",
+      "source": "clawhub",
+      "downloads": 1722,
+      "found_date": "2026-10-12",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-smyx-lawn-health-assessment-analysis",
+      "slug": "smyx-lawn-health-assessment-analysis",
+      "name": "Lawn Health Assessment | 草坪枯黄率与杂草密度评估",
+      "description": "AI-powered lawn health assessment from drone or fixed-camera top-down images. Uses semantic segmentation to distinguish healthy turf (green), wilting/yellow turf (yellow-brown), bare soil and weeds (o",
+      "link": "https://clawhub.ai/smyx-sunjinhui/skills/smyx-lawn-health-assessment-analysis",
+      "source": "clawhub",
+      "downloads": 1725,
+      "found_date": "2026-10-12",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-legal-explainer-clip",
+      "slug": "legal-explainer-clip",
+      "name": "legal-explainer-clip",
+      "description": "Turn one public-education legal topic into a labeled digital-human still, a speakable explainer script, and one talking clip. This Legal Explainer Clip studio writes lawyer explainer and public-educat",
+      "link": "https://clawhub.ai/beatra-ai/skills/legal-explainer-clip",
+      "source": "clawhub",
+      "downloads": 459,
+      "found_date": "2026-10-12",
+      "status": "pending_review"
+    },
+    {
       "id": "clawhub-daily-financial-report",
       "slug": "daily-financial-report",
       "name": "生成每日金融日报",
@@ -2391,6 +2479,13 @@
         "platform": "ClawHub",
         "install_method": "clawhub install ths-advanced-analysis",
         "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "stock-screener",
+        "description": "A股行情、量化筛选、回测、因子挖掘、同花顺 iFinD、AI4Trade 与受限多智能体投研 MCP。",
+        "platform": "ClawHub",
+        "install_method": "clawhub install stock-screener-pro",
+        "evaluation": "自动发现，待人工评估"
       }
     ],
     "东方财富": [
@@ -2491,6 +2586,15 @@
         "description": "🏆 AI交易复盘教练 — 把你的券商CSV变成可执行的改进洞察！\n自动FIFO配对持仓，8维度质量评分(入场/出场/趋势/风险...)，10维度AI洞察。\n支持富途(中/英)、老虎、中信、华泰等主流券商。\n触发条件: 用户提供交易CSV、要求分析交易表现、评估交易质量、生成复盘报告、\n计算盈亏统计、识别交易模式问题、\"帮我复盘\"、\"分析我的交易\"。",
         "platform": "ClawHub",
         "install_method": "clawhub install trading-coach",
+        "evaluation": "自动发现，待人工评估"
+      }
+    ],
+    "万得 (Wind)": [
+      {
+        "skill_name": "trading-news-guard",
+        "description": "News blackout awareness for trading: local reference for high-impact events (NFP/CPI/FOMC) and blackout-window logic. The agent decides whether to trade. 100% lokal reference — ingen netværkskald, ing",
+        "platform": "ClawHub",
+        "install_method": "clawhub install trading-news-guard",
         "evaluation": "自动发现，待人工评估"
       }
     ]
