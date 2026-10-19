@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-12",
-  "last_updated": "2026-10-12",
+  "version": "2026-10-19",
+  "last_updated": "2026-10-19",
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
@@ -2446,6 +2446,36 @@
       "source": "npm",
       "found_date": "2026-10-12",
       "status": "pending_review"
+    },
+    {
+      "name": "@xingweisteven/finance-mcp",
+      "version": "1.0.0",
+      "description": "Finance MCP server with Tushare market data, financial reports and technical indicators",
+      "link": "https://www.npmjs.com/package/@xingweisteven/finance-mcp",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "name": "@iflow-mcp/lorine93s-marinade-finance-mcp-server",
+      "version": "1.0.0",
+      "description": "Marinade Finance MCP Server for interacting with Marinade Finance on Solana network",
+      "link": "https://www.npmjs.com/package/@iflow-mcp/lorine93s-marinade-finance-mcp-server",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "name": "stock-images-mcp",
+      "version": "2.0.1",
+      "description": "MCP server to search and download stock images from Pexels, Unsplash, and Pixabay",
+      "link": "https://www.npmjs.com/package/stock-images-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-10-19",
+      "status": "pending_review"
     }
   ],
   "institution_candidates": {
@@ -2929,6 +2959,42 @@
       "scope": "global",
       "source": "github_search",
       "found_date": "2026-10-12",
+      "status": "pending_review"
+    },
+    {
+      "name": "stock-screener",
+      "full_name": "xang1234/stock-screener",
+      "description": "CANSLIM & Minervini stock screener for 12 markets (US, China, HK, Japan, India, Korea, Taiwan & more). 80+ filters, StockBee-style breadth, group rankings, theme discovery and an AI research chatbot. ",
+      "link": "https://github.com/xang1234/stock-screener",
+      "stars": 376,
+      "language": "Python",
+      "scope": "cn",
+      "source": "github_search",
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "name": "idx",
+      "full_name": "fzn0x/idx",
+      "description": "Analyze the Indonesian stock market (IDX/IHSG) from web terminal, CLI, or any AI agents via MCP server. IHSG Prices, Fundamentals, and Screening. Free and No API keys required. Changelog: https://gith",
+      "link": "https://github.com/fzn0x/idx",
+      "stars": 148,
+      "language": "Rust",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "name": "brvm-mcp-server",
+      "full_name": "Dilane-Kamga/brvm-mcp-server",
+      "description": "MCP server for BRVM market data (West Africa's regional stock exchange): quotes, indices, BOC volumes, Sikafinance indicators and news.",
+      "link": "https://github.com/Dilane-Kamga/brvm-mcp-server",
+      "stars": 5,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-10-19",
       "status": "pending_review"
     }
   ]
