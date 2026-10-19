@@ -4,6 +4,138 @@
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
+      "id": "clawhub-market-data-checker",
+      "slug": "market-data-checker",
+      "name": "金融市场数据质量校验工具",
+      "description": "金融市场数据质量校验工具。对 market_data.json 执行全链路数据质量检查。 支持 10 类校验规则，可扩展，统一返回通过/拒绝 + 原因。 当用户要求\"检查数据质量\"、\"数据校验\"、\"检查日报数据\"、\"数据完整性检查\"时使用。",
+      "link": "https://clawhub.ai/szrw1825/skills/market-data-checker",
+      "source": "clawhub",
+      "downloads": 521,
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-zlbx-company-registry",
+      "slug": "zlbx-company-registry",
+      "name": "工商数据查询 · 企业基本信息、股东、分支、投资与变更",
+      "description": "查询企业工商基本信息、企业股东与出资记录、分支机构、对外投资、工商变更，并按需补充招投标战绩。适用于企业核验、注册资本/法人查询、股东和分支查询。五项工商能力每次/每页3积分，只按需调用；司法风险和复杂股权穿透本期未开放。完整企业背调报告使用zlbx-company-intel，招标项目决策使用zlbx-bid-decision。使用平台API Key，首次自动注册需用户同意。",
+      "link": "https://clawhub.ai/bailianai/skills/zlbx-company-registry",
+      "source": "clawhub",
+      "downloads": 202,
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-nansen-trading",
+      "slug": "nansen-trading",
+      "name": "nansen-trading",
+      "description": "Execute DEX swaps on Solana or Base (including cross-chain bridges) and Hyperliquid perpetual trades. Use when buying or selling a token, getting a swap quote, executing a trade, or opening/closing/ma",
+      "link": "https://clawhub.ai/nansen-devops/skills/nansen-trading",
+      "source": "clawhub",
+      "downloads": 1985,
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-wq-news-event-driven-stock-pick",
+      "slug": "wq-news-event-driven-stock-pick",
+      "name": "新闻流事件驱动选股系统",
+      "description": "新闻流事件驱动选股系统 - 接收财经新闻输入，通过百度千帆API进行事件NLP分析，关联受益A股标的，输出事件驱动选股信号。",
+      "link": "https://clawhub.ai/chenxyzcyxpp/skills/wq-news-event-driven-stock-pick",
+      "source": "clawhub",
+      "downloads": 298,
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-aisa-market-skill",
+      "slug": "aisa-market-skill",
+      "name": "MarketPulse Financial Data",
+      "description": "Query real-time and historical financial data across equities and crypto—prices, market moves, metrics, and trends for analysis, alerts, and reporting.",
+      "link": "https://clawhub.ai/bowen-dotcom/skills/aisa-market-skill",
+      "source": "clawhub",
+      "downloads": 2232,
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-hypergrok-hyperliquid-market-data",
+      "slug": "hypergrok-hyperliquid-market-data",
+      "name": "HyperGrok Hyperliquid Market Data",
+      "description": "Read live Hyperliquid market data from the desk computer with curl or the Python SDK - mid, mark and oracle prices, order book depth, funding (current, predicted, historical), open interest, volume, c",
+      "link": "https://clawhub.ai/galleonlabs/skills/hypergrok-hyperliquid-market-data",
+      "source": "clawhub",
+      "downloads": 441,
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-open-claw-cash",
+      "slug": "open-claw-cash",
+      "name": "Agentwalletapi",
+      "description": "OpenclawCash crypto wallet API for AI agents (also called openclawcash). Use when an agent needs to work with OpenclawCash-managed EVM and Solana wallets. Read-only - list wallets, balances, policies,",
+      "link": "https://clawhub.ai/agentwalletapi/skills/open-claw-cash",
+      "source": "clawhub",
+      "downloads": 1884,
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-mt5-httpapi",
+      "slug": "mt5-httpapi",
+      "name": "mt5-httpapi",
+      "description": "HTTP client for a user-deployed mt5-httpapi MetaTrader 5 bridge. Use ONLY when the user has explicitly installed and configured mt5-httpapi AND provided MT5_API_URL. Read endpoints (account, symbols, ",
+      "link": "https://clawhub.ai/psyb0t/skills/mt5-httpapi",
+      "source": "clawhub",
+      "downloads": 5478,
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-diaper-stock-optimizer",
+      "slug": "diaper-stock-optimizer",
+      "name": "diaper-stock-optimizer",
+      "description": "Use when buying diapers in bulk, planning a Costco/Amazon stock-up run, checking how long current diaper stock will last, or deciding size transitions — size-by-size quantity math from the baby's birt",
+      "link": "https://clawhub.ai/voronindenis5/skills/diaper-stock-optimizer",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-finch-market",
+      "slug": "finch-market",
+      "name": "Finch Market",
+      "description": "Use Finch Agent, Task, and Skill markets",
+      "link": "https://clawhub.ai/a0971025732-netizen/skills/finch-market",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-openinvest",
+      "slug": "openinvest",
+      "name": "openInvest",
+      "description": "openInvest multi-asset AI investment committee — **daily use**. Read portfolio / live prices / strategy / decision history / adjust positions / run a 4-role LLM committee for an investment verdict. Su",
+      "link": "https://clawhub.ai/longsizhuo/skills/openinvest",
+      "source": "clawhub",
+      "downloads": 1194,
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-equibles",
+      "slug": "equibles",
+      "name": "equibles",
+      "description": "US stock market data from Equibles: SEC filing search with exact lines, XBRL financial statements, earnings call transcripts, insider trades, 13F holders, congressional trades and daily prices. Use wh",
+      "link": "https://clawhub.ai/daniel3303/skills/equibles",
+      "source": "clawhub",
+      "downloads": 13,
+      "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
       "id": "clawhub-stock-portfolio-advisor",
       "slug": "stock-portfolio-advisor",
       "name": "股票投资价值评分 / Stock Portfolio Investment Scoring",
@@ -2625,6 +2757,15 @@
         "description": "News blackout awareness for trading: local reference for high-impact events (NFP/CPI/FOMC) and blackout-window logic. The agent decides whether to trade. 100% lokal reference — ingen netværkskald, ing",
         "platform": "ClawHub",
         "install_method": "clawhub install trading-news-guard",
+        "evaluation": "自动发现，待人工评估"
+      }
+    ],
+    "工商银行": [
+      {
+        "skill_name": "工商数据查询 · 企业基本信息、股东、分支、投资与变更",
+        "description": "查询企业工商基本信息、企业股东与出资记录、分支机构、对外投资、工商变更，并按需补充招投标战绩。适用于企业核验、注册资本/法人查询、股东和分支查询。五项工商能力每次/每页3积分，只按需调用；司法风险和复杂股权穿透本期未开放。完整企业背调报告使用zlbx-company-intel，招标项目决策使用zlbx-bid-decision。使用平台API Key，首次自动注册需用户同意。",
+        "platform": "ClawHub",
+        "install_method": "clawhub install zlbx-company-registry",
         "evaluation": "自动发现，待人工评估"
       }
     ]
