@@ -4,6 +4,83 @@
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
+      "id": "clawhub-tdx-api-skill",
+      "slug": "tdx-api-skill",
+      "name": "通达信TDX股票查询技能",
+      "description": "基于TDX API的股票数据查询技能，提供全面的A股市场数据查询功能，包括实时行情、K线数据、分时数据、分时成交、股票搜索、指数数据、ETF数据、市场统计、个股新闻、股票公告等31个API接口。当用户询问股票相关信息时调用。",
+      "link": "https://clawhub.ai/bensema/skills/tdx-api-skill",
+      "source": "clawhub",
+      "downloads": 1688,
+      "found_date": "2026-10-26",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-china-a-stocks-daily-review",
+      "slug": "china-a-stocks-daily-review",
+      "name": "A股市场分析报告/china A stocks daily review",
+      "description": "A股市场行情分析 Skill，支持生成三类报告：盘前市场综述、盘中市场简评、盘后复盘报告。 China A-Share Market Daily Review Skill — generates 3 report types: Pre-Market Briefing, Intraday Snapshot, Pos...",
+      "link": "https://clawhub.ai/kooui/skills/china-a-stocks-daily-review",
+      "source": "clawhub",
+      "downloads": 1189,
+      "found_date": "2026-10-26",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-a-stock-technical-analysis",
+      "slug": "a-stock-technical-analysis",
+      "name": "A股技术分析报告",
+      "description": "A股个股技术分析报告生成工具。当用户请求生成股票技术分析报告、查询A股个股行情、分析个股走势时触发。支持输入股票代码和股票名称，自动抓取东方财富实时数据并生成结构化技术分析报告。",
+      "link": "https://clawhub.ai/zhangyuqi98/skills/a-stock-technical-analysis",
+      "source": "clawhub",
+      "downloads": 1935,
+      "found_date": "2026-10-26",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-dadao-investing",
+      "slug": "dadao-investing",
+      "name": "大道无形·段永平价值投资",
+      "description": "大道无形·段永平价值投资框架。用段永平（雪球\"大道无形我有型\"，网易0.8美元抄底近100倍、2006年62.01万美元巴菲特午餐首位华人中标者）的方式分析个股：不为清单一票否决（不做空/不借钱/不懂不碰）→ 三层过滤（好生意→好人→好价格）→ \"股市关门五年\"持有测试，附已核验案例库与经典语录。当用户要求用段永平/大道的方法分析个股、检验投资决策、评估\"能不能买/该不该卖\"、学习价值投资框架、或",
+      "link": "https://clawhub.ai/419597334-sudo/skills/dadao-investing",
+      "source": "clawhub",
+      "downloads": 99,
+      "found_date": "2026-10-26",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-ai-trading",
+      "slug": "ai-trading",
+      "name": "AI Trading",
+      "description": "Research US stocks and ETFs with market data, technicals, fundamentals, backtests, and risk-based trade plans; requires human approval and never executes ord...",
+      "link": "https://clawhub.ai/rapidworker1/skills/ai-trading",
+      "source": "clawhub",
+      "downloads": 182,
+      "found_date": "2026-10-26",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-mkts-market-data",
+      "slug": "mkts-market-data",
+      "name": "mkts Market Data",
+      "description": "Retrieve market data and, with explicit user confirmation, manage portfolio, journal, and watchlist records through mkts.io for stocks, crypto, ETFs, commodities, and forex. Use for quotes, research, ",
+      "link": "https://clawhub.ai/sdliriano/skills/mkts-market-data",
+      "source": "clawhub",
+      "downloads": 2602,
+      "found_date": "2026-10-26",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-volcengine-find-skills",
+      "slug": "volcengine-find-skills",
+      "name": "Volcengine Skills Finder",
+      "description": "List, select, and install Volcengine skills from the volcengine-skills marketplace. Use when a user asks which Volcengine skill or plugin handles a task, wants to browse every available skill, needs a",
+      "link": "https://clawhub.ai/volc-sdk-team/skills/volcengine-find-skills",
+      "source": "clawhub",
+      "downloads": 477,
+      "found_date": "2026-10-26",
+      "status": "pending_review"
+    },
+    {
       "id": "clawhub-market-data-checker",
       "slug": "market-data-checker",
       "name": "金融市场数据质量校验工具",
@@ -2685,6 +2762,13 @@
         "platform": "ClawHub",
         "install_method": "clawhub install ashare-financial-report-analysis",
         "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "A股技术分析报告",
+        "description": "A股个股技术分析报告生成工具。当用户请求生成股票技术分析报告、查询A股个股行情、分析个股走势时触发。支持输入股票代码和股票名称，自动抓取东方财富实时数据并生成结构化技术分析报告。",
+        "platform": "ClawHub",
+        "install_method": "clawhub install a-stock-technical-analysis",
+        "evaluation": "自动发现，待人工评估"
       }
     ],
     "国泰海通": [
@@ -2847,6 +2931,14 @@
       "slug": "slzq-trading",
       "downloads": 199,
       "link_fixed": "2026-09-22"
+    },
+    {
+      "name": "大道无形·段永平价值投资",
+      "desc": "大道无形·段永平价值投资框架。用段永平（雪球\"大道无形我有型\"，网易0.8美元抄底近100倍、2006年62.01万美元巴菲特午餐首位华人中标者）的方式分析个股：不为清单一票否决（不做空/不借钱/不懂不碰）→ 三层过滤（好生意→好人→好价格）→ \"股市关门五年\"持有测试，附已核验案例库与经典语录。当用户要求用段永平/大道的方法分析个股、检验投资决策、评估\"能不能买/该不该卖\"、学习价值投资框架、或引用段永平观点时使用本skill。不构成投资建议。",
+      "source": "ClawHub",
+      "inferred_org": "大道无形",
+      "link": "https://clawhub.ai/419597334-sudo/skills/dadao-investing",
+      "found_date": "2026-10-26"
     }
   ],
   "github_candidates": [
