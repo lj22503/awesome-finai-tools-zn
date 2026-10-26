@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-19",
-  "last_updated": "2026-10-19",
+  "version": "2026-10-26",
+  "last_updated": "2026-10-26",
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
@@ -3136,6 +3136,30 @@
       "scope": "global",
       "source": "github_search",
       "found_date": "2026-10-19",
+      "status": "pending_review"
+    },
+    {
+      "name": "CNEquity",
+      "full_name": "rootSunc/CNEquity",
+      "description": "开源中国股市（A股）本地数据湖，面向量化研究与回测：股票行情、财务数据、期货、资金流向、公告、指数行业、宏观，55 个日更数据集，复权与历史成分内置，行级溯源、PIT 语义，MCP 原生，让 AI 直接查 A 股。免注册、免 Token，自托管。Open-source China A-share stock data lake for quant research, backtesting and",
+      "link": "https://github.com/rootSunc/CNEquity",
+      "stars": 873,
+      "language": "Python",
+      "scope": "cn",
+      "source": "github_search",
+      "found_date": "2026-10-26",
+      "status": "pending_review"
+    },
+    {
+      "name": "fdnpy",
+      "full_name": "financialdatanet/fdnpy",
+      "description": "A Python SDK for FinancialData.Net API - Real-time & Historical Stock Market Data",
+      "link": "https://github.com/financialdatanet/fdnpy",
+      "stars": 62,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-10-26",
       "status": "pending_review"
     }
   ]
