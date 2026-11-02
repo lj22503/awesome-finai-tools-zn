@@ -4,6 +4,116 @@
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
+      "id": "clawhub-j-stock-analyzer",
+      "slug": "j-stock-analyzer",
+      "name": "Stock Analyzer | 股票深度分析",
+      "description": "输入股票代码，深入分析财务数据、估值、护城河，生成投资分析报告",
+      "link": "https://clawhub.ai/jearrylee/skills/j-stock-analyzer",
+      "source": "clawhub",
+      "downloads": 1533,
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-a-share-capital-flow",
+      "slug": "a-share-capital-flow",
+      "name": "A股资金流向分析",
+      "description": "提供基于资金流向和板块轮动的A股每日简报、持仓健康诊断及交易策略建议。",
+      "link": "https://clawhub.ai/wukai8289/skills/a-share-capital-flow",
+      "source": "clawhub",
+      "downloads": 1410,
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-cue-event-risk-scan",
+      "slug": "cue-event-risk-scan",
+      "name": "企业风险扫描·三源可查不打分",
+      "description": "企业风险一键扫描（数据腿实测版）：给你公司名或代码，产出一页扫描卡——行政处罚与监管措施逐条（带决定文书号/日期/机关）、对外担保要点、全球制裁执法面（涉跨境主体时）；每条挂官方出处，检索未达的面**明写未达不补空白**。适合「这家公司有什么处罚」「对外担保扫一遍」「出海实体制裁风险查查」等场景。Do NOT use for: 整体风险评级或违约概率、涉诉与股权链推断（通道当前未达，本件不装）、投",
+      "link": "https://clawhub.ai/huhoo/skills/cue-event-risk-scan",
+      "source": "clawhub",
+      "downloads": 177,
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-agent-bom-registry",
+      "slug": "agent-bom-registry",
+      "name": "agent-bom registry",
+      "description": "MCP server security registry and trust assessment — look up servers in the 1256-entry server security metadata registry, run pre-install marketplace checks, batch fleet risk scoring, assess skill file",
+      "link": "https://clawhub.ai/msaad00/skills/agent-bom-registry",
+      "source": "clawhub",
+      "downloads": 6216,
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-smyx-focus-analysis",
+      "slug": "smyx-focus-analysis",
+      "name": "Concentration Analysis Skill | 专注度分析技能",
+      "description": "Real-time detection of gaze direction and facial pose to quantify states of focus, distraction, or mind-wandering. Suitable for scenarios such as classroom learning, office meetings, and driving atten",
+      "link": "https://clawhub.ai/18072937735/skills/smyx-focus-analysis",
+      "source": "clawhub",
+      "downloads": 2403,
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-zhuangshi-suanliang",
+      "slug": "zhuangshi-suanliang",
+      "name": "Interior Finish Quantity Ledger",
+      "description": "Turns room schedules, finishes, construction methods and node details into review-ready decoration budget candidates and material plans. Imports cad-file-reader measurement candidates as review input ",
+      "link": "https://clawhub.ai/lisong2003-lgtm/skills/zhuangshi-suanliang",
+      "source": "clawhub",
+      "downloads": 722,
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-yuanlin-suanliang",
+      "slug": "yuanlin-suanliang",
+      "name": "Landscape Quantity Review Ledger",
+      "description": "Classifies plant legends, parses plant-table baselines and computes pavement area from closed regions using cad-file-reader landscape candidates. Outputs review-ready landscape budget and material-pla",
+      "link": "https://clawhub.ai/lisong2003-lgtm/skills/yuanlin-suanliang",
+      "source": "clawhub",
+      "downloads": 503,
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-lis-skill-bus",
+      "slug": "lis-skill-bus",
+      "name": "Local Skill Bus for CAD Evidence Contracts",
+      "description": "Connects local CAD skills so one drawing is parsed once and its evidence-backed contract is shared across downstream quantity skills. Runs locally without network and degrades safely when the bus is a",
+      "link": "https://clawhub.ai/lisong2003-lgtm/skills/lis-skill-bus",
+      "source": "clawhub",
+      "downloads": 215,
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-curo-peptide-research",
+      "slug": "curo-peptide-research",
+      "name": "curo-peptide-research",
+      "description": "Answer peptide research questions with PepBank study findings, and look up Curo peptides, prices, stock and the lab report (COA) for each lot. Use when the user asks what the research says about a pep",
+      "link": "https://clawhub.ai/curo-you-peptides/skills/curo-peptide-research",
+      "source": "clawhub",
+      "downloads": 0,
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-cue-event-brief-cn",
+      "slug": "cue-event-brief-cn",
+      "name": "公告事件速读卡·关键数逐字带出处",
+      "description": "A股公告事件速读卡：把一份临时公告（回购/增减持/业绩预告/重大合同/处罚问询等）变成可核对的五段卡——逐字关键数+出处、影响链候选、同类对照、待核清单。评级与目标价一律[待人工]，不预测走势。适合「刚出了公告先看什么」「这份公告讲什么」。Do NOT use for: 投资建议或买卖决策、未检索到的数据编造、收益承诺。Triggers: 公告速读 / 公告解读 / 这份公告 / 回购公告 / 增",
+      "link": "https://clawhub.ai/huhoo/skills/cue-event-brief-cn",
+      "source": "clawhub",
+      "downloads": 180,
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
       "id": "clawhub-tdx-api-skill",
       "slug": "tdx-api-skill",
       "name": "通达信TDX股票查询技能",
