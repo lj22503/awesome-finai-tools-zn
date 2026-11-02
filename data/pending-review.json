@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-26",
-  "last_updated": "2026-10-26",
+  "version": "2026-11-02",
+  "last_updated": "2026-11-02",
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
@@ -2685,6 +2685,36 @@
       "source": "npm",
       "found_date": "2026-10-19",
       "status": "pending_review"
+    },
+    {
+      "name": "idx-stock-mcp",
+      "version": "1.4.0",
+      "description": "MCP server untuk data saham Bursa Efek Indonesia (IDX) dan portofolio pribadi",
+      "link": "https://www.npmjs.com/package/idx-stock-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
+      "name": "tickdb-ts",
+      "version": "0.7.0",
+      "description": "offline-first TypeScript client for tickdb (A-share market data): manifest sync + local DuckDB",
+      "link": "https://www.npmjs.com/package/tickdb-ts",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
+      "name": "dragon-quant-skills",
+      "version": "1.0.0",
+      "description": "Agent Skills for the dragon-quant A-share dragon scanner CLI",
+      "link": "https://www.npmjs.com/package/dragon-quant-skills",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-11-02",
+      "status": "pending_review"
     }
   ],
   "institution_candidates": {
@@ -3252,6 +3282,42 @@
       "scope": "global",
       "source": "github_search",
       "found_date": "2026-10-26",
+      "status": "pending_review"
+    },
+    {
+      "name": "lava-mcp",
+      "full_name": "dustinliang666-blip/lava-mcp",
+      "description": "熔岩 Lava：A 股股票与概念板块的消息面热度监测（结构化只读 MCP/REST，支持量化交易工具与 AI Agent 股市研究接入）",
+      "link": "https://github.com/dustinliang666-blip/lava-mcp",
+      "stars": 41,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
+      "name": "stock-skill",
+      "full_name": "xiongcp/stock-skill",
+      "description": "AI agent skill (Claude Code / Codex) for deterministic K-line structure analysis of A-shares, HK & US stocks: triple-barrier risk plans, 15-day normal volatility range, no-lookahead backtest, JSON + P",
+      "link": "https://github.com/xiongcp/stock-skill",
+      "stars": 57,
+      "language": "Python",
+      "scope": "cn",
+      "source": "github_search",
+      "found_date": "2026-11-02",
+      "status": "pending_review"
+    },
+    {
+      "name": "a-share-tdxdata",
+      "full_name": "ShanNing-YU/a-share-tdxdata",
+      "description": "通达信A股行情数据客户端（2026新版协议逆向）| TDX A-share market data client for the 2026 protocol",
+      "link": "https://github.com/ShanNing-YU/a-share-tdxdata",
+      "stars": 14,
+      "language": "Python",
+      "scope": "cn",
+      "source": "github_search",
+      "found_date": "2026-11-02",
       "status": "pending_review"
     }
   ]
