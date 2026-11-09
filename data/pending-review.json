@@ -4,6 +4,160 @@
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
+      "id": "clawhub-lgd-fin-guard",
+      "slug": "lgd-fin-guard",
+      "name": "LGD Fin Guard（金融 AI 合规守门）",
+      "description": "Screen a financial AI system against the three laws of registered, evidenced and gated before it goes live, so licensed advisory, risk-control and anti-money-laundering use cases hold up. lgd-fin-guar",
+      "link": "https://clawhub.ai/zhaoxinghua09-cell/skills/lgd-fin-guard",
+      "source": "clawhub",
+      "downloads": 631,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-cue-fund-facts-cn",
+      "slug": "cue-fund-facts-cn",
+      "name": "基金资料卡",
+      "description": "境内基金资料卡：输入一份产品资料概要或招募说明书，产出八项逐字速读——基金名称与类型、投资范围与比例限制、业绩比较基准、管理费与托管费、申购赎回费用与到账、基金经理与任职期限、风险收益特征与风险等级、分红与收益分配规则。每项挂原句＋锚，缺项点名「未检索到」；费率逐字，推定语不算值。打新收益、收益预测、评级与目标价一律 [待人工]。Do NOT use for: 基金推荐与申购建议、收益预测、代客申",
+      "link": "https://clawhub.ai/huhoo/skills/cue-fund-facts-cn",
+      "source": "clawhub",
+      "downloads": 52,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-xg-backtrader",
+      "slug": "xg-backtrader",
+      "name": "小果量化回测系统助手",
+      "description": "小果量化回测系统助手 (微信:xg_quant)。基于业界领先的Backtrader回测框架，提供从数据加载、策略开发、回测执行到绩效分析的全流程量化交易解决方案。\n支持多品种（股票、期货、外汇、加密货币）、多周期（Tick, 秒, 分钟, 日, 周, 月）、多策略回测与参数优化。\n具备完整的订单管理（市价、限价、止损、止损限价、跟踪止损）、佣金方案配置（固定、百分比、期货）、滑点模拟和绩效分析（",
+      "link": "https://clawhub.ai/li152/skills/xg-backtrader",
+      "source": "clawhub",
+      "downloads": 370,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-xg-qmt",
+      "slug": "xg-qmt",
+      "name": "小果全能大QMT量化交易助手",
+      "description": "小果全能大QMT量化交易助手 - 专业级QMT策略开发全能助手\n本助手是专为「迅投QMT极速策略交易系统」打造的量化交易策略开发专家。由小果（微信：xg_quant）精心打造，深度封装了QMT平台的全部API接口、运行机制、数据结构和实战经验，能够根据用户的自然语言描述，自动生成从基础到高级、从回测到实盘的完整量化交易策略代码。\n\n【核心功能矩阵】\n✅ 策略开发：根据需求描述自动生成QMT策略代码",
+      "link": "https://clawhub.ai/li152/skills/xg-qmt",
+      "source": "clawhub",
+      "downloads": 396,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-a-share-ledger-workflow",
+      "slug": "a-share-ledger-workflow",
+      "name": "A股台账工作流 · 选股跟踪·持仓管理·财报核验·复盘（8步投研流程）",
+      "description": "A股投研 8 步流程：方向→产业→链条→选股→跟踪→买入门禁→持仓台账→复盘，含 15 个子技能与 17 个零依赖脚本。触发词：A股分析、选股、股票台账、持仓管理、财报核验、复盘、投研流程、交易记录。Use for end-to-end A-share research, screening, tracking ledgers, pre-buy gating, position tracking,",
+      "link": "https://clawhub.ai/yangclaw2026-png/skills/a-share-ledger-workflow",
+      "source": "clawhub",
+      "downloads": 59,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-hk-stock-short-selling",
+      "slug": "hk-stock-short-selling",
+      "name": "港股卖空数据",
+      "description": "Get Hong Kong stock short selling data (daily and historical) from HKEX and ETNet. 免费获取港股每日和历史卖空数据。",
+      "link": "https://clawhub.ai/kadinxu/skills/hk-stock-short-selling",
+      "source": "clawhub",
+      "downloads": 1024,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-factor-investment",
+      "slug": "factor-investment",
+      "name": "因子投资",
+      "description": "基于《因子投资：方法与实践》的量化选股系统，融合Fama-French多因子模型与技术面选股，提供集合竞价选股、盘中监控、持仓复盘等功能。",
+      "link": "https://clawhub.ai/shenkunming/skills/factor-investment",
+      "source": "clawhub",
+      "downloads": 1069,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-trading-universe",
+      "slug": "trading-universe",
+      "name": "Trading Universe",
+      "description": "Use for deterministic ICT market scans, validated intraday order-plan tickets, structure reads, macro bias boards, the local Trading Universe dashboard, and...",
+      "link": "https://clawhub.ai/illimitedenterprise/skills/trading-universe",
+      "source": "clawhub",
+      "downloads": 1979,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-a-share-trading",
+      "slug": "a-share-trading",
+      "name": "A Share Trading",
+      "description": "A股交易层：自选股管理/实时监控/大盘情绪/热点板块/买卖策略/止盈止损/仓位管理/价格预警",
+      "link": "https://clawhub.ai/cooperiano/skills/a-share-trading",
+      "source": "clawhub",
+      "downloads": 464,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-genexxis-market-data",
+      "slug": "genexxis-market-data",
+      "name": "Genexxis live market data: crypto, DeFi, odds, rates, FX",
+      "description": "Live market data for agents, paid per call via x402 (USDC on Base, no API key): median crypto spot prices, DEX price and liquidity by contract address, OHLCV candles, top movers, perpetual funding rat",
+      "link": "https://clawhub.ai/montassirbbk-dot/skills/genexxis-market-data",
+      "source": "clawhub",
+      "downloads": 55,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-ftai-market-data",
+      "slug": "ftai-market-data",
+      "name": "Skills of A-share market data released by ft.tech.",
+      "description": "非凸科技A股市场数据技能集。覆盖 A 股股票列表、实时行情、IPO信息、大宗交易、融资融券、个股详情与估值等接口。",
+      "link": "https://clawhub.ai/shawn92/skills/ftai-market-data",
+      "source": "clawhub",
+      "downloads": 1962,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-cue-cn-morning-brief",
+      "slug": "cue-cn-morning-brief",
+      "name": "晨会纪要·数据槽与覆盖率（盘前早报）",
+      "description": "A股盘前晨会纪要·时点驱动的两段式：市场层五槽（隔夜外盘、汇率与商品、利率与流动性、指数与成交、两融余额）与标的层三槽（标的隔夜公告标题、标的今日事件、今日披露与解禁），逐槽挂来源与检索日；头部申报已填槽/总槽并与槽表逐行对账，缺口逐槽点名，判断位一律[待人工]。Do NOT use for: 涨跌预测、买卖建议、评级目标价、单份公告逐字精读。",
+      "link": "https://clawhub.ai/huhoo/skills/cue-cn-morning-brief",
+      "source": "clawhub",
+      "downloads": 17,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-cue-cn-lockup-expiry-pressure",
+      "slug": "cue-cn-lockup-expiry-pressure",
+      "name": "限售解禁压力·逐条挂源",
+      "description": "A股限售解禁跨期跟踪：把同一只股票未来数轮限售解禁按解禁日串成日历，逐轮登记解禁日、解禁方类型、解禁股数、占总股本比（分母总股本单独挂源、不自己拿股数除）与成本区间，每行挂原公告与检索日；公告没写的逐轮点名未取到。机检 check_lockup.py 五道：形制／锚／红线／未取到两向点名／边界，零网络。Do NOT use for: 股价预测、解禁必跌判断、买卖与减持建议、评级与目标价、已发生的分",
+      "link": "https://clawhub.ai/huhoo/skills/cue-cn-lockup-expiry-pressure",
+      "source": "clawhub",
+      "downloads": 30,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-cue-cn-goodwill-impairment-risk",
+      "slug": "cue-cn-goodwill-impairment-risk",
+      "name": "商誉减值风险·逐条挂源",
+      "description": "A股商誉科目专项台账：把一份年报或收购公告的商誉科目拆成八节——商誉余额、被收购标的、业绩承诺完成度、减值测试关键假设、本次计提与未计提，每行挂原句与锚；计提金额与比例只认披露原句，卡面不得拿余额减可收回金额自算。缺的逐条写未取到，两向点名。机检 check_goodwill.py 五道：形制／原句与锚／红线／未取到与不得自算／边界，零网络。Do NOT use for: 会不会减值、计提是否充分",
+      "link": "https://clawhub.ai/huhoo/skills/cue-cn-goodwill-impairment-risk",
+      "source": "clawhub",
+      "downloads": 36,
+      "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
       "id": "clawhub-j-stock-analyzer",
       "slug": "j-stock-analyzer",
       "name": "Stock Analyzer | 股票深度分析",
@@ -3139,6 +3293,30 @@
       "inferred_org": "大道无形",
       "link": "https://clawhub.ai/419597334-sudo/skills/dadao-investing",
       "found_date": "2026-10-26"
+    },
+    {
+      "name": "LGD Fin Guard（金融 AI 合规守门）",
+      "desc": "Screen a financial AI system against the three laws of registered, evidenced and gated before it goes live, so licensed advisory, risk-control and anti-money-laundering use cases hold up. lgd-fin-guard — 把 LGD 三律（有籍·有证·有门禁）翻译进金融 / 持牌机构 AI 应用（投顾·风控·反洗钱）的合规守门器，对 AI 系统做三律自评与门禁判定（零依赖）。",
+      "source": "ClawHub",
+      "inferred_org": "LGD",
+      "link": "https://clawhub.ai/zhaoxinghua09-cell/skills/lgd-fin-guard",
+      "found_date": "2026-11-09"
+    },
+    {
+      "name": "基金资料卡",
+      "desc": "境内基金资料卡：输入一份产品资料概要或招募说明书，产出八项逐字速读——基金名称与类型、投资范围与比例限制、业绩比较基准、管理费与托管费、申购赎回费用与到账、基金经理与任职期限、风险收益特征与风险等级、分红与收益分配规则。每项挂原句＋锚，缺项点名「未检索到」；费率逐字，推定语不算值。打新收益、收益预测、评级与目标价一律 [待人工]。Do NOT use for: 基金推荐与申购建议、收益预测、代客申购、收益与风险承诺。Triggers: 这只基金的费率 / 业绩比较基准 / 什么时候分红；fund facts card",
+      "source": "ClawHub",
+      "inferred_org": "境内基金",
+      "link": "https://clawhub.ai/huhoo/skills/cue-fund-facts-cn",
+      "found_date": "2026-11-09"
+    },
+    {
+      "name": "晨会纪要·数据槽与覆盖率（盘前早报）",
+      "desc": "A股盘前晨会纪要·时点驱动的两段式：市场层五槽（隔夜外盘、汇率与商品、利率与流动性、指数与成交、两融余额）与标的层三槽（标的隔夜公告标题、标的今日事件、今日披露与解禁），逐槽挂来源与检索日；头部申报已填槽/总槽并与槽表逐行对账，缺口逐槽点名，判断位一律[待人工]。Do NOT use for: 涨跌预测、买卖建议、评级目标价、单份公告逐字精读。",
+      "source": "ClawHub",
+      "inferred_org": "晨会纪要",
+      "link": "https://clawhub.ai/huhoo/skills/cue-cn-morning-brief",
+      "found_date": "2026-11-09"
     }
   ],
   "github_candidates": [
