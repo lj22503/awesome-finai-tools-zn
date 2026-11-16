@@ -4,6 +4,72 @@
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
+      "id": "clawhub-cue-cn-financial-instruments-risk-cn",
+      "slug": "cue-cn-financial-instruments-risk-cn",
+      "name": "金融工具风险敞口·到期分档与敏感性重算",
+      "description": "把年报或半年报附注里「金融工具及其风险」那一段读成逐行可回到原句的登记表：风险敞口概况、按剩余到期期限分档的合同未折现现金流、利率风险与汇率风险的敏感性影响、信用风险集中度。每个数照抄附注原句并挂〔锚：…〕[S#]，分档求和与敏感性重算由机检现算。不判断流动性是否充裕、不判断偿债能力强弱、不把敞口当已发生损失或可用资金、不给评级目标价。Do NOT use for: 判断偿债能力强弱、测算可动用资",
+      "link": "https://clawhub.ai/huhoo/skills/cue-cn-financial-instruments-risk-cn",
+      "source": "clawhub",
+      "downloads": 58,
+      "found_date": "2026-11-16",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-cue-cn-investment-property-cn",
+      "slug": "cue-cn-investment-property-cn",
+      "name": "投资性房地产·逐条挂源",
+      "description": "给一份财报或公告，把投资性房地产读成每条都能回到原句的登记表：概况（期末期初、本期增减）、计量模式（成本／公允价值、模式变更与否）、成本模式明细（原值、累计折旧、减值准备）、公允价值模式明细（公允价值、变动损益、估值技术与层级）、转换与处置（转换日、差额金额与去向、处置损益），逐条挂「」原句＋〔锚〕＋[S#]。计量模式只认披露写法，不因「存在活跃市场」推断；转换差额去向照抄披露，不按准则方向补。D",
+      "link": "https://clawhub.ai/huhoo/skills/cue-cn-investment-property-cn",
+      "source": "clawhub",
+      "downloads": 97,
+      "found_date": "2026-11-16",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-cue-cn-long-term-equity-investment-cn",
+      "slug": "cue-cn-long-term-equity-investment-cn",
+      "name": "长期股权投资·逐条挂源",
+      "description": "给一份年报附注的长期股权投资一节，把五块读成每条都能回到原句的台账：按被投资单位列的期初期末与增减、子公司/合营/联营的划分与成本法权益法适用、权益法确认的投资损益与未实现损益抵消、投资收益与现金分红的对应、减值与处置；每格挂「」原句＋〔锚〕＋[S#]，分类与核算法只认原句，不按持股比例推。Do NOT use for: 判被投资单位值不值钱、投资能否收回、预测投资收益、建议追加或退出、对赌条款评",
+      "link": "https://clawhub.ai/huhoo/skills/cue-cn-long-term-equity-investment-cn",
+      "source": "clawhub",
+      "downloads": 90,
+      "found_date": "2026-11-16",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-trading-intelligence-bundle",
+      "slug": "trading-intelligence-bundle",
+      "name": "trading-intelligence-bundle",
+      "description": "Paid x402 endpoint: $0.007 USDC per call on Base. Returns momentum + whale sentiment + regime confluence.",
+      "link": "https://clawhub.ai/kynto2001-ctrl/skills/trading-intelligence-bundle",
+      "source": "clawhub",
+      "downloads": 616,
+      "found_date": "2026-11-16",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-stock-screener",
+      "slug": "stock-screener",
+      "name": "stock-screener",
+      "description": "Stock screener for US stocks and ETFs: screen stocks in plain language, such as \"find stocks that are oversold with bullish sentiment\" or \"stocks under $20 the crowd likes\", translated into one valid ",
+      "link": "https://clawhub.ai/thesentitrader/skills/stock-screener",
+      "source": "clawhub",
+      "downloads": 753,
+      "found_date": "2026-11-16",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-finance-data-analysis",
+      "slug": "finance-data-analysis",
+      "name": "Finance Data Analysis",
+      "description": "Provides AI-driven financial data analysis including KPI tracking, financial statement evaluation, data visualization, and automated reporting for decision s...",
+      "link": "https://clawhub.ai/gechengling/skills/finance-data-analysis",
+      "source": "clawhub",
+      "downloads": 1703,
+      "found_date": "2026-11-16",
+      "status": "pending_review"
+    },
+    {
       "id": "clawhub-lgd-fin-guard",
       "slug": "lgd-fin-guard",
       "name": "LGD Fin Guard（金融 AI 合规守门）",
