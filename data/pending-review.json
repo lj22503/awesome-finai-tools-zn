@@ -1,6 +1,6 @@
 {
-  "version": "2026-11-09",
-  "last_updated": "2026-11-09",
+  "version": "2026-11-16",
+  "last_updated": "2026-11-16",
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
@@ -3039,6 +3039,56 @@
       "source": "npm",
       "found_date": "2026-11-09",
       "status": "pending_review"
+    },
+    {
+      "name": "defi-quant-mcp-server",
+      "version": "1.0.8",
+      "description": "Quantitative DeFi yield, leveraged carry ROE, and borrow rate kink slippage MCP server for Morpho Blue, Ethena, Fluid, Sky, Euler V2, and Pendle V2.",
+      "link": "https://www.npmjs.com/package/defi-quant-mcp-server",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-11-16",
+      "status": "pending_review"
+    },
+    {
+      "name": "dsh-invest-provider-eastmoney",
+      "version": "0.1.0",
+      "description": "DSH 插件:把东方财富的场内 ETF 目录与前复权 K 线注册进 dsh-invest | DSH plugin: registers Eastmoney ETF catalog and K-lines into dsh-invest.",
+      "link": "https://www.npmjs.com/package/dsh-invest-provider-eastmoney",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-11-16",
+      "status": "pending_review"
+    },
+    {
+      "name": "@wilshi/cnstock",
+      "version": "0.1.2",
+      "description": "中国股票数据命令行工具与 MCP 服务：行情、财报、估值与研报，免 API Key、零配置。A-share market data CLI and MCP server.",
+      "link": "https://www.npmjs.com/package/@wilshi/cnstock",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-11-16",
+      "status": "pending_review"
+    },
+    {
+      "name": "dsh-mcp-connector",
+      "version": "0.2.109",
+      "description": "MCP Connector for DeepSeek Harness: a data marketplace connecting enterprise, financial, legal, patent and research data. Manage authorization, search tools and troubleshoot MCP connections. Supports OAuth, API keys and HTTP/stdio.",
+      "link": "https://www.npmjs.com/package/dsh-mcp-connector",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-11-16",
+      "status": "pending_review"
+    },
+    {
+      "name": "openclaw-stock-analysis",
+      "version": "0.2.12",
+      "description": "OpenClaw plugin for stock analysis, screening, and strategy backtesting across A/HK/US/JP/KR/TW markets",
+      "link": "https://www.npmjs.com/package/openclaw-stock-analysis",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-11-16",
+      "status": "pending_review"
     }
   ],
   "institution_candidates": {
@@ -3690,6 +3740,18 @@
       "scope": "global",
       "source": "github_search",
       "found_date": "2026-11-09",
+      "status": "pending_review"
+    },
+    {
+      "name": "quicken-mac-mcp",
+      "full_name": "dweekly/quicken-mac-mcp",
+      "description": "MCP server providing read-only access to Quicken For Mac financial data via Claude",
+      "link": "https://github.com/dweekly/quicken-mac-mcp",
+      "stars": 56,
+      "language": "TypeScript",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-11-16",
       "status": "pending_review"
     }
   ]
