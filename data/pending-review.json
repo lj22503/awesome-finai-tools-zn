@@ -1,6 +1,6 @@
 {
-  "version": "2026-11-16",
-  "last_updated": "2026-11-16",
+  "version": "2026-11-23",
+  "last_updated": "2026-11-23",
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
@@ -3155,6 +3155,66 @@
       "source": "npm",
       "found_date": "2026-11-16",
       "status": "pending_review"
+    },
+    {
+      "name": "@kentandrian/id-finance-mcp",
+      "version": "0.1.2",
+      "description": "Indonesian finance MCP server for Bank Indonesia IDR exchange rates and live IDR crypto prices (Indodax & Pintu)",
+      "link": "https://www.npmjs.com/package/@kentandrian/id-finance-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "name": "tw-stock-mcp",
+      "version": "0.1.3",
+      "description": "Zero-dependency MCP server for Taiwan stock market data (TWSE / TPEx)",
+      "link": "https://www.npmjs.com/package/tw-stock-mcp",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "name": "gitrader",
+      "version": "0.1.1",
+      "description": "Gitrader is an open-source AI quant trading base: embed it in any agent, and combine it with any functional trading plugin.",
+      "link": "https://www.npmjs.com/package/gitrader",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "name": "dsh-mcp-bridge-cn",
+      "version": "0.1.0",
+      "description": "Generic Streamable HTTP MCP bridge for DeepSeek Harness, with a bring-your-own-key Eastmoney Miaoxiang preset.",
+      "link": "https://www.npmjs.com/package/dsh-mcp-bridge-cn",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "name": "dsh-tushare",
+      "version": "2.3.4",
+      "description": "Ships the tushare-data research skill to every DSH session; set your Tushare token in the Plugins settings tab, or via /tushare-token.",
+      "link": "https://www.npmjs.com/package/dsh-tushare",
+      "scope": "cn",
+      "source": "npm",
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "name": "@weaxs/openclaw-stock-analysis",
+      "version": "0.2.16",
+      "description": "OpenClaw plugin for stock analysis, screening, and strategy backtesting across A/HK/US/JP/KR/TW markets",
+      "link": "https://www.npmjs.com/package/@weaxs/openclaw-stock-analysis",
+      "scope": "global",
+      "source": "npm",
+      "found_date": "2026-11-23",
+      "status": "pending_review"
     }
   ],
   "institution_candidates": {
@@ -3818,6 +3878,18 @@
       "scope": "global",
       "source": "github_search",
       "found_date": "2026-11-16",
+      "status": "pending_review"
+    },
+    {
+      "name": "nepse_data_api",
+      "full_name": "ra8in/nepse_data_api",
+      "description": "python library for accessing market data of the Nepal Stock Exchange",
+      "link": "https://github.com/ra8in/nepse_data_api",
+      "stars": 5,
+      "language": "Python",
+      "scope": "global",
+      "source": "github_search",
+      "found_date": "2026-11-23",
       "status": "pending_review"
     }
   ]
