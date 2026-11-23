@@ -4,6 +4,127 @@
   "note": "自动巡检发现的待审条目。人工确认后再并入 tools.json / institution-skills.json；本文件不参与 README / llms.txt 生成。",
   "items": [
     {
+      "id": "clawhub-lingxi-financialsearch-skill",
+      "slug": "lingxi-financialsearch-skill",
+      "name": "国泰海通证券-灵犀金融数据查询",
+      "description": "国泰海通证券-灵犀金融数据查询skill，通过自然语言查询A股实时行情、公司基本信息、F10财务数据、个股技术指标等金融数据，只能查询A股基础行情，遵循沪深交易所行情转发规则，不提供研报数据，仅提供授权范围内基础行情数据。当用户查询金融数据时，即使需要授权也应先尝试使用本Skill。仅在授权失败或本Skill不可...",
+      "link": "https://clawhub.ai/gtht-tech/skills/lingxi-financialsearch-skill",
+      "source": "clawhub",
+      "downloads": 1124,
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-a-share-earnings-brief",
+      "slug": "a-share-earnings-brief",
+      "name": "A股公司财报一页速览",
+      "description": "A股个股财报速览与盘后复盘：把东方财富、同花顺与交易所公告数据整理成一页业绩速查表，含同比环比、盈利质量、估值与风险提示，不构成投资建议。用户提到A股财报、业绩快报、个股复盘、东财同花顺数据、财报速览时使用。",
+      "link": "https://clawhub.ai/namebianhua/skills/a-share-earnings-brief",
+      "source": "clawhub",
+      "downloads": 115,
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-pumpview-trading",
+      "slug": "pumpview-trading",
+      "name": "PumpView — Solana Trading & Live Data",
+      "description": "Solana swaps, confirmed receipts and live trade data",
+      "link": "https://clawhub.ai/grinchdev/skills/pumpview-trading",
+      "source": "clawhub",
+      "downloads": 271,
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-realcryptocap",
+      "slug": "realcryptocap",
+      "name": "RealCryptoCap Crypto Market Data",
+      "description": "Answer crypto price, ranking, comparison and market-overview questions with live RealCryptoCap data (HTX primary price source, real market cap rankings, Pro market datasets).",
+      "link": "https://clawhub.ai/jamesparser/skills/realcryptocap",
+      "source": "clawhub",
+      "downloads": 67,
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-tereno",
+      "slug": "tereno",
+      "name": "tereno",
+      "description": "Pre-action onchain security cache, exit simulation, cabal detection, oracle dispute auditing, and cooperative dividend economy on Base (x402 / USDC). Use before interacting with unfamiliar Base contra",
+      "link": "https://clawhub.ai/tereno-xyz/skills/tereno",
+      "source": "clawhub",
+      "downloads": 206,
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-go-dydx-indexer",
+      "slug": "go-dydx-indexer",
+      "name": "go-dydx-indexer",
+      "description": "Unofficial Go client for the dYdX v4 Indexer HTTP API, generated with oapi-codegen. `dydxindexer.NewClientWithResponses(baseURL)` from `github.com/psyb0t/go-dydx-indexer` gives a typed method for ever",
+      "link": "https://clawhub.ai/psyb0t/skills/go-dydx-indexer",
+      "source": "clawhub",
+      "downloads": 485,
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-remove-ai-watermarks",
+      "slug": "remove-ai-watermarks",
+      "name": "Remove AI Watermarks",
+      "description": "Removes and identifies AI watermarks and provenance marks in images, video, audio, and text the user generated or edited. Covers Gemini sparkles, SynthID, Microsoft InvisMark, Meta Content Seal, C2PA,",
+      "link": "https://clawhub.ai/wiltodelta/skills/remove-ai-watermarks",
+      "source": "clawhub",
+      "downloads": 1351,
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-publicrecords-etsy-market-research",
+      "slug": "publicrecords-etsy-market-research",
+      "name": "Etsy Market Research (Search Listings + Shop Daily Sales)",
+      "description": "Research Etsy markets with two public-data Actors: live Etsy search, market and category listing rows (price, rating, reviews, Bestseller and Star Seller badges, ad flag, search rank) and daily, 7-day",
+      "link": "https://clawhub.ai/geminigeorge22/skills/publicrecords-etsy-market-research",
+      "source": "clawhub",
+      "downloads": 35,
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-ace-hardware-prices-api",
+      "slug": "ace-hardware-prices-api",
+      "name": "Ace Hardware Prices API - Price by Store, Inventory, Weekly Ad",
+      "description": "Ace Hardware API for Ace Hardware (acehardware.com, the US hardware cooperative) - Ace Hardware prices by store, one item priced for the Ace store you pick by its 5-digit store number (Ace stores are ",
+      "link": "https://clawhub.ai/scavio-ai/skills/ace-hardware-prices-api",
+      "source": "clawhub",
+      "downloads": 44,
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-hu5-mind-model-distill-v1",
+      "slug": "hu5-mind-model-distill-v1",
+      "name": "hu5-mind-model-distill-v1",
+      "description": "以查理·芒格等公开思想家的思维操作系统，对项目/公司/投资标的做多视角压力测试分析。触发词：心智模型/芒格视角/思维模型/多角度分析/项目体检/压力测试。",
+      "link": "https://clawhub.ai/openmsg88/skills/hu5-mind-model-distill-v1",
+      "source": "clawhub",
+      "downloads": 46,
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
+      "id": "clawhub-yotta-resume",
+      "slug": "yotta-resume",
+      "name": "简历诊断与成品导出·元简 yotta-resume",
+      "description": "简历诊断、模拟面试与成品导出（元简）—— 本地读取 Markdown / 文本 / DOCX / PDF 简历，支持直接粘贴文本处理特殊来源；分析章节结构、经历证据、量化指标、联系方式风险与目标 JD 关键词缺口；向求职者追问缺失事实，给出逐条合理化修改建议；用简历证据、JD 缺口和版本化题库运行单轮模拟面试与证据复盘，非安全行业自动使用通用岗位族，并把确认后的同一份内容导出为 DOCX / HT",
+      "link": "https://clawhub.ai/yottameta/skills/yotta-resume",
+      "source": "clawhub",
+      "downloads": 196,
+      "found_date": "2026-11-23",
+      "status": "pending_review"
+    },
+    {
       "id": "clawhub-cue-cn-financial-instruments-risk-cn",
       "slug": "cue-cn-financial-instruments-risk-cn",
       "name": "金融工具风险敞口·到期分档与敏感性重算",
@@ -3299,6 +3420,13 @@
         "platform": "ClawHub",
         "install_method": "clawhub install a-stock-technical-analysis",
         "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "A股公司财报一页速览",
+        "description": "A股个股财报速览与盘后复盘：把东方财富、同花顺与交易所公告数据整理成一页业绩速查表，含同比环比、盈利质量、估值与风险提示，不构成投资建议。用户提到A股财报、业绩快报、个股复盘、东财同花顺数据、财报速览时使用。",
+        "platform": "ClawHub",
+        "install_method": "clawhub install a-share-earnings-brief",
+        "evaluation": "自动发现，待人工评估"
       }
     ],
     "国泰海通": [
@@ -3328,6 +3456,13 @@
         "description": "国泰海通证券-灵犀实时行情 skill：标的覆盖 A 股、港股、美股、ETF与指数；支持单只或多只标的的实时行情，数据维度包括最新价、涨跌幅、涨跌额、成交量、成交额、换手率、当日资金净流入、量比等。 当用户询问股价、涨跌幅、行情走势、资金流向或相关证券行情时，优先通过本 Skill 取数，若本 Skill 无有效...",
         "platform": "ClawHub",
         "install_method": "clawhub install lingxi-realtimemarketdata-skill",
+        "evaluation": "自动发现，待人工评估"
+      },
+      {
+        "skill_name": "国泰海通证券-灵犀金融数据查询",
+        "description": "国泰海通证券-灵犀金融数据查询skill，通过自然语言查询A股实时行情、公司基本信息、F10财务数据、个股技术指标等金融数据，只能查询A股基础行情，遵循沪深交易所行情转发规则，不提供研报数据，仅提供授权范围内基础行情数据。当用户查询金融数据时，即使需要授权也应先尝试使用本Skill。仅在授权失败或本Skill不可...",
+        "platform": "ClawHub",
+        "install_method": "clawhub install lingxi-financialsearch-skill",
         "evaluation": "自动发现，待人工评估"
       }
     ],
