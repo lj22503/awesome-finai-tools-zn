@@ -2179,6 +2179,51 @@
         "财务指标",
         "非商业许可"
       ]
+    },
+    {
+      "id": "alphasift",
+      "name": "AlphaSift",
+      "category": "analysis",
+      "type": "mcp",
+      "description": "多市场开源股票筛选 CLI 与 14 工具只读 MCP Server，覆盖 A股/港股/美股/日/韩/台/印 7 个市场，内置无前瞻 Walk-Forward K线形态回放、市场状态与上方套牢盘风险门禁及 T+N 公开绩效跟踪",
+      "input": {
+        "intent": "多市场选股筛选、策略对比、K线形态历史回放与盘后日报生成",
+        "market": "可选，支持 cn / hk / us / jp / kr / tw / in",
+        "strategy": "可选，内置双低轮动、质量价值、多因子共振等规则策略"
+      },
+      "output": {
+        "format": "结构化 JSON / Markdown 盘后研究简报 / 14 工具 + 4 资源 MCP",
+        "覆盖": [
+          "A股",
+          "港股",
+          "美股",
+          "日韩台印",
+          "形态回放",
+          "T+N 验证"
+        ]
+      },
+      "access": {
+        "method": "Python CLI（alphasift）与本地 STDIO MCP（alphasift mcp），可选 Web API",
+        "auth_required": false,
+        "api_key_required": false
+      },
+      "installation": {
+        "command": "pip install alphasift",
+        "url": "https://github.com/ZhuLinsen/alphasift"
+      },
+      "cost": "free",
+      "pricing_note": "Apache-2.0 开源；不触发付费 LLM 且无任何实盘下单功能，仅作量化研究辅助",
+      "official_url": "https://github.com/ZhuLinsen/alphasift",
+      "github": "github.com/ZhuLinsen/alphasift",
+      "maintainer": "ZhuLinsen",
+      "tags": [
+        "MCP",
+        "多市场选股",
+        "A股",
+        "Walk-Forward",
+        "T+N验证",
+        "Apache-2.0"
+      ]
     }
   ]
 }

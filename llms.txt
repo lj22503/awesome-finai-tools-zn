@@ -2,7 +2,7 @@
 
 ## 网站/仓库简介
 
-Awesome FinAI Tools 是中国金融 AI 工具全景图（lj22503/awesome-finai-tools-zn），收录可接入 AI Agent 的 Market Data MCP、量化框架、券商 Skills、交易接口、数据 API，共 55 个工具、24 家机构 Skill。每周自动巡检 GitHub / npm / PyPI 更新。数据更新日期：2026-09-21。
+Awesome FinAI Tools 是中国金融 AI 工具全景图（lj22503/awesome-finai-tools-zn），收录可接入 AI Agent 的 Market Data MCP、量化框架、券商 Skills、交易接口、数据 API，共 56 个工具、24 家机构 Skill。每周自动巡检 GitHub / npm / PyPI 更新。数据更新日期：2026-09-21。
 
 ## 核心页面
 
@@ -66,6 +66,7 @@ Awesome FinAI Tools 是中国金融 AI 工具全景图（lj22503/awesome-finai-t
 | QuantGPT | 框架 | ✅ | Agent 驱动的 Alpha 工厂：LLM 自主设计、回测并提交因子到 WorldQua… |
 | tradex-hub | MCP | ✅ | 面向量化与投研的 MCP 工具集线器，聚合 129 个 MCP 工具，统一接入数据、因子、… |
 | Awesome Finance Skills | Skill | ✅ | 金融领域 Agent Skills 合集，以标准 Skill 形式封装财报分析、估值建模、… |
+| AlphaSift | MCP | ✅ | 多市场开源股票筛选 CLI 与 14 工具只读 MCP Server，覆盖 A股/港股/美… |
 ### 🔄 Trading（交易执行）
 
 | 工具 | 类型 | 费用 | 一句话描述 |
