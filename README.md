@@ -3,7 +3,7 @@
 
 [![Stars](https://img.shields.io/github/stars/lj22503/awesome-finai-tools-zn?style=flat-square)](https://github.com/lj22503/awesome-finai-tools-zn)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](./LICENSE)
-[![Tools](https://img.shields.io/badge/%E5%B7%A5%E5%85%B7-55-blue?style=flat-square)](#工具分类)
+[![Tools](https://img.shields.io/badge/%E5%B7%A5%E5%85%B7-56-blue?style=flat-square)](#工具分类)
 [![Updated](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026-09-21-brightgreen?style=flat-square)](#每周自动更新)
 
 > 本仓库收录**中国金融 AI 工具**，包括 **Market Data MCP**、**量化框架**、**券商 Skills**、**金融 CLI**、**Python 金融库**。覆盖 **A股 / 港股 / 基金 / 期货** 行情数据、量化回测、因子挖掘、舆情分析、投研等场景。支持 **OpenClaw / Claude / Cursor / Codex / WorkBuddy / Coze** 等 AI Agent 平台。每周自动巡检更新。
@@ -105,6 +105,7 @@
 | [QuantGPT](#quantgpt) | 框架 | ✅ | Agent 驱动的 Alpha 工厂：LLM 自主设计、回测并提交因子到 WorldQuant BRAIN，支… | git clone [GitHub 仓库](https://github.com/Miasyster/QuantGPT) |
 | [tradex-hub](#tradex-hub) | MCP | ✅ | 面向量化与投研的 MCP 工具集线器，聚合 129 个 MCP 工具，统一接入数据、因子、回测与交易相关能力 | git clone [GitHub 仓库](https://github.com/wolfjkd/tradex-hub) |
 | [Awesome Finance Skills](#awesome-finance-skills) | Skill | ✅ | 金融领域 Agent Skills 合集，以标准 Skill 形式封装财报分析、估值建模、行业研究等能力，一条… | `npx skills add RKiding/Awesome-finance-skil…` |
+| [AlphaSift](#alphasift) | MCP | ✅ | 多市场开源股票筛选 CLI 与 14 工具只读 MCP Server，覆盖 A股/港股/美股/日/韩/台/印 … | `pip install alphasift` |
 
 ### 🔄 Trading（交易执行）
 
@@ -888,6 +889,28 @@ npx skills add RKiding/Awesome-finance-skills
 
 ---
 
+### AlphaSift
+
+**类型**：MCP　|　**费用**：✅ 免费  
+**费用说明**：Apache-2.0 开源；不触发付费 LLM 且无任何实盘下单功能，仅作量化研究辅助  
+**GitHub**：[github.com/ZhuLinsen/alphasift](https://github.com/ZhuLinsen/alphasift)  
+**官网**：[https://github.com/ZhuLinsen/alphasift](https://github.com/ZhuLinsen/alphasift)  
+**维护方**：ZhuLinsen  
+
+多市场开源股票筛选 CLI 与 14 工具只读 MCP Server，覆盖 A股/港股/美股/日/韩/台/印 7 个市场，内置无前瞻 Walk-Forward K线形态回放、市场状态与上方套牢盘风险门禁及 T+N 公开绩效跟踪
+
+**输入**：intent=多市场选股筛选、策略对比、K线形态历史回放与盘后日报生成 / market=可选，支持 cn / hk / us / jp / kr / tw / in / strategy=可选，内置双低轮动、质量价值、多因子共振等规则策略  
+**输出覆盖**：A股 / 港股 / 美股 / 日韩台印 / 形态回放 / T+N 验证  
+**输出格式**：结构化 JSON / Markdown 盘后研究简报 / 14 工具 + 4 资源 MCP  
+**接入方式**：Python CLI（alphasift）与本地 STDIO MCP（alphasift mcp），可选 Web API  
+
+**安装**：
+```bash
+pip install alphasift
+```
+
+---
+
 
 #### 🔄 Trading（交易执行）
 
@@ -1428,4 +1451,4 @@ MIT — 详见 [LICENSE](./LICENSE)
 
 ---
 
-*本文件由 `scripts/generate_readme.py` 自动从 `data/tools.json` / `data/institution-skills.json` / `data/institution-dynamics.json` 生成，最后更新：2026-11-23 21:34*
+*本文件由 `scripts/generate_readme.py` 自动从 `data/tools.json` / `data/institution-skills.json` / `data/institution-dynamics.json` 生成，最后更新：2026-11-26 04:50*
